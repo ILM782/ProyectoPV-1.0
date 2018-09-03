@@ -1,10 +1,10 @@
-﻿Public Class Form1
+﻿Public Class Login
 
 
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
         If Txt_Usuario.Text = "Admin" And Txt_Contrasena.Text = "1234" Then
             MsgBox("Se a logeado con exito", MsgBoxStyle.OkOnly, "FELICITACIONES")
-            Form2.Show()
+            Ventana_Principal.Show()
             Me.Hide()
         Else
             MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")

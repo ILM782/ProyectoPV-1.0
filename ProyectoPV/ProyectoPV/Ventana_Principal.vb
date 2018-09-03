@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class Ventana_Principal
 
     'PARA HACER LA BARRA DE NAVEGACION(http://codigofacilito.com/videos/visual_basic_net_parte_menustrip_curso_vbnet)
     Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Form3ToolStripMenuItem.Click
@@ -22,7 +22,7 @@
     Private Sub SALIRToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SALIRToolStripMenuItem.Click
 
         Me.Close()
-        Form1.Show()
+        Login.Show()
         Me.Hide()
 
     End Sub
