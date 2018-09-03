@@ -32,15 +32,15 @@ Partial Class Form1
         Me.Txt_Usuario = New System.Windows.Forms.TextBox()
         Me.Txt_Contrasena = New System.Windows.Forms.TextBox()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.YellowGreen
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -78,7 +78,7 @@ Partial Class Form1
         Me.Btn_Entrar.Name = "Btn_Entrar"
         Me.Btn_Entrar.Size = New System.Drawing.Size(194, 40)
         Me.Btn_Entrar.TabIndex = 4
-        Me.Btn_Entrar.Text = "ENTRAR"
+        Me.Btn_Entrar.Text = "&ENTRAR"
         Me.Btn_Entrar.UseVisualStyleBackColor = False
         '
         'Btn_Salir
@@ -90,7 +90,7 @@ Partial Class Form1
         Me.Btn_Salir.Name = "Btn_Salir"
         Me.Btn_Salir.Size = New System.Drawing.Size(194, 40)
         Me.Btn_Salir.TabIndex = 5
-        Me.Btn_Salir.Text = "SALIR"
+        Me.Btn_Salir.Text = "&SALIR"
         Me.Btn_Salir.UseVisualStyleBackColor = False
         '
         'Label1
@@ -138,15 +138,6 @@ Partial Class Form1
         Me.ShapeContainer1.TabIndex = 9
         Me.ShapeContainer1.TabStop = False
         '
-        'LineShape1
-        '
-        Me.LineShape1.Enabled = False
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 308
-        Me.LineShape1.X2 = 720
-        Me.LineShape1.Y1 = 100
-        Me.LineShape1.Y2 = 100
-        '
         'LineShape2
         '
         Me.LineShape2.Enabled = False
@@ -155,6 +146,15 @@ Partial Class Form1
         Me.LineShape2.X2 = 720
         Me.LineShape2.Y1 = 200
         Me.LineShape2.Y2 = 200
+        '
+        'LineShape1
+        '
+        Me.LineShape1.Enabled = False
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 308
+        Me.LineShape1.X2 = 720
+        Me.LineShape1.Y1 = 100
+        Me.LineShape1.Y2 = 100
         '
         'Form1
         '
