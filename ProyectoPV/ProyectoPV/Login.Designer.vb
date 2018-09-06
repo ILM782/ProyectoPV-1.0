@@ -61,7 +61,7 @@ Partial Class Login
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.user_13230
         Me.PictureBox3.Location = New System.Drawing.Point(40, 29)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(176, 219)
@@ -156,7 +156,7 @@ Partial Class Login
         Me.LineShape1.Y1 = 100
         Me.LineShape1.Y2 = 100
         '
-        'Form1
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -171,8 +171,8 @@ Partial Class Login
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
-        Me.Opacity = 0.9R
+        Me.Name = "Login"
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LOGIN"
         Me.Panel1.ResumeLayout(False)
