@@ -40,7 +40,7 @@ Partial Class Login
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Panel1.BackColor = System.Drawing.Color.Gold
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -106,7 +106,7 @@ Partial Class Login
         '
         'Txt_Usuario
         '
-        Me.Txt_Usuario.BackColor = System.Drawing.Color.White
+        Me.Txt_Usuario.BackColor = System.Drawing.Color.PaleTurquoise
         Me.Txt_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Usuario.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Usuario.ForeColor = System.Drawing.Color.Black
@@ -118,7 +118,7 @@ Partial Class Login
         '
         'Txt_Contrasena
         '
-        Me.Txt_Contrasena.BackColor = System.Drawing.Color.White
+        Me.Txt_Contrasena.BackColor = System.Drawing.Color.PaleTurquoise
         Me.Txt_Contrasena.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Contrasena.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Contrasena.ForeColor = System.Drawing.Color.Black
@@ -160,7 +160,7 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.PaleTurquoise
         Me.ClientSize = New System.Drawing.Size(772, 319)
         Me.Controls.Add(Me.Txt_Contrasena)
         Me.Controls.Add(Me.Txt_Usuario)

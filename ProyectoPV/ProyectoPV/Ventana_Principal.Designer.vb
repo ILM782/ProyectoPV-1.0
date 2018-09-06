@@ -85,7 +85,7 @@ Partial Class Ventana_Principal
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.YellowGreen
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Gold
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VENTASToolStripMenuItem, Me.AbrirToolStripMenuItem, Me.CAJAToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.ToolStripMenuItem1, Me.HerramientasToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.VERSIONToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -127,26 +127,26 @@ Partial Class Ventana_Principal
         'NUEVOToolStripMenuItem
         '
         Me.NUEVOToolStripMenuItem.Name = "NUEVOToolStripMenuItem"
-        Me.NUEVOToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.NUEVOToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NUEVOToolStripMenuItem.Text = "&NUEVO"
         '
         'ABRIRToolStripMenuItem1
         '
         Me.ABRIRToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Form3ToolStripMenuItem})
         Me.ABRIRToolStripMenuItem1.Name = "ABRIRToolStripMenuItem1"
-        Me.ABRIRToolStripMenuItem1.Size = New System.Drawing.Size(117, 22)
+        Me.ABRIRToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ABRIRToolStripMenuItem1.Text = "A&BRIR"
         '
         'Form3ToolStripMenuItem
         '
         Me.Form3ToolStripMenuItem.Name = "Form3ToolStripMenuItem"
-        Me.Form3ToolStripMenuItem.Size = New System.Drawing.Size(108, 22)
+        Me.Form3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.Form3ToolStripMenuItem.Text = "Form3"
         '
         'CERRARToolStripMenuItem
         '
         Me.CERRARToolStripMenuItem.Name = "CERRARToolStripMenuItem"
-        Me.CERRARToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.CERRARToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CERRARToolStripMenuItem.Text = "&CERRAR"
         '
         'CAJAToolStripMenuItem
@@ -278,8 +278,8 @@ Partial Class Ventana_Principal
         'SALIRToolStripMenuItem
         '
         Me.SALIRToolStripMenuItem.Name = "SALIRToolStripMenuItem"
-        Me.SALIRToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
-        Me.SALIRToolStripMenuItem.Text = "&SALIR"
+        Me.SALIRToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
+        Me.SALIRToolStripMenuItem.Text = "&IR A LOGIN"
         '
         'AyudaToolStripMenuItem
         '
