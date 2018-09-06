@@ -34,7 +34,23 @@
     End Sub
 
     Private Sub Btn_Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir.Click
+
         End
         Stop
+
+    End Sub
+
+
+    Private Sub Btn_Salir2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir2.Click
+
+        End
+        Stop
+
+    End Sub
+
+    Private Sub VERSIONToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VERSIONToolStripMenuItem.Click
+
+        Version.Show()
+
     End Sub
 End Class

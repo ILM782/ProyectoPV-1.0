@@ -79,6 +79,12 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Version.Designer.vb">
+      <DependentUpon>Version.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventana_Principal.Designer.vb">
       <DependentUpon>Ventana_Principal.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Version.resx">
+      <DependentUpon>Version.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -134,6 +143,18 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e_comerc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nueva carpeta\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nueva carpeta\ico-derecho-comercial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nueva carpeta\32841.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
