@@ -25,7 +25,6 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Btn_Entrar = New System.Windows.Forms.Button()
         Me.Btn_Salir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,13 +33,14 @@ Partial Class Login
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Gold
+        Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -52,22 +52,14 @@ Partial Class Login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 268)
+        Me.Label2.BackColor = System.Drawing.Color.Black
+        Me.Label2.Font = New System.Drawing.Font("C39HrP24DhTt", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(32, 253)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(244, 42)
+        Me.Label2.Size = New System.Drawing.Size(185, 48)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "AppComercio"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.user_13230
-        Me.PictureBox3.Location = New System.Drawing.Point(40, 29)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(176, 219)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
         '
         'Btn_Entrar
         '
@@ -100,13 +92,13 @@ Partial Class Login
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(465, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 33)
+        Me.Label1.Size = New System.Drawing.Size(101, 32)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "LOGIN"
         '
         'Txt_Usuario
         '
-        Me.Txt_Usuario.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.Txt_Usuario.BackColor = System.Drawing.Color.SteelBlue
         Me.Txt_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Usuario.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Usuario.ForeColor = System.Drawing.Color.Black
@@ -118,7 +110,7 @@ Partial Class Login
         '
         'Txt_Contrasena
         '
-        Me.Txt_Contrasena.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.Txt_Contrasena.BackColor = System.Drawing.Color.SteelBlue
         Me.Txt_Contrasena.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Contrasena.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Contrasena.ForeColor = System.Drawing.Color.Black
@@ -156,11 +148,21 @@ Partial Class Login
         Me.LineShape1.Y1 = 100
         Me.LineShape1.Y2 = 100
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.candado
+        Me.PictureBox3.Location = New System.Drawing.Point(-62, -61)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(364, 380)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(772, 319)
         Me.Controls.Add(Me.Txt_Contrasena)
         Me.Controls.Add(Me.Txt_Usuario)

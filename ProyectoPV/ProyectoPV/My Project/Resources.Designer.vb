@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property candado() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("candado", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property e_comerc() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("e_comerc", resourceCulture)
@@ -96,6 +106,16 @@ Namespace My.Resources
         Friend ReadOnly Property images() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("images", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property kisspng_padlock_5add5677169c17_7945095815244550310926() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("kisspng-padlock-5add5677169c17.7945095815244550310926", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

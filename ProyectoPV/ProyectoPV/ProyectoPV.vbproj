@@ -150,6 +150,12 @@
   <ItemGroup>
     <None Include="Resources\Nueva carpeta\user_13230.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-padlock-5add5677169c17.7945095815244550310926.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

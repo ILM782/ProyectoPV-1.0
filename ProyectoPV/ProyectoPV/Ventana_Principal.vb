@@ -1,11 +1,11 @@
 ﻿Public Class Ventana_Principal
 
     'PARA HACER LA BARRA DE NAVEGACION(http://codigofacilito.com/videos/visual_basic_net_parte_menustrip_curso_vbnet)
-    Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    'Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        Form3.ShowDialog()
+    'Form3.ShowDialog()
 
-    End Sub
+    'End Sub
 
     Private Sub NUEVOToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
