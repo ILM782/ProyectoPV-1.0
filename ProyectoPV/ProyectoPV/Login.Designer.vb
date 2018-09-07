@@ -53,11 +53,11 @@ Partial Class Login
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Black
-        Me.Label2.Font = New System.Drawing.Font("C39HrP24DhTt", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("barcode font", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(32, 253)
+        Me.Label2.Location = New System.Drawing.Point(47, 228)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(185, 48)
+        Me.Label2.Size = New System.Drawing.Size(149, 65)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "AppComercio"
         '
@@ -92,7 +92,7 @@ Partial Class Login
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(465, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 32)
+        Me.Label1.Size = New System.Drawing.Size(105, 33)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "LOGIN"
         '

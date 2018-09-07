@@ -93,7 +93,7 @@ Partial Class Ventana_Principal
         '
         Me.CAJAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicializacionToolStripMenuItem})
         Me.CAJAToolStripMenuItem.Name = "CAJAToolStripMenuItem"
-        Me.CAJAToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.CAJAToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.CAJAToolStripMenuItem.Text = "CAJA"
         '
         'InicializacionToolStripMenuItem
@@ -106,13 +106,13 @@ Partial Class Ventana_Principal
         'APERTURADeCajaToolStripMenuItem
         '
         Me.APERTURADeCajaToolStripMenuItem.Name = "APERTURADeCajaToolStripMenuItem"
-        Me.APERTURADeCajaToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.APERTURADeCajaToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.APERTURADeCajaToolStripMenuItem.Text = "APERTURA de caja"
         '
         'CIERREDeCajaToolStripMenuItem
         '
         Me.CIERREDeCajaToolStripMenuItem.Name = "CIERREDeCajaToolStripMenuItem"
-        Me.CIERREDeCajaToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.CIERREDeCajaToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.CIERREDeCajaToolStripMenuItem.Text = "CIERRE de caja"
         '
         'VENTASToolStripMenuItem
@@ -122,7 +122,7 @@ Partial Class Ventana_Principal
         Me.VENTASToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.VENTASToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaVentaToolStripMenuItem, Me.BusquedaDeComprobantesToolStripMenuItem})
         Me.VENTASToolStripMenuItem.Name = "VENTASToolStripMenuItem"
-        Me.VENTASToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.VENTASToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.VENTASToolStripMenuItem.Text = "VENTAS"
         Me.VENTASToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
         '
@@ -180,7 +180,7 @@ Partial Class Ventana_Principal
         '
         Me.ESTADISTICAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentaPorUsuarioToolStripMenuItem, Me.ArticulosVendidosToolStripMenuItem})
         Me.ESTADISTICAToolStripMenuItem.Name = "ESTADISTICAToolStripMenuItem"
-        Me.ESTADISTICAToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
+        Me.ESTADISTICAToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
         Me.ESTADISTICAToolStripMenuItem.Text = "ESTADISTICA"
         '
         'VentaPorUsuarioToolStripMenuItem
@@ -228,7 +228,7 @@ Partial Class Ventana_Principal
         'VERSIONToolStripMenuItem
         '
         Me.VERSIONToolStripMenuItem.Name = "VERSIONToolStripMenuItem"
-        Me.VERSIONToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.VERSIONToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
         Me.VERSIONToolStripMenuItem.Text = "Versión"
         '
         'AyudaToolStripMenuItem

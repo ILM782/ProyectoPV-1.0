@@ -43,14 +43,19 @@
 
     Private Sub Btn_Salir2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir2.Click
 
-        End
-        Stop
+        Dim respuesta As Object
+        respuesta = MsgBox("¿Desea Salir?", MsgBoxStyle.YesNo, "Advertencia!")
+        If respuesta = vbYes Then
+            End
+        End If
 
     End Sub
 
     Private Sub VERSIONToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VERSIONToolStripMenuItem.Click
-
         Version.Show()
+    End Sub
 
+    Private Sub BusquedaDeClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BusquedaDeClienteToolStripMenuItem.Click
+        Clientes.Show()
     End Sub
 End Class
