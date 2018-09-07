@@ -56,6 +56,6 @@
     End Sub
 
     Private Sub BusquedaDeClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BusquedaDeClienteToolStripMenuItem.Click
-        Clientes.Show()
+        TablasClientes.Show()
     End Sub
 End Class

@@ -34,10 +34,6 @@ Partial Class Ventana_Principal
         Me.BusquedaDeComprobantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CLIENTEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AltaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClienteFinalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BajaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ESTADISTICAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentaPorUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArticulosVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -140,7 +136,7 @@ Partial Class Ventana_Principal
         '
         'CLIENTEToolStripMenuItem
         '
-        Me.CLIENTEToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BusquedaDeClienteToolStripMenuItem, Me.AltaDeClienteToolStripMenuItem, Me.BajaDeClienteToolStripMenuItem})
+        Me.CLIENTEToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BusquedaDeClienteToolStripMenuItem})
         Me.CLIENTEToolStripMenuItem.Name = "CLIENTEToolStripMenuItem"
         Me.CLIENTEToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
         Me.CLIENTEToolStripMenuItem.Text = "CLIENTE"
@@ -148,33 +144,8 @@ Partial Class Ventana_Principal
         'BusquedaDeClienteToolStripMenuItem
         '
         Me.BusquedaDeClienteToolStripMenuItem.Name = "BusquedaDeClienteToolStripMenuItem"
-        Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BusquedaDeClienteToolStripMenuItem.Text = "Busqueda de cliente"
-        '
-        'AltaDeClienteToolStripMenuItem
-        '
-        Me.AltaDeClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteFinalToolStripMenuItem, Me.ClienteToolStripMenuItem1})
-        Me.AltaDeClienteToolStripMenuItem.Name = "AltaDeClienteToolStripMenuItem"
-        Me.AltaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AltaDeClienteToolStripMenuItem.Text = "Alta de cliente"
-        '
-        'ClienteFinalToolStripMenuItem
-        '
-        Me.ClienteFinalToolStripMenuItem.Name = "ClienteFinalToolStripMenuItem"
-        Me.ClienteFinalToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-        Me.ClienteFinalToolStripMenuItem.Text = "Consumidor final"
-        '
-        'ClienteToolStripMenuItem1
-        '
-        Me.ClienteToolStripMenuItem1.Name = "ClienteToolStripMenuItem1"
-        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(166, 22)
-        Me.ClienteToolStripMenuItem1.Text = "Comerciante"
-        '
-        'BajaDeClienteToolStripMenuItem
-        '
-        Me.BajaDeClienteToolStripMenuItem.Name = "BajaDeClienteToolStripMenuItem"
-        Me.BajaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BajaDeClienteToolStripMenuItem.Text = "Baja de cliente"
+        Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BusquedaDeClienteToolStripMenuItem.Text = "Tabla Cliente"
         '
         'ESTADISTICAToolStripMenuItem
         '
@@ -397,10 +368,6 @@ Partial Class Ventana_Principal
     Friend WithEvents CIERREDeCajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CLIENTEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BusquedaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AltaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClienteFinalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClienteToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BajaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripContainer1 As System.Windows.Forms.ToolStripContainer
     Friend WithEvents ToolStripContainer2 As System.Windows.Forms.ToolStripContainer

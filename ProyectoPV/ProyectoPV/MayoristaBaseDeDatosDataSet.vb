@@ -1,4 +1,2 @@
-﻿
-
-Partial Public Class MayoristaBaseDeDatosDataSet
+﻿Partial Class MayoristaBaseDeDatosDataSet
 End Class

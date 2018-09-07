@@ -89,12 +89,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\MayoristaConBaseDeDatos.Designer.vb">
-      <DependentUpon>MayoristaConBaseDeDatos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="..\..\..\MayoristaConBaseDeDatos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +103,12 @@
     </Compile>
     <Compile Include="MayoristaBaseDeDatosDataSet.vb">
       <DependentUpon>MayoristaBaseDeDatosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TablasClientes.Designer.vb">
+      <DependentUpon>TablasClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TablasClientes.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Version.Designer.vb">
       <DependentUpon>Version.vb</DependentUpon>
@@ -139,11 +139,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\..\MayoristaConBaseDeDatos.resx">
-      <DependentUpon>MayoristaConBaseDeDatos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasClientes.resx">
+      <DependentUpon>TablasClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana_Principal.resx">
       <DependentUpon>Ventana_Principal.vb</DependentUpon>

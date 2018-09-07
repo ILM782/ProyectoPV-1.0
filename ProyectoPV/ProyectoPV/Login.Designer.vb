@@ -25,6 +25,7 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Btn_Entrar = New System.Windows.Forms.Button()
         Me.Btn_Salir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,7 +34,6 @@ Partial Class Login
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -60,6 +60,16 @@ Partial Class Login
         Me.Label2.Size = New System.Drawing.Size(149, 65)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "AppComercio"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.candado
+        Me.PictureBox3.Location = New System.Drawing.Point(-62, -61)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(364, 380)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
         '
         'Btn_Entrar
         '
@@ -147,16 +157,6 @@ Partial Class Login
         Me.LineShape1.X2 = 720
         Me.LineShape1.Y1 = 100
         Me.LineShape1.Y2 = 100
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.candado
-        Me.PictureBox3.Location = New System.Drawing.Point(-62, -61)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(364, 380)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
         '
         'Login
         '

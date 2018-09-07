@@ -12,26 +12,6 @@
                 MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
             End If
         End If
-        'Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
-        'If Txt_Usuario.Text = "Admin" And Txt_Contrasena.Text = "1234" Then
-        'MsgBox("Se a logeado con exito", MsgBoxStyle.OkOnly, "FELICITACIONES")
-        'Form2.Show()
-        'Me.Hide()
-        'Else
-        'If Txt_Usuario.Text = "" And Txt_Contrasena.Text = "" Then
-        'MsgBox("No a ingresado nada vuelva a intentar", MsgBoxStyle.Exclamation, "ERROR")
-        'Else
-        'If Txt_Usuario.Text = "" Then
-        'MsgBox("No a ingresado USUARIO", MsgBoxStyle.Exclamation, "ERROR")
-        'Else
-        'If Txt_Contrasena.Text = "" Then
-        'MsgBox("No a ingresado CONTRASEÑA", MsgBoxStyle.Exclamation, "ERROR")
-
-        'End If
-        'End If
-        'End If
-        'End If
-        'End Sub
     End Sub
 
     Private Sub Btn_Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir.Click

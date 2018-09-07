@@ -995,12 +995,17 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT [DNI], [Nombre_Cliente], [Apellido_Cliente], [ID_Localidad], [Domicilio_Cl"& _ 
                 "iente], [Telefono_Cliente], [Correo_Cliente] FROM [Clientes]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "DELETE FROM [Clientes] WHERE (([DNI] = @p1))"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.BigInt, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI", Global.System.Data.DataRowVersion.Original, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1185,6 +1190,29 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
         Public Overloads Overridable Function Update(ByVal p2 As String, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Integer), ByVal p5 As String, ByVal p6 As Global.System.Nullable(Of Long), ByVal p7 As String, ByVal p8 As Long) As Integer
             Return Me.Update(p8, p2, p3, p4, p5, p6, p7, p8)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, false)>  _
+        Public Overloads Overridable Function Borrar(ByVal p1 As Long) As Integer
+            Dim command As Global.System.Data.SqlServerCe.SqlCeCommand = Me.CommandCollection(1)
+            command.Parameters(0).Value = CType(p1,Long)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open
+            End If
+            Dim returnValue As Integer
+            Try 
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close
+                End If
+            End Try
+            Return returnValue
         End Function
     End Class
     
