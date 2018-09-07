@@ -3,11 +3,14 @@
 
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
         If Txt_Usuario.Text = "Admin" And Txt_Contrasena.Text = "1234" Then
-            MsgBox("Se a logeado con exito", MsgBoxStyle.OkOnly, "FELICITACIONES")
             Ventana_Principal.Show()
-            Me.Hide()
+            Me.Close()
         Else
-            MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
+            If Txt_Usuario.Text = "USUARIO" And Txt_Contrasena.Text = "CONTRASEÑA" Then
+                MsgBox("Campos vacios", MsgBoxStyle.Information, "Error")
+            Else
+                MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
+            End If
         End If
         'Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
         'If Txt_Usuario.Text = "Admin" And Txt_Contrasena.Text = "1234" Then
@@ -37,12 +40,18 @@
     End Sub
 
     Private Sub Txt_Usuario_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Usuario.KeyPress
+        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+            Call Btn_Salir_Click(sender, e)
+        End If
         If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 13(ENTER) LLAME AL BOTON ENTRAR
             Call Btn_Entrar_Click(sender, e)
         End If
     End Sub
 
     Private Sub Txt_Contrasena_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Contrasena.KeyPress
+        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+            Call Btn_Salir_Click(sender, e)
+        End If
         If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 13(ENTER) LLAME AL BOTON ENTRAR
             Call Btn_Entrar_Click(sender, e)
         End If
@@ -74,6 +83,18 @@
         If (Txt_Contrasena.Text = "") Then
             Txt_Contrasena.Text = "CONTRASEÑA"
             Txt_Contrasena.UseSystemPasswordChar = False
+        End If
+    End Sub
+
+    Private Sub Btn_Entrar_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Btn_Entrar.KeyPress
+        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+            Call Btn_Salir_Click(sender, e)
+        End If
+    End Sub
+
+    Private Sub Btn_Salir_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Btn_Salir.KeyPress
+        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+            Call Btn_Salir_Click(sender, e)
         End If
     End Sub
 End Class

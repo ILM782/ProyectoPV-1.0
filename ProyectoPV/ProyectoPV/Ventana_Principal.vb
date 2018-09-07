@@ -1,19 +1,19 @@
 ﻿Public Class Ventana_Principal
 
     'PARA HACER LA BARRA DE NAVEGACION(http://codigofacilito.com/videos/visual_basic_net_parte_menustrip_curso_vbnet)
-    Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Form3ToolStripMenuItem.Click
+    Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Form3.ShowDialog()
 
     End Sub
 
-    Private Sub NUEVOToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NUEVOToolStripMenuItem.Click
+    Private Sub NUEVOToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         MsgBox("Ha dado click en nuevo")
 
     End Sub
 
-    Private Sub CERRARToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CERRARToolStripMenuItem.Click
+    Private Sub CERRARToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         MsgBox("Ha dado click en cerrar")
 

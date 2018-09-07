@@ -28,11 +28,6 @@ Partial Class Ventana_Principal
         Me.VENTASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedaDeComprobantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AbrirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NUEVOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ABRIRToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Form3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CERRARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CAJAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InicializacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.APERTURADeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -87,7 +82,7 @@ Partial Class Ventana_Principal
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Gold
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VENTASToolStripMenuItem, Me.AbrirToolStripMenuItem, Me.CAJAToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.ToolStripMenuItem1, Me.HerramientasToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.VERSIONToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CAJAToolStripMenuItem, Me.VENTASToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.ToolStripMenuItem1, Me.VERSIONToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.HerramientasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(848, 24)
@@ -117,38 +112,6 @@ Partial Class Ventana_Principal
         Me.BusquedaDeComprobantesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.BusquedaDeComprobantesToolStripMenuItem.Text = "Busqueda de comprobantes"
         '
-        'AbrirToolStripMenuItem
-        '
-        Me.AbrirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NUEVOToolStripMenuItem, Me.ABRIRToolStripMenuItem1, Me.CERRARToolStripMenuItem})
-        Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
-        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
-        Me.AbrirToolStripMenuItem.Text = "&ARCHIVO"
-        '
-        'NUEVOToolStripMenuItem
-        '
-        Me.NUEVOToolStripMenuItem.Name = "NUEVOToolStripMenuItem"
-        Me.NUEVOToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NUEVOToolStripMenuItem.Text = "&NUEVO"
-        '
-        'ABRIRToolStripMenuItem1
-        '
-        Me.ABRIRToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Form3ToolStripMenuItem})
-        Me.ABRIRToolStripMenuItem1.Name = "ABRIRToolStripMenuItem1"
-        Me.ABRIRToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.ABRIRToolStripMenuItem1.Text = "A&BRIR"
-        '
-        'Form3ToolStripMenuItem
-        '
-        Me.Form3ToolStripMenuItem.Name = "Form3ToolStripMenuItem"
-        Me.Form3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Form3ToolStripMenuItem.Text = "Form3"
-        '
-        'CERRARToolStripMenuItem
-        '
-        Me.CERRARToolStripMenuItem.Name = "CERRARToolStripMenuItem"
-        Me.CERRARToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.CERRARToolStripMenuItem.Text = "&CERRAR"
-        '
         'CAJAToolStripMenuItem
         '
         Me.CAJAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicializacionToolStripMenuItem})
@@ -160,7 +123,7 @@ Partial Class Ventana_Principal
         '
         Me.InicializacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.APERTURADeCajaToolStripMenuItem, Me.CIERREDeCajaToolStripMenuItem})
         Me.InicializacionToolStripMenuItem.Name = "InicializacionToolStripMenuItem"
-        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InicializacionToolStripMenuItem.Text = "Inicializacion"
         '
         'APERTURADeCajaToolStripMenuItem
@@ -266,13 +229,13 @@ Partial Class Ventana_Principal
         'PersonalizarToolStripMenuItem
         '
         Me.PersonalizarToolStripMenuItem.Name = "PersonalizarToolStripMenuItem"
-        Me.PersonalizarToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.PersonalizarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PersonalizarToolStripMenuItem.Text = "&Personalizar"
         '
         'OpcionesToolStripMenuItem
         '
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         '
         'SALIRToolStripMenuItem
@@ -291,30 +254,30 @@ Partial Class Ventana_Principal
         'ContenidoToolStripMenuItem
         '
         Me.ContenidoToolStripMenuItem.Name = "ContenidoToolStripMenuItem"
-        Me.ContenidoToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.ContenidoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ContenidoToolStripMenuItem.Text = "&Contenido"
         '
         'ÍndiceToolStripMenuItem
         '
         Me.ÍndiceToolStripMenuItem.Name = "ÍndiceToolStripMenuItem"
-        Me.ÍndiceToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.ÍndiceToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ÍndiceToolStripMenuItem.Text = "Índic&e"
         '
         'BuscarToolStripMenuItem
         '
         Me.BuscarToolStripMenuItem.Name = "BuscarToolStripMenuItem"
-        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BuscarToolStripMenuItem.Text = "&Buscar"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(132, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(149, 6)
         '
         'AcercadeToolStripMenuItem
         '
         Me.AcercadeToolStripMenuItem.Name = "AcercadeToolStripMenuItem"
-        Me.AcercadeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.AcercadeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AcercadeToolStripMenuItem.Text = "&Acerca de..."
         '
         'VERSIONToolStripMenuItem
@@ -423,11 +386,6 @@ Partial Class Ventana_Principal
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents AbrirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NUEVOToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ABRIRToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Form3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CERRARToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SALIRToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Btn_Salir As System.Windows.Forms.Button
     Friend WithEvents VENTASToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
