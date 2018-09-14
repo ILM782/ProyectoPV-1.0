@@ -56,11 +56,18 @@
     End Sub
 
     Private Sub BusquedaDeClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BusquedaDeClienteToolStripMenuItem.Click
+
         LoginGerente.Show()
+
     End Sub
 
 
     Private Sub InicializacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InicializacionToolStripMenuItem.Click
-        Caja.Show()
+        Transaccion_Venta.Show()
+        Me.WindowState = FormWindowState.Minimized
+
+
+
+
     End Sub
 End Class

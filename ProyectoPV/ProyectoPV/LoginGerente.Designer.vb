@@ -93,6 +93,7 @@ Partial Class LoginGerente
         Me.Controls.Add(Me.Btn_Entrar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "LoginGerente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LoginGerente"
         Me.ResumeLayout(False)
         Me.PerformLayout()

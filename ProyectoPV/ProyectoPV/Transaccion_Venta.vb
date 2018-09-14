@@ -1,4 +1,4 @@
-﻿Public Class Caja
+﻿Public Class Transaccion_Venta
 
     Private Sub ClienteBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
@@ -8,6 +8,12 @@
     End Sub
 
     Private Sub Caja_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Marcas' Puede moverla o quitarla según sea necesario.
+        Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Categoria' Puede moverla o quitarla según sea necesario.
+        Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
+        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Ventas_Clientes' Puede moverla o quitarla según sea necesario.
         Me.Ventas_ClientesTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Ventas_Clientes)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
@@ -22,10 +28,10 @@
             End
             Exit Sub
         End If
-
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Me.Close()
+        Ventana_Principal.WindowState = FormWindowState.Maximized
     End Sub
 End Class

@@ -20,4 +20,8 @@
             Close()
         End If
     End Sub
+
+    Private Sub Txt_Contraseña_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Contraseña.TextChanged
+        Txt_Contraseña.UseSystemPasswordChar = True
+    End Sub
 End Class
