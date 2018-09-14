@@ -56,6 +56,11 @@
     End Sub
 
     Private Sub BusquedaDeClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BusquedaDeClienteToolStripMenuItem.Click
-        TablasClientes.Show()
+        LoginGerente.Show()
+    End Sub
+
+
+    Private Sub InicializacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InicializacionToolStripMenuItem.Click
+        Caja.Show()
     End Sub
 End Class

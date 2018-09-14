@@ -27,8 +27,6 @@ Partial Class Ventana_Principal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CAJAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InicializacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.APERTURADeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CIERREDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VENTASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedaDeComprobantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -94,22 +92,9 @@ Partial Class Ventana_Principal
         '
         'InicializacionToolStripMenuItem
         '
-        Me.InicializacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.APERTURADeCajaToolStripMenuItem, Me.CIERREDeCajaToolStripMenuItem})
         Me.InicializacionToolStripMenuItem.Name = "InicializacionToolStripMenuItem"
-        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.InicializacionToolStripMenuItem.Text = "Inicializacion"
-        '
-        'APERTURADeCajaToolStripMenuItem
-        '
-        Me.APERTURADeCajaToolStripMenuItem.Name = "APERTURADeCajaToolStripMenuItem"
-        Me.APERTURADeCajaToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
-        Me.APERTURADeCajaToolStripMenuItem.Text = "APERTURA de caja"
-        '
-        'CIERREDeCajaToolStripMenuItem
-        '
-        Me.CIERREDeCajaToolStripMenuItem.Name = "CIERREDeCajaToolStripMenuItem"
-        Me.CIERREDeCajaToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
-        Me.CIERREDeCajaToolStripMenuItem.Text = "CIERRE de caja"
+        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InicializacionToolStripMenuItem.Text = "Transaccion"
         '
         'VENTASToolStripMenuItem
         '
@@ -144,7 +129,7 @@ Partial Class Ventana_Principal
         'BusquedaDeClienteToolStripMenuItem
         '
         Me.BusquedaDeClienteToolStripMenuItem.Name = "BusquedaDeClienteToolStripMenuItem"
-        Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.BusquedaDeClienteToolStripMenuItem.Text = "Tabla Cliente"
         '
         'ESTADISTICAToolStripMenuItem
@@ -364,8 +349,6 @@ Partial Class Ventana_Principal
     Friend WithEvents BusquedaDeComprobantesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CAJAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InicializacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents APERTURADeCajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CIERREDeCajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CLIENTEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BusquedaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem

@@ -89,11 +89,23 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caja.Designer.vb">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGerente.Designer.vb">
+      <DependentUpon>LoginGerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGerente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MayoristaBaseDeDatosDataSet.Designer.vb">
@@ -139,8 +151,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Caja.resx">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGerente.resx">
+      <DependentUpon>LoginGerente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TablasClientes.resx">
       <DependentUpon>TablasClientes.vb</DependentUpon>
