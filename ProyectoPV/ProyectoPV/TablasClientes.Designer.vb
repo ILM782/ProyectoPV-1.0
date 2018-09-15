@@ -47,6 +47,13 @@ Partial Class TablasClientes
         Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
         Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Txt_Consulta_Cliente = New System.Windows.Forms.TextBox()
         Me.Btn_Consultar_Cliente = New System.Windows.Forms.Button()
@@ -67,13 +74,6 @@ Partial Class TablasClientes
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.ProvinciaTextBox = New System.Windows.Forms.TextBox()
         Me.MayoristaBaseDeDatosDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Correo_ClienteLabel = New System.Windows.Forms.Label()
         Correo_ClienteLabel1 = New System.Windows.Forms.Label()
         Telefono_ClienteLabel = New System.Windows.Forms.Label()
@@ -294,6 +294,49 @@ Partial Class TablasClientes
         Me.ClienteDataGridView.Size = New System.Drawing.Size(741, 335)
         Me.ClienteDataGridView.TabIndex = 34
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
         'ClienteBindingSource
         '
         Me.ClienteBindingSource.DataMember = "Cliente"
@@ -441,49 +484,6 @@ Partial Class TablasClientes
         '
         Me.MayoristaBaseDeDatosDataSetBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         Me.MayoristaBaseDeDatosDataSetBindingSource.Position = 0
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo_Cliente"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono_Cliente"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio_Cliente"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido_Cliente"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Cliente"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'TablasClientes
         '

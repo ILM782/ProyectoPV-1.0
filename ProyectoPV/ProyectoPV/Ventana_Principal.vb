@@ -61,13 +61,12 @@
 
     End Sub
 
-
     Private Sub InicializacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InicializacionToolStripMenuItem.Click
         Transaccion_Venta.Show()
-        Me.WindowState = FormWindowState.Minimized
+        '  Me.WindowState = FormWindowState.Minimized 'minimiza ventana
+    End Sub
 
-
-
-
+    Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
+        Productos.Show()
     End Sub
 End Class

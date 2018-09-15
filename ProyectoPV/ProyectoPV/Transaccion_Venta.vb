@@ -32,6 +32,22 @@
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Me.Close()
-        Ventana_Principal.WindowState = FormWindowState.Maximized
+
+    End Sub
+
+    Private Sub Btn_Finalizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Finalizar.Click
+        Dim fila As Integer
+        If Txt_Categoria.Text <> "" Then
+
+            fila = Me.CategoriaBindingSource.Find("Categoria", Txt_Categoria.Text)
+            If fila <> -1 Then
+
+
+            Else
+                MsgBox("Categoria no encontrada")
+            End If
+        Else
+            MsgBox("El campo esta vacio")
+        End If
     End Sub
 End Class

@@ -30,7 +30,6 @@ Partial Class Transaccion_Venta
         Dim ItemsLabel As System.Windows.Forms.Label
         Dim MontoLabel As System.Windows.Forms.Label
         Dim Tipo_De_FacturacionLabel As System.Windows.Forms.Label
-        Dim ID_ProductoLabel1 As System.Windows.Forms.Label
         Dim ID_MarcaLabel As System.Windows.Forms.Label
         Dim ID_CategoriaLabel As System.Windows.Forms.Label
         Dim Nombre_ProductoLabel As System.Windows.Forms.Label
@@ -61,14 +60,12 @@ Partial Class Transaccion_Venta
         Me.Tipo_De_FacturacionTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
-        Me.ID_ProductoTextBox1 = New System.Windows.Forms.TextBox()
         Me.ID_MarcaTextBox = New System.Windows.Forms.TextBox()
-        Me.ID_CategoriaTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_ProductoTextBox = New System.Windows.Forms.TextBox()
         Me.StrockTextBox = New System.Windows.Forms.TextBox()
         Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
@@ -81,6 +78,8 @@ Partial Class Transaccion_Venta
         Me.MarcasTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter()
         Me.ID_MarcaTextBox1 = New System.Windows.Forms.TextBox()
         Me.MarcaTextBox = New System.Windows.Forms.TextBox()
+        Me.Btn_Finalizar = New System.Windows.Forms.Button()
+        Me.Txt_Categoria = New System.Windows.Forms.TextBox()
         ID_OperadorLabel = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
         ID_ClienteLabel = New System.Windows.Forms.Label()
@@ -88,7 +87,6 @@ Partial Class Transaccion_Venta
         ItemsLabel = New System.Windows.Forms.Label()
         MontoLabel = New System.Windows.Forms.Label()
         Tipo_De_FacturacionLabel = New System.Windows.Forms.Label()
-        ID_ProductoLabel1 = New System.Windows.Forms.Label()
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_CategoriaLabel = New System.Windows.Forms.Label()
         Nombre_ProductoLabel = New System.Windows.Forms.Label()
@@ -170,6 +168,96 @@ Partial Class Transaccion_Venta
         Tipo_De_FacturacionLabel.Size = New System.Drawing.Size(107, 13)
         Tipo_De_FacturacionLabel.TabIndex = 15
         Tipo_De_FacturacionLabel.Text = "Tipo De Facturacion:"
+        '
+        'ID_MarcaLabel
+        '
+        ID_MarcaLabel.AutoSize = True
+        ID_MarcaLabel.Location = New System.Drawing.Point(12, 196)
+        ID_MarcaLabel.Name = "ID_MarcaLabel"
+        ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
+        ID_MarcaLabel.TabIndex = 2
+        ID_MarcaLabel.Text = "ID Marca:"
+        '
+        'ID_CategoriaLabel
+        '
+        ID_CategoriaLabel.AutoSize = True
+        ID_CategoriaLabel.Location = New System.Drawing.Point(224, 196)
+        ID_CategoriaLabel.Name = "ID_CategoriaLabel"
+        ID_CategoriaLabel.Size = New System.Drawing.Size(52, 13)
+        ID_CategoriaLabel.TabIndex = 4
+        ID_CategoriaLabel.Text = "Categoria"
+        '
+        'Nombre_ProductoLabel
+        '
+        Nombre_ProductoLabel.AutoSize = True
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(224, 222)
+        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
+        Nombre_ProductoLabel.Size = New System.Drawing.Size(93, 13)
+        Nombre_ProductoLabel.TabIndex = 6
+        Nombre_ProductoLabel.Text = "Nombre Producto:"
+        '
+        'StrockLabel
+        '
+        StrockLabel.AutoSize = True
+        StrockLabel.Location = New System.Drawing.Point(433, 196)
+        StrockLabel.Name = "StrockLabel"
+        StrockLabel.Size = New System.Drawing.Size(41, 13)
+        StrockLabel.TabIndex = 8
+        StrockLabel.Text = "Strock:"
+        '
+        'Precio_UnitarioLabel
+        '
+        Precio_UnitarioLabel.AutoSize = True
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(433, 222)
+        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
+        Precio_UnitarioLabel.Size = New System.Drawing.Size(79, 13)
+        Precio_UnitarioLabel.TabIndex = 10
+        Precio_UnitarioLabel.Text = "Precio Unitario:"
+        '
+        'DescripcionLabel
+        '
+        DescripcionLabel.AutoSize = True
+        DescripcionLabel.Location = New System.Drawing.Point(11, 274)
+        DescripcionLabel.Name = "DescripcionLabel"
+        DescripcionLabel.Size = New System.Drawing.Size(66, 13)
+        DescripcionLabel.TabIndex = 12
+        DescripcionLabel.Text = "Descripcion:"
+        '
+        'ID_CategoriaLabel1
+        '
+        ID_CategoriaLabel1.AutoSize = True
+        ID_CategoriaLabel1.Location = New System.Drawing.Point(11, 222)
+        ID_CategoriaLabel1.Name = "ID_CategoriaLabel1"
+        ID_CategoriaLabel1.Size = New System.Drawing.Size(69, 13)
+        ID_CategoriaLabel1.TabIndex = 0
+        ID_CategoriaLabel1.Text = "ID Categoria:"
+        '
+        'CategoriaLabel
+        '
+        CategoriaLabel.AutoSize = True
+        CategoriaLabel.Location = New System.Drawing.Point(11, 248)
+        CategoriaLabel.Name = "CategoriaLabel"
+        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel.TabIndex = 2
+        CategoriaLabel.Text = "Categoria:"
+        '
+        'ID_MarcaLabel1
+        '
+        ID_MarcaLabel1.AutoSize = True
+        ID_MarcaLabel1.Location = New System.Drawing.Point(224, 248)
+        ID_MarcaLabel1.Name = "ID_MarcaLabel1"
+        ID_MarcaLabel1.Size = New System.Drawing.Size(54, 13)
+        ID_MarcaLabel1.TabIndex = 4
+        ID_MarcaLabel1.Text = "ID Marca:"
+        '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.Location = New System.Drawing.Point(224, 274)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel.TabIndex = 6
+        MarcaLabel.Text = "Marca:"
         '
         'MayoristaBaseDeDatosDataSet
         '
@@ -318,6 +406,14 @@ Partial Class Transaccion_Venta
         Me.ShapeContainer1.TabIndex = 18
         Me.ShapeContainer1.TabStop = False
         '
+        'LineShape2
+        '
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 7
+        Me.LineShape2.X2 = 878
+        Me.LineShape2.Y1 = 173
+        Me.LineShape2.Y2 = 173
+        '
         'LineShape1
         '
         Me.LineShape1.Name = "LineShape1"
@@ -336,14 +432,6 @@ Partial Class Transaccion_Venta
         Me.Label2.TabIndex = 19
         Me.Label2.Text = "Datos de Producto"
         '
-        'LineShape2
-        '
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 7
-        Me.LineShape2.X2 = 878
-        Me.LineShape2.Y1 = 173
-        Me.LineShape2.Y2 = 173
-        '
         'ProductoBindingSource
         '
         Me.ProductoBindingSource.DataMember = "Producto"
@@ -353,65 +441,13 @@ Partial Class Transaccion_Venta
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
         '
-        'ID_ProductoLabel1
-        '
-        ID_ProductoLabel1.AutoSize = True
-        ID_ProductoLabel1.Location = New System.Drawing.Point(12, 196)
-        ID_ProductoLabel1.Name = "ID_ProductoLabel1"
-        ID_ProductoLabel1.Size = New System.Drawing.Size(67, 13)
-        ID_ProductoLabel1.TabIndex = 0
-        ID_ProductoLabel1.Text = "ID Producto:"
-        '
-        'ID_ProductoTextBox1
-        '
-        Me.ID_ProductoTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Producto", True))
-        Me.ID_ProductoTextBox1.Location = New System.Drawing.Point(111, 193)
-        Me.ID_ProductoTextBox1.Name = "ID_ProductoTextBox1"
-        Me.ID_ProductoTextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.ID_ProductoTextBox1.TabIndex = 1
-        '
-        'ID_MarcaLabel
-        '
-        ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.Location = New System.Drawing.Point(12, 222)
-        ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
-        ID_MarcaLabel.TabIndex = 2
-        ID_MarcaLabel.Text = "ID Marca:"
-        '
         'ID_MarcaTextBox
         '
         Me.ID_MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Marca", True))
-        Me.ID_MarcaTextBox.Location = New System.Drawing.Point(111, 219)
+        Me.ID_MarcaTextBox.Location = New System.Drawing.Point(111, 193)
         Me.ID_MarcaTextBox.Name = "ID_MarcaTextBox"
         Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_MarcaTextBox.TabIndex = 3
-        '
-        'ID_CategoriaLabel
-        '
-        ID_CategoriaLabel.AutoSize = True
-        ID_CategoriaLabel.Location = New System.Drawing.Point(224, 196)
-        ID_CategoriaLabel.Name = "ID_CategoriaLabel"
-        ID_CategoriaLabel.Size = New System.Drawing.Size(69, 13)
-        ID_CategoriaLabel.TabIndex = 4
-        ID_CategoriaLabel.Text = "ID Categoria:"
-        '
-        'ID_CategoriaTextBox
-        '
-        Me.ID_CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Categoria", True))
-        Me.ID_CategoriaTextBox.Location = New System.Drawing.Point(323, 193)
-        Me.ID_CategoriaTextBox.Name = "ID_CategoriaTextBox"
-        Me.ID_CategoriaTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ID_CategoriaTextBox.TabIndex = 5
-        '
-        'Nombre_ProductoLabel
-        '
-        Nombre_ProductoLabel.AutoSize = True
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(224, 222)
-        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
-        Nombre_ProductoLabel.Size = New System.Drawing.Size(93, 13)
-        Nombre_ProductoLabel.TabIndex = 6
-        Nombre_ProductoLabel.Text = "Nombre Producto:"
         '
         'Nombre_ProductoTextBox
         '
@@ -421,15 +457,6 @@ Partial Class Transaccion_Venta
         Me.Nombre_ProductoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Nombre_ProductoTextBox.TabIndex = 7
         '
-        'StrockLabel
-        '
-        StrockLabel.AutoSize = True
-        StrockLabel.Location = New System.Drawing.Point(433, 196)
-        StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(41, 13)
-        StrockLabel.TabIndex = 8
-        StrockLabel.Text = "Strock:"
-        '
         'StrockTextBox
         '
         Me.StrockTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Strock", True))
@@ -437,15 +464,6 @@ Partial Class Transaccion_Venta
         Me.StrockTextBox.Name = "StrockTextBox"
         Me.StrockTextBox.Size = New System.Drawing.Size(100, 20)
         Me.StrockTextBox.TabIndex = 9
-        '
-        'Precio_UnitarioLabel
-        '
-        Precio_UnitarioLabel.AutoSize = True
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(433, 222)
-        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
-        Precio_UnitarioLabel.Size = New System.Drawing.Size(79, 13)
-        Precio_UnitarioLabel.TabIndex = 10
-        Precio_UnitarioLabel.Text = "Precio Unitario:"
         '
         'Precio_UnitarioTextBox
         '
@@ -455,19 +473,10 @@ Partial Class Transaccion_Venta
         Me.Precio_UnitarioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Precio_UnitarioTextBox.TabIndex = 11
         '
-        'DescripcionLabel
-        '
-        DescripcionLabel.AutoSize = True
-        DescripcionLabel.Location = New System.Drawing.Point(638, 196)
-        DescripcionLabel.Name = "DescripcionLabel"
-        DescripcionLabel.Size = New System.Drawing.Size(66, 13)
-        DescripcionLabel.TabIndex = 12
-        DescripcionLabel.Text = "Descripcion:"
-        '
         'DescripcionTextBox
         '
         Me.DescripcionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Descripcion", True))
-        Me.DescripcionTextBox.Location = New System.Drawing.Point(737, 193)
+        Me.DescripcionTextBox.Location = New System.Drawing.Point(110, 271)
         Me.DescripcionTextBox.Name = "DescripcionTextBox"
         Me.DescripcionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DescripcionTextBox.TabIndex = 13
@@ -481,36 +490,18 @@ Partial Class Transaccion_Venta
         '
         Me.CategoriaTableAdapter.ClearBeforeFill = True
         '
-        'ID_CategoriaLabel1
-        '
-        ID_CategoriaLabel1.AutoSize = True
-        ID_CategoriaLabel1.Location = New System.Drawing.Point(11, 248)
-        ID_CategoriaLabel1.Name = "ID_CategoriaLabel1"
-        ID_CategoriaLabel1.Size = New System.Drawing.Size(69, 13)
-        ID_CategoriaLabel1.TabIndex = 0
-        ID_CategoriaLabel1.Text = "ID Categoria:"
-        '
         'ID_CategoriaTextBox1
         '
         Me.ID_CategoriaTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource, "ID_Categoria", True))
-        Me.ID_CategoriaTextBox1.Location = New System.Drawing.Point(111, 245)
+        Me.ID_CategoriaTextBox1.Location = New System.Drawing.Point(111, 219)
         Me.ID_CategoriaTextBox1.Name = "ID_CategoriaTextBox1"
         Me.ID_CategoriaTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.ID_CategoriaTextBox1.TabIndex = 1
         '
-        'CategoriaLabel
-        '
-        CategoriaLabel.AutoSize = True
-        CategoriaLabel.Location = New System.Drawing.Point(11, 274)
-        CategoriaLabel.Name = "CategoriaLabel"
-        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
-        CategoriaLabel.TabIndex = 2
-        CategoriaLabel.Text = "Categoria:"
-        '
         'CategoriaTextBox
         '
         Me.CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource, "Categoria", True))
-        Me.CategoriaTextBox.Location = New System.Drawing.Point(111, 271)
+        Me.CategoriaTextBox.Location = New System.Drawing.Point(111, 245)
         Me.CategoriaTextBox.Name = "CategoriaTextBox"
         Me.CategoriaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CategoriaTextBox.TabIndex = 3
@@ -524,15 +515,6 @@ Partial Class Transaccion_Venta
         '
         Me.MarcasTableAdapter.ClearBeforeFill = True
         '
-        'ID_MarcaLabel1
-        '
-        ID_MarcaLabel1.AutoSize = True
-        ID_MarcaLabel1.Location = New System.Drawing.Point(224, 248)
-        ID_MarcaLabel1.Name = "ID_MarcaLabel1"
-        ID_MarcaLabel1.Size = New System.Drawing.Size(54, 13)
-        ID_MarcaLabel1.TabIndex = 4
-        ID_MarcaLabel1.Text = "ID Marca:"
-        '
         'ID_MarcaTextBox1
         '
         Me.ID_MarcaTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource, "ID_Marca", True))
@@ -540,15 +522,6 @@ Partial Class Transaccion_Venta
         Me.ID_MarcaTextBox1.Name = "ID_MarcaTextBox1"
         Me.ID_MarcaTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.ID_MarcaTextBox1.TabIndex = 5
-        '
-        'MarcaLabel
-        '
-        MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(224, 274)
-        MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(40, 13)
-        MarcaLabel.TabIndex = 6
-        MarcaLabel.Text = "Marca:"
         '
         'MarcaTextBox
         '
@@ -558,11 +531,29 @@ Partial Class Transaccion_Venta
         Me.MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.MarcaTextBox.TabIndex = 7
         '
+        'Btn_Finalizar
+        '
+        Me.Btn_Finalizar.Location = New System.Drawing.Point(739, 286)
+        Me.Btn_Finalizar.Name = "Btn_Finalizar"
+        Me.Btn_Finalizar.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Finalizar.TabIndex = 20
+        Me.Btn_Finalizar.Text = "Finalizar "
+        Me.Btn_Finalizar.UseVisualStyleBackColor = True
+        '
+        'Txt_Categoria
+        '
+        Me.Txt_Categoria.Location = New System.Drawing.Point(323, 193)
+        Me.Txt_Categoria.Name = "Txt_Categoria"
+        Me.Txt_Categoria.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Categoria.TabIndex = 21
+        '
         'Transaccion_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(903, 321)
+        Me.Controls.Add(Me.Txt_Categoria)
+        Me.Controls.Add(Me.Btn_Finalizar)
         Me.Controls.Add(ID_MarcaLabel1)
         Me.Controls.Add(Me.ID_MarcaTextBox1)
         Me.Controls.Add(MarcaLabel)
@@ -571,12 +562,9 @@ Partial Class Transaccion_Venta
         Me.Controls.Add(Me.ID_CategoriaTextBox1)
         Me.Controls.Add(CategoriaLabel)
         Me.Controls.Add(Me.CategoriaTextBox)
-        Me.Controls.Add(ID_ProductoLabel1)
-        Me.Controls.Add(Me.ID_ProductoTextBox1)
         Me.Controls.Add(ID_MarcaLabel)
         Me.Controls.Add(Me.ID_MarcaTextBox)
         Me.Controls.Add(ID_CategoriaLabel)
-        Me.Controls.Add(Me.ID_CategoriaTextBox)
         Me.Controls.Add(Nombre_ProductoLabel)
         Me.Controls.Add(Me.Nombre_ProductoTextBox)
         Me.Controls.Add(StrockLabel)
@@ -603,6 +591,7 @@ Partial Class Transaccion_Venta
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Transaccion_Venta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -644,9 +633,7 @@ Partial Class Transaccion_Venta
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
-    Friend WithEvents ID_ProductoTextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents ID_MarcaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_CategoriaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Nombre_ProductoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents StrockTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Precio_UnitarioTextBox As System.Windows.Forms.TextBox
@@ -659,4 +646,6 @@ Partial Class Transaccion_Venta
     Friend WithEvents MarcasTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter
     Friend WithEvents ID_MarcaTextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
+    Friend WithEvents Txt_Categoria As System.Windows.Forms.TextBox
 End Class

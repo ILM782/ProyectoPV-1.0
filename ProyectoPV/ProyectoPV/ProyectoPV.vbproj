@@ -89,6 +89,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transaccion_Venta.Designer.vb">
       <DependentUpon>Transaccion_Venta.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaccion_Venta.resx">
       <DependentUpon>Transaccion_Venta.vb</DependentUpon>
     </EmbeddedResource>

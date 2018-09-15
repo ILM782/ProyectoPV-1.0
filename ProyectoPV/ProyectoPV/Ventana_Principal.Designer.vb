@@ -27,17 +27,19 @@ Partial Class Ventana_Principal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CAJAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InicializacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VENTASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedaDeComprobantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CLIENTEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ESTADISTICAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentaPorUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArticulosVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PROVEEDORESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarEntradaDeMercaderiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OPERARIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ESTADISTICAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentaPorUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArticulosVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SALIRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.VERSIONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -76,7 +78,7 @@ Partial Class Ventana_Principal
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.SteelBlue
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CAJAToolStripMenuItem, Me.VENTASToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.ToolStripMenuItem1, Me.VERSIONToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.HerramientasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CAJAToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.VENTASToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.OPERARIOSToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.ToolStripMenuItem1, Me.VERSIONToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.HerramientasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(848, 24)
@@ -93,8 +95,14 @@ Partial Class Ventana_Principal
         'InicializacionToolStripMenuItem
         '
         Me.InicializacionToolStripMenuItem.Name = "InicializacionToolStripMenuItem"
-        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.InicializacionToolStripMenuItem.Text = "Transaccion"
+        '
+        'ProductosToolStripMenuItem
+        '
+        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
+        Me.ProductosToolStripMenuItem.Text = "PRODUCTOS"
         '
         'VENTASToolStripMenuItem
         '
@@ -132,25 +140,6 @@ Partial Class Ventana_Principal
         Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.BusquedaDeClienteToolStripMenuItem.Text = "Tabla Cliente"
         '
-        'ESTADISTICAToolStripMenuItem
-        '
-        Me.ESTADISTICAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentaPorUsuarioToolStripMenuItem, Me.ArticulosVendidosToolStripMenuItem})
-        Me.ESTADISTICAToolStripMenuItem.Name = "ESTADISTICAToolStripMenuItem"
-        Me.ESTADISTICAToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-        Me.ESTADISTICAToolStripMenuItem.Text = "ESTADISTICA"
-        '
-        'VentaPorUsuarioToolStripMenuItem
-        '
-        Me.VentaPorUsuarioToolStripMenuItem.Name = "VentaPorUsuarioToolStripMenuItem"
-        Me.VentaPorUsuarioToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
-        Me.VentaPorUsuarioToolStripMenuItem.Text = "Venta por Usuario"
-        '
-        'ArticulosVendidosToolStripMenuItem
-        '
-        Me.ArticulosVendidosToolStripMenuItem.Name = "ArticulosVendidosToolStripMenuItem"
-        Me.ArticulosVendidosToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
-        Me.ArticulosVendidosToolStripMenuItem.Text = "Articulos vendidos"
-        '
         'PROVEEDORESToolStripMenuItem
         '
         Me.PROVEEDORESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.BuscarEntradaDeMercaderiaToolStripMenuItem})
@@ -169,6 +158,31 @@ Partial Class Ventana_Principal
         Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Name = "BuscarEntradaDeMercaderiaToolStripMenuItem"
         Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
         Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Text = "Buscar entrada de mercaderia"
+        '
+        'OPERARIOSToolStripMenuItem
+        '
+        Me.OPERARIOSToolStripMenuItem.Name = "OPERARIOSToolStripMenuItem"
+        Me.OPERARIOSToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
+        Me.OPERARIOSToolStripMenuItem.Text = "OPERARIOS"
+        '
+        'ESTADISTICAToolStripMenuItem
+        '
+        Me.ESTADISTICAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentaPorUsuarioToolStripMenuItem, Me.ArticulosVendidosToolStripMenuItem})
+        Me.ESTADISTICAToolStripMenuItem.Name = "ESTADISTICAToolStripMenuItem"
+        Me.ESTADISTICAToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+        Me.ESTADISTICAToolStripMenuItem.Text = "ESTADISTICA"
+        '
+        'VentaPorUsuarioToolStripMenuItem
+        '
+        Me.VentaPorUsuarioToolStripMenuItem.Name = "VentaPorUsuarioToolStripMenuItem"
+        Me.VentaPorUsuarioToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.VentaPorUsuarioToolStripMenuItem.Text = "Venta por Usuario"
+        '
+        'ArticulosVendidosToolStripMenuItem
+        '
+        Me.ArticulosVendidosToolStripMenuItem.Name = "ArticulosVendidosToolStripMenuItem"
+        Me.ArticulosVendidosToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.ArticulosVendidosToolStripMenuItem.Text = "Articulos vendidos"
         '
         'SALIRToolStripMenuItem
         '
@@ -372,4 +386,6 @@ Partial Class Ventana_Principal
     Friend WithEvents VERSIONToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Btn_Salir2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OPERARIOSToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

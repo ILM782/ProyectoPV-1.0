@@ -48,12 +48,12 @@
     End Sub
 
     Private Sub Btn_Consultar_Cliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Consultar_Cliente.Click
-        Dim fila As Integer
+        Dim Consulta As Integer
         If ComboBox1.Text <> "" Then
 
-            fila = Me.ClienteBindingSource.Find(ComboBox1.Text, Txt_Consulta_Cliente.Text)
-            If fila <> -1 Then
-                ClienteBindingSource.Position = fila
+            Consulta = Me.ClienteBindingSource.Find(ComboBox1.Text, Txt_Consulta_Cliente.Text)
+            If Consulta <> -1 Then
+                ClienteBindingSource.Position = Consulta
                 MsgBox("Encontrado")
             Else
                 MsgBox("El registro no encontro")
@@ -69,11 +69,11 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim fila As Integer
+        Dim f As Integer
         If ID_LocalidadTextBox.Text <> "" Then
 
-            fila = Me.LocalidadBindingSource.Find("ID_Localidad", ID_LocalidadTextBox.Text)
-            If fila <> -1 Then
+            f = Me.LocalidadBindingSource.Find("ID_Localidad", ID_LocalidadTextBox.Text)
+            If f <> -1 Then
 
 
                 Me.ClienteBindingSource.EndEdit()
