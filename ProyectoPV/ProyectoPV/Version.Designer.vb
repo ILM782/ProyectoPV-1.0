@@ -44,7 +44,7 @@ Partial Class Version
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(226, 23)
+        Me.Label1.Location = New System.Drawing.Point(225, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 16)
         Me.Label1.TabIndex = 1
@@ -72,7 +72,7 @@ Partial Class Version
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(374, 170)
+        Me.ClientSize = New System.Drawing.Size(383, 170)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
