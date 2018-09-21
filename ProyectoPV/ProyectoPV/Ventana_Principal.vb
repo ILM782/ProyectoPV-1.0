@@ -1,45 +1,10 @@
 ﻿Public Class Ventana_Principal
 
     'PARA HACER LA BARRA DE NAVEGACION(http://codigofacilito.com/videos/visual_basic_net_parte_menustrip_curso_vbnet)
-    'Private Sub Form3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    'Form3.ShowDialog()
-
-    'End Sub
-
-    Private Sub NUEVOToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-        MsgBox("Ha dado click en nuevo")
+  
+    Private Sub Ventana_Principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
-
-    Private Sub CERRARToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-        MsgBox("Ha dado click en cerrar")
-
-    End Sub
-
-    Private Sub SALIRToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SALIRToolStripMenuItem.Click
-
-        Me.Close()
-        Login.Show()
-        Me.Hide()
-
-    End Sub
-
-    Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-        Me.WindowState = FormWindowState.Maximized 'PARA MAXIMIZAR LA VENTANA A LA MEDIDA DE LA PANTALLA(http://www.forosdelweb.com/f69/colocar-formulario-pantalla-completa-518379/)
-
-    End Sub
-
-    Private Sub Btn_Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir.Click
-
-        End
-        Stop
-
-    End Sub
-
 
     Private Sub Btn_Salir2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir2.Click
 
@@ -51,22 +16,16 @@
 
     End Sub
 
-    Private Sub VERSIONToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VERSIONToolStripMenuItem.Click
-        Version.Show()
-    End Sub
-
-    Private Sub BusquedaDeClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BusquedaDeClienteToolStripMenuItem.Click
-
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         LoginGerente.Show()
-
     End Sub
 
-    Private Sub InicializacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InicializacionToolStripMenuItem.Click
-        Transaccion_Venta.Show()
-        '  Me.WindowState = FormWindowState.Minimized 'minimiza ventana
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Lbl_hora_2.Text = TimeOfDay 'hora
+        Lbl_Fecha_2.Text = DateString 'fecha
     End Sub
 
-    Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
-        Productos.Show()
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        LoginCajero.Show()
     End Sub
 End Class

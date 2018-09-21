@@ -89,29 +89,52 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Productos.Designer.vb">
-      <DependentUpon>Productos.vb</DependentUpon>
+    <Compile Include="Atributos_De_Cajero.Designer.vb">
+      <DependentUpon>Atributos_De_Cajero.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos.vb">
+    <Compile Include="Atributos_De_Cajero.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaccion_Venta.Designer.vb">
-      <DependentUpon>Transaccion_Venta.vb</DependentUpon>
+    <Compile Include="Atributos_De_Gerente.Designer.vb">
+      <DependentUpon>Atributos_De_Gerente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Transaccion_Venta.vb">
+    <Compile Include="Atributos_De_Gerente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Compra.Designer.vb">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="LoginCajero.Designer.vb">
+      <DependentUpon>LoginCajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCajero.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginGerente.Designer.vb">
       <DependentUpon>LoginGerente.vb</DependentUpon>
     </Compile>
     <Compile Include="LoginGerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaccion_Venta.Designer.vb">
+      <DependentUpon>Transaccion_Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaccion_Venta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MayoristaBaseDeDatosDataSet.Designer.vb">
@@ -126,6 +149,12 @@
       <DependentUpon>TablasClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="TablasClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.vb">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Version.Designer.vb">
@@ -157,17 +186,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Atributos_De_Cajero.resx">
+      <DependentUpon>Atributos_De_Cajero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atributos_De_Gerente.resx">
+      <DependentUpon>Atributos_De_Gerente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCajero.resx">
+      <DependentUpon>LoginCajero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGerente.resx">
+      <DependentUpon>LoginGerente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Productos.resx">
       <DependentUpon>Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaccion_Venta.resx">
       <DependentUpon>Transaccion_Venta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginGerente.resx">
-      <DependentUpon>LoginGerente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TablasClientes.resx">
       <DependentUpon>TablasClientes.vb</DependentUpon>
@@ -209,6 +244,11 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Resources\png" />
+    <None Include="Resources\png1" />
+    <None Include="Resources\png2" />
+    <None Include="Resources\png3" />
+    <None Include="Resources\png4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\e_comerc.png" />
@@ -257,6 +297,18 @@
     <Content Include="MayoristaBaseDeDatos.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\flecha-atras1.png" />
+    <None Include="Resources\usuario-hombre.png" />
+    <None Include="Resources\candado-cerrado.png" />
+    <None Include="Resources\apertura-de-puerta-abierta.png" />
+    <None Include="Resources\flecha-atras.png" />
+    <None Include="Resources\cliente.png" />
+    <None Include="Resources\divisa.png" />
+    <None Include="Resources\carretilla-de-transporte.png" />
+    <None Include="Resources\codigo-de-barras2.png" />
+    <None Include="Resources\codigo-de-barras1.png" />
+    <None Include="Resources\codigo-de-barras.png" />
+    <None Include="Resources\cajero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

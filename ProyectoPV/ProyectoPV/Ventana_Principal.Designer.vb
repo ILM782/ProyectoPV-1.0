@@ -22,47 +22,26 @@ Partial Class Ventana_Principal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ventana_Principal))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.CAJAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InicializacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VENTASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevaVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BusquedaDeComprobantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CLIENTEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BusquedaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PROVEEDORESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarEntradaDeMercaderiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OPERARIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ESTADISTICAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentaPorUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArticulosVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SALIRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VERSIONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContenidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ÍndiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.AcercadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HerramientasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PersonalizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Btn_Salir = New System.Windows.Forms.Button()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStripContainer2 = New System.Windows.Forms.ToolStripContainer()
         Me.Btn_Salir2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.MenuStrip1.SuspendLayout()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Lbl_Fecha_2 = New System.Windows.Forms.Label()
+        Me.Lbl_hora_2 = New System.Windows.Forms.Label()
+        Me.Lbl_hora = New System.Windows.Forms.Label()
+        Me.Lbl_fecha = New System.Windows.Forms.Label()
+        Me.Inicio = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStripContainer1.SuspendLayout()
         Me.ToolStripContainer2.ContentPanel.SuspendLayout()
-        Me.ToolStripContainer2.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -73,188 +52,6 @@ Partial Class Ventana_Principal
         Me.Label1.Size = New System.Drawing.Size(66, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "LOGEADO"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.SteelBlue
-        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CAJAToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.VENTASToolStripMenuItem, Me.CLIENTEToolStripMenuItem, Me.PROVEEDORESToolStripMenuItem, Me.OPERARIOSToolStripMenuItem, Me.ESTADISTICAToolStripMenuItem, Me.SALIRToolStripMenuItem, Me.ToolStripMenuItem1, Me.VERSIONToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.HerramientasToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(848, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'CAJAToolStripMenuItem
-        '
-        Me.CAJAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicializacionToolStripMenuItem})
-        Me.CAJAToolStripMenuItem.Name = "CAJAToolStripMenuItem"
-        Me.CAJAToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
-        Me.CAJAToolStripMenuItem.Text = "CAJA"
-        '
-        'InicializacionToolStripMenuItem
-        '
-        Me.InicializacionToolStripMenuItem.Name = "InicializacionToolStripMenuItem"
-        Me.InicializacionToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.InicializacionToolStripMenuItem.Text = "Transaccion"
-        '
-        'ProductosToolStripMenuItem
-        '
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
-        Me.ProductosToolStripMenuItem.Text = "PRODUCTOS"
-        '
-        'VENTASToolStripMenuItem
-        '
-        Me.VENTASToolStripMenuItem.Checked = True
-        Me.VENTASToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.VENTASToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.VENTASToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaVentaToolStripMenuItem, Me.BusquedaDeComprobantesToolStripMenuItem})
-        Me.VENTASToolStripMenuItem.Name = "VENTASToolStripMenuItem"
-        Me.VENTASToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.VENTASToolStripMenuItem.Text = "VENTAS"
-        Me.VENTASToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay
-        '
-        'NuevaVentaToolStripMenuItem
-        '
-        Me.NuevaVentaToolStripMenuItem.Name = "NuevaVentaToolStripMenuItem"
-        Me.NuevaVentaToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
-        Me.NuevaVentaToolStripMenuItem.Text = "Nueva Venta"
-        '
-        'BusquedaDeComprobantesToolStripMenuItem
-        '
-        Me.BusquedaDeComprobantesToolStripMenuItem.Name = "BusquedaDeComprobantesToolStripMenuItem"
-        Me.BusquedaDeComprobantesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
-        Me.BusquedaDeComprobantesToolStripMenuItem.Text = "Busqueda de comprobantes"
-        '
-        'CLIENTEToolStripMenuItem
-        '
-        Me.CLIENTEToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BusquedaDeClienteToolStripMenuItem})
-        Me.CLIENTEToolStripMenuItem.Name = "CLIENTEToolStripMenuItem"
-        Me.CLIENTEToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.CLIENTEToolStripMenuItem.Text = "CLIENTE"
-        '
-        'BusquedaDeClienteToolStripMenuItem
-        '
-        Me.BusquedaDeClienteToolStripMenuItem.Name = "BusquedaDeClienteToolStripMenuItem"
-        Me.BusquedaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.BusquedaDeClienteToolStripMenuItem.Text = "Tabla Cliente"
-        '
-        'PROVEEDORESToolStripMenuItem
-        '
-        Me.PROVEEDORESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.BuscarEntradaDeMercaderiaToolStripMenuItem})
-        Me.PROVEEDORESToolStripMenuItem.Name = "PROVEEDORESToolStripMenuItem"
-        Me.PROVEEDORESToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
-        Me.PROVEEDORESToolStripMenuItem.Text = "PROVEEDORES"
-        '
-        'AltaToolStripMenuItem
-        '
-        Me.AltaToolStripMenuItem.Name = "AltaToolStripMenuItem"
-        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
-        Me.AltaToolStripMenuItem.Text = "Alta entrade de mercaderia"
-        '
-        'BuscarEntradaDeMercaderiaToolStripMenuItem
-        '
-        Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Name = "BuscarEntradaDeMercaderiaToolStripMenuItem"
-        Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
-        Me.BuscarEntradaDeMercaderiaToolStripMenuItem.Text = "Buscar entrada de mercaderia"
-        '
-        'OPERARIOSToolStripMenuItem
-        '
-        Me.OPERARIOSToolStripMenuItem.Name = "OPERARIOSToolStripMenuItem"
-        Me.OPERARIOSToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
-        Me.OPERARIOSToolStripMenuItem.Text = "OPERARIOS"
-        '
-        'ESTADISTICAToolStripMenuItem
-        '
-        Me.ESTADISTICAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentaPorUsuarioToolStripMenuItem, Me.ArticulosVendidosToolStripMenuItem})
-        Me.ESTADISTICAToolStripMenuItem.Name = "ESTADISTICAToolStripMenuItem"
-        Me.ESTADISTICAToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-        Me.ESTADISTICAToolStripMenuItem.Text = "ESTADISTICA"
-        '
-        'VentaPorUsuarioToolStripMenuItem
-        '
-        Me.VentaPorUsuarioToolStripMenuItem.Name = "VentaPorUsuarioToolStripMenuItem"
-        Me.VentaPorUsuarioToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
-        Me.VentaPorUsuarioToolStripMenuItem.Text = "Venta por Usuario"
-        '
-        'ArticulosVendidosToolStripMenuItem
-        '
-        Me.ArticulosVendidosToolStripMenuItem.Name = "ArticulosVendidosToolStripMenuItem"
-        Me.ArticulosVendidosToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
-        Me.ArticulosVendidosToolStripMenuItem.Text = "Articulos vendidos"
-        '
-        'SALIRToolStripMenuItem
-        '
-        Me.SALIRToolStripMenuItem.Name = "SALIRToolStripMenuItem"
-        Me.SALIRToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
-        Me.SALIRToolStripMenuItem.Text = "&IR A LOGIN"
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 20)
-        '
-        'VERSIONToolStripMenuItem
-        '
-        Me.VERSIONToolStripMenuItem.Name = "VERSIONToolStripMenuItem"
-        Me.VERSIONToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.VERSIONToolStripMenuItem.Text = "Versión"
-        '
-        'AyudaToolStripMenuItem
-        '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContenidoToolStripMenuItem, Me.ÍndiceToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.toolStripSeparator5, Me.AcercadeToolStripMenuItem})
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ay&uda"
-        '
-        'ContenidoToolStripMenuItem
-        '
-        Me.ContenidoToolStripMenuItem.Name = "ContenidoToolStripMenuItem"
-        Me.ContenidoToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.ContenidoToolStripMenuItem.Text = "&Contenido"
-        '
-        'ÍndiceToolStripMenuItem
-        '
-        Me.ÍndiceToolStripMenuItem.Name = "ÍndiceToolStripMenuItem"
-        Me.ÍndiceToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.ÍndiceToolStripMenuItem.Text = "Índic&e"
-        '
-        'BuscarToolStripMenuItem
-        '
-        Me.BuscarToolStripMenuItem.Name = "BuscarToolStripMenuItem"
-        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.BuscarToolStripMenuItem.Text = "&Buscar"
-        '
-        'toolStripSeparator5
-        '
-        Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(132, 6)
-        '
-        'AcercadeToolStripMenuItem
-        '
-        Me.AcercadeToolStripMenuItem.Name = "AcercadeToolStripMenuItem"
-        Me.AcercadeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.AcercadeToolStripMenuItem.Text = "&Acerca de..."
-        '
-        'HerramientasToolStripMenuItem
-        '
-        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonalizarToolStripMenuItem, Me.OpcionesToolStripMenuItem})
-        Me.HerramientasToolStripMenuItem.Name = "HerramientasToolStripMenuItem"
-        Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
-        Me.HerramientasToolStripMenuItem.Text = "&Herramientas"
-        '
-        'PersonalizarToolStripMenuItem
-        '
-        Me.PersonalizarToolStripMenuItem.Name = "PersonalizarToolStripMenuItem"
-        Me.PersonalizarToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.PersonalizarToolStripMenuItem.Text = "&Personalizar"
-        '
-        'OpcionesToolStripMenuItem
-        '
-        Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.OpcionesToolStripMenuItem.Text = "&Opciones"
         '
         'Btn_Salir
         '
@@ -282,54 +79,143 @@ Partial Class Ventana_Principal
         '
         'ToolStripContainer2
         '
+        Me.ToolStripContainer2.BottomToolStripPanelVisible = False
         '
         'ToolStripContainer2.ContentPanel
         '
-        Me.ToolStripContainer2.ContentPanel.BackColor = System.Drawing.Color.DarkGray
+        Me.ToolStripContainer2.ContentPanel.BackColor = System.Drawing.Color.White
         Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.Btn_Salir2)
-        Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.PictureBox1)
-        Me.ToolStripContainer2.ContentPanel.Size = New System.Drawing.Size(848, 315)
+        Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.Panel1)
+        Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.Button2)
+        Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.Button1)
+        Me.ToolStripContainer2.ContentPanel.Size = New System.Drawing.Size(586, 339)
         Me.ToolStripContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer2.LeftToolStripPanelVisible = False
         Me.ToolStripContainer2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer2.Name = "ToolStripContainer2"
-        Me.ToolStripContainer2.Size = New System.Drawing.Size(848, 339)
+        Me.ToolStripContainer2.RightToolStripPanelVisible = False
+        Me.ToolStripContainer2.Size = New System.Drawing.Size(586, 339)
         Me.ToolStripContainer2.TabIndex = 8
         Me.ToolStripContainer2.Text = "ToolStripContainer2"
-        '
-        'ToolStripContainer2.TopToolStripPanel
-        '
-        Me.ToolStripContainer2.TopToolStripPanel.Controls.Add(Me.MenuStrip1)
+        Me.ToolStripContainer2.TopToolStripPanelVisible = False
         '
         'Btn_Salir2
         '
         Me.Btn_Salir2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_Salir2.BackColor = System.Drawing.Color.DimGray
+        Me.Btn_Salir2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Btn_Salir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Salir2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Salir2.Location = New System.Drawing.Point(619, 243)
+        Me.Btn_Salir2.Location = New System.Drawing.Point(409, 293)
         Me.Btn_Salir2.Name = "Btn_Salir2"
-        Me.Btn_Salir2.Size = New System.Drawing.Size(194, 40)
+        Me.Btn_Salir2.Size = New System.Drawing.Size(165, 34)
         Me.Btn_Salir2.TabIndex = 7
         Me.Btn_Salir2.Text = "&SALIR"
         Me.Btn_Salir2.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'Panel1
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources._32841
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(848, 315)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Lbl_Fecha_2)
+        Me.Panel1.Controls.Add(Me.Lbl_hora_2)
+        Me.Panel1.Controls.Add(Me.Lbl_hora)
+        Me.Panel1.Controls.Add(Me.Lbl_fecha)
+        Me.Panel1.Controls.Add(Me.Inicio)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(600, 38)
+        Me.Panel1.TabIndex = 10
+        '
+        'Lbl_Fecha_2
+        '
+        Me.Lbl_Fecha_2.AutoSize = True
+        Me.Lbl_Fecha_2.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Fecha_2.Location = New System.Drawing.Point(288, 13)
+        Me.Lbl_Fecha_2.Name = "Lbl_Fecha_2"
+        Me.Lbl_Fecha_2.Size = New System.Drawing.Size(45, 13)
+        Me.Lbl_Fecha_2.TabIndex = 4
+        Me.Lbl_Fecha_2.Text = "Label3"
+        '
+        'Lbl_hora_2
+        '
+        Me.Lbl_hora_2.AutoSize = True
+        Me.Lbl_hora_2.ForeColor = System.Drawing.Color.White
+        Me.Lbl_hora_2.Location = New System.Drawing.Point(478, 13)
+        Me.Lbl_hora_2.Name = "Lbl_hora_2"
+        Me.Lbl_hora_2.Size = New System.Drawing.Size(57, 13)
+        Me.Lbl_hora_2.TabIndex = 3
+        Me.Lbl_hora_2.Text = "00:00:00"
+        '
+        'Lbl_hora
+        '
+        Me.Lbl_hora.AutoSize = True
+        Me.Lbl_hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_hora.ForeColor = System.Drawing.Color.White
+        Me.Lbl_hora.Location = New System.Drawing.Point(434, 13)
+        Me.Lbl_hora.Name = "Lbl_hora"
+        Me.Lbl_hora.Size = New System.Drawing.Size(38, 13)
+        Me.Lbl_hora.TabIndex = 2
+        Me.Lbl_hora.Text = "Hora:"
+        '
+        'Lbl_fecha
+        '
+        Me.Lbl_fecha.AutoSize = True
+        Me.Lbl_fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_fecha.ForeColor = System.Drawing.Color.White
+        Me.Lbl_fecha.Location = New System.Drawing.Point(236, 13)
+        Me.Lbl_fecha.Name = "Lbl_fecha"
+        Me.Lbl_fecha.Size = New System.Drawing.Size(46, 13)
+        Me.Lbl_fecha.TabIndex = 1
+        Me.Lbl_fecha.Text = "Fecha:"
+        '
+        'Inicio
+        '
+        Me.Inicio.AutoSize = True
+        Me.Inicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Inicio.Location = New System.Drawing.Point(5, 8)
+        Me.Inicio.Name = "Inicio"
+        Me.Inicio.Size = New System.Drawing.Size(52, 20)
+        Me.Inicio.TabIndex = 0
+        Me.Inicio.Text = "Inicio"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.cajero
+        Me.Button2.Location = New System.Drawing.Point(309, 96)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(192, 163)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Cajero"
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.png4
+        Me.Button1.Location = New System.Drawing.Point(84, 96)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(177, 163)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Gerente"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
         '
         'Ventana_Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(848, 339)
+        Me.ClientSize = New System.Drawing.Size(586, 339)
         Me.Controls.Add(Me.ToolStripContainer2)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.Btn_Salir)
@@ -337,55 +223,33 @@ Partial Class Ventana_Principal
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Ventana_Principal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AppComercio"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ToolStripContainer1.ResumeLayout(False)
         Me.ToolStripContainer1.PerformLayout()
         Me.ToolStripContainer2.ContentPanel.ResumeLayout(False)
-        Me.ToolStripContainer2.TopToolStripPanel.ResumeLayout(False)
-        Me.ToolStripContainer2.TopToolStripPanel.PerformLayout()
         Me.ToolStripContainer2.ResumeLayout(False)
         Me.ToolStripContainer2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents SALIRToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Btn_Salir As System.Windows.Forms.Button
-    Friend WithEvents VENTASToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NuevaVentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BusquedaDeComprobantesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CAJAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InicializacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CLIENTEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BusquedaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripContainer1 As System.Windows.Forms.ToolStripContainer
     Friend WithEvents ToolStripContainer2 As System.Windows.Forms.ToolStripContainer
-    Friend WithEvents HerramientasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PersonalizarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OpcionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ContenidoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ÍndiceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BuscarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents toolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents AcercadeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PROVEEDORESToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AltaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ESTADISTICAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VentaPorUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ArticulosVendidosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BuscarEntradaDeMercaderiaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VERSIONToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Lbl_hora As System.Windows.Forms.Label
+    Friend WithEvents Lbl_fecha As System.Windows.Forms.Label
+    Friend WithEvents Inicio As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Fecha_2 As System.Windows.Forms.Label
+    Friend WithEvents Lbl_hora_2 As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Btn_Salir2 As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OPERARIOSToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
