@@ -2,7 +2,6 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\MayoristaBaseDeDatos.sdf
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Productos.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Transaccion_Venta.resources
-C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Login.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.LoginGerente.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.TablasClientes.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Ventana_Principal.resources
@@ -15,3 +14,6 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Proyec
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.exe
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.pdb
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.xml
+C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Atributos_De_Cajero.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Atributos_De_Gerente.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.LoginCajero.resources
