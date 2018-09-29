@@ -279,6 +279,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="BaseDeDatos\app.config">
       <SubType>Designer</SubType>
     </None>

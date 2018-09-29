@@ -17,7 +17,7 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Ventas_Clientes' Puede moverla o quitarla según sea necesario.
         Me.Ventas_ClientesTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Ventas_Clientes)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
-        'Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+       ' Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
 
     End Sub
 

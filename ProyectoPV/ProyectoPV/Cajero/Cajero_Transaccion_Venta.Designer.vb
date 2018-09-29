@@ -46,6 +46,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarLocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -80,7 +81,8 @@ Partial Class Cajero_Transaccion_Venta
         Me.MarcaTextBox = New System.Windows.Forms.TextBox()
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
         Me.Txt_Categoria = New System.Windows.Forms.TextBox()
-        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         ID_OperadorLabel = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
         ID_ClienteLabel = New System.Windows.Forms.Label()
@@ -105,6 +107,7 @@ Partial Class Cajero_Transaccion_Venta
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ID_OperadorLabel
@@ -277,6 +280,7 @@ Partial Class Cajero_Transaccion_Venta
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Me.ClienteTableAdapter
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
@@ -296,7 +300,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1053, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1147, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -307,6 +311,13 @@ Partial Class Cajero_Transaccion_Venta
         Me.AgregarClienteToolStripMenuItem.Name = "AgregarClienteToolStripMenuItem"
         Me.AgregarClienteToolStripMenuItem.Size = New System.Drawing.Size(102, 20)
         Me.AgregarClienteToolStripMenuItem.Text = "Agregar Cliente"
+        '
+        'ProductosToolStripMenuItem
+        '
+        Me.ProductosToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
+        Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'AgregarLocalidadToolStripMenuItem
         '
@@ -408,7 +419,7 @@ Partial Class Cajero_Transaccion_Venta
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 41)
+        Me.Label1.Location = New System.Drawing.Point(2, 7)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(216, 26)
         Me.Label1.TabIndex = 17
@@ -419,8 +430,8 @@ Partial Class Cajero_Transaccion_Venta
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1053, 395)
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1147, 524)
         Me.ShapeContainer1.TabIndex = 18
         Me.ShapeContainer1.TabStop = False
         '
@@ -435,10 +446,10 @@ Partial Class Cajero_Transaccion_Venta
         'LineShape1
         '
         Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 8
-        Me.LineShape1.X2 = 885
-        Me.LineShape1.Y1 = 60
-        Me.LineShape1.Y2 = 60
+        Me.LineShape1.X1 = 217
+        Me.LineShape1.X2 = 1094
+        Me.LineShape1.Y1 = 22
+        Me.LineShape1.Y2 = 22
         '
         'Label2
         '
@@ -576,19 +587,34 @@ Partial Class Cajero_Transaccion_Venta
         Me.Txt_Categoria.Size = New System.Drawing.Size(116, 23)
         Me.Txt_Categoria.TabIndex = 21
         '
-        'ProductosToolStripMenuItem
+        'Panel1
         '
-        Me.ProductosToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
-        Me.ProductosToolStripMenuItem.Text = "Productos"
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.ShapeContainer2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1147, 40)
+        Me.Panel1.TabIndex = 22
+        '
+        'ShapeContainer2
+        '
+        Me.ShapeContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer2.Name = "ShapeContainer2"
+        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
+        Me.ShapeContainer2.Size = New System.Drawing.Size(1147, 40)
+        Me.ShapeContainer2.TabIndex = 18
+        Me.ShapeContainer2.TabStop = False
         '
         'Cajero_Transaccion_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1053, 395)
+        Me.BackColor = System.Drawing.Color.Silver
+        Me.ClientSize = New System.Drawing.Size(1147, 524)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Txt_Categoria)
         Me.Controls.Add(Me.Btn_Finalizar)
         Me.Controls.Add(ID_MarcaLabel1)
@@ -626,7 +652,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Controls.Add(Tipo_De_FacturacionLabel)
         Me.Controls.Add(Me.Tipo_De_FacturacionTextBox)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -644,6 +669,8 @@ Partial Class Cajero_Transaccion_Venta
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -689,4 +716,6 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
     Friend WithEvents Txt_Categoria As System.Windows.Forms.TextBox
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents ShapeContainer2 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
 End Class
