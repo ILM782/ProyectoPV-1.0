@@ -124,9 +124,6 @@
   <data name="png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png1;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="codigo-de-barras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\codigo-de-barras.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="candado-cerrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\candado-cerrado.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +154,9 @@
   <data name="png2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png2;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="simbolo-seo-local" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simbolo-seo-local.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="flecha-atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flecha-atras.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +174,9 @@
   </data>
   <data name="codigo-de-barras2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\codigo-de-barras2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codigo-de-barras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codigo-de-barras.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nueva carpeta\images.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -206,7 +209,10 @@
     <value>..\Resources\apertura-de-puerta-abierta.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="simbolo-seo-local" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\simbolo-seo-local.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Retail-shop-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Retail-shop-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

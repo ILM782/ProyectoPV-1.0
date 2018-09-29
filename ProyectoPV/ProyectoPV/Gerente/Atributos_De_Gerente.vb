@@ -1,7 +1,7 @@
 ﻿Public Class Atributos_De_Gerente
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Ventana_Principal.Show()
+        Login.Show()
         Me.Close()
     End Sub
 

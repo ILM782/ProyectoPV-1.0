@@ -57,7 +57,7 @@ Partial Class Version
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Versión 1.1.02"
+        Me.Label2.Text = "Versión 1.1.03"
         '
         'Label3
         '

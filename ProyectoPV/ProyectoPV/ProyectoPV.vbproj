@@ -134,22 +134,10 @@
     <Compile Include="Gerente\Gerente_Compras_Realizadas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cajero\LoginCajero.Designer.vb">
-      <DependentUpon>LoginCajero.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Cajero\LoginCajero.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Gerente\Gerente_Localidad.Designer.vb">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_Localidad.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\LoginGerente.Designer.vb">
-      <DependentUpon>LoginGerente.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\LoginGerente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Productos.Designer.vb">
@@ -202,16 +190,17 @@
     <Compile Include="Gerente\Gerente_Ventas_Realizadas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Otros\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\SoloNumero.vb" />
     <Compile Include="Otros\Version.Designer.vb">
       <DependentUpon>Version.vb</DependentUpon>
     </Compile>
     <Compile Include="Otros\Version.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Otros\Ventana_Principal.Designer.vb">
-      <DependentUpon>Ventana_Principal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Otros\Ventana_Principal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -252,9 +241,6 @@
     <EmbeddedResource Include="Gerente\Atributos_De_Gerente.resx">
       <DependentUpon>Atributos_De_Gerente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cajero\LoginCajero.resx">
-      <DependentUpon>LoginCajero.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Compras_Realizadas.resx">
       <DependentUpon>Gerente_Compras_Realizadas.vb</DependentUpon>
     </EmbeddedResource>
@@ -263,9 +249,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
       <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\LoginGerente.resx">
-      <DependentUpon>LoginGerente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Productos.resx">
       <DependentUpon>Gerente_Productos.vb</DependentUpon>
@@ -282,8 +265,8 @@
     <EmbeddedResource Include="Gerente\Gerente_TablasClientes.resx">
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Otros\Ventana_Principal.resx">
-      <DependentUpon>Ventana_Principal.vb</DependentUpon>
+    <EmbeddedResource Include="Otros\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -373,6 +356,8 @@
     <Content Include="BaseDeDatos\MayoristaBaseDeDatos.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\login.png" />
+    <None Include="Resources\Retail-shop-icon.png" />
     <None Include="Resources\simbolo-seo-local.png" />
     <None Include="Resources\cesta-de-la-compra-de-diseno-a-cuadros.png" />
     <None Include="Resources\carpeta-simbolo-de-agregar.png" />

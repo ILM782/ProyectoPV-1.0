@@ -1,6 +1,7 @@
 ﻿Public Class Cajero_Localidad
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
+        Atributos_De_Cajero.Show()
         Me.Close()
     End Sub
 

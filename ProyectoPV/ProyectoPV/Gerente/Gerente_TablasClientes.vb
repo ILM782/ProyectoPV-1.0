@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub AtrasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AtrasToolStripMenuItem.Click
-        Ventana_Principal.Show()
+        Atributos_De_Gerente.Show()
         Me.Close()
     End Sub
 

@@ -248,7 +248,7 @@ Partial Class Gerente_Agregar_Marca
         Me.Btn_Eliminar.Text = "Eliminar"
         Me.Btn_Eliminar.UseVisualStyleBackColor = True
         '
-        'Agregar_Marca
+        'Gerente_Agregar_Marca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -269,7 +269,7 @@ Partial Class Gerente_Agregar_Marca
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
-        Me.Name = "Agregar_Marca"
+        Me.Name = "Gerente_Agregar_Marca"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Marcas"
         Me.TransparencyKey = System.Drawing.Color.Red

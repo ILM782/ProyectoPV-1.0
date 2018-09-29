@@ -7,6 +7,8 @@
 
     End Sub
 
+
+
     Private Sub Productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
@@ -15,9 +17,7 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Marcas' Puede moverla o quitarla según sea necesario.
         Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
-        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
         Me.ProductoBindingSource.AddNew()
-
     End Sub
 
     Private Sub AtrasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -60,69 +60,24 @@
         Gerente_Agregar_Categoria.Show()
     End Sub
 
-    Private Sub MarcasBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.MarcasBindingSource1.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
-
-    End Sub
-
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        'Dim categoria As Integer
-        ' Dim marca As Integer
-        'If CategoriaTextBox.Text <> "" Then
 
-        'categoria = Me.CategoriaBindingSource.Find("Categoria", CategoriaTextBox.Text)
-        'If categoria <> -1 Then
-        'If MarcaTextBox.Text <> "" Then
-
-        'marca = Me.MarcasBindingSource.Find("Marca", MarcaTextBox.Text)
-        '  If marca <> -1 Then
-
-        Me.ProductoBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
-        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
-        Me.ProductoBindingSource.MoveLast()
-        Me.ProductoBindingSource.AddNew()
-        MsgBox("EXITO")
-        ' Else
-        ' MsgBox("Marca no encontrada")
-        'End If
-        ' Else
-        'MsgBox("El campo esta vacio")
-        'End If
-
-        ' Else
-        ' MsgBox("Categoria no encontrada")
-        ' End If
-        ' Else
-        ' MsgBox("El campo esta vacio")
-        '  End If
-
-    End Sub
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim fila2 As Integer
-        If CategoriaComboBox.Text <> "" Then
-
-            fila2 = Me.CategoriaBindingSource1.Find("Categoria", CategoriaComboBox.Text)
-            If fila2 <> -1 Then
-
-                Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-
-            End If
-        End If
-        Dim fila3 As Integer
-        If MarcaComboBox.Text <> "" Then
-
-            fila3 = Me.MarcasBindingSource1.Find("Marca", MarcaComboBox.Text)
-            If fila3 <> -1 Then
-
-                Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
-
-            End If
+        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or ComboBox1.Text = "" Or ComboBox2.Text = "" Then
+            MsgBox("Algun campo vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            Me.ProductoBindingSource.Current("ID_Marca") = Val(ComboBox1.SelectedValue)
+            Me.ProductoBindingSource.Current("ID_Categoria") = Val(ComboBox2.SelectedValue)
+            Me.ProductoBindingSource.Current("Nombre_Producto") = TextBox1.Text
+            Me.ProductoBindingSource.Current("Strock") = Val(TextBox2.Text)
+            Me.ProductoBindingSource.Current("Precio_Unitario") = Val(TextBox3.Text)
+            Me.ProductoBindingSource.Current("Descripcion") = TextBox4.Text
+            Me.ProductoBindingSource.EndEdit() 'Cierra la edicion
+            Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disc
+            Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto) 'actualizo la base
+            Me.ProductoBindingSource.AddNew()
         End If
     End Sub
+
     Private Sub ComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
@@ -136,5 +91,21 @@
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
+    End Sub
+
+    Private Sub TextBox3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress
+        e.KeyChar = ChrW(Coma(e))
+        If e.KeyChar = Chr(13) Then
+            TextBox3.Focus()
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+        e.KeyChar = ChrW(solonumeros(e))
+        If e.KeyChar = Chr(13) Then
+            TextBox2.Focus()
+            e.Handled = True
+        End If
     End Sub
 End Class

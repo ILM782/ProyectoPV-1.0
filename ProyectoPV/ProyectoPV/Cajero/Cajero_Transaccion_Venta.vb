@@ -41,8 +41,6 @@
 
             fila = Me.CategoriaBindingSource.Find("Categoria", Txt_Categoria.Text)
             If fila <> -1 Then
-
-
             Else
                 MsgBox("Categoria no encontrada")
             End If

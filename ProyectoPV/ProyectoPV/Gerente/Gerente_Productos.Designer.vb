@@ -26,7 +26,7 @@ Partial Class Gerente_Productos
         Dim MarcaLabel As System.Windows.Forms.Label
         Dim CategoriaLabel As System.Windows.Forms.Label
         Dim Nombre_ProductoLabel As System.Windows.Forms.Label
-        Dim StrockLabel As System.Windows.Forms.Label
+        Dim StockLabel As System.Windows.Forms.Label
         Dim Precio_UnitarioLabel As System.Windows.Forms.Label
         Dim DescripcionLabel As System.Windows.Forms.Label
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -45,15 +45,12 @@ Partial Class Gerente_Productos
         Me.CategoriaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter()
         Me.MarcasTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter()
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ID_Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre_de_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio_Unitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MayoristaBaseDeDatosDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MarcasBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoriaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
+        Me.MayoristaBaseDeDatosDataSetBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -62,30 +59,26 @@ Partial Class Gerente_Productos
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MarcasBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MarcaComboBox = New System.Windows.Forms.ComboBox()
-        Me.CategoriaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CategoriaComboBox = New System.Windows.Forms.ComboBox()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
-        Me.Nombre_ProductoTextBox1 = New System.Windows.Forms.TextBox()
-        Me.StrockTextBox = New System.Windows.Forms.TextBox()
-        Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
-        Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         MarcaLabel = New System.Windows.Forms.Label()
         CategoriaLabel = New System.Windows.Forms.Label()
         Nombre_ProductoLabel = New System.Windows.Forms.Label()
-        StrockLabel = New System.Windows.Forms.Label()
+        StockLabel = New System.Windows.Forms.Label()
         Precio_UnitarioLabel = New System.Windows.Forms.Label()
         DescripcionLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MayoristaBaseDeDatosDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MayoristaBaseDeDatosDataSetBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MarcaLabel
@@ -118,15 +111,15 @@ Partial Class Gerente_Productos
         Nombre_ProductoLabel.TabIndex = 15
         Nombre_ProductoLabel.Text = "Nombre Producto:"
         '
-        'StrockLabel
+        'StockLabel
         '
-        StrockLabel.AutoSize = True
-        StrockLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        StrockLabel.Location = New System.Drawing.Point(13, 80)
-        StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(42, 14)
-        StrockLabel.TabIndex = 17
-        StrockLabel.Text = "Strock:"
+        StockLabel.AutoSize = True
+        StockLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        StockLabel.Location = New System.Drawing.Point(13, 80)
+        StockLabel.Name = "StockLabel"
+        StockLabel.Size = New System.Drawing.Size(38, 14)
+        StockLabel.TabIndex = 17
+        StockLabel.Text = "Stock:"
         '
         'Precio_UnitarioLabel
         '
@@ -155,7 +148,7 @@ Partial Class Gerente_Productos
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedoresToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1035, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1055, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -279,72 +272,45 @@ Partial Class Gerente_Productos
         Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
         Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_Nombre, Me.Nombre_de_Producto, Me.Stock, Me.Precio_Unitario, Me.Descripcion, Me.Categoria, Me.Marca})
-        Me.DataGridView1.DataSource = Me.MayoristaBaseDeDatosDataSetBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(292, 24)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(743, 74)
-        Me.DataGridView1.TabIndex = 26
-        '
-        'ID_Nombre
-        '
-        Me.ID_Nombre.Frozen = True
-        Me.ID_Nombre.HeaderText = "ID_Nombre"
-        Me.ID_Nombre.Name = "ID_Nombre"
-        '
-        'Nombre_de_Producto
-        '
-        Me.Nombre_de_Producto.Frozen = True
-        Me.Nombre_de_Producto.HeaderText = "Nombre de Producto"
-        Me.Nombre_de_Producto.Name = "Nombre_de_Producto"
-        '
-        'Stock
-        '
-        Me.Stock.Frozen = True
-        Me.Stock.HeaderText = "Stock"
-        Me.Stock.Name = "Stock"
-        '
-        'Precio_Unitario
-        '
-        Me.Precio_Unitario.Frozen = True
-        Me.Precio_Unitario.HeaderText = "Precio unitario"
-        Me.Precio_Unitario.Name = "Precio_Unitario"
-        '
-        'Descripcion
-        '
-        Me.Descripcion.Frozen = True
-        Me.Descripcion.HeaderText = "Descripcion"
-        Me.Descripcion.Name = "Descripcion"
-        '
-        'Categoria
-        '
-        Me.Categoria.Frozen = True
-        Me.Categoria.HeaderText = "Categoria"
-        Me.Categoria.Name = "Categoria"
-        '
-        'Marca
-        '
-        Me.Marca.HeaderText = "Marca"
-        Me.Marca.Name = "Marca"
-        '
         'MayoristaBaseDeDatosDataSetBindingSource
         '
         Me.MayoristaBaseDeDatosDataSetBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         Me.MayoristaBaseDeDatosDataSetBindingSource.Position = 0
         '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'MarcasBindingSource1
+        '
+        Me.MarcasBindingSource1.DataMember = "Marcas"
+        Me.MarcasBindingSource1.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'CategoriaBindingSource1
+        '
+        Me.CategoriaBindingSource1.DataMember = "Categoria"
+        Me.CategoriaBindingSource1.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'ProductoTableAdapter
+        '
+        Me.ProductoTableAdapter.ClearBeforeFill = True
+        '
+        'MayoristaBaseDeDatosDataSetBindingSource1
+        '
+        Me.MayoristaBaseDeDatosDataSetBindingSource1.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.MayoristaBaseDeDatosDataSetBindingSource1.Position = 0
+        '
         'ProductoDataGridView
         '
+        Me.ProductoDataGridView.AutoGenerateColumns = False
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(292, 107)
+        Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(278, 30)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(743, 237)
-        Me.ProductoDataGridView.TabIndex = 26
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(734, 220)
+        Me.ProductoDataGridView.TabIndex = 54
         '
         'DataGridViewTextBoxColumn1
         '
@@ -389,98 +355,76 @@ Partial Class Gerente_Productos
         Me.DataGridViewTextBoxColumn7.HeaderText = "Descripcion"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'MarcasBindingSource1
+        'TextBox1
         '
-        Me.MarcasBindingSource1.DataMember = "Marcas"
-        Me.MarcasBindingSource1.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.TextBox1.Location = New System.Drawing.Point(124, 50)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(121, 21)
+        Me.TextBox1.TabIndex = 55
         '
-        'MarcaComboBox
+        'TextBox2
         '
-        Me.MarcaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource1, "Marca", True))
-        Me.MarcaComboBox.DataSource = Me.MarcasBindingSource1
-        Me.MarcaComboBox.DisplayMember = "Marca"
-        Me.MarcaComboBox.FormattingEnabled = True
-        Me.MarcaComboBox.Location = New System.Drawing.Point(119, 186)
-        Me.MarcaComboBox.Name = "MarcaComboBox"
-        Me.MarcaComboBox.Size = New System.Drawing.Size(121, 22)
-        Me.MarcaComboBox.TabIndex = 40
+        Me.TextBox2.Location = New System.Drawing.Point(124, 77)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(121, 21)
+        Me.TextBox2.TabIndex = 56
         '
-        'CategoriaBindingSource1
+        'TextBox3
         '
-        Me.CategoriaBindingSource1.DataMember = "Categoria"
-        Me.CategoriaBindingSource1.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.TextBox3.Location = New System.Drawing.Point(124, 104)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(121, 21)
+        Me.TextBox3.TabIndex = 57
         '
-        'CategoriaComboBox
+        'TextBox4
         '
-        Me.CategoriaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource1, "Categoria", True))
-        Me.CategoriaComboBox.DataSource = Me.CategoriaBindingSource1
-        Me.CategoriaComboBox.DisplayMember = "Categoria"
-        Me.CategoriaComboBox.FormattingEnabled = True
-        Me.CategoriaComboBox.Location = New System.Drawing.Point(119, 158)
-        Me.CategoriaComboBox.Name = "CategoriaComboBox"
-        Me.CategoriaComboBox.Size = New System.Drawing.Size(121, 22)
-        Me.CategoriaComboBox.TabIndex = 41
+        Me.TextBox4.Location = New System.Drawing.Point(124, 131)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(121, 21)
+        Me.TextBox4.TabIndex = 58
         '
-        'ProductoBindingSource
+        'ComboBox1
         '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource1, "ID_Categoria", True))
+        Me.ComboBox1.DataSource = Me.CategoriaBindingSource1
+        Me.ComboBox1.DisplayMember = "Categoria"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(124, 158)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 22)
+        Me.ComboBox1.TabIndex = 59
+        Me.ComboBox1.ValueMember = "ID_Categoria"
         '
-        'ProductoTableAdapter
+        'ComboBox2
         '
-        Me.ProductoTableAdapter.ClearBeforeFill = True
-        '
-        'Nombre_ProductoTextBox1
-        '
-        Me.Nombre_ProductoTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Nombre_Producto", True))
-        Me.Nombre_ProductoTextBox1.Location = New System.Drawing.Point(119, 50)
-        Me.Nombre_ProductoTextBox1.Name = "Nombre_ProductoTextBox1"
-        Me.Nombre_ProductoTextBox1.Size = New System.Drawing.Size(121, 21)
-        Me.Nombre_ProductoTextBox1.TabIndex = 48
-        '
-        'StrockTextBox
-        '
-        Me.StrockTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Strock", True))
-        Me.StrockTextBox.Location = New System.Drawing.Point(119, 77)
-        Me.StrockTextBox.Name = "StrockTextBox"
-        Me.StrockTextBox.Size = New System.Drawing.Size(121, 21)
-        Me.StrockTextBox.TabIndex = 50
-        '
-        'Precio_UnitarioTextBox
-        '
-        Me.Precio_UnitarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Precio_Unitario", True))
-        Me.Precio_UnitarioTextBox.Location = New System.Drawing.Point(119, 104)
-        Me.Precio_UnitarioTextBox.Name = "Precio_UnitarioTextBox"
-        Me.Precio_UnitarioTextBox.Size = New System.Drawing.Size(121, 21)
-        Me.Precio_UnitarioTextBox.TabIndex = 52
-        '
-        'DescripcionTextBox
-        '
-        Me.DescripcionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Descripcion", True))
-        Me.DescripcionTextBox.Location = New System.Drawing.Point(119, 131)
-        Me.DescripcionTextBox.Name = "DescripcionTextBox"
-        Me.DescripcionTextBox.Size = New System.Drawing.Size(121, 21)
-        Me.DescripcionTextBox.TabIndex = 54
+        Me.ComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource1, "ID_Marca", True))
+        Me.ComboBox2.DataSource = Me.MarcasBindingSource1
+        Me.ComboBox2.DisplayMember = "Marca"
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(124, 186)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 22)
+        Me.ComboBox2.TabIndex = 60
+        Me.ComboBox2.ValueMember = "ID_Marca"
         '
         'Gerente_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1035, 368)
-        Me.Controls.Add(Me.Nombre_ProductoTextBox1)
-        Me.Controls.Add(Me.StrockTextBox)
-        Me.Controls.Add(Me.Precio_UnitarioTextBox)
-        Me.Controls.Add(Me.DescripcionTextBox)
-        Me.Controls.Add(Me.CategoriaComboBox)
-        Me.Controls.Add(Me.MarcaComboBox)
+        Me.ClientSize = New System.Drawing.Size(1055, 289)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ProductoDataGridView)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Nombre_ProductoLabel)
-        Me.Controls.Add(StrockLabel)
+        Me.Controls.Add(StockLabel)
         Me.Controls.Add(Precio_UnitarioLabel)
         Me.Controls.Add(DescripcionLabel)
         Me.Controls.Add(CategoriaLabel)
@@ -496,12 +440,12 @@ Partial Class Gerente_Productos
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MayoristaBaseDeDatosDataSetBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -519,15 +463,15 @@ Partial Class Gerente_Productos
     Friend WithEvents CategoriaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter
     Friend WithEvents MarcasTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter
     Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents MayoristaBaseDeDatosDataSetBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ID_Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombre_de_Producto As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Stock As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Precio_Unitario As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Descripcion As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Categoria As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Marca As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MarcasBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents CategoriaBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
+    Friend WithEvents ComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MayoristaBaseDeDatosDataSetBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents ProductoDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -536,17 +480,10 @@ Partial Class Gerente_Productos
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MarcasBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents MarcaComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents CategoriaBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents CategoriaComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
-    Friend WithEvents Nombre_ProductoTextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents StrockTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Precio_UnitarioTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DescripcionTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
 End Class
