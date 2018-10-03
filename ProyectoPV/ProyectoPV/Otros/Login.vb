@@ -1,7 +1,4 @@
 ﻿Public Class Login
-
-    'ESTO ES PARA HACER EL LOGIN CON REGISTRO (https://www.youtube.com/watch?v=qVNEUTosrOc&feature=youtu.be)
-
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
         If Txt_Usuario.Text = "USUARIO" And Txt_Contrasena.Text = "CONTRASEÑA" Then
             MsgBox("Campos vacios", MsgBoxStyle.Information, "Error")
@@ -10,7 +7,7 @@
             Me.Close()
 
         ElseIf Txt_Usuario.Text = "Gerente" And Txt_Contrasena.Text = "1234" And Ckt_Gerente.Checked Then
-            'Atributos_De_Gerente.Show()
+            Atributos_De_Gerente.Show()
             Me.Close()
         Else
             MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
@@ -81,11 +78,13 @@
 
     'BORRAR ES SOLO PARA EL DEBUG
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        'Atributos_De_Gerente.Show()
+        Atributos_De_Gerente.Show()
+        Me.Close()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Atributos_De_Cajero.Show()
+        Me.Close()
     End Sub
 
 End Class

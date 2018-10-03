@@ -54,9 +54,9 @@ Partial Class Version
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(188, 103)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(176, 13)
+        Me.Label3.Size = New System.Drawing.Size(176, 26)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Email: ivan.martinez782@gmail.com"
+        Me.Label3.Text = "Email: ivan.martinez782@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "            fede_storti31@hotmail.com"
         '
         'PictureBox1
         '

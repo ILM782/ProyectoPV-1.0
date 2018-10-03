@@ -209,7 +209,6 @@ Partial Class Gerente_Compras_Realizadas
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Me.Compra_ProveedorTableAdapter
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.OperadorTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
