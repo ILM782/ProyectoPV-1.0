@@ -6,7 +6,11 @@ ProyectoPV
 </name>
 </assembly>
 <members>
-<member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaDataTable">
+<member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -14,7 +18,7 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorDataTable">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -38,13 +42,9 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorDataTable">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
 	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
-	<summary>
-Represents the strongly named DataTable class.
+Represents strongly named DataRow class.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
 	<summary>
@@ -54,7 +54,7 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorRow">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -78,13 +78,9 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRow">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
 	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
-	<summary>
-Represents strongly named DataRow class.
+Row event argument class
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
 	<summary>
@@ -94,7 +90,7 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorRowChangeEvent">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -118,17 +114,13 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet">
 	<summary>
 Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter">
 	<summary>
@@ -138,7 +130,7 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.OperadorTableAdapter">
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -159,14 +151,6 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Ventas_ClientesTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
