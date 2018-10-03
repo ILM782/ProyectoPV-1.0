@@ -34,15 +34,16 @@ Partial Class Login
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Lbl_fecha = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Lbl_FechaLogin = New System.Windows.Forms.Label()
         Me.Lbl_HoraLogin = New System.Windows.Forms.Label()
         Me.Lbl_hora = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TimerLogin = New System.Windows.Forms.Timer(Me.components)
         Me.Btn_Salir = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -65,10 +66,10 @@ Partial Class Login
         Me.Btn_Entrar.FlatAppearance.BorderSize = 0
         Me.Btn_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Entrar.Location = New System.Drawing.Point(287, 247)
+        Me.Btn_Entrar.Location = New System.Drawing.Point(290, 248)
         Me.Btn_Entrar.Name = "Btn_Entrar"
         Me.Btn_Entrar.Size = New System.Drawing.Size(194, 40)
-        Me.Btn_Entrar.TabIndex = 5
+        Me.Btn_Entrar.TabIndex = 4
         Me.Btn_Entrar.Text = "&ENTRAR"
         Me.Btn_Entrar.UseVisualStyleBackColor = False
         '
@@ -99,6 +100,7 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -160,6 +162,17 @@ Partial Class Login
         Me.Panel2.Size = New System.Drawing.Size(528, 47)
         Me.Panel2.TabIndex = 13
         '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(3, 26)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 23)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "&2 CAJERO"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Lbl_fecha
         '
         Me.Lbl_fecha.AutoSize = True
@@ -170,6 +183,17 @@ Partial Class Login
         Me.Lbl_fecha.Size = New System.Drawing.Size(46, 13)
         Me.Lbl_fecha.TabIndex = 5
         Me.Lbl_fecha.Text = "Fecha:"
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(3, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(85, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "&1 GERENTE"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Lbl_FechaLogin
         '
@@ -224,34 +248,23 @@ Partial Class Login
         Me.Btn_Salir.FlatAppearance.BorderSize = 0
         Me.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Salir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Salir.Location = New System.Drawing.Point(539, 246)
+        Me.Btn_Salir.Location = New System.Drawing.Point(542, 247)
         Me.Btn_Salir.Name = "Btn_Salir"
         Me.Btn_Salir.Size = New System.Drawing.Size(194, 40)
-        Me.Btn_Salir.TabIndex = 6
+        Me.Btn_Salir.TabIndex = 5
         Me.Btn_Salir.Text = "&SALIR"
         Me.Btn_Salir.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(3, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 23)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "&1 GERENTE"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(3, 26)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(85, 23)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "&2 CAJERO"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(0, 278)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(97, 23)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Versión 1.1.03"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Login
         '
@@ -301,4 +314,5 @@ Partial Class Login
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

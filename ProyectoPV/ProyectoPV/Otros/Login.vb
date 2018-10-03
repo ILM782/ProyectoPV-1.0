@@ -72,6 +72,10 @@
         End If
     End Sub
 
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Version.Show()
+    End Sub
+
     'BORRAR ES SOLO PARA EL DEBUG
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Atributos_De_Gerente.Show()
@@ -80,4 +84,5 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Atributos_De_Cajero.Show()
     End Sub
+
 End Class

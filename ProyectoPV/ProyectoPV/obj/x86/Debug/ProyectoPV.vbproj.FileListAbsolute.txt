@@ -103,10 +103,7 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Resources.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Version.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbproj.GenerateResource.Cache
-<<<<<<< HEAD
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Producto_Para_Ventas.resources
-=======
->>>>>>> 1081de942e4206937bda14aac21b0d1c12edb991
 C:\Users\fede_\Desktop\ProyectoPV-1.0-master\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.exe.config
 C:\Users\fede_\Desktop\ProyectoPV-1.0-master\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.exe
 C:\Users\fede_\Desktop\ProyectoPV-1.0-master\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.xml
