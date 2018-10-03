@@ -59,10 +59,10 @@ Partial Class Gerente_Productos
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Nombre_ProductoTextBox = New System.Windows.Forms.TextBox()
+        Me.StrockTextBox = New System.Windows.Forms.TextBox()
+        Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
+        Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         MarcaLabel = New System.Windows.Forms.Label()
@@ -248,6 +248,7 @@ Partial Class Gerente_Productos
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Me.CategoriaTableAdapter
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
@@ -303,12 +304,14 @@ Partial Class Gerente_Productos
         '
         'ProductoDataGridView
         '
+        Me.ProductoDataGridView.AllowUserToDeleteRows = False
         Me.ProductoDataGridView.AutoGenerateColumns = False
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
         Me.ProductoDataGridView.Location = New System.Drawing.Point(278, 30)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
+        Me.ProductoDataGridView.ReadOnly = True
         Me.ProductoDataGridView.Size = New System.Drawing.Size(734, 220)
         Me.ProductoDataGridView.TabIndex = 54
         '
@@ -324,87 +327,95 @@ Partial Class Gerente_Productos
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Marca"
         Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Marca"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Categoria"
         Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Categoria"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nombre_Producto"
         Me.DataGridViewTextBoxColumn4.HeaderText = "Nombre_Producto"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "Strock"
         Me.DataGridViewTextBoxColumn5.HeaderText = "Strock"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "Precio_Unitario"
         Me.DataGridViewTextBoxColumn6.HeaderText = "Precio_Unitario"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "Descripcion"
         Me.DataGridViewTextBoxColumn7.HeaderText = "Descripcion"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
-        'TextBox1
+        'Nombre_ProductoTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(124, 50)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 21)
-        Me.TextBox1.TabIndex = 55
+        Me.Nombre_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Nombre_Producto", True))
+        Me.Nombre_ProductoTextBox.Location = New System.Drawing.Point(124, 50)
+        Me.Nombre_ProductoTextBox.Name = "Nombre_ProductoTextBox"
+        Me.Nombre_ProductoTextBox.Size = New System.Drawing.Size(121, 21)
+        Me.Nombre_ProductoTextBox.TabIndex = 67
         '
-        'TextBox2
+        'StrockTextBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(124, 77)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(121, 21)
-        Me.TextBox2.TabIndex = 56
+        Me.StrockTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Strock", True))
+        Me.StrockTextBox.Location = New System.Drawing.Point(124, 77)
+        Me.StrockTextBox.Name = "StrockTextBox"
+        Me.StrockTextBox.Size = New System.Drawing.Size(121, 21)
+        Me.StrockTextBox.TabIndex = 69
         '
-        'TextBox3
+        'Precio_UnitarioTextBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(124, 104)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 21)
-        Me.TextBox3.TabIndex = 57
+        Me.Precio_UnitarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Precio_Unitario", True))
+        Me.Precio_UnitarioTextBox.Location = New System.Drawing.Point(124, 104)
+        Me.Precio_UnitarioTextBox.Name = "Precio_UnitarioTextBox"
+        Me.Precio_UnitarioTextBox.Size = New System.Drawing.Size(121, 21)
+        Me.Precio_UnitarioTextBox.TabIndex = 71
         '
-        'TextBox4
+        'DescripcionTextBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(124, 131)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 21)
-        Me.TextBox4.TabIndex = 58
+        Me.DescripcionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Descripcion", True))
+        Me.DescripcionTextBox.Location = New System.Drawing.Point(124, 131)
+        Me.DescripcionTextBox.Name = "DescripcionTextBox"
+        Me.DescripcionTextBox.Size = New System.Drawing.Size(121, 21)
+        Me.DescripcionTextBox.TabIndex = 73
         '
         'ComboBox1
         '
-        Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource1, "ID_Categoria", True))
         Me.ComboBox1.DataSource = Me.CategoriaBindingSource1
         Me.ComboBox1.DisplayMember = "Categoria"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(124, 158)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 22)
-        Me.ComboBox1.TabIndex = 59
-        Me.ComboBox1.ValueMember = "ID_Categoria"
+        Me.ComboBox1.TabIndex = 74
+        Me.ComboBox1.ValueMember = "Categoria"
         '
         'ComboBox2
         '
-        Me.ComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource1, "ID_Marca", True))
         Me.ComboBox2.DataSource = Me.MarcasBindingSource1
         Me.ComboBox2.DisplayMember = "Marca"
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(124, 186)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 22)
-        Me.ComboBox2.TabIndex = 60
+        Me.ComboBox2.TabIndex = 75
         Me.ComboBox2.ValueMember = "ID_Marca"
         '
         'Gerente_Productos
@@ -412,13 +423,13 @@ Partial Class Gerente_Productos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1055, 289)
+        Me.ClientSize = New System.Drawing.Size(1055, 302)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Nombre_ProductoTextBox)
+        Me.Controls.Add(Me.StrockTextBox)
+        Me.Controls.Add(Me.Precio_UnitarioTextBox)
+        Me.Controls.Add(Me.DescripcionTextBox)
         Me.Controls.Add(Me.ProductoDataGridView)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -480,10 +491,10 @@ Partial Class Gerente_Productos
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Nombre_ProductoTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents StrockTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Precio_UnitarioTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DescripcionTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
 End Class

@@ -68,7 +68,7 @@
             CodConsulta = Txt_Buscar.Text
             fila = Me.CategoriaBindingSource.Find("Categoria", CodConsulta)
             If fila = -1 Then
-                MsgBox("Marca no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
+                MsgBox("Categoria no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
             Else
                 Me.CategoriaBindingSource.Position = fila '
                 aux = MsgBox("¿Seguro que quiere eliminar a " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
@@ -77,7 +77,7 @@
                     Me.CategoriaBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-                    Gerente_Productos.MarcasTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Marcas)
+                    Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
                     Me.CategoriaBindingSource.MoveLast()
                     CategoriaTextBox.Text = ""
                     Txt_Buscar.Text = ""
