@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub ProductoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductoToolStripMenuItem.Click
-        Cajero_Producto_Para_Vistas.Show()
+        Cajero_Producto_Para_Ventas.Show()
         Me.Close()
     End Sub
 

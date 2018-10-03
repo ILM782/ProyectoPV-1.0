@@ -41,6 +41,8 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TimerLogin = New System.Windows.Forms.Timer(Me.components)
         Me.Btn_Salir = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -53,7 +55,7 @@ Partial Class Login
         Me.Ckt_Gerente.Location = New System.Drawing.Point(455, 213)
         Me.Ckt_Gerente.Name = "Ckt_Gerente"
         Me.Ckt_Gerente.Size = New System.Drawing.Size(121, 19)
-        Me.Ckt_Gerente.TabIndex = 4
+        Me.Ckt_Gerente.TabIndex = 1
         Me.Ckt_Gerente.Text = "Usted es Gerente"
         Me.Ckt_Gerente.UseVisualStyleBackColor = True
         '
@@ -62,7 +64,7 @@ Partial Class Login
         Me.Btn_Entrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Btn_Entrar.FlatAppearance.BorderSize = 0
         Me.Btn_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Entrar.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Entrar.Location = New System.Drawing.Point(287, 247)
         Me.Btn_Entrar.Name = "Btn_Entrar"
         Me.Btn_Entrar.Size = New System.Drawing.Size(194, 40)
@@ -72,7 +74,7 @@ Partial Class Login
         '
         'Txt_Contrasena
         '
-        Me.Txt_Contrasena.BackColor = System.Drawing.Color.Gray
+        Me.Txt_Contrasena.BackColor = System.Drawing.Color.DimGray
         Me.Txt_Contrasena.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Contrasena.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Contrasena.Location = New System.Drawing.Point(292, 167)
@@ -84,7 +86,7 @@ Partial Class Login
         '
         'Txt_Usuario
         '
-        Me.Txt_Usuario.BackColor = System.Drawing.Color.Gray
+        Me.Txt_Usuario.BackColor = System.Drawing.Color.DimGray
         Me.Txt_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txt_Usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Usuario.Location = New System.Drawing.Point(287, 77)
@@ -146,7 +148,9 @@ Partial Class Login
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.Lbl_fecha)
+        Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Lbl_FechaLogin)
         Me.Panel2.Controls.Add(Me.Lbl_HoraLogin)
         Me.Panel2.Controls.Add(Me.Lbl_hora)
@@ -227,11 +231,33 @@ Partial Class Login
         Me.Btn_Salir.Text = "&SALIR"
         Me.Btn_Salir.UseVisualStyleBackColor = False
         '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(3, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(85, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "&1 GERENTE"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(3, 26)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 23)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "&2 CAJERO"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gray
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(774, 301)
         Me.Controls.Add(Me.Btn_Salir)
         Me.Controls.Add(Me.Panel1)
@@ -246,7 +272,7 @@ Partial Class Login
         Me.MaximizeBox = False
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "LOGIN"
+        Me.Text = "COMERCIANDO"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -273,4 +299,6 @@ Partial Class Login
     Friend WithEvents TimerLogin As System.Windows.Forms.Timer
     Friend WithEvents Btn_Salir As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

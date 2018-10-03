@@ -1,17 +1,13 @@
-﻿Public Class Cajero_Agregar_Cliente
+﻿Public Class Cajero_Producto_Para_Ventas
 
     Private Sub TransaccionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionToolStripMenuItem.Click
         Cajero_Transaccion_Venta.Show()
         Me.Close()
     End Sub
 
-    Private Sub ProductoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductoToolStripMenuItem.Click
-        Cajero_Producto_Para_Ventas.Show()
+    Private Sub AgregarClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarClienteToolStripMenuItem.Click
+        Cajero_Agregar_Cliente.Show()
         Me.Close()
-    End Sub
-
-    Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Cajero_Localidad.Show()
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click

@@ -146,10 +146,10 @@
     <Compile Include="Gerente\Gerente_Productos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cajero\Cajero_Producto_Para_Vistas.Designer.vb">
-      <DependentUpon>Cajero_Producto_Para_Vistas.vb</DependentUpon>
+    <Compile Include="Cajero\Cajero_Producto_Para_Ventas.Designer.vb">
+      <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Cajero\Cajero_Producto_Para_Vistas.vb">
+    <Compile Include="Cajero\Cajero_Producto_Para_Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Proveedores.Designer.vb">
@@ -223,8 +223,8 @@
     <EmbeddedResource Include="Cajero\Cajero_Localidad.resx">
       <DependentUpon>Cajero_Localidad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cajero\Cajero_Producto_Para_Vistas.resx">
-      <DependentUpon>Cajero_Producto_Para_Vistas.vb</DependentUpon>
+    <EmbeddedResource Include="Cajero\Cajero_Producto_Para_Ventas.resx">
+      <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Agregar_Categoria.resx">
       <DependentUpon>Gerente_Agregar_Categoria.vb</DependentUpon>
@@ -357,6 +357,8 @@
     <Content Include="BaseDeDatos\MayoristaBaseDeDatos.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ICONO ICO.ico" />
+    <None Include="Resources\ICONO PNG.png" />
     <None Include="Resources\login.png" />
     <None Include="Resources\Retail-shop-icon.png" />
     <None Include="Resources\simbolo-seo-local.png" />
