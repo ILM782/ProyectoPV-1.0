@@ -7,8 +7,6 @@
 
     End Sub
 
-
-
     Private Sub Productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
@@ -62,19 +60,20 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
-        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or ComboBox1.Text = "" Or ComboBox2.Text = "" Then
+        If Nombre_ProductoTextBox.Text = "" Or StrockTextBox.Text = "" Or Precio_UnitarioTextBox.Text = "" Or DescripcionTextBox.Text = "" Or ComboBox1.Text = "" Or ComboBox2.Text = "" Then
             MsgBox("Algun campo vacio", MsgBoxStyle.Exclamation, "Advertencia")
         Else
-            Me.ProductoBindingSource.Current("ID_Marca") = Val(ComboBox1.SelectedValue)
+            ' Me.ProductoBindingSource.Current("Nombre_Producto") = Nombre_ProductoTextBox.Text
+            ' Me.ProductoBindingSource.Current("Strock") = Val(StrockTextBox.Text)
+            ' Me.ProductoBindingSource.Current("Precio_Unitario") = Val(Precio_UnitarioTextBox.Text)
+            'Me.ProductoBindingSource.Current("Descripcion") = DescripcionTextBox.Text
             Me.ProductoBindingSource.Current("ID_Categoria") = Val(ComboBox2.SelectedValue)
-            Me.ProductoBindingSource.Current("Nombre_Producto") = TextBox1.Text
-            Me.ProductoBindingSource.Current("Strock") = Val(TextBox2.Text)
-            Me.ProductoBindingSource.Current("Precio_Unitario") = Val(TextBox3.Text)
-            Me.ProductoBindingSource.Current("Descripcion") = TextBox4.Text
-            Me.ProductoBindingSource.EndEdit() 'Cierra la edicion
+            Me.ProductoBindingSource.Current("ID_Marca") = Val(ComboBox1.SelectedValue)
+            Me.ProductoBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disc
             Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto) 'actualizo la base
             Me.ProductoBindingSource.AddNew()
+
         End If
     End Sub
 
@@ -93,19 +92,22 @@
         Me.Close()
     End Sub
 
-    Private Sub TextBox3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress
-        e.KeyChar = ChrW(Coma(e))
+    Private Sub StrockTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles StrockTextBox.KeyPress
+
+        e.KeyChar = ChrW(solonumeros(e))
         If e.KeyChar = Chr(13) Then
-            TextBox3.Focus()
+            StrockTextBox.Focus()
             e.Handled = True
         End If
     End Sub
 
-    Private Sub TextBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
-        e.KeyChar = ChrW(solonumeros(e))
+    Private Sub Precio_UnitarioTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Precio_UnitarioTextBox.KeyPress
+        e.KeyChar = ChrW(Coma(e))
         If e.KeyChar = Chr(13) Then
-            TextBox2.Focus()
+            Precio_UnitarioTextBox.Focus()
             e.Handled = True
         End If
     End Sub
+
+
 End Class

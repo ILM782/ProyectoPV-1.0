@@ -80,6 +80,7 @@ Partial Class Gerente_Agregar_Categoria
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Me.CategoriaTableAdapter
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
@@ -137,6 +138,8 @@ Partial Class Gerente_Agregar_Categoria
         '
         'CategoriaDataGridView
         '
+        Me.CategoriaDataGridView.AllowUserToAddRows = False
+        Me.CategoriaDataGridView.AllowUserToDeleteRows = False
         Me.CategoriaDataGridView.AutoGenerateColumns = False
         Me.CategoriaDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.CategoriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -243,7 +246,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.Txt_Buscar.Size = New System.Drawing.Size(100, 20)
         Me.Txt_Buscar.TabIndex = 14
         '
-        'Agregar_Categoria
+        'Gerente_Agregar_Categoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -264,7 +267,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Agregar_Categoria"
+        Me.Name = "Gerente_Agregar_Categoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Categorias"
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()

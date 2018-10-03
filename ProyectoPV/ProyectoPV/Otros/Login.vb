@@ -1,18 +1,18 @@
 ﻿Public Class Login
 
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
-        If Txt_Usuario.Text = "USUARIO" And Txt_Contrasena.Text = "CONTRASEÑA" Then
-            MsgBox("Campos vacios", MsgBoxStyle.Information, "Error")
-        ElseIf Txt_Usuario.Text = "Cajero" And Txt_Contrasena.Text = "1234" Then
-            Atributos_De_Cajero.Show()
-            Me.Close()
+        'If Txt_Usuario.Text = "USUARIO" And Txt_Contrasena.Text = "CONTRASEÑA" Then
+        'MsgBox("Campos vacios", MsgBoxStyle.Information, "Error")
+        ' ElseIf Txt_Usuario.Text = "Cajero" And Txt_Contrasena.Text = "1234" Then
+        ' Atributos_De_Cajero.Show()
+        ' Me.Close()
 
-        ElseIf Txt_Usuario.Text = "Gerente" And Txt_Contrasena.Text = "1234" And Ckt_Gerente.Checked Then
-            Atributos_De_Gerente.Show()
-            Me.Close()
-        Else
-            MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
-        End If
+        ' ElseIf Txt_Usuario.Text = "Gerente" And Txt_Contrasena.Text = "1234" And Ckt_Gerente.Checked Then
+        Atributos_De_Gerente.Show()
+        Me.Close()
+        'Else
+        ' MsgBox("La contraseña o usuario son incorrectos", MsgBoxStyle.Exclamation, "Reintente")
+        ' End If
     End Sub
 
     Private Sub TimerLogin_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TimerLogin.Tick
@@ -81,7 +81,10 @@
     End Sub
 
     Private Sub Btn_Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Salir.Click
-        End
-        Stop
+        Dim respuesta As Object
+        respuesta = MsgBox("¿Desea Salir?", MsgBoxStyle.YesNo, "Advertencia")
+        If respuesta = vbYes Then
+            End
+        End If
     End Sub
 End Class
