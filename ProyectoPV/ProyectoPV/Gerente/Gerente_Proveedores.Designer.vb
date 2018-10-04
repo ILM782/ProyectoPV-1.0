@@ -41,11 +41,24 @@ Partial Class Gerente_Proveedores
         Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedorTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
-        Me.Nombre_EmpresaTextBox = New System.Windows.Forms.TextBox()
-        Me.Domicilio_ProveedorTextBox = New System.Windows.Forms.TextBox()
-        Me.Telefono_ProveedorTextBox = New System.Windows.Forms.TextBox()
-        Me.Correo_ProveedorTextBox = New System.Windows.Forms.TextBox()
-        Me.ID_LocalidadTextBox = New System.Windows.Forms.TextBox()
+        Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Btn_Guardar = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
+        Me.Txt_Nombre_Empresa = New System.Windows.Forms.TextBox()
+        Me.Txt_Domicilio = New System.Windows.Forms.TextBox()
+        Me.Txt_Telefono = New System.Windows.Forms.TextBox()
+        Me.Txt_Correo = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Btn_Eliminar = New System.Windows.Forms.Button()
         Nombre_EmpresaLabel = New System.Windows.Forms.Label()
         Domicilio_ProveedorLabel = New System.Windows.Forms.Label()
         Telefono_ProveedorLabel = New System.Windows.Forms.Label()
@@ -54,6 +67,8 @@ Partial Class Gerente_Proveedores
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Nombre_EmpresaLabel
@@ -97,9 +112,9 @@ Partial Class Gerente_Proveedores
         ID_LocalidadLabel.AutoSize = True
         ID_LocalidadLabel.Location = New System.Drawing.Point(12, 75)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(56, 13)
         ID_LocalidadLabel.TabIndex = 6
-        ID_LocalidadLabel.Text = "ID Localidad:"
+        ID_LocalidadLabel.Text = "Localidad:"
         '
         'MenuStrip1
         '
@@ -108,7 +123,7 @@ Partial Class Gerente_Proveedores
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasOComprasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(760, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(895, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -195,73 +210,175 @@ Partial Class Gerente_Proveedores
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Me.ProveedorTableAdapter
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
         '
-        'Nombre_EmpresaTextBox
+        'ProveedorDataGridView
         '
-        Me.Nombre_EmpresaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "Nombre_Empresa", True))
-        Me.Nombre_EmpresaTextBox.Location = New System.Drawing.Point(122, 46)
-        Me.Nombre_EmpresaTextBox.Name = "Nombre_EmpresaTextBox"
-        Me.Nombre_EmpresaTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Nombre_EmpresaTextBox.TabIndex = 5
+        Me.ProveedorDataGridView.AllowUserToAddRows = False
+        Me.ProveedorDataGridView.AllowUserToDeleteRows = False
+        Me.ProveedorDataGridView.AllowUserToResizeColumns = False
+        Me.ProveedorDataGridView.AllowUserToResizeRows = False
+        Me.ProveedorDataGridView.AutoGenerateColumns = False
+        Me.ProveedorDataGridView.BackgroundColor = System.Drawing.Color.White
+        Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
+        Me.ProveedorDataGridView.Enabled = False
+        Me.ProveedorDataGridView.EnableHeadersVisualStyles = False
+        Me.ProveedorDataGridView.Location = New System.Drawing.Point(228, 46)
+        Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
+        Me.ProveedorDataGridView.Size = New System.Drawing.Size(647, 220)
+        Me.ProveedorDataGridView.TabIndex = 13
         '
-        'Domicilio_ProveedorTextBox
+        'DataGridViewTextBoxColumn1
         '
-        Me.Domicilio_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "Domicilio_Proveedor", True))
-        Me.Domicilio_ProveedorTextBox.Location = New System.Drawing.Point(122, 98)
-        Me.Domicilio_ProveedorTextBox.Name = "Domicilio_ProveedorTextBox"
-        Me.Domicilio_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Domicilio_ProveedorTextBox.TabIndex = 9
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
-        'Telefono_ProveedorTextBox
+        'DataGridViewTextBoxColumn2
         '
-        Me.Telefono_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "Telefono_Proveedor", True))
-        Me.Telefono_ProveedorTextBox.Location = New System.Drawing.Point(122, 124)
-        Me.Telefono_ProveedorTextBox.Name = "Telefono_ProveedorTextBox"
-        Me.Telefono_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Telefono_ProveedorTextBox.TabIndex = 11
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Empresa"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Empresa"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'Correo_ProveedorTextBox
+        'DataGridViewTextBoxColumn3
         '
-        Me.Correo_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "Correo_Proveedor", True))
-        Me.Correo_ProveedorTextBox.Location = New System.Drawing.Point(122, 150)
-        Me.Correo_ProveedorTextBox.Name = "Correo_ProveedorTextBox"
-        Me.Correo_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Correo_ProveedorTextBox.TabIndex = 13
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'ID_LocalidadTextBox
+        'DataGridViewTextBoxColumn4
         '
-        Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(122, 72)
-        Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
-        Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ID_LocalidadTextBox.TabIndex = 7
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Domicilio_Proveedor"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Domicilio_Proveedor"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Telefono_Proveedor"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Telefono_Proveedor"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Correo_Proveedor"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Correo_Proveedor"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'Btn_Guardar
+        '
+        Me.Btn_Guardar.Location = New System.Drawing.Point(147, 176)
+        Me.Btn_Guardar.Name = "Btn_Guardar"
+        Me.Btn_Guardar.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Guardar.TabIndex = 14
+        Me.Btn_Guardar.Text = "Guardar"
+        Me.Btn_Guardar.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DataSource = Me.LocalidadBindingSource
+        Me.ComboBox1.DisplayMember = "Localidad_Localidad"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(122, 72)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 15
+        Me.ComboBox1.ValueMember = "ID_Localidad"
+        '
+        'LocalidadBindingSource
+        '
+        Me.LocalidadBindingSource.DataMember = "Localidad"
+        Me.LocalidadBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'LocalidadTableAdapter
+        '
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        '
+        'Txt_Nombre_Empresa
+        '
+        Me.Txt_Nombre_Empresa.Location = New System.Drawing.Point(122, 46)
+        Me.Txt_Nombre_Empresa.Name = "Txt_Nombre_Empresa"
+        Me.Txt_Nombre_Empresa.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Nombre_Empresa.TabIndex = 16
+        '
+        'Txt_Domicilio
+        '
+        Me.Txt_Domicilio.Location = New System.Drawing.Point(122, 98)
+        Me.Txt_Domicilio.Name = "Txt_Domicilio"
+        Me.Txt_Domicilio.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Domicilio.TabIndex = 17
+        '
+        'Txt_Telefono
+        '
+        Me.Txt_Telefono.Location = New System.Drawing.Point(122, 124)
+        Me.Txt_Telefono.Name = "Txt_Telefono"
+        Me.Txt_Telefono.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Telefono.TabIndex = 18
+        '
+        'Txt_Correo
+        '
+        Me.Txt_Correo.Location = New System.Drawing.Point(122, 150)
+        Me.Txt_Correo.Name = "Txt_Correo"
+        Me.Txt_Correo.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Correo.TabIndex = 19
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(122, 237)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 20
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 240)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(95, 13)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Buscar Proveedor:"
+        '
+        'Btn_Eliminar
+        '
+        Me.Btn_Eliminar.Location = New System.Drawing.Point(147, 263)
+        Me.Btn_Eliminar.Name = "Btn_Eliminar"
+        Me.Btn_Eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Eliminar.TabIndex = 22
+        Me.Btn_Eliminar.Text = "Eliminar"
+        Me.Btn_Eliminar.UseVisualStyleBackColor = True
         '
         'Gerente_Proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(760, 261)
+        Me.ClientSize = New System.Drawing.Size(895, 325)
+        Me.Controls.Add(Me.Btn_Eliminar)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Txt_Correo)
+        Me.Controls.Add(Me.Txt_Telefono)
+        Me.Controls.Add(Me.Txt_Domicilio)
+        Me.Controls.Add(Me.Txt_Nombre_Empresa)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Btn_Guardar)
+        Me.Controls.Add(Me.ProveedorDataGridView)
         Me.Controls.Add(Nombre_EmpresaLabel)
-        Me.Controls.Add(Me.Nombre_EmpresaTextBox)
         Me.Controls.Add(ID_LocalidadLabel)
-        Me.Controls.Add(Me.ID_LocalidadTextBox)
         Me.Controls.Add(Domicilio_ProveedorLabel)
-        Me.Controls.Add(Me.Domicilio_ProveedorTextBox)
         Me.Controls.Add(Telefono_ProveedorLabel)
-        Me.Controls.Add(Me.Telefono_ProveedorTextBox)
         Me.Controls.Add(Correo_ProveedorLabel)
-        Me.Controls.Add(Me.Correo_ProveedorTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
@@ -273,6 +390,8 @@ Partial Class Gerente_Proveedores
         Me.MenuStrip1.PerformLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -287,12 +406,25 @@ Partial Class Gerente_Proveedores
     Friend WithEvents ProveedorBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ProveedorTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Nombre_EmpresaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Domicilio_ProveedorTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Telefono_ProveedorTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Correo_ProveedorTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransaccionesDeCompraToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProveedorDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents LocalidadTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter
+    Friend WithEvents Txt_Nombre_Empresa As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Domicilio As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Telefono As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Correo As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
 End Class

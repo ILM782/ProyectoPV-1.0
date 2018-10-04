@@ -66,8 +66,6 @@
                 Me.LocalidadBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
                 Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-                Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
-                Me.LocalidadBindingSource.MoveLast()
                 MsgBox("El Id de la Localidad es: " & LocalidadBindingSource.Current("ID_Localidad"), MsgBoxStyle.Information, " Id Localidad ")
                 Me.LocalidadBindingSource.AddNew()
                 Txt_CP.Text = ""
@@ -85,10 +83,10 @@
         Dim fila As Integer
         Dim CodConsulta As String
         Dim aux As Object
-        If ID_LocalidadTextBox1.Text = "" Then
+        If TextBox2.Text = "" Then
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
         Else
-            CodConsulta = ID_LocalidadTextBox1.Text
+            CodConsulta = TextBox2.Text
             fila = Me.LocalidadBindingSource.Find("ID_Localidad", CodConsulta)
             If fila = -1 Then
                 MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
@@ -100,11 +98,10 @@
                     Me.LocalidadBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-                    Me.LocalidadBindingSource.MoveLast()
-                    Me.LocalidadBindingSource.AddNew()
 
-                    TextBox1.Text = ""
-                    TextBox1.Focus()
+
+                    TextBox2.Text = ""
+                    TextBox2.Focus()
                 End If
             End If
         End If
@@ -118,4 +115,13 @@
             Me.LocalidadTableAdapter.FillBy(Me.MayoristaBaseDeDatosDataSet.Localidad, TextBox1.Text)
         End If
     End Sub
+
+    Private Sub Txt_CP_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_CP.KeyPress
+        e.KeyChar = ChrW(solonumeros(e))
+        If e.KeyChar = Chr(13) Then
+            Txt_CP.Focus()
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

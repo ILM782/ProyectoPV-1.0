@@ -50,15 +50,15 @@ Partial Class Gerente_Localidad
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
         Me.ID_LocalidadTextBox = New System.Windows.Forms.TextBox()
-        Me.ID_LocalidadTextBox1 = New System.Windows.Forms.TextBox()
         Me.Txt_Localidad = New System.Windows.Forms.TextBox()
         Me.Txt_CP = New System.Windows.Forms.TextBox()
         Me.Txt_Provincia = New System.Windows.Forms.TextBox()
         Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -307,14 +307,6 @@ Partial Class Gerente_Localidad
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 1
         '
-        'ID_LocalidadTextBox1
-        '
-        Me.ID_LocalidadTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox1.Location = New System.Drawing.Point(144, 208)
-        Me.ID_LocalidadTextBox1.Name = "ID_LocalidadTextBox1"
-        Me.ID_LocalidadTextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.ID_LocalidadTextBox1.TabIndex = 1
-        '
         'Txt_Localidad
         '
         Me.Txt_Localidad.Location = New System.Drawing.Point(145, 71)
@@ -349,7 +341,6 @@ Partial Class Gerente_Localidad
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Me.LocalidadTableAdapter
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -366,17 +357,6 @@ Partial Class Gerente_Localidad
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Eliminar"
         '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 19)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Localidad"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
@@ -389,17 +369,35 @@ Partial Class Gerente_Localidad
         Me.RadioButton1.Text = "Provincia"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 19)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Localidad"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(145, 207)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 25
+        '
         'Gerente_Localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(737, 414)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(ID_LocalidadLabel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ID_LocalidadTextBox1)
         Me.Controls.Add(Me.Txt_Provincia)
         Me.Controls.Add(Me.Txt_CP)
         Me.Controls.Add(Me.Txt_Localidad)
@@ -450,11 +448,11 @@ Partial Class Gerente_Localidad
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
     Friend WithEvents NuevoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ID_LocalidadTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_LocalidadTextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Localidad As System.Windows.Forms.TextBox
     Friend WithEvents Txt_CP As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Provincia As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class
