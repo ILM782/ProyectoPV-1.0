@@ -62,6 +62,8 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
@@ -302,11 +304,11 @@ Partial Class Cajero_Agregar_Cliente
         Me.Btn_Entrar.FlatAppearance.BorderSize = 0
         Me.Btn_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Entrar.Location = New System.Drawing.Point(46, 394)
+        Me.Btn_Entrar.Location = New System.Drawing.Point(54, 367)
         Me.Btn_Entrar.Name = "Btn_Entrar"
         Me.Btn_Entrar.Size = New System.Drawing.Size(224, 40)
         Me.Btn_Entrar.TabIndex = 23
-        Me.Btn_Entrar.Text = "&ENTRAR"
+        Me.Btn_Entrar.Text = "&GUARDAR"
         Me.Btn_Entrar.UseVisualStyleBackColor = False
         '
         'ClienteTableAdapter
@@ -397,12 +399,40 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(59, 434)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(224, 40)
+        Me.Button1.TabIndex = 24
+        Me.Button1.Text = "&ENTRAR"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(339, 440)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(224, 40)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "&ENTRAR"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Cajero_Agregar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(1216, 486)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.Btn_Entrar)
         Me.Controls.Add(ID_ClienteLabel)
@@ -472,4 +502,6 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
