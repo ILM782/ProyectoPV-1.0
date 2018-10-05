@@ -42,4 +42,23 @@
         Gerente_Localidad.Show()
         Me.Close()
     End Sub
+
+    Private Sub Ventas_ClientesBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Validate()
+        Me.Ventas_ClientesBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+
+    End Sub
+
+    Private Sub Gerente_Ventas_Realizadas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cajero' Puede moverla o quitarla según sea necesario.
+        Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
+        Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
+        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Ventas_Clientes' Puede moverla o quitarla según sea necesario.
+        Me.Ventas_ClientesTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Ventas_Clientes)
+
+    End Sub
 End Class
