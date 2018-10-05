@@ -105,6 +105,7 @@
                 Cadena = ProveedorBindingSource.Current("Id_articulo").ToString.Substring(0, Len(TextBox1.Text))
                 'ejemplo de error descripcion valor "maria"    caja de texto "mariano" len da 7 y maria tiene solo 5 tira error
             Catch ex As Exception 'ante cualquier error
+
                 Cadena = ""
 
             End Try
@@ -177,5 +178,4 @@
         End If
     End Sub
 
-    
 End Class

@@ -22,9 +22,6 @@ Partial Class Gerente_TablasClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_TablasClientes))
-
         Me.components = New System.ComponentModel.Container()
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
         Dim Apellido_ClienteLabel As System.Windows.Forms.Label
@@ -33,6 +30,7 @@ Partial Class Gerente_TablasClientes
         Dim Telefono_ClienteLabel As System.Windows.Forms.Label
         Dim Correo_ClienteLabel As System.Windows.Forms.Label
         Dim DniLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_TablasClientes))
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,17 +47,8 @@ Partial Class Gerente_TablasClientes
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Txt_Nombre = New System.Windows.Forms.TextBox()
         Me.Txt_Apellido = New System.Windows.Forms.TextBox()
         Me.Txt_Dni = New System.Windows.Forms.TextBox()
@@ -71,6 +60,14 @@ Partial Class Gerente_TablasClientes
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
@@ -268,16 +265,6 @@ Partial Class Gerente_TablasClientes
         '
         Me.LocalidadTableAdapter.ClearBeforeFill = True
         '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button1.Location = New System.Drawing.Point(232, 121)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(28, 21)
-        Me.Button1.TabIndex = 19
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Btn_Guardar
         '
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -298,55 +285,6 @@ Partial Class Gerente_TablasClientes
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
         Me.ClienteDataGridView.Size = New System.Drawing.Size(840, 220)
         Me.ClienteDataGridView.TabIndex = 20
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Cliente"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido_Cliente"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio_Cliente"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono_Cliente"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo_Cliente"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Dni"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Dni"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
         'Txt_Nombre
         '
@@ -433,12 +371,60 @@ Partial Class Gerente_TablasClientes
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Eliminar por DNI:"
         '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Dni"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Dni"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
         'Gerente_TablasClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(782, 711)
         Me.ClientSize = New System.Drawing.Size(860, 386)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
@@ -453,7 +439,6 @@ Partial Class Gerente_TablasClientes
         Me.Controls.Add(Me.Txt_Nombre)
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.Btn_Guardar)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Nombre_ClienteLabel)
         Me.Controls.Add(Apellido_ClienteLabel)
@@ -496,17 +481,8 @@ Partial Class Gerente_TablasClientes
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents LocalidadTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents ClienteDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Txt_Nombre As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Apellido As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Dni As System.Windows.Forms.TextBox
@@ -518,4 +494,12 @@ Partial Class Gerente_TablasClientes
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
