@@ -22,9 +22,7 @@ Partial Class Gerente_TablasClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-<<<<<<< HEAD
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_TablasClientes))
-=======
         Me.components = New System.ComponentModel.Container()
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
         Dim Apellido_ClienteLabel As System.Windows.Forms.Label
@@ -33,7 +31,6 @@ Partial Class Gerente_TablasClientes
         Dim Telefono_ClienteLabel As System.Windows.Forms.Label
         Dim Correo_ClienteLabel As System.Windows.Forms.Label
         Dim DniLabel As System.Windows.Forms.Label
->>>>>>> 709be9b5cd56d5efc791013a1ce98195acf74bd8
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -439,9 +436,7 @@ Partial Class Gerente_TablasClientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(782, 711)
-=======
         Me.ClientSize = New System.Drawing.Size(860, 386)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
@@ -465,7 +460,6 @@ Partial Class Gerente_TablasClientes
         Me.Controls.Add(Telefono_ClienteLabel)
         Me.Controls.Add(Correo_ClienteLabel)
         Me.Controls.Add(DniLabel)
->>>>>>> 709be9b5cd56d5efc791013a1ce98195acf74bd8
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
