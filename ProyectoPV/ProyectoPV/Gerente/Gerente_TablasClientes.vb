@@ -82,7 +82,12 @@
                 MsgBox("El Id del Cliente es: " & ClienteBindingSource.Current("ID_Cliente"), MsgBoxStyle.Information, " Id Cliente ")
 
                 Me.ClienteBindingSource.AddNew()
-
+                Txt_Nombre.Text = ""
+                Txt_Apellido.Text = ""
+                Txt_Domicilio.Text = ""
+                Txt_Telefono.Text = ""
+                Txt_Correo.Text = ""
+                Txt_Dni.Text = ""
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
