@@ -1,0 +1,462 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Gerente_Producto
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim CategoriaLabel As System.Windows.Forms.Label
+        Dim MarcaLabel As System.Windows.Forms.Label
+        Dim Nombre_ProductoLabel As System.Windows.Forms.Label
+        Dim StrockLabel As System.Windows.Forms.Label
+        Dim Precio_UnitarioLabel As System.Windows.Forms.Label
+        Dim DescripcionLabel As System.Windows.Forms.Label
+        Me.ProductoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
+        Me.CategoriaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter()
+        Me.MarcasTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.IDProductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDMarcaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDCategoriaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreProductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StrockDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioUnitarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CategoriaLabel = New System.Windows.Forms.Label()
+        MarcaLabel = New System.Windows.Forms.Label()
+        Nombre_ProductoLabel = New System.Windows.Forms.Label()
+        StrockLabel = New System.Windows.Forms.Label()
+        Precio_UnitarioLabel = New System.Windows.Forms.Label()
+        DescripcionLabel = New System.Windows.Forms.Label()
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'CategoriaLabel
+        '
+        CategoriaLabel.AutoSize = True
+        CategoriaLabel.ForeColor = System.Drawing.Color.Black
+        CategoriaLabel.Location = New System.Drawing.Point(34, 149)
+        CategoriaLabel.Name = "CategoriaLabel"
+        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel.TabIndex = 40
+        CategoriaLabel.Text = "Categoria:"
+        '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.ForeColor = System.Drawing.Color.Black
+        MarcaLabel.Location = New System.Drawing.Point(34, 176)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel.TabIndex = 39
+        MarcaLabel.Text = "Marca:"
+        '
+        'Nombre_ProductoLabel
+        '
+        Nombre_ProductoLabel.AutoSize = True
+        Nombre_ProductoLabel.ForeColor = System.Drawing.Color.Black
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(33, 44)
+        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
+        Nombre_ProductoLabel.Size = New System.Drawing.Size(93, 13)
+        Nombre_ProductoLabel.TabIndex = 35
+        Nombre_ProductoLabel.Text = "Nombre Producto:"
+        '
+        'StrockLabel
+        '
+        StrockLabel.AutoSize = True
+        StrockLabel.ForeColor = System.Drawing.Color.Black
+        StrockLabel.Location = New System.Drawing.Point(33, 71)
+        StrockLabel.Name = "StrockLabel"
+        StrockLabel.Size = New System.Drawing.Size(41, 13)
+        StrockLabel.TabIndex = 36
+        StrockLabel.Text = "Strock:"
+        '
+        'Precio_UnitarioLabel
+        '
+        Precio_UnitarioLabel.AutoSize = True
+        Precio_UnitarioLabel.ForeColor = System.Drawing.Color.Black
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(33, 97)
+        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
+        Precio_UnitarioLabel.Size = New System.Drawing.Size(79, 13)
+        Precio_UnitarioLabel.TabIndex = 37
+        Precio_UnitarioLabel.Text = "Precio Unitario:"
+        '
+        'DescripcionLabel
+        '
+        DescripcionLabel.AutoSize = True
+        DescripcionLabel.ForeColor = System.Drawing.Color.Black
+        DescripcionLabel.Location = New System.Drawing.Point(33, 123)
+        DescripcionLabel.Name = "DescripcionLabel"
+        DescripcionLabel.Size = New System.Drawing.Size(66, 13)
+        DescripcionLabel.TabIndex = 38
+        DescripcionLabel.Text = "Descripcion:"
+        '
+        'ProductoDataGridView
+        '
+        Me.ProductoDataGridView.AutoGenerateColumns = False
+        Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDProductoDataGridViewTextBoxColumn, Me.IDMarcaDataGridViewTextBoxColumn, Me.IDCategoriaDataGridViewTextBoxColumn, Me.NombreProductoDataGridViewTextBoxColumn, Me.StrockDataGridViewTextBoxColumn, Me.PrecioUnitarioDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn})
+        Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(310, 41)
+        Me.ProductoDataGridView.Name = "ProductoDataGridView"
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(437, 220)
+        Me.ProductoDataGridView.TabIndex = 49
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(132, 120)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox4.TabIndex = 50
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(132, 94)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox3.TabIndex = 48
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(132, 68)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox2.TabIndex = 47
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(132, 41)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox1.TabIndex = 46
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DataSource = Me.MarcasBindingSource
+        Me.ComboBox2.DisplayMember = "Marca"
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(132, 173)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 45
+        Me.ComboBox2.ValueMember = "ID_Marca"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DataSource = Me.CategoriaBindingSource
+        Me.ComboBox1.DisplayMember = "Categoria"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(132, 146)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 44
+        Me.ComboBox1.ValueMember = "ID_Categoria"
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
+        Me.Button3.Location = New System.Drawing.Point(259, 146)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(27, 21)
+        Me.Button3.TabIndex = 43
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
+        Me.Button2.Location = New System.Drawing.Point(259, 173)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(27, 23)
+        Me.Button2.TabIndex = 42
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(198, 219)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 41
+        Me.Button1.Text = "Guardar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Black
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(776, 24)
+        Me.MenuStrip1.TabIndex = 34
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'ProveedorToolStripMenuItem
+        '
+        Me.ProveedorToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
+        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
+        '
+        'TransaccionesDeCompraToolStripMenuItem
+        '
+        Me.TransaccionesDeCompraToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.TransaccionesDeCompraToolStripMenuItem.Name = "TransaccionesDeCompraToolStripMenuItem"
+        Me.TransaccionesDeCompraToolStripMenuItem.Size = New System.Drawing.Size(153, 20)
+        Me.TransaccionesDeCompraToolStripMenuItem.Text = "Transacciones de compra"
+        '
+        'ClientesToolStripMenuItem
+        '
+        Me.ClientesToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        '
+        'VentasRealizadasToolStripMenuItem
+        '
+        Me.VentasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.VentasRealizadasToolStripMenuItem.Name = "VentasRealizadasToolStripMenuItem"
+        Me.VentasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(110, 20)
+        Me.VentasRealizadasToolStripMenuItem.Text = "Ventas Realizadas"
+        '
+        'ComprasRealizadasToolStripMenuItem
+        '
+        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
+        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(124, 20)
+        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
+        '
+        'LocalidadToolStripMenuItem
+        '
+        Me.LocalidadToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
+        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.LocalidadToolStripMenuItem.Text = "Localidad"
+        '
+        'VolverToolStripMenuItem
+        '
+        Me.VolverToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.VolverToolStripMenuItem.Name = "VolverToolStripMenuItem"
+        Me.VolverToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
+        Me.VolverToolStripMenuItem.Text = "Volver"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'MayoristaBaseDeDatosDataSet
+        '
+        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
+        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'ProductoTableAdapter
+        '
+        Me.ProductoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
+        Me.TableAdapterManager.CategoriaTableAdapter = Me.CategoriaTableAdapter
+        Me.TableAdapterManager.ClienteTableAdapter = Nothing
+        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
+        Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
+        Me.TableAdapterManager.ProveedorTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
+        '
+        'CategoriaTableAdapter
+        '
+        Me.CategoriaTableAdapter.ClearBeforeFill = True
+        '
+        'MarcasTableAdapter
+        '
+        Me.MarcasTableAdapter.ClearBeforeFill = True
+        '
+        'MarcasBindingSource
+        '
+        Me.MarcasBindingSource.DataMember = "Marcas"
+        Me.MarcasBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'CategoriaBindingSource
+        '
+        Me.CategoriaBindingSource.DataMember = "Categoria"
+        Me.CategoriaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'IDProductoDataGridViewTextBoxColumn
+        '
+        Me.IDProductoDataGridViewTextBoxColumn.DataPropertyName = "ID_Producto"
+        Me.IDProductoDataGridViewTextBoxColumn.HeaderText = "ID_Producto"
+        Me.IDProductoDataGridViewTextBoxColumn.Name = "IDProductoDataGridViewTextBoxColumn"
+        Me.IDProductoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'IDMarcaDataGridViewTextBoxColumn
+        '
+        Me.IDMarcaDataGridViewTextBoxColumn.DataPropertyName = "ID_Marca"
+        Me.IDMarcaDataGridViewTextBoxColumn.HeaderText = "ID_Marca"
+        Me.IDMarcaDataGridViewTextBoxColumn.Name = "IDMarcaDataGridViewTextBoxColumn"
+        '
+        'IDCategoriaDataGridViewTextBoxColumn
+        '
+        Me.IDCategoriaDataGridViewTextBoxColumn.DataPropertyName = "ID_Categoria"
+        Me.IDCategoriaDataGridViewTextBoxColumn.HeaderText = "ID_Categoria"
+        Me.IDCategoriaDataGridViewTextBoxColumn.Name = "IDCategoriaDataGridViewTextBoxColumn"
+        '
+        'NombreProductoDataGridViewTextBoxColumn
+        '
+        Me.NombreProductoDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Producto"
+        Me.NombreProductoDataGridViewTextBoxColumn.HeaderText = "Nombre_Producto"
+        Me.NombreProductoDataGridViewTextBoxColumn.Name = "NombreProductoDataGridViewTextBoxColumn"
+        '
+        'StrockDataGridViewTextBoxColumn
+        '
+        Me.StrockDataGridViewTextBoxColumn.DataPropertyName = "Strock"
+        Me.StrockDataGridViewTextBoxColumn.HeaderText = "Strock"
+        Me.StrockDataGridViewTextBoxColumn.Name = "StrockDataGridViewTextBoxColumn"
+        '
+        'PrecioUnitarioDataGridViewTextBoxColumn
+        '
+        Me.PrecioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario"
+        Me.PrecioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario"
+        Me.PrecioUnitarioDataGridViewTextBoxColumn.Name = "PrecioUnitarioDataGridViewTextBoxColumn"
+        '
+        'DescripcionDataGridViewTextBoxColumn
+        '
+        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion"
+        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion"
+        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
+        '
+        'Gerente_Producto
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(776, 432)
+        Me.Controls.Add(Me.ProductoDataGridView)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(CategoriaLabel)
+        Me.Controls.Add(MarcaLabel)
+        Me.Controls.Add(Nombre_ProductoLabel)
+        Me.Controls.Add(StrockLabel)
+        Me.Controls.Add(Precio_UnitarioLabel)
+        Me.Controls.Add(DescripcionLabel)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.Name = "Gerente_Producto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Productos"
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents ProductoDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents ProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TransaccionesDeCompraToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ClientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VentasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VolverToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
+    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
+    Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents MarcasTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter
+    Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CategoriaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter
+    Friend WithEvents CategoriaBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents IDProductoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDMarcaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDCategoriaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NombreProductoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents StrockDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PrecioUnitarioDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DescripcionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+End Class

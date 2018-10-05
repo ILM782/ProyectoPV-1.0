@@ -1,7 +1,7 @@
 ﻿Public Class Gerente_Transacciones_de_Compras
 
     Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 

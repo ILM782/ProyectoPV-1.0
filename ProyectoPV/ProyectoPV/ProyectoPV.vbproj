@@ -140,16 +140,16 @@
     <Compile Include="Gerente\Gerente_Localidad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gerente\Gerente_Productos.Designer.vb">
-      <DependentUpon>Gerente_Productos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Productos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.Designer.vb">
       <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
     </Compile>
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente\Gerente_producto.Designer.vb">
+      <DependentUpon>Gerente_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_producto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Proveedores.Designer.vb">
@@ -247,11 +247,11 @@
     <EmbeddedResource Include="Gerente\Gerente_Localidad.resx">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_producto.resx">
+      <DependentUpon>Gerente_producto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
       <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Productos.resx">
-      <DependentUpon>Gerente_Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Proveedores.resx">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>

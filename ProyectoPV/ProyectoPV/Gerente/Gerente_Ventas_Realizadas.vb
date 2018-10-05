@@ -1,7 +1,7 @@
 ﻿Public Class Gerente_Ventas_Realizadas
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 

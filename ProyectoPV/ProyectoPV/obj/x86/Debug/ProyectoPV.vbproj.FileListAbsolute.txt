@@ -33,7 +33,6 @@ C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbproj.GenerateResource.Cache
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Categoria.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Marca.resources
-C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Productos.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Proveedores.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Transacciones_de_Compras.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Transaccion_Venta.resources
@@ -162,3 +161,4 @@ G:\ProyectoPV-1.0-592ddd8af1ac8839138bbf4180005e7617ec2755\ProyectoPV\ProyectoPV
 G:\ProyectoPV-1.0-592ddd8af1ac8839138bbf4180005e7617ec2755\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbproj.GenerateResource.Cache
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Producto_Para_Ventas.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Login.resources
+C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Producto.resources

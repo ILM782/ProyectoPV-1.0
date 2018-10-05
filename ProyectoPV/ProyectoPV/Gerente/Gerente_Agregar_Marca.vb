@@ -42,7 +42,7 @@
                 Me.MarcasBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
                 Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
-                Gerente_Productos.MarcasTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Marcas)
+                Gerente_Producto.MarcasTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Marcas)
                 Me.MarcasBindingSource.MoveLast()
                 MsgBox("El Id de la marca es: " & MarcasBindingSource.Current("ID_Marca"), MsgBoxStyle.Information, " Id Marca ")
                 Me.MarcasBindingSource.AddNew()
@@ -79,7 +79,7 @@
                     Me.MarcasBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
-                    Gerente_Productos.MarcasTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Marcas)
+                    Gerente_Producto.MarcasTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Marcas)
                     Me.MarcasBindingSource.MoveLast()
                     MarcaTextBox.Text = ""
                     TextBox1.Text = ""
