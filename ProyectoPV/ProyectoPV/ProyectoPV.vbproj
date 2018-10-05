@@ -255,6 +255,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Proveedores.resx">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
@@ -264,6 +265,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_TablasClientes.resx">
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Otros\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
