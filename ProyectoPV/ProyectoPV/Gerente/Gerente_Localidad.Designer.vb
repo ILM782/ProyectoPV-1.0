@@ -59,7 +59,14 @@ Partial Class Gerente_Localidad
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+<<<<<<< HEAD
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+=======
+
+
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+
+>>>>>>> 59d1ddac1eeb2da37427d415d183e81c733de409
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -359,6 +366,10 @@ Partial Class Gerente_Localidad
         Me.GroupBox1.Text = "Eliminar"
         '
         'RadioButton1
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59d1ddac1eeb2da37427d415d183e81c733de409
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
@@ -382,6 +393,10 @@ Partial Class Gerente_Localidad
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'TextBox2
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59d1ddac1eeb2da37427d415d183e81c733de409
         '
         Me.TextBox2.Location = New System.Drawing.Point(145, 207)
         Me.TextBox2.Name = "TextBox2"
