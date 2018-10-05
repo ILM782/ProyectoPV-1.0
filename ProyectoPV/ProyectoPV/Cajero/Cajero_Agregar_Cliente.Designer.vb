@@ -62,8 +62,6 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Btn_Eliminar = New System.Windows.Forms.Button()
-        Me.Btn_Modificar = New System.Windows.Forms.Button()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
@@ -340,7 +338,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.ClienteDataGridView.Location = New System.Drawing.Point(322, 122)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
         Me.ClienteDataGridView.ReadOnly = True
-        Me.ClienteDataGridView.Size = New System.Drawing.Size(843, 385)
+        Me.ClienteDataGridView.Size = New System.Drawing.Size(843, 267)
         Me.ClienteDataGridView.TabIndex = 23
         '
         'DataGridViewTextBoxColumn1
@@ -399,40 +397,12 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
-        'Btn_Eliminar
-        '
-        Me.Btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Eliminar.FlatAppearance.BorderSize = 0
-        Me.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Eliminar.Location = New System.Drawing.Point(52, 467)
-        Me.Btn_Eliminar.Name = "Btn_Eliminar"
-        Me.Btn_Eliminar.Size = New System.Drawing.Size(216, 40)
-        Me.Btn_Eliminar.TabIndex = 24
-        Me.Btn_Eliminar.Text = "&ELIMINAR"
-        Me.Btn_Eliminar.UseVisualStyleBackColor = False
-        '
-        'Btn_Modificar
-        '
-        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
-        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Modificar.Location = New System.Drawing.Point(52, 406)
-        Me.Btn_Modificar.Name = "Btn_Modificar"
-        Me.Btn_Modificar.Size = New System.Drawing.Size(216, 40)
-        Me.Btn_Modificar.TabIndex = 25
-        Me.Btn_Modificar.Text = "&MODIFICAR"
-        Me.Btn_Modificar.UseVisualStyleBackColor = False
-        '
         'Cajero_Agregar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(1210, 541)
-        Me.Controls.Add(Me.Btn_Modificar)
-        Me.Controls.Add(Me.Btn_Eliminar)
+        Me.ClientSize = New System.Drawing.Size(1210, 425)
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(ID_ClienteLabel)
@@ -502,6 +472,4 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
-    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
 End Class
