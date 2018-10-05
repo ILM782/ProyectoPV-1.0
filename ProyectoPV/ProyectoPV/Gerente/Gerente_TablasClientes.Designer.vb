@@ -66,6 +66,8 @@ Partial Class Gerente_TablasClientes
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
@@ -360,6 +362,7 @@ Partial Class Gerente_TablasClientes
         'Txt_Dni
         '
         Me.Txt_Dni.Location = New System.Drawing.Point(105, 95)
+        Me.Txt_Dni.MaxLength = 8
         Me.Txt_Dni.Name = "Txt_Dni"
         Me.Txt_Dni.Size = New System.Drawing.Size(121, 20)
         Me.Txt_Dni.TabIndex = 24
@@ -404,12 +407,28 @@ Partial Class Gerente_TablasClientes
         'Btn_Eliminar
         '
         Me.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Eliminar.Location = New System.Drawing.Point(638, 67)
+        Me.Btn_Eliminar.Location = New System.Drawing.Point(662, 122)
         Me.Btn_Eliminar.Name = "Btn_Eliminar"
         Me.Btn_Eliminar.Size = New System.Drawing.Size(75, 23)
         Me.Btn_Eliminar.TabIndex = 30
         Me.Btn_Eliminar.Text = "Eliminar"
         Me.Btn_Eliminar.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(637, 96)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 31
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(545, 101)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(86, 13)
+        Me.Label2.TabIndex = 32
+        Me.Label2.Text = "Eliminar por DNI:"
         '
         'Gerente_TablasClientes
         '
@@ -417,6 +436,8 @@ Partial Class Gerente_TablasClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(860, 386)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
@@ -490,4 +511,6 @@ Partial Class Gerente_TablasClientes
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

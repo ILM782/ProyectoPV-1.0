@@ -1,7 +1,7 @@
 ﻿Public Class Gerente_Localidad
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 
@@ -64,9 +64,11 @@
                 Me.LocalidadBindingSource.Current("CP_Localidad") = Val(Txt_CP.Text)
                 Me.LocalidadBindingSource.Current("Provincia_Localidad") = Txt_Provincia.Text
                 Me.LocalidadBindingSource.EndEdit() ' finaliza edicion
-                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
+                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
                 Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
+                Me.LocalidadBindingSource.MoveLast()
                 MsgBox("El Id de la Localidad es: " & LocalidadBindingSource.Current("ID_Localidad"), MsgBoxStyle.Information, " Id Localidad ")
+
                 Me.LocalidadBindingSource.AddNew()
                 Txt_CP.Text = ""
                 Txt_Localidad.Text = ""
@@ -98,13 +100,14 @@
                     Me.LocalidadBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-
+                    Me.LocalidadBindingSource.AddNew()
 
                     TextBox2.Text = ""
                     TextBox2.Focus()
                 End If
             End If
         End If
+
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged

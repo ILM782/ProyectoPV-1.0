@@ -18,7 +18,7 @@
     End Sub
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 
@@ -112,6 +112,7 @@
                     Me.ProveedorBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.ProveedorTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Proveedor)
+                    Me.ProveedorBindingSource.AddNew()
                     TextBox1.Text = ""
                     TextBox1.Focus()
                 End If

@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 
@@ -77,8 +77,10 @@
                 Me.ClienteBindingSource.Current("ID_Localidad") = Val(ComboBox1.SelectedValue)
                 Me.ClienteBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
-                Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+                    Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+                Me.ClienteBindingSource.MoveLast()
                 MsgBox("El Id del Cliente es: " & ClienteBindingSource.Current("ID_Cliente"), MsgBoxStyle.Information, " Id Cliente ")
+
                 Me.ClienteBindingSource.AddNew()
 
             End If
@@ -87,18 +89,14 @@
         End If
     End Sub
 
-    Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
-        Me.ClienteTableAdapter.FillByDni(Me.MayoristaBaseDeDatosDataSet.Cliente, TextBox1.Text)
-    End Sub
-
     Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Eliminar.Click
         Dim fila As Integer
         Dim CodConsulta As String
         Dim aux As Object
-        If TextBox1.Text = "" Then
+        If TextBox2.Text = "" Then
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
         Else
-            CodConsulta = TextBox1.Text
+            CodConsulta = TextBox2.Text
             fila = Me.ClienteBindingSource.Find("Dni", CodConsulta)
             If fila = -1 Then
                 MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
@@ -110,13 +108,13 @@
                     Me.ClienteBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
-                    Me.ClienteBindingSource.AddNew()
-                    Me.ClienteBindingSource.MoveLast()
                     TextBox1.Text = ""
                     TextBox1.Focus()
                 End If
             End If
         End If
+
+
     End Sub
 
     Private Sub Txt_Telefono_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Telefono.KeyPress
@@ -133,5 +131,12 @@
             Txt_Dni.Focus()
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Dim vista As New DataView 'instancio el objeto
+        vista.Table = Me.MayoristaBaseDeDatosDataSet.Cliente
+        vista.RowFilter = " ID_Cliente =" & Val(Me.TextBox1.Text)
+        Me.ClienteDataGridView.DataSource = vista
     End Sub
 End Class

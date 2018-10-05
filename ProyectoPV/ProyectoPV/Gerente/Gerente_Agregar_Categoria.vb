@@ -46,7 +46,7 @@
                 Me.CategoriaBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
                 Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-                Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
+                Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
                 Me.CategoriaBindingSource.MoveLast()
                 MsgBox("El Id de la categoria es: " & CategoriaBindingSource.Current("ID_Categoria"), MsgBoxStyle.Information, " Id Categoria ")
                 Me.CategoriaBindingSource.AddNew()
@@ -77,7 +77,7 @@
                     Me.CategoriaBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-                    Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
+                    Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
                     Me.CategoriaBindingSource.MoveLast()
                     CategoriaTextBox.Text = ""
                     Txt_Buscar.Text = ""

@@ -322,6 +322,7 @@ Partial Class Gerente_Proveedores
         'Txt_Telefono
         '
         Me.Txt_Telefono.Location = New System.Drawing.Point(122, 124)
+        Me.Txt_Telefono.MaxLength = 11
         Me.Txt_Telefono.Name = "Txt_Telefono"
         Me.Txt_Telefono.Size = New System.Drawing.Size(100, 20)
         Me.Txt_Telefono.TabIndex = 18
