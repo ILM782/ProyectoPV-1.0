@@ -22,6 +22,16 @@ Partial Class Gerente_TablasClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_TablasClientes))
+=======
+
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_TablasClientes))
+
+>>>>>>> 59d1ddac1eeb2da37427d415d183e81c733de409
+>>>>>>> 00531612ab53322b4a0ae8b64d6b6a1f2b64853c
         Me.components = New System.ComponentModel.Container()
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
         Dim Apellido_ClienteLabel As System.Windows.Forms.Label
