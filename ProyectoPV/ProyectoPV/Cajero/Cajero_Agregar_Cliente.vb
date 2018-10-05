@@ -40,7 +40,7 @@
         Me.ClienteBindingSource.AddNew()
     End Sub
 
-    Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Entrar.Click
+    Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
         Me.ClienteBindingSource.Current("Nombre_Cliente") = Nombre_ClienteTextBox.Text
         Me.ClienteBindingSource.Current("Apellido_Cliente") = Apellido_ClienteTextBox.Text
         Me.ClienteBindingSource.Current("DNI_Cliente") = DniTextBox.Text

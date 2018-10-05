@@ -28,6 +28,7 @@ Partial Class Gerente_Compras_Realizadas
         Dim MontoLabel As System.Windows.Forms.Label
         Dim Tipo_De_FacturacionLabel As System.Windows.Forms.Label
         Dim Nombre_ProductoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Compras_Realizadas))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -349,6 +350,7 @@ Partial Class Gerente_Compras_Realizadas
         Me.Controls.Add(Me.Tipo_De_FacturacionTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Gerente_Compras_Realizadas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

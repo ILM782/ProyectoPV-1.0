@@ -24,6 +24,7 @@ Partial Class Gerente_Agregar_Marca
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim MarcaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Agregar_Marca))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -104,6 +105,7 @@ Partial Class Gerente_Agregar_Marca
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
@@ -266,6 +268,7 @@ Partial Class Gerente_Agregar_Marca
         Me.Controls.Add(Me.MarcaTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Gerente_Agregar_Marca"
