@@ -50,7 +50,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.Telefono_ClienteTextBox = New System.Windows.Forms.TextBox()
         Me.Correo_ClienteTextBox = New System.Windows.Forms.TextBox()
         Me.DniTextBox = New System.Windows.Forms.TextBox()
-        Me.Btn_Entrar = New System.Windows.Forms.Button()
+        Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
@@ -62,8 +62,8 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Btn_Modificar = New System.Windows.Forms.Button()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
@@ -82,7 +82,7 @@ Partial Class Cajero_Agregar_Cliente
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.Location = New System.Drawing.Point(82, 148)
+        ID_ClienteLabel.Location = New System.Drawing.Point(80, 122)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
         ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
         ID_ClienteLabel.TabIndex = 7
@@ -91,7 +91,7 @@ Partial Class Cajero_Agregar_Cliente
         'Nombre_ClienteLabel
         '
         Nombre_ClienteLabel.AutoSize = True
-        Nombre_ClienteLabel.Location = New System.Drawing.Point(56, 177)
+        Nombre_ClienteLabel.Location = New System.Drawing.Point(54, 151)
         Nombre_ClienteLabel.Name = "Nombre_ClienteLabel"
         Nombre_ClienteLabel.Size = New System.Drawing.Size(82, 13)
         Nombre_ClienteLabel.TabIndex = 9
@@ -100,7 +100,7 @@ Partial Class Cajero_Agregar_Cliente
         'Apellido_ClienteLabel
         '
         Apellido_ClienteLabel.AutoSize = True
-        Apellido_ClienteLabel.Location = New System.Drawing.Point(56, 203)
+        Apellido_ClienteLabel.Location = New System.Drawing.Point(54, 177)
         Apellido_ClienteLabel.Name = "Apellido_ClienteLabel"
         Apellido_ClienteLabel.Size = New System.Drawing.Size(82, 13)
         Apellido_ClienteLabel.TabIndex = 11
@@ -109,7 +109,7 @@ Partial Class Cajero_Agregar_Cliente
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(82, 229)
+        ID_LocalidadLabel.Location = New System.Drawing.Point(80, 203)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(56, 13)
         ID_LocalidadLabel.TabIndex = 13
@@ -118,7 +118,7 @@ Partial Class Cajero_Agregar_Cliente
         'Domicilio_ClienteLabel
         '
         Domicilio_ClienteLabel.AutoSize = True
-        Domicilio_ClienteLabel.Location = New System.Drawing.Point(51, 256)
+        Domicilio_ClienteLabel.Location = New System.Drawing.Point(49, 230)
         Domicilio_ClienteLabel.Name = "Domicilio_ClienteLabel"
         Domicilio_ClienteLabel.Size = New System.Drawing.Size(87, 13)
         Domicilio_ClienteLabel.TabIndex = 15
@@ -127,7 +127,7 @@ Partial Class Cajero_Agregar_Cliente
         'Telefono_ClienteLabel
         '
         Telefono_ClienteLabel.AutoSize = True
-        Telefono_ClienteLabel.Location = New System.Drawing.Point(51, 282)
+        Telefono_ClienteLabel.Location = New System.Drawing.Point(49, 256)
         Telefono_ClienteLabel.Name = "Telefono_ClienteLabel"
         Telefono_ClienteLabel.Size = New System.Drawing.Size(87, 13)
         Telefono_ClienteLabel.TabIndex = 17
@@ -136,7 +136,7 @@ Partial Class Cajero_Agregar_Cliente
         'Correo_ClienteLabel
         '
         Correo_ClienteLabel.AutoSize = True
-        Correo_ClienteLabel.Location = New System.Drawing.Point(62, 308)
+        Correo_ClienteLabel.Location = New System.Drawing.Point(60, 282)
         Correo_ClienteLabel.Name = "Correo_ClienteLabel"
         Correo_ClienteLabel.Size = New System.Drawing.Size(76, 13)
         Correo_ClienteLabel.TabIndex = 19
@@ -145,7 +145,7 @@ Partial Class Cajero_Agregar_Cliente
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(112, 334)
+        DniLabel.Location = New System.Drawing.Point(110, 308)
         DniLabel.Name = "DniLabel"
         DniLabel.Size = New System.Drawing.Size(26, 13)
         DniLabel.TabIndex = 21
@@ -157,7 +157,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TransaccionToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1216, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1210, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -208,7 +208,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1216, 66)
+        Me.Panel1.Size = New System.Drawing.Size(1210, 66)
         Me.Panel1.TabIndex = 6
         '
         'Label2
@@ -225,7 +225,7 @@ Partial Class Cajero_Agregar_Cliente
         'ID_ClienteLabel1
         '
         Me.ID_ClienteLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "ID_Cliente", True))
-        Me.ID_ClienteLabel1.Location = New System.Drawing.Point(149, 148)
+        Me.ID_ClienteLabel1.Location = New System.Drawing.Point(147, 122)
         Me.ID_ClienteLabel1.Name = "ID_ClienteLabel1"
         Me.ID_ClienteLabel1.Size = New System.Drawing.Size(121, 23)
         Me.ID_ClienteLabel1.TabIndex = 8
@@ -244,7 +244,7 @@ Partial Class Cajero_Agregar_Cliente
         'Nombre_ClienteTextBox
         '
         Me.Nombre_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre_Cliente", True))
-        Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(149, 174)
+        Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(147, 148)
         Me.Nombre_ClienteTextBox.Name = "Nombre_ClienteTextBox"
         Me.Nombre_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Nombre_ClienteTextBox.TabIndex = 10
@@ -252,7 +252,7 @@ Partial Class Cajero_Agregar_Cliente
         'Apellido_ClienteTextBox
         '
         Me.Apellido_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_Cliente", True))
-        Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(149, 200)
+        Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(147, 174)
         Me.Apellido_ClienteTextBox.Name = "Apellido_ClienteTextBox"
         Me.Apellido_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Apellido_ClienteTextBox.TabIndex = 12
@@ -261,7 +261,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.ID_LocalidadComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "ID_Localidad", True))
         Me.ID_LocalidadComboBox.FormattingEnabled = True
-        Me.ID_LocalidadComboBox.Location = New System.Drawing.Point(149, 226)
+        Me.ID_LocalidadComboBox.Location = New System.Drawing.Point(147, 200)
         Me.ID_LocalidadComboBox.Name = "ID_LocalidadComboBox"
         Me.ID_LocalidadComboBox.Size = New System.Drawing.Size(121, 21)
         Me.ID_LocalidadComboBox.TabIndex = 14
@@ -269,7 +269,7 @@ Partial Class Cajero_Agregar_Cliente
         'Domicilio_ClienteTextBox
         '
         Me.Domicilio_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Domicilio_Cliente", True))
-        Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(149, 253)
+        Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(147, 227)
         Me.Domicilio_ClienteTextBox.Name = "Domicilio_ClienteTextBox"
         Me.Domicilio_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Domicilio_ClienteTextBox.TabIndex = 16
@@ -277,7 +277,7 @@ Partial Class Cajero_Agregar_Cliente
         'Telefono_ClienteTextBox
         '
         Me.Telefono_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Telefono_Cliente", True))
-        Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(149, 279)
+        Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(147, 253)
         Me.Telefono_ClienteTextBox.Name = "Telefono_ClienteTextBox"
         Me.Telefono_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Telefono_ClienteTextBox.TabIndex = 18
@@ -285,7 +285,7 @@ Partial Class Cajero_Agregar_Cliente
         'Correo_ClienteTextBox
         '
         Me.Correo_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Correo_Cliente", True))
-        Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(149, 305)
+        Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(147, 279)
         Me.Correo_ClienteTextBox.Name = "Correo_ClienteTextBox"
         Me.Correo_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Correo_ClienteTextBox.TabIndex = 20
@@ -293,23 +293,23 @@ Partial Class Cajero_Agregar_Cliente
         'DniTextBox
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Dni", True))
-        Me.DniTextBox.Location = New System.Drawing.Point(149, 331)
+        Me.DniTextBox.Location = New System.Drawing.Point(147, 305)
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(121, 20)
         Me.DniTextBox.TabIndex = 22
         '
-        'Btn_Entrar
+        'Btn_Guardar
         '
-        Me.Btn_Entrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Entrar.FlatAppearance.BorderSize = 0
-        Me.Btn_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Entrar.Location = New System.Drawing.Point(54, 367)
-        Me.Btn_Entrar.Name = "Btn_Entrar"
-        Me.Btn_Entrar.Size = New System.Drawing.Size(224, 40)
-        Me.Btn_Entrar.TabIndex = 23
-        Me.Btn_Entrar.Text = "&GUARDAR"
-        Me.Btn_Entrar.UseVisualStyleBackColor = False
+        Me.Btn_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Guardar.FlatAppearance.BorderSize = 0
+        Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Guardar.Location = New System.Drawing.Point(52, 349)
+        Me.Btn_Guardar.Name = "Btn_Guardar"
+        Me.Btn_Guardar.Size = New System.Drawing.Size(216, 40)
+        Me.Btn_Guardar.TabIndex = 23
+        Me.Btn_Guardar.Text = "&GUARDAR"
+        Me.Btn_Guardar.UseVisualStyleBackColor = False
         '
         'ClienteTableAdapter
         '
@@ -337,10 +337,10 @@ Partial Class Cajero_Agregar_Cliente
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
         Me.ClienteDataGridView.Enabled = False
-        Me.ClienteDataGridView.Location = New System.Drawing.Point(328, 148)
+        Me.ClienteDataGridView.Location = New System.Drawing.Point(322, 122)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
         Me.ClienteDataGridView.ReadOnly = True
-        Me.ClienteDataGridView.Size = New System.Drawing.Size(843, 286)
+        Me.ClienteDataGridView.Size = New System.Drawing.Size(843, 385)
         Me.ClienteDataGridView.TabIndex = 23
         '
         'DataGridViewTextBoxColumn1
@@ -399,42 +399,42 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
-        'Button1
+        'Btn_Eliminar
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(59, 434)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(224, 40)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "&ENTRAR"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Eliminar.FlatAppearance.BorderSize = 0
+        Me.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Eliminar.Location = New System.Drawing.Point(52, 467)
+        Me.Btn_Eliminar.Name = "Btn_Eliminar"
+        Me.Btn_Eliminar.Size = New System.Drawing.Size(216, 40)
+        Me.Btn_Eliminar.TabIndex = 24
+        Me.Btn_Eliminar.Text = "&ELIMINAR"
+        Me.Btn_Eliminar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Btn_Modificar
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(339, 440)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(224, 40)
-        Me.Button2.TabIndex = 25
-        Me.Button2.Text = "&ENTRAR"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modificar.Location = New System.Drawing.Point(52, 406)
+        Me.Btn_Modificar.Name = "Btn_Modificar"
+        Me.Btn_Modificar.Size = New System.Drawing.Size(216, 40)
+        Me.Btn_Modificar.TabIndex = 25
+        Me.Btn_Modificar.Text = "&MODIFICAR"
+        Me.Btn_Modificar.UseVisualStyleBackColor = False
         '
         'Cajero_Agregar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(1216, 486)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1210, 541)
+        Me.Controls.Add(Me.Btn_Modificar)
+        Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.ClienteDataGridView)
-        Me.Controls.Add(Me.Btn_Entrar)
+        Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(ID_ClienteLabel)
         Me.Controls.Add(Me.ID_ClienteLabel1)
         Me.Controls.Add(Nombre_ClienteLabel)
@@ -492,7 +492,7 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents Telefono_ClienteTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Correo_ClienteTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DniTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Btn_Entrar As System.Windows.Forms.Button
+    Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents ClienteDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -502,6 +502,6 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
 End Class

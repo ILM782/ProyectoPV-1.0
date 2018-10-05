@@ -29,6 +29,7 @@ Partial Class Gerente_Productos
         Dim StockLabel As System.Windows.Forms.Label
         Dim Precio_UnitarioLabel As System.Windows.Forms.Label
         Dim DescripcionLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Productos))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -443,6 +444,7 @@ Partial Class Gerente_Productos
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Gerente_Productos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

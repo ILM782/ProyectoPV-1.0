@@ -24,6 +24,7 @@ Partial Class Gerente_Agregar_Categoria
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CategoriaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Agregar_Categoria))
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoriaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter()
@@ -86,7 +87,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -266,6 +266,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Gerente_Agregar_Categoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

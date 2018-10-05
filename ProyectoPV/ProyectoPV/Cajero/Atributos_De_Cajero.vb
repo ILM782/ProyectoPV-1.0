@@ -40,7 +40,7 @@
         Me.Close()
     End Sub
 
-    Private Sub Atributos_De_Cajero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized 'PARA MAXIMIZAR LA VENTANA A LA MEDIDA DE LA PANTALLA(http://www.forosdelweb.com/f69/colocar-formulario-pantalla-completa-518379/)
-    End Sub
+    'Private Sub Atributos_De_Cajero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'Me.WindowState = FormWindowState.Maximized 'PARA MAXIMIZAR LA VENTANA A LA MEDIDA DE LA PANTALLA(http://www.forosdelweb.com/f69/colocar-formulario-pantalla-completa-518379/)
+    'End Sub
 End Class

@@ -28,6 +28,7 @@ Partial Class Gerente_Proveedores
         Dim Telefono_ProveedorLabel As System.Windows.Forms.Label
         Dim Correo_ProveedorLabel As System.Windows.Forms.Label
         Dim ID_LocalidadLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Proveedores))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -195,12 +196,12 @@ Partial Class Gerente_Proveedores
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Me.ProveedorTableAdapter
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -264,6 +265,7 @@ Partial Class Gerente_Proveedores
         Me.Controls.Add(Me.Correo_ProveedorTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Gerente_Proveedores"

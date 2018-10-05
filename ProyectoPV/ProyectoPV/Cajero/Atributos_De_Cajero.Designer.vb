@@ -63,7 +63,7 @@ Partial Class Atributos_De_Cajero
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(1070, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 16)
+        Me.Label1.Size = New System.Drawing.Size(57, 16)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Fecha:"
         '
@@ -96,7 +96,7 @@ Partial Class Atributos_De_Cajero
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(1079, 15)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 16)
+        Me.Label3.Size = New System.Drawing.Size(48, 16)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Hora:"
         '
@@ -107,7 +107,7 @@ Partial Class Atributos_De_Cajero
         Me.Lbl_Hora.ForeColor = System.Drawing.Color.White
         Me.Lbl_Hora.Location = New System.Drawing.Point(1134, 15)
         Me.Lbl_Hora.Name = "Lbl_Hora"
-        Me.Lbl_Hora.Size = New System.Drawing.Size(64, 16)
+        Me.Lbl_Hora.Size = New System.Drawing.Size(72, 16)
         Me.Lbl_Hora.TabIndex = 13
         Me.Lbl_Hora.Text = "00:00:00"
         '
@@ -127,16 +127,17 @@ Partial Class Atributos_De_Cajero
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 66)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1226, 504)
+        Me.Panel2.Size = New System.Drawing.Size(1226, 513)
         Me.Panel2.TabIndex = 9
         '
         'Btn_Localidades
         '
         Me.Btn_Localidades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Localidades.FlatAppearance.BorderSize = 0
         Me.Btn_Localidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Localidades.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Localidades.Image = Global.WindowsApplication1.My.Resources.Resources.simbolo_seo_local
-        Me.Btn_Localidades.Location = New System.Drawing.Point(495, 249)
+        Me.Btn_Localidades.Location = New System.Drawing.Point(495, 265)
         Me.Btn_Localidades.Name = "Btn_Localidades"
         Me.Btn_Localidades.Size = New System.Drawing.Size(244, 201)
         Me.Btn_Localidades.TabIndex = 5
@@ -147,10 +148,11 @@ Partial Class Atributos_De_Cajero
         'Btn_Salir
         '
         Me.Btn_Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Salir.FlatAppearance.BorderSize = 0
         Me.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Salir.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Salir.Image = Global.WindowsApplication1.My.Resources.Resources.apertura_de_puerta_abierta1
-        Me.Btn_Salir.Location = New System.Drawing.Point(770, 249)
+        Me.Btn_Salir.Location = New System.Drawing.Point(770, 265)
         Me.Btn_Salir.Name = "Btn_Salir"
         Me.Btn_Salir.Size = New System.Drawing.Size(244, 201)
         Me.Btn_Salir.TabIndex = 6
@@ -161,10 +163,11 @@ Partial Class Atributos_De_Cajero
         'Btn_Volver
         '
         Me.Btn_Volver.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Volver.FlatAppearance.BorderSize = 0
         Me.Btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Volver.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Volver.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
-        Me.Btn_Volver.Location = New System.Drawing.Point(772, 24)
+        Me.Btn_Volver.Location = New System.Drawing.Point(772, 40)
         Me.Btn_Volver.Name = "Btn_Volver"
         Me.Btn_Volver.Size = New System.Drawing.Size(244, 197)
         Me.Btn_Volver.TabIndex = 3
@@ -175,10 +178,11 @@ Partial Class Atributos_De_Cajero
         'Btn_Agregar_Cliente
         '
         Me.Btn_Agregar_Cliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Agregar_Cliente.FlatAppearance.BorderSize = 0
         Me.Btn_Agregar_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Agregar_Cliente.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Agregar_Cliente.Image = Global.WindowsApplication1.My.Resources.Resources.agregar_usuario
-        Me.Btn_Agregar_Cliente.Location = New System.Drawing.Point(495, 24)
+        Me.Btn_Agregar_Cliente.Location = New System.Drawing.Point(495, 40)
         Me.Btn_Agregar_Cliente.Name = "Btn_Agregar_Cliente"
         Me.Btn_Agregar_Cliente.Size = New System.Drawing.Size(244, 197)
         Me.Btn_Agregar_Cliente.TabIndex = 2
@@ -189,10 +193,11 @@ Partial Class Atributos_De_Cajero
         'Btn_Productos
         '
         Me.Btn_Productos.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Productos.FlatAppearance.BorderSize = 0
         Me.Btn_Productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Productos.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Productos.Image = Global.WindowsApplication1.My.Resources.Resources.codigo_de_barras2
-        Me.Btn_Productos.Location = New System.Drawing.Point(223, 249)
+        Me.Btn_Productos.Location = New System.Drawing.Point(223, 265)
         Me.Btn_Productos.Name = "Btn_Productos"
         Me.Btn_Productos.Size = New System.Drawing.Size(243, 201)
         Me.Btn_Productos.TabIndex = 4
@@ -203,10 +208,11 @@ Partial Class Atributos_De_Cajero
         'Btn_Transacciones
         '
         Me.Btn_Transacciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Transacciones.FlatAppearance.BorderSize = 0
         Me.Btn_Transacciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Transacciones.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Transacciones.Image = Global.WindowsApplication1.My.Resources.Resources.png21
-        Me.Btn_Transacciones.Location = New System.Drawing.Point(223, 24)
+        Me.Btn_Transacciones.Location = New System.Drawing.Point(223, 40)
         Me.Btn_Transacciones.Name = "Btn_Transacciones"
         Me.Btn_Transacciones.Size = New System.Drawing.Size(243, 197)
         Me.Btn_Transacciones.TabIndex = 1
@@ -219,7 +225,7 @@ Partial Class Atributos_De_Cajero
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1226, 570)
+        Me.ClientSize = New System.Drawing.Size(1226, 579)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle

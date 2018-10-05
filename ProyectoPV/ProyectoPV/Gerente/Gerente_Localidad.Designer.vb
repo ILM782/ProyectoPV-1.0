@@ -29,6 +29,7 @@ Partial Class Gerente_Localidad
         Dim LocalidadDataGridView As System.Windows.Forms.DataGridView
         Dim ID_LocalidadLabel As System.Windows.Forms.Label
         Dim ID_LocalidadLabel1 As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Localidad))
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,8 +58,8 @@ Partial Class Gerente_Localidad
         Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -349,7 +350,6 @@ Partial Class Gerente_Localidad
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Me.LocalidadTableAdapter
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -366,17 +366,6 @@ Partial Class Gerente_Localidad
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Eliminar"
         '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 19)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Localidad"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
@@ -388,6 +377,17 @@ Partial Class Gerente_Localidad
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Provincia"
         Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 19)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Localidad"
+        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'Gerente_Localidad
         '
@@ -412,6 +412,7 @@ Partial Class Gerente_Localidad
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Gerente_Localidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

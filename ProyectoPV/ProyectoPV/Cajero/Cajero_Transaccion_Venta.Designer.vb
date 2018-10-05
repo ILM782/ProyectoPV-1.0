@@ -34,10 +34,8 @@ Partial Class Cajero_Transaccion_Venta
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
         Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarLocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -79,6 +77,69 @@ Partial Class Cajero_Transaccion_Venta
         FechaLabel.TabIndex = 9
         FechaLabel.Text = "Fecha:"
         '
+        'ID_ProductoLabel
+        '
+        ID_ProductoLabel.AutoSize = True
+        ID_ProductoLabel.Location = New System.Drawing.Point(20, 120)
+        ID_ProductoLabel.Name = "ID_ProductoLabel"
+        ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
+        ID_ProductoLabel.TabIndex = 23
+        ID_ProductoLabel.Text = "ID Producto:"
+        '
+        'ID_MarcaLabel
+        '
+        ID_MarcaLabel.AutoSize = True
+        ID_MarcaLabel.Location = New System.Drawing.Point(20, 149)
+        ID_MarcaLabel.Name = "ID_MarcaLabel"
+        ID_MarcaLabel.Size = New System.Drawing.Size(58, 16)
+        ID_MarcaLabel.TabIndex = 25
+        ID_MarcaLabel.Text = "ID Marca:"
+        '
+        'ID_CategoriaLabel
+        '
+        ID_CategoriaLabel.AutoSize = True
+        ID_CategoriaLabel.Location = New System.Drawing.Point(20, 178)
+        ID_CategoriaLabel.Name = "ID_CategoriaLabel"
+        ID_CategoriaLabel.Size = New System.Drawing.Size(76, 16)
+        ID_CategoriaLabel.TabIndex = 27
+        ID_CategoriaLabel.Text = "ID Categoria:"
+        '
+        'Nombre_ProductoLabel
+        '
+        Nombre_ProductoLabel.AutoSize = True
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(20, 207)
+        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
+        Nombre_ProductoLabel.Size = New System.Drawing.Size(107, 16)
+        Nombre_ProductoLabel.TabIndex = 29
+        Nombre_ProductoLabel.Text = "Nombre Producto:"
+        '
+        'StrockLabel
+        '
+        StrockLabel.AutoSize = True
+        StrockLabel.Location = New System.Drawing.Point(20, 236)
+        StrockLabel.Name = "StrockLabel"
+        StrockLabel.Size = New System.Drawing.Size(44, 16)
+        StrockLabel.TabIndex = 31
+        StrockLabel.Text = "Strock:"
+        '
+        'Precio_UnitarioLabel
+        '
+        Precio_UnitarioLabel.AutoSize = True
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(20, 265)
+        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
+        Precio_UnitarioLabel.Size = New System.Drawing.Size(89, 16)
+        Precio_UnitarioLabel.TabIndex = 33
+        Precio_UnitarioLabel.Text = "Precio Unitario:"
+        '
+        'DescripcionLabel
+        '
+        DescripcionLabel.AutoSize = True
+        DescripcionLabel.Location = New System.Drawing.Point(20, 294)
+        DescripcionLabel.Name = "DescripcionLabel"
+        DescripcionLabel.Size = New System.Drawing.Size(73, 16)
+        DescripcionLabel.TabIndex = 35
+        DescripcionLabel.Text = "Descripcion:"
+        '
         'FechaDateTimePicker
         '
         Me.FechaDateTimePicker.Location = New System.Drawing.Point(692, 8)
@@ -91,19 +152,11 @@ Partial Class Cajero_Transaccion_Venta
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(2, 7)
+        Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(216, 26)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Datos de Transaccion"
-        '
-        'LineShape1
-        '
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 217
-        Me.LineShape1.X2 = 647
-        Me.LineShape1.Y1 = 22
-        Me.LineShape1.Y2 = 22
         '
         'Btn_Finalizar
         '
@@ -121,22 +174,11 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel1.Controls.Add(Me.FechaDateTimePicker)
         Me.Panel1.Controls.Add(FechaLabel)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.ShapeContainer2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(855, 40)
+        Me.Panel1.Size = New System.Drawing.Size(855, 47)
         Me.Panel1.TabIndex = 22
-        '
-        'ShapeContainer2
-        '
-        Me.ShapeContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer2.Name = "ShapeContainer2"
-        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer2.Size = New System.Drawing.Size(855, 40)
-        Me.ShapeContainer2.TabIndex = 18
-        Me.ShapeContainer2.TabStop = False
         '
         'AgregarClienteToolStripMenuItem
         '
@@ -212,20 +254,10 @@ Partial Class Cajero_Transaccion_Venta
         Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
-        '
-        'ID_ProductoLabel
-        '
-        ID_ProductoLabel.AutoSize = True
-        ID_ProductoLabel.Location = New System.Drawing.Point(20, 120)
-        ID_ProductoLabel.Name = "ID_ProductoLabel"
-        ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
-        ID_ProductoLabel.TabIndex = 23
-        ID_ProductoLabel.Text = "ID Producto:"
         '
         'ID_ProductoTextBox
         '
@@ -235,15 +267,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.ID_ProductoTextBox.Size = New System.Drawing.Size(100, 23)
         Me.ID_ProductoTextBox.TabIndex = 24
         '
-        'ID_MarcaLabel
-        '
-        ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.Location = New System.Drawing.Point(20, 149)
-        ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(58, 16)
-        ID_MarcaLabel.TabIndex = 25
-        ID_MarcaLabel.Text = "ID Marca:"
-        '
         'ID_MarcaTextBox
         '
         Me.ID_MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Marca", True))
@@ -251,15 +274,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.ID_MarcaTextBox.Name = "ID_MarcaTextBox"
         Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 23)
         Me.ID_MarcaTextBox.TabIndex = 26
-        '
-        'ID_CategoriaLabel
-        '
-        ID_CategoriaLabel.AutoSize = True
-        ID_CategoriaLabel.Location = New System.Drawing.Point(20, 178)
-        ID_CategoriaLabel.Name = "ID_CategoriaLabel"
-        ID_CategoriaLabel.Size = New System.Drawing.Size(76, 16)
-        ID_CategoriaLabel.TabIndex = 27
-        ID_CategoriaLabel.Text = "ID Categoria:"
         '
         'ID_CategoriaTextBox
         '
@@ -269,15 +283,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.ID_CategoriaTextBox.Size = New System.Drawing.Size(100, 23)
         Me.ID_CategoriaTextBox.TabIndex = 28
         '
-        'Nombre_ProductoLabel
-        '
-        Nombre_ProductoLabel.AutoSize = True
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(20, 207)
-        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
-        Nombre_ProductoLabel.Size = New System.Drawing.Size(107, 16)
-        Nombre_ProductoLabel.TabIndex = 29
-        Nombre_ProductoLabel.Text = "Nombre Producto:"
-        '
         'Nombre_ProductoTextBox
         '
         Me.Nombre_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Nombre_Producto", True))
@@ -285,15 +290,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Nombre_ProductoTextBox.Name = "Nombre_ProductoTextBox"
         Me.Nombre_ProductoTextBox.Size = New System.Drawing.Size(100, 23)
         Me.Nombre_ProductoTextBox.TabIndex = 30
-        '
-        'StrockLabel
-        '
-        StrockLabel.AutoSize = True
-        StrockLabel.Location = New System.Drawing.Point(20, 236)
-        StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(44, 16)
-        StrockLabel.TabIndex = 31
-        StrockLabel.Text = "Strock:"
         '
         'StrockTextBox
         '
@@ -303,15 +299,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.StrockTextBox.Size = New System.Drawing.Size(100, 23)
         Me.StrockTextBox.TabIndex = 32
         '
-        'Precio_UnitarioLabel
-        '
-        Precio_UnitarioLabel.AutoSize = True
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(20, 265)
-        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
-        Precio_UnitarioLabel.Size = New System.Drawing.Size(89, 16)
-        Precio_UnitarioLabel.TabIndex = 33
-        Precio_UnitarioLabel.Text = "Precio Unitario:"
-        '
         'Precio_UnitarioTextBox
         '
         Me.Precio_UnitarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Precio_Unitario", True))
@@ -319,15 +306,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Precio_UnitarioTextBox.Name = "Precio_UnitarioTextBox"
         Me.Precio_UnitarioTextBox.Size = New System.Drawing.Size(100, 23)
         Me.Precio_UnitarioTextBox.TabIndex = 34
-        '
-        'DescripcionLabel
-        '
-        DescripcionLabel.AutoSize = True
-        DescripcionLabel.Location = New System.Drawing.Point(20, 294)
-        DescripcionLabel.Name = "DescripcionLabel"
-        DescripcionLabel.Size = New System.Drawing.Size(73, 16)
-        DescripcionLabel.TabIndex = 35
-        DescripcionLabel.Text = "Descripcion:"
         '
         'DescripcionTextBox
         '
@@ -350,7 +328,7 @@ Partial Class Cajero_Transaccion_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Silver
+        Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(855, 524)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(ID_ProductoLabel)
@@ -391,10 +369,8 @@ Partial Class Cajero_Transaccion_Venta
     End Sub
     Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents ShapeContainer2 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents AgregarClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgregarLocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
