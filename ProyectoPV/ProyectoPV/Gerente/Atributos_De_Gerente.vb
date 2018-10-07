@@ -29,11 +29,6 @@
         Me.Close()
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Lbl_Hora.Text = TimeOfDay
         Lbl_Fecha.Text = DateString
@@ -42,11 +37,6 @@
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
         Gerente_Transacciones_de_Compras.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-        Gerente_Compras_Realizadas.Show()
         Me.Close()
     End Sub
 

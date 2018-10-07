@@ -29,17 +29,6 @@
         Me.Close()
     End Sub
 
-    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
-
-    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
-        Gerente_Compras_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
@@ -53,7 +42,7 @@
     End Sub
 
     Private Sub Gerente_TablasClientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Localidad' Puede moverla o quitarla según sea necesario.
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
         Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
         Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
@@ -63,21 +52,21 @@
     Private Sub Btn_Guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
         Dim consulta1 As Integer
         If Txt_Nombre.Text <> "" And Txt_Apellido.Text <> "" And Txt_Dni.Text <> "" And Txt_Domicilio.Text <> "" And Txt_Telefono.Text <> "" And Txt_Correo.Text <> "" Then
-            consulta1 = Me.ClienteBindingSource.Find("Dni", Txt_Dni.Text)
+            consulta1 = Me.ClienteBindingSource.Find("DNI_Cliente", Txt_Dni.Text)
 
             If consulta1 <> -1 Then
                 MsgBox("Cliente Exixtente", MsgBoxStyle.Exclamation, "Advertencia")
             Else
                 Me.ClienteBindingSource.Current("Nombre_Cliente") = Txt_Nombre.Text
                 Me.ClienteBindingSource.Current("Apellido_Cliente") = Txt_Apellido.Text
-                Me.ClienteBindingSource.Current("Dni") = Val(Txt_Dni.Text)
+                Me.ClienteBindingSource.Current("DNI_Cliente") = Val(Txt_Dni.Text)
                 Me.ClienteBindingSource.Current("Domicilio_Cliente") = Txt_Domicilio.Text
                 Me.ClienteBindingSource.Current("Correo_Cliente") = Txt_Correo.Text
                 Me.ClienteBindingSource.Current("Telefono_Cliente") = Txt_Telefono.Text
                 Me.ClienteBindingSource.Current("ID_Localidad") = Val(ComboBox1.SelectedValue)
                 Me.ClienteBindingSource.EndEdit() ' finaliza edicion
-                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
-                    Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
+                Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
                 Me.ClienteBindingSource.MoveLast()
                 MsgBox("El Id del Cliente es: " & ClienteBindingSource.Current("ID_Cliente"), MsgBoxStyle.Information, " Id Cliente ")
 
@@ -102,7 +91,7 @@
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
         Else
             CodConsulta = TextBox2.Text
-            fila = Me.ClienteBindingSource.Find("Dni", CodConsulta)
+            fila = Me.ClienteBindingSource.Find("DNI_Cliente", CodConsulta)
             If fila = -1 Then
                 MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
             Else

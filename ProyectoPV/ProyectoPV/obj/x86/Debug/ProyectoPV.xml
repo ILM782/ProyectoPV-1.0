@@ -6,187 +6,7 @@ ProyectoPV
 </name>
 </assembly>
 <members>
-<member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Ventas_ClientesTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.MayoristaBaseDeDatosDataSet)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+<member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
 	<summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
 </summary>
@@ -334,6 +154,154 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 </member><member name="T:WindowsApplication1.My.Resources.Resources">
 	<summary>
   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.MarcasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProductoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ProveedorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.MayoristaBaseDeDatosDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
 </members>
