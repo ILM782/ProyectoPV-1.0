@@ -24,12 +24,12 @@ Partial Class Gerente_Agregar_Categoria
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CategoriaLabel As System.Windows.Forms.Label
+        Dim CategoriaLabel1 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Agregar_Categoria))
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoriaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
-        Me.CategoriaTextBox = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VolveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,7 +43,11 @@ Partial Class Gerente_Agregar_Categoria
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.CategoriaTextBox1 = New System.Windows.Forms.TextBox()
+        Me.Btn_Modificar = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CategoriaLabel = New System.Windows.Forms.Label()
+        CategoriaLabel1 = New System.Windows.Forms.Label()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -57,7 +61,7 @@ Partial Class Gerente_Agregar_Categoria
         CategoriaLabel.BackColor = System.Drawing.Color.Transparent
         CategoriaLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CategoriaLabel.ForeColor = System.Drawing.Color.Black
-        CategoriaLabel.Location = New System.Drawing.Point(38, 128)
+        CategoriaLabel.Location = New System.Drawing.Point(12, 128)
         CategoriaLabel.Name = "CategoriaLabel"
         CategoriaLabel.Size = New System.Drawing.Size(62, 16)
         CategoriaLabel.TabIndex = 3
@@ -88,14 +92,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'CategoriaTextBox
-        '
-        Me.CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource, "Categoria", True))
-        Me.CategoriaTextBox.Location = New System.Drawing.Point(106, 126)
-        Me.CategoriaTextBox.Name = "CategoriaTextBox"
-        Me.CategoriaTextBox.Size = New System.Drawing.Size(143, 20)
-        Me.CategoriaTextBox.TabIndex = 4
         '
         'MenuStrip1
         '
@@ -135,7 +131,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.CategoriaDataGridView.GridColor = System.Drawing.Color.Black
         Me.CategoriaDataGridView.Location = New System.Drawing.Point(271, 126)
         Me.CategoriaDataGridView.Name = "CategoriaDataGridView"
-        Me.CategoriaDataGridView.Size = New System.Drawing.Size(243, 169)
+        Me.CategoriaDataGridView.Size = New System.Drawing.Size(243, 284)
         Me.CategoriaDataGridView.TabIndex = 7
         '
         'DataGridViewTextBoxColumn1
@@ -156,18 +152,18 @@ Partial Class Gerente_Agregar_Categoria
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(38, 221)
+        Me.Label2.Location = New System.Drawing.Point(12, 221)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 16)
+        Me.Label2.Size = New System.Drawing.Size(100, 16)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Buscar:"
+        Me.Label2.Text = "Buscar Categoria:"
         '
         'Txt_Buscar
         '
-        Me.Txt_Buscar.Location = New System.Drawing.Point(106, 219)
+        Me.Txt_Buscar.Location = New System.Drawing.Point(118, 219)
         Me.Txt_Buscar.Name = "Txt_Buscar"
-        Me.Txt_Buscar.Size = New System.Drawing.Size(143, 20)
-        Me.Txt_Buscar.TabIndex = 14
+        Me.Txt_Buscar.Size = New System.Drawing.Size(131, 20)
+        Me.Txt_Buscar.TabIndex = 3
         '
         'Panel2
         '
@@ -205,10 +201,10 @@ Partial Class Gerente_Agregar_Categoria
         Me.Btn_Guardar.FlatAppearance.BorderSize = 0
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(38, 162)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(12, 162)
         Me.Btn_Guardar.Name = "Btn_Guardar"
-        Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Guardar.TabIndex = 57
+        Me.Btn_Guardar.Size = New System.Drawing.Size(237, 40)
+        Me.Btn_Guardar.TabIndex = 2
         Me.Btn_Guardar.Text = "&GUARDAR"
         Me.Btn_Guardar.UseVisualStyleBackColor = False
         '
@@ -218,19 +214,61 @@ Partial Class Gerente_Agregar_Categoria
         Me.Btn_Eliminar.FlatAppearance.BorderSize = 0
         Me.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Eliminar.Location = New System.Drawing.Point(38, 255)
+        Me.Btn_Eliminar.Location = New System.Drawing.Point(12, 255)
         Me.Btn_Eliminar.Name = "Btn_Eliminar"
-        Me.Btn_Eliminar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Eliminar.TabIndex = 58
+        Me.Btn_Eliminar.Size = New System.Drawing.Size(237, 40)
+        Me.Btn_Eliminar.TabIndex = 4
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
+        '
+        'CategoriaLabel1
+        '
+        CategoriaLabel1.AutoSize = True
+        CategoriaLabel1.Location = New System.Drawing.Point(12, 313)
+        CategoriaLabel1.Name = "CategoriaLabel1"
+        CategoriaLabel1.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel1.TabIndex = 58
+        CategoriaLabel1.Text = "Categoria:"
+        '
+        'CategoriaTextBox1
+        '
+        Me.CategoriaTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource, "Categoria", True))
+        Me.CategoriaTextBox1.Location = New System.Drawing.Point(118, 310)
+        Me.CategoriaTextBox1.Name = "CategoriaTextBox1"
+        Me.CategoriaTextBox1.Size = New System.Drawing.Size(131, 20)
+        Me.CategoriaTextBox1.TabIndex = 5
+        '
+        'Btn_Modificar
+        '
+        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modificar.Location = New System.Drawing.Point(12, 345)
+        Me.Btn_Modificar.Name = "Btn_Modificar"
+        Me.Btn_Modificar.Size = New System.Drawing.Size(237, 40)
+        Me.Btn_Modificar.TabIndex = 6
+        Me.Btn_Modificar.Text = "&MODIFICAR"
+        Me.Btn_Modificar.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(118, 123)
+        Me.TextBox1.MaxLength = 60
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox1.TabIndex = 1
         '
         'Gerente_Agregar_Categoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(549, 331)
+        Me.ClientSize = New System.Drawing.Size(549, 430)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Btn_Modificar)
+        Me.Controls.Add(CategoriaLabel1)
+        Me.Controls.Add(Me.CategoriaTextBox1)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
@@ -239,7 +277,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.CategoriaDataGridView)
         Me.Controls.Add(CategoriaLabel)
-        Me.Controls.Add(Me.CategoriaTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -263,7 +300,6 @@ Partial Class Gerente_Agregar_Categoria
     Friend WithEvents CategoriaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CategoriaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents CategoriaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents VolveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -277,4 +313,7 @@ Partial Class Gerente_Agregar_Categoria
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents CategoriaTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

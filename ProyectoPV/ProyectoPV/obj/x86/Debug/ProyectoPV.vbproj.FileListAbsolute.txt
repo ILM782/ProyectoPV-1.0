@@ -40,8 +40,6 @@ C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\BaseDeDatos\MayoristaBaseDeDatos.sdf
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Agregar_Cliente.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Localidad.resources
-C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Compras_Realizadas.resources
-C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Ventas_Realizadas.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Localidad.resources
 C:\Users\Ruben\Downloads\ProyectoPV-1.0 (1)\ProyectoPV-1.0\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.exe.config
 C:\Users\Ruben\Downloads\ProyectoPV-1.0 (1)\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.exe

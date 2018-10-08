@@ -24,6 +24,7 @@ Partial Class Gerente_Agregar_Marca
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim MarcaLabel As System.Windows.Forms.Label
+        Dim MarcaLabel1 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Agregar_Marca))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,7 +33,6 @@ Partial Class Gerente_Agregar_Marca
         Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MarcasTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
-        Me.MarcaTextBox = New System.Windows.Forms.TextBox()
         Me.MarcasDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -44,7 +44,11 @@ Partial Class Gerente_Agregar_Marca
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.MarcaTextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         MarcaLabel = New System.Windows.Forms.Label()
+        MarcaLabel1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,14 +118,6 @@ Partial Class Gerente_Agregar_Marca
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'MarcaTextBox
-        '
-        Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource, "Marca", True))
-        Me.MarcaTextBox.Location = New System.Drawing.Point(152, 131)
-        Me.MarcaTextBox.Name = "MarcaTextBox"
-        Me.MarcaTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.MarcaTextBox.TabIndex = 5
-        '
         'MarcasDataGridView
         '
         Me.MarcasDataGridView.AllowUserToAddRows = False
@@ -137,8 +133,8 @@ Partial Class Gerente_Agregar_Marca
         Me.MarcasDataGridView.Location = New System.Drawing.Point(276, 131)
         Me.MarcasDataGridView.Name = "MarcasDataGridView"
         Me.MarcasDataGridView.ReadOnly = True
-        Me.MarcasDataGridView.Size = New System.Drawing.Size(244, 186)
-        Me.MarcasDataGridView.TabIndex = 5
+        Me.MarcasDataGridView.Size = New System.Drawing.Size(244, 271)
+        Me.MarcasDataGridView.TabIndex = 20
         '
         'DataGridViewTextBoxColumn1
         '
@@ -161,10 +157,10 @@ Partial Class Gerente_Agregar_Marca
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(152, 236)
+        Me.TextBox1.Location = New System.Drawing.Point(130, 236)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 12
+        Me.TextBox1.Size = New System.Drawing.Size(122, 20)
+        Me.TextBox1.TabIndex = 3
         '
         'Label2
         '
@@ -172,9 +168,9 @@ Partial Class Gerente_Agregar_Marca
         Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(38, 240)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 16)
+        Me.Label2.Size = New System.Drawing.Size(82, 16)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Buscar:"
+        Me.Label2.Text = "Buscar Marca:"
         '
         'Panel2
         '
@@ -215,7 +211,7 @@ Partial Class Gerente_Agregar_Marca
         Me.Btn_Guardar.Location = New System.Drawing.Point(41, 174)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Guardar.TabIndex = 57
+        Me.Btn_Guardar.TabIndex = 2
         Me.Btn_Guardar.Text = "&GUARDAR"
         Me.Btn_Guardar.UseVisualStyleBackColor = False
         '
@@ -228,16 +224,58 @@ Partial Class Gerente_Agregar_Marca
         Me.Btn_Eliminar.Location = New System.Drawing.Point(41, 277)
         Me.Btn_Eliminar.Name = "Btn_Eliminar"
         Me.Btn_Eliminar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Eliminar.TabIndex = 58
+        Me.Btn_Eliminar.TabIndex = 4
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(41, 362)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(211, 40)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "&MODIFICAR"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'MarcaLabel1
+        '
+        MarcaLabel1.AutoSize = True
+        MarcaLabel1.Location = New System.Drawing.Point(38, 339)
+        MarcaLabel1.Name = "MarcaLabel1"
+        MarcaLabel1.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel1.TabIndex = 59
+        MarcaLabel1.Text = "Marca:"
+        '
+        'MarcaTextBox1
+        '
+        Me.MarcaTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource, "Marca", True))
+        Me.MarcaTextBox1.Location = New System.Drawing.Point(130, 336)
+        Me.MarcaTextBox1.Name = "MarcaTextBox1"
+        Me.MarcaTextBox1.Size = New System.Drawing.Size(122, 20)
+        Me.MarcaTextBox1.TabIndex = 5
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(130, 131)
+        Me.TextBox2.MaxLength = 60
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(122, 20)
+        Me.TextBox2.TabIndex = 1
         '
         'Gerente_Agregar_Marca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(561, 353)
+        Me.ClientSize = New System.Drawing.Size(561, 424)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(MarcaLabel1)
+        Me.Controls.Add(Me.MarcaTextBox1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
@@ -246,7 +284,6 @@ Partial Class Gerente_Agregar_Marca
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MarcasDataGridView)
         Me.Controls.Add(MarcaLabel)
-        Me.Controls.Add(Me.MarcaTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -274,7 +311,6 @@ Partial Class Gerente_Agregar_Marca
     Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents MarcasTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents MarcasDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
@@ -286,4 +322,7 @@ Partial Class Gerente_Agregar_Marca
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents MarcaTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class
