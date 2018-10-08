@@ -22,6 +22,13 @@ Partial Class Gerente_Transacciones_de_Compras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim ID_ProveedorLabel As System.Windows.Forms.Label
+        Dim ID_ProductoLabel As System.Windows.Forms.Label
+        Dim FechaLabel As System.Windows.Forms.Label
+        Dim ItemsLabel As System.Windows.Forms.Label
+        Dim MontoLabel As System.Windows.Forms.Label
+        Dim Tipo_De_FacturacionLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Transacciones_de_Compras))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,8 +39,87 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
+        Me.Compra_ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Compra_ProveedorTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
+        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
+        Me.ProveedorTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter()
+        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.ItemsTextBox = New System.Windows.Forms.TextBox()
+        Me.MontoTextBox = New System.Windows.Forms.TextBox()
+        Me.Tipo_De_FacturacionTextBox = New System.Windows.Forms.TextBox()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Btn_Guardar = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        ID_ProveedorLabel = New System.Windows.Forms.Label()
+        ID_ProductoLabel = New System.Windows.Forms.Label()
+        FechaLabel = New System.Windows.Forms.Label()
+        ItemsLabel = New System.Windows.Forms.Label()
+        MontoLabel = New System.Windows.Forms.Label()
+        Tipo_De_FacturacionLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Compra_ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_ProveedorLabel
+        '
+        ID_ProveedorLabel.AutoSize = True
+        ID_ProveedorLabel.Location = New System.Drawing.Point(31, 60)
+        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
+        ID_ProveedorLabel.Size = New System.Drawing.Size(79, 16)
+        ID_ProveedorLabel.TabIndex = 4
+        ID_ProveedorLabel.Text = "ID Proveedor:"
+        '
+        'ID_ProductoLabel
+        '
+        ID_ProductoLabel.AutoSize = True
+        ID_ProductoLabel.Location = New System.Drawing.Point(31, 89)
+        ID_ProductoLabel.Name = "ID_ProductoLabel"
+        ID_ProductoLabel.Size = New System.Drawing.Size(60, 16)
+        ID_ProductoLabel.TabIndex = 6
+        ID_ProductoLabel.Text = "Producto:"
+        '
+        'FechaLabel
+        '
+        FechaLabel.AutoSize = True
+        FechaLabel.Location = New System.Drawing.Point(31, 119)
+        FechaLabel.Name = "FechaLabel"
+        FechaLabel.Size = New System.Drawing.Size(42, 16)
+        FechaLabel.TabIndex = 8
+        FechaLabel.Text = "Fecha:"
+        '
+        'ItemsLabel
+        '
+        ItemsLabel.AutoSize = True
+        ItemsLabel.Location = New System.Drawing.Point(31, 147)
+        ItemsLabel.Name = "ItemsLabel"
+        ItemsLabel.Size = New System.Drawing.Size(40, 16)
+        ItemsLabel.TabIndex = 10
+        ItemsLabel.Text = "Items:"
+        '
+        'MontoLabel
+        '
+        MontoLabel.AutoSize = True
+        MontoLabel.Location = New System.Drawing.Point(31, 176)
+        MontoLabel.Name = "MontoLabel"
+        MontoLabel.Size = New System.Drawing.Size(47, 16)
+        MontoLabel.TabIndex = 12
+        MontoLabel.Text = "Monto:"
+        '
+        'Tipo_De_FacturacionLabel
+        '
+        Tipo_De_FacturacionLabel.AutoSize = True
+        Tipo_De_FacturacionLabel.Location = New System.Drawing.Point(31, 205)
+        Tipo_De_FacturacionLabel.Name = "Tipo_De_FacturacionLabel"
+        Tipo_De_FacturacionLabel.Size = New System.Drawing.Size(117, 16)
+        Tipo_De_FacturacionLabel.TabIndex = 14
+        Tipo_De_FacturacionLabel.Text = "Tipo De Facturacion:"
         '
         'MenuStrip1
         '
@@ -43,7 +129,7 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(897, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(914, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -110,12 +196,135 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
+        'MayoristaBaseDeDatosDataSet
+        '
+        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
+        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Compra_ProveedorBindingSource
+        '
+        Me.Compra_ProveedorBindingSource.DataMember = "Compra_Proveedor"
+        Me.Compra_ProveedorBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'Compra_ProveedorTableAdapter
+        '
+        Me.Compra_ProveedorTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Nothing
+        Me.TableAdapterManager.CategoriaTableAdapter = Nothing
+        Me.TableAdapterManager.ClienteTableAdapter = Nothing
+        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Me.Compra_ProveedorTableAdapter
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Nothing
+        Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
+        Me.TableAdapterManager.ProveedorTableAdapter = Me.ProveedorTableAdapter
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
+        '
+        'ProductoTableAdapter
+        '
+        Me.ProductoTableAdapter.ClearBeforeFill = True
+        '
+        'ProveedorTableAdapter
+        '
+        Me.ProveedorTableAdapter.ClearBeforeFill = True
+        '
+        'FechaDateTimePicker
+        '
+        Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.Compra_ProveedorBindingSource, "Fecha", True))
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(177, 115)
+        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(91, 23)
+        Me.FechaDateTimePicker.TabIndex = 9
+        '
+        'ItemsTextBox
+        '
+        Me.ItemsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Compra_ProveedorBindingSource, "Items", True))
+        Me.ItemsTextBox.Location = New System.Drawing.Point(177, 144)
+        Me.ItemsTextBox.Name = "ItemsTextBox"
+        Me.ItemsTextBox.Size = New System.Drawing.Size(91, 23)
+        Me.ItemsTextBox.TabIndex = 11
+        '
+        'MontoTextBox
+        '
+        Me.MontoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Compra_ProveedorBindingSource, "Monto", True))
+        Me.MontoTextBox.Location = New System.Drawing.Point(177, 173)
+        Me.MontoTextBox.Name = "MontoTextBox"
+        Me.MontoTextBox.Size = New System.Drawing.Size(91, 23)
+        Me.MontoTextBox.TabIndex = 13
+        '
+        'Tipo_De_FacturacionTextBox
+        '
+        Me.Tipo_De_FacturacionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Compra_ProveedorBindingSource, "Tipo_De_Facturacion", True))
+        Me.Tipo_De_FacturacionTextBox.Location = New System.Drawing.Point(177, 202)
+        Me.Tipo_De_FacturacionTextBox.Name = "Tipo_De_FacturacionTextBox"
+        Me.Tipo_De_FacturacionTextBox.Size = New System.Drawing.Size(91, 23)
+        Me.Tipo_De_FacturacionTextBox.TabIndex = 15
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'ProveedorBindingSource
+        '
+        Me.ProveedorBindingSource.DataMember = "Proveedor"
+        Me.ProveedorBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'Btn_Guardar
+        '
+        Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Guardar.Location = New System.Drawing.Point(188, 240)
+        Me.Btn_Guardar.Name = "Btn_Guardar"
+        Me.Btn_Guardar.Size = New System.Drawing.Size(80, 23)
+        Me.Btn_Guardar.TabIndex = 16
+        Me.Btn_Guardar.Text = "Guardar"
+        Me.Btn_Guardar.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DataSource = Me.ProductoBindingSource
+        Me.ComboBox1.DisplayMember = "Nombre_Producto"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(177, 86)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(91, 24)
+        Me.ComboBox1.TabIndex = 17
+        Me.ComboBox1.ValueMember = "ID_Producto"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DataSource = Me.ProveedorBindingSource
+        Me.ComboBox2.DisplayMember = "Nombre_Empresa"
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(177, 57)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(91, 24)
+        Me.ComboBox2.TabIndex = 18
+        Me.ComboBox2.ValueMember = "ID_Proveedor"
+        '
         'Gerente_Transacciones_de_Compras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(897, 321)
+        Me.ClientSize = New System.Drawing.Size(914, 341)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Btn_Guardar)
+        Me.Controls.Add(ID_ProveedorLabel)
+        Me.Controls.Add(ID_ProductoLabel)
+        Me.Controls.Add(FechaLabel)
+        Me.Controls.Add(Me.FechaDateTimePicker)
+        Me.Controls.Add(ItemsLabel)
+        Me.Controls.Add(Me.ItemsTextBox)
+        Me.Controls.Add(MontoLabel)
+        Me.Controls.Add(Me.MontoTextBox)
+        Me.Controls.Add(Tipo_De_FacturacionLabel)
+        Me.Controls.Add(Me.Tipo_De_FacturacionTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
@@ -129,6 +338,10 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.Text = "Transacciones de Compras"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Compra_ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +355,19 @@ Partial Class Gerente_Transacciones_de_Compras
     Friend WithEvents VolverToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
+    Friend WithEvents Compra_ProveedorBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Compra_ProveedorTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter
+    Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
+    Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ItemsTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents MontoTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Tipo_De_FacturacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProveedorTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProveedorTableAdapter
+    Friend WithEvents ProveedorBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
 End Class
