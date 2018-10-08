@@ -1,13 +1,5 @@
 ﻿Public Class Gerente_Producto
 
-   
-
-
-    Private Sub ComprasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasRealizadasToolStripMenuItem.Click
-        Gerente_Compras_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
@@ -28,44 +20,9 @@
         Me.Close()
     End Sub
 
-    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub TransaccionesDeCompraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionesDeCompraToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
-    End Sub
-
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim consulta1 As Integer
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" Then
-            consulta1 = Me.ProductoBindingSource.Find("Nombre_Producto", TextBox1.Text)
-
-            If consulta1 <> -1 Then
-                MsgBox("Producto Repetido", MsgBoxStyle.Exclamation, "Advertencia")
-            Else
-                Me.ProductoBindingSource.Current("Nombre_Producto") = TextBox1.Text
-                Me.ProductoBindingSource.Current("Strock") = Val(TextBox2.Text)
-                Me.ProductoBindingSource.Current("Precio_Unitario") = Val(TextBox3.Text)
-                Me.ProductoBindingSource.Current("Descripcion") = TextBox4.Text
-                Me.ProductoBindingSource.Current("ID_Categoria") = Val(ComboBox1.SelectedValue)
-                Me.ProductoBindingSource.Current("ID_Marca") = Val(ComboBox2.SelectedValue)
-                Me.ProductoBindingSource.EndEdit() ' finaliza edicion
-                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
-                Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
-                Me.ProductoBindingSource.MoveLast()
-                MsgBox("El Id del Producto es: " & ProductoBindingSource.Current("ID_Producto"), MsgBoxStyle.Information, " Id Producto ")
-                Me.ProductoBindingSource.AddNew()
-            End If
-        Else
-            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
-        End If
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Gerente_Agregar_Categoria.Show()
     End Sub
 
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -96,62 +53,6 @@
         End If
     End Sub
 
-    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
-    End Sub
-
-    Private Sub DescripcionLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Precio_UnitarioLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub StrockLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Nombre_ProductoLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub MarcaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub CategoriaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub ProductoDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles ProductoDataGridView.CellContentClick
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub ComboBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox2.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
-
-    End Sub
-
-    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
-
-    End Sub
-
     Private Sub ProductoBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.ProductoBindingSource.EndEdit()
@@ -167,5 +68,35 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
         Me.ProductoBindingSource.AddNew()
+    End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim consulta1 As Integer
+        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" Then
+            consulta1 = Me.ProductoBindingSource.Find("Nombre_Producto", TextBox1.Text)
+
+            If consulta1 <> -1 Then
+                MsgBox("Producto Repetido", MsgBoxStyle.Exclamation, "Advertencia")
+            Else
+                Me.ProductoBindingSource.Current("Nombre_Producto") = TextBox1.Text
+                Me.ProductoBindingSource.Current("Strock") = Val(TextBox2.Text)
+                Me.ProductoBindingSource.Current("Precio_Unitario") = Val(TextBox3.Text)
+                Me.ProductoBindingSource.Current("Descripcion") = TextBox4.Text
+                Me.ProductoBindingSource.Current("ID_Categoria") = Val(ComboBox1.SelectedValue)
+                Me.ProductoBindingSource.Current("ID_Marca") = Val(ComboBox2.SelectedValue)
+                Me.ProductoBindingSource.EndEdit() ' finaliza edicion
+                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
+                Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
+                Me.ProductoBindingSource.MoveLast()
+                MsgBox("El Id del Producto es: " & ProductoBindingSource.Current("ID_Producto"), MsgBoxStyle.Information, " Id Producto ")
+                Me.ProductoBindingSource.AddNew()
+            End If
+        Else
+            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        End If
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Gerente_Agregar_Categoria.Show()
     End Sub
 End Class

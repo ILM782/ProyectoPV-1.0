@@ -23,7 +23,6 @@ Partial Class Cajero_Transaccion_Venta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim FechaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
         Dim ID_MarcaLabel As System.Windows.Forms.Label
         Dim ID_CategoriaLabel As System.Windows.Forms.Label
@@ -31,11 +30,9 @@ Partial Class Cajero_Transaccion_Venta
         Dim StrockLabel As System.Windows.Forms.Label
         Dim Precio_UnitarioLabel As System.Windows.Forms.Label
         Dim DescripcionLabel As System.Windows.Forms.Label
+        Dim FechaLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
-        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarLocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,7 +51,10 @@ Partial Class Cajero_Transaccion_Venta
         Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
         Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        FechaLabel = New System.Windows.Forms.Label()
+        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_CategoriaLabel = New System.Windows.Forms.Label()
@@ -62,20 +62,12 @@ Partial Class Cajero_Transaccion_Venta
         StrockLabel = New System.Windows.Forms.Label()
         Precio_UnitarioLabel = New System.Windows.Forms.Label()
         DescripcionLabel = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
+        FechaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'FechaLabel
-        '
-        FechaLabel.AutoSize = True
-        FechaLabel.Location = New System.Drawing.Point(650, 12)
-        FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(42, 16)
-        FechaLabel.TabIndex = 9
-        FechaLabel.Text = "Fecha:"
         '
         'ID_ProductoLabel
         '
@@ -140,24 +132,6 @@ Partial Class Cajero_Transaccion_Venta
         DescripcionLabel.TabIndex = 35
         DescripcionLabel.Text = "Descripcion:"
         '
-        'FechaDateTimePicker
-        '
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(692, 8)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(149, 23)
-        Me.FechaDateTimePicker.TabIndex = 10
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(216, 26)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Datos de Transaccion"
-        '
         'Btn_Finalizar
         '
         Me.Btn_Finalizar.Location = New System.Drawing.Point(723, 468)
@@ -167,18 +141,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Finalizar.TabIndex = 20
         Me.Btn_Finalizar.Text = "Finalizar "
         Me.Btn_Finalizar.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.FechaDateTimePicker)
-        Me.Panel1.Controls.Add(FechaLabel)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 24)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(855, 47)
-        Me.Panel1.TabIndex = 22
         '
         'AgregarClienteToolStripMenuItem
         '
@@ -251,13 +213,11 @@ Partial Class Cajero_Transaccion_Venta
         Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
-        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
         '
         'ID_ProductoTextBox
         '
@@ -324,12 +284,63 @@ Partial Class Cajero_Transaccion_Venta
         Me.Label2.TabIndex = 37
         Me.Label2.Text = "PRODUCTO"
         '
+        'FechaLabel
+        '
+        FechaLabel.AutoSize = True
+        FechaLabel.Location = New System.Drawing.Point(569, 153)
+        FechaLabel.Name = "FechaLabel"
+        FechaLabel.Size = New System.Drawing.Size(42, 16)
+        FechaLabel.TabIndex = 9
+        FechaLabel.Text = "Fecha:"
+        '
+        'FechaDateTimePicker
+        '
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(611, 149)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(149, 23)
+        Me.FechaDateTimePicker.TabIndex = 10
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 84)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(855, 10)
+        Me.Panel2.TabIndex = 56
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(855, 60)
+        Me.Panel1.TabIndex = 55
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(21, 9)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(311, 42)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Agregar Producto"
+        '
         'Cajero_Transaccion_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(855, 524)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.FechaDateTimePicker)
+        Me.Controls.Add(FechaLabel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(ID_ProductoLabel)
         Me.Controls.Add(Me.ID_ProductoTextBox)
@@ -345,7 +356,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Controls.Add(Me.Precio_UnitarioTextBox)
         Me.Controls.Add(DescripcionLabel)
         Me.Controls.Add(Me.DescripcionTextBox)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_Finalizar)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -357,20 +367,17 @@ Partial Class Cajero_Transaccion_Venta
         Me.Name = "Cajero_Transaccion_Venta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "COMERCIANDO / Transaccion"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents AgregarClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgregarLocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -389,4 +396,8 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents Precio_UnitarioTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DescripcionTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

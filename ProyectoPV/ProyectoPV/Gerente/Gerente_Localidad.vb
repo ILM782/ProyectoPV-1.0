@@ -20,11 +20,6 @@
         Me.Close()
     End Sub
 
-    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub AtrasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AtrasToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()

@@ -38,6 +38,7 @@ Partial Class Atributos_De_Cajero
         Me.Btn_Agregar_Cliente = New System.Windows.Forms.Button()
         Me.Btn_Productos = New System.Windows.Forms.Button()
         Me.Btn_Transacciones = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -118,6 +119,7 @@ Partial Class Atributos_De_Cajero
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Gray
+        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.Btn_Localidades)
         Me.Panel2.Controls.Add(Me.Btn_Salir)
         Me.Panel2.Controls.Add(Me.Btn_Volver)
@@ -220,6 +222,15 @@ Partial Class Atributos_De_Cajero
         Me.Btn_Transacciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Btn_Transacciones.UseVisualStyleBackColor = False
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1226, 10)
+        Me.Panel3.TabIndex = 58
+        '
         'Atributos_De_Cajero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -253,4 +264,5 @@ Partial Class Atributos_De_Cajero
     Friend WithEvents Btn_Agregar_Cliente As System.Windows.Forms.Button
     Friend WithEvents Btn_Productos As System.Windows.Forms.Button
     Friend WithEvents Btn_Transacciones As System.Windows.Forms.Button
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
 End Class

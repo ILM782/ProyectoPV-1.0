@@ -131,12 +131,6 @@
     <Compile Include="Gerente\Atributos_De_Gerente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gerente\Gerente_Compras_Realizadas.Designer.vb">
-      <DependentUpon>Gerente_Compras_Realizadas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Compras_Realizadas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Gerente\Gerente_Localidad.Designer.vb">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </Compile>
@@ -185,12 +179,6 @@
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_TablasClientes.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Ventas_Realizadas.Designer.vb">
-      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Ventas_Realizadas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Otros\Login.Designer.vb">
@@ -244,17 +232,11 @@
     <EmbeddedResource Include="Gerente\Atributos_De_Gerente.resx">
       <DependentUpon>Atributos_De_Gerente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Compras_Realizadas.resx">
-      <DependentUpon>Gerente_Compras_Realizadas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Localidad.resx">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Producto.resx">
       <DependentUpon>Gerente_Producto.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
-      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Proveedores.resx">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>

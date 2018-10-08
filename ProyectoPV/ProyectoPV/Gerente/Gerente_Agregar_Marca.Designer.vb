@@ -36,27 +36,27 @@ Partial Class Gerente_Agregar_Marca
         Me.MarcasDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Btn_Guardar = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Fecha = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Hora = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
         MarcaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
         MarcaLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        MarcaLabel.Location = New System.Drawing.Point(35, 38)
+        MarcaLabel.Location = New System.Drawing.Point(38, 133)
         MarcaLabel.Name = "MarcaLabel"
         MarcaLabel.Size = New System.Drawing.Size(44, 16)
         MarcaLabel.TabIndex = 4
@@ -68,7 +68,7 @@ Partial Class Gerente_Agregar_Marca
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(319, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(561, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -108,18 +108,16 @@ Partial Class Gerente_Agregar_Marca
         Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Nothing
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
-        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
         '
         'MarcaTextBox
         '
         Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource, "Marca", True))
-        Me.MarcaTextBox.Location = New System.Drawing.Point(87, 36)
+        Me.MarcaTextBox.Location = New System.Drawing.Point(152, 131)
         Me.MarcaTextBox.Name = "MarcaTextBox"
         Me.MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.MarcaTextBox.TabIndex = 5
@@ -136,10 +134,10 @@ Partial Class Gerente_Agregar_Marca
         Me.MarcasDataGridView.DataSource = Me.MarcasBindingSource
         Me.MarcasDataGridView.Enabled = False
         Me.MarcasDataGridView.EnableHeadersVisualStyles = False
-        Me.MarcasDataGridView.Location = New System.Drawing.Point(38, 88)
+        Me.MarcasDataGridView.Location = New System.Drawing.Point(276, 131)
         Me.MarcasDataGridView.Name = "MarcasDataGridView"
         Me.MarcasDataGridView.ReadOnly = True
-        Me.MarcasDataGridView.Size = New System.Drawing.Size(244, 232)
+        Me.MarcasDataGridView.Size = New System.Drawing.Size(244, 186)
         Me.MarcasDataGridView.TabIndex = 5
         '
         'DataGridViewTextBoxColumn1
@@ -157,73 +155,13 @@ Partial Class Gerente_Agregar_Marca
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
-        'Btn_Guardar
-        '
-        Me.Btn_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(207, 33)
-        Me.Btn_Guardar.Name = "Btn_Guardar"
-        Me.Btn_Guardar.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Guardar.TabIndex = 6
-        Me.Btn_Guardar.Text = "Guardar"
-        Me.Btn_Guardar.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(113, 323)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 16)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Fecha:"
-        '
-        'Fecha
-        '
-        Me.Fecha.AutoSize = True
-        Me.Fecha.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Fecha.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Fecha.ForeColor = System.Drawing.Color.Black
-        Me.Fecha.Location = New System.Drawing.Point(149, 323)
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.Size = New System.Drawing.Size(42, 16)
-        Me.Fecha.TabIndex = 8
-        Me.Fecha.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(224, 323)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 16)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Hora:"
-        '
-        'Hora
-        '
-        Me.Hora.AutoSize = True
-        Me.Hora.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Hora.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Hora.ForeColor = System.Drawing.Color.Black
-        Me.Hora.Location = New System.Drawing.Point(253, 323)
-        Me.Hora.Name = "Hora"
-        Me.Hora.Size = New System.Drawing.Size(50, 16)
-        Me.Hora.TabIndex = 10
-        Me.Hora.Text = "00:00:00"
-        '
         'Timer1
         '
         Me.Timer1.Enabled = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(87, 62)
+        Me.TextBox1.Location = New System.Drawing.Point(152, 236)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 12
@@ -232,37 +170,80 @@ Partial Class Gerente_Agregar_Marca
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(35, 64)
+        Me.Label2.Location = New System.Drawing.Point(38, 240)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 16)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Buscar:"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 84)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(561, 10)
+        Me.Panel2.TabIndex = 56
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(561, 60)
+        Me.Panel1.TabIndex = 55
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(21, 9)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(265, 42)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Agregar Marca"
+        '
+        'Btn_Guardar
+        '
+        Me.Btn_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Guardar.FlatAppearance.BorderSize = 0
+        Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Guardar.Location = New System.Drawing.Point(41, 174)
+        Me.Btn_Guardar.Name = "Btn_Guardar"
+        Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Guardar.TabIndex = 57
+        Me.Btn_Guardar.Text = "&GUARDAR"
+        Me.Btn_Guardar.UseVisualStyleBackColor = False
+        '
         'Btn_Eliminar
         '
+        Me.Btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Eliminar.FlatAppearance.BorderSize = 0
         Me.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Eliminar.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Eliminar.Location = New System.Drawing.Point(207, 61)
+        Me.Btn_Eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Eliminar.Location = New System.Drawing.Point(41, 277)
         Me.Btn_Eliminar.Name = "Btn_Eliminar"
-        Me.Btn_Eliminar.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Eliminar.TabIndex = 14
-        Me.Btn_Eliminar.Text = "Eliminar"
-        Me.Btn_Eliminar.UseVisualStyleBackColor = True
+        Me.Btn_Eliminar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Eliminar.TabIndex = 58
+        Me.Btn_Eliminar.Text = "&ELIMINAR"
+        Me.Btn_Eliminar.UseVisualStyleBackColor = False
         '
         'Gerente_Agregar_Marca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(319, 347)
+        Me.BackColor = System.Drawing.Color.Gray
+        Me.ClientSize = New System.Drawing.Size(561, 353)
         Me.Controls.Add(Me.Btn_Eliminar)
+        Me.Controls.Add(Me.Btn_Guardar)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Hora)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Fecha)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.MarcasDataGridView)
         Me.Controls.Add(MarcaLabel)
         Me.Controls.Add(Me.MarcaTextBox)
@@ -280,6 +261,8 @@ Partial Class Gerente_Agregar_Marca
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,15 +276,14 @@ Partial Class Gerente_Agregar_Marca
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
     Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents MarcasDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Fecha As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Hora As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
+    Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
 End Class

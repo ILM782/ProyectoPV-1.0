@@ -50,7 +50,6 @@ Partial Class Gerente_Producto
         Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,6 +63,10 @@ Partial Class Gerente_Producto
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.CategoriaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter()
         Me.MarcasTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.MarcasTableAdapter()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         CategoriaLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         Nombre_ProductoLabel = New System.Windows.Forms.Label()
@@ -76,13 +79,14 @@ Partial Class Gerente_Producto
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'CategoriaLabel
         '
         CategoriaLabel.AutoSize = True
         CategoriaLabel.ForeColor = System.Drawing.Color.Black
-        CategoriaLabel.Location = New System.Drawing.Point(34, 149)
+        CategoriaLabel.Location = New System.Drawing.Point(45, 235)
         CategoriaLabel.Name = "CategoriaLabel"
         CategoriaLabel.Size = New System.Drawing.Size(55, 13)
         CategoriaLabel.TabIndex = 40
@@ -92,7 +96,7 @@ Partial Class Gerente_Producto
         '
         MarcaLabel.AutoSize = True
         MarcaLabel.ForeColor = System.Drawing.Color.Black
-        MarcaLabel.Location = New System.Drawing.Point(34, 176)
+        MarcaLabel.Location = New System.Drawing.Point(45, 262)
         MarcaLabel.Name = "MarcaLabel"
         MarcaLabel.Size = New System.Drawing.Size(40, 13)
         MarcaLabel.TabIndex = 39
@@ -102,7 +106,7 @@ Partial Class Gerente_Producto
         '
         Nombre_ProductoLabel.AutoSize = True
         Nombre_ProductoLabel.ForeColor = System.Drawing.Color.Black
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(33, 44)
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(44, 130)
         Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
         Nombre_ProductoLabel.Size = New System.Drawing.Size(93, 13)
         Nombre_ProductoLabel.TabIndex = 35
@@ -112,7 +116,7 @@ Partial Class Gerente_Producto
         '
         StrockLabel.AutoSize = True
         StrockLabel.ForeColor = System.Drawing.Color.Black
-        StrockLabel.Location = New System.Drawing.Point(33, 71)
+        StrockLabel.Location = New System.Drawing.Point(44, 157)
         StrockLabel.Name = "StrockLabel"
         StrockLabel.Size = New System.Drawing.Size(41, 13)
         StrockLabel.TabIndex = 36
@@ -122,7 +126,7 @@ Partial Class Gerente_Producto
         '
         Precio_UnitarioLabel.AutoSize = True
         Precio_UnitarioLabel.ForeColor = System.Drawing.Color.Black
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(33, 97)
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(44, 183)
         Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
         Precio_UnitarioLabel.Size = New System.Drawing.Size(79, 13)
         Precio_UnitarioLabel.TabIndex = 37
@@ -132,7 +136,7 @@ Partial Class Gerente_Producto
         '
         DescripcionLabel.AutoSize = True
         DescripcionLabel.ForeColor = System.Drawing.Color.Black
-        DescripcionLabel.Location = New System.Drawing.Point(33, 123)
+        DescripcionLabel.Location = New System.Drawing.Point(44, 209)
         DescripcionLabel.Name = "DescripcionLabel"
         DescripcionLabel.Size = New System.Drawing.Size(66, 13)
         DescripcionLabel.TabIndex = 38
@@ -144,9 +148,9 @@ Partial Class Gerente_Producto
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDProductoDataGridViewTextBoxColumn, Me.IDMarcaDataGridViewTextBoxColumn, Me.IDCategoriaDataGridViewTextBoxColumn, Me.NombreProductoDataGridViewTextBoxColumn, Me.StrockDataGridViewTextBoxColumn, Me.PrecioUnitarioDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(310, 41)
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(323, 127)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(437, 220)
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(744, 230)
         Me.ProductoDataGridView.TabIndex = 49
         '
         'IDProductoDataGridViewTextBoxColumn
@@ -204,28 +208,28 @@ Partial Class Gerente_Producto
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(132, 120)
+        Me.TextBox4.Location = New System.Drawing.Point(143, 206)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 20)
         Me.TextBox4.TabIndex = 50
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(132, 94)
+        Me.TextBox3.Location = New System.Drawing.Point(143, 180)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(121, 20)
         Me.TextBox3.TabIndex = 48
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(132, 68)
+        Me.TextBox2.Location = New System.Drawing.Point(143, 154)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 20)
         Me.TextBox2.TabIndex = 47
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(132, 41)
+        Me.TextBox1.Location = New System.Drawing.Point(143, 127)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 20)
         Me.TextBox1.TabIndex = 46
@@ -235,7 +239,7 @@ Partial Class Gerente_Producto
         Me.ComboBox2.DataSource = Me.MarcasBindingSource
         Me.ComboBox2.DisplayMember = "Marca"
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(132, 173)
+        Me.ComboBox2.Location = New System.Drawing.Point(143, 259)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox2.TabIndex = 45
@@ -251,7 +255,7 @@ Partial Class Gerente_Producto
         Me.ComboBox1.DataSource = Me.CategoriaBindingSource
         Me.ComboBox1.DisplayMember = "Categoria"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(132, 146)
+        Me.ComboBox1.Location = New System.Drawing.Point(143, 232)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 44
@@ -264,36 +268,27 @@ Partial Class Gerente_Producto
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button3.Location = New System.Drawing.Point(259, 146)
+        Me.Button3.Location = New System.Drawing.Point(270, 232)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 21)
+        Me.Button3.Size = New System.Drawing.Size(34, 21)
         Me.Button3.TabIndex = 43
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button2.Location = New System.Drawing.Point(259, 173)
+        Me.Button2.Location = New System.Drawing.Point(270, 259)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(27, 23)
+        Me.Button2.Size = New System.Drawing.Size(34, 23)
         Me.Button2.TabIndex = 42
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(198, 219)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 41
-        Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'MenuStrip1
         '
@@ -301,7 +296,7 @@ Partial Class Gerente_Producto
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(776, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1109, 24)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -371,13 +366,11 @@ Partial Class Gerente_Producto
         Me.TableAdapterManager.CajeroTableAdapter = Nothing
         Me.TableAdapterManager.CategoriaTableAdapter = Me.CategoriaTableAdapter
         Me.TableAdapterManager.ClienteTableAdapter = Nothing
-        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.LocalidadTableAdapter = Nothing
         Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
         '
         'CategoriaTableAdapter
         '
@@ -387,12 +380,58 @@ Partial Class Gerente_Producto
         '
         Me.MarcasTableAdapter.ClearBeforeFill = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1109, 60)
+        Me.Panel1.TabIndex = 51
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(21, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(311, 42)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Agregar Producto"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 84)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1109, 10)
+        Me.Panel2.TabIndex = 52
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(47, 307)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(217, 40)
+        Me.Button1.TabIndex = 53
+        Me.Button1.Text = "&GUARDAR"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Gerente_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(776, 432)
+        Me.BackColor = System.Drawing.Color.Gray
+        Me.ClientSize = New System.Drawing.Size(1109, 399)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ProductoDataGridView)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
@@ -402,7 +441,6 @@ Partial Class Gerente_Producto
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(CategoriaLabel)
         Me.Controls.Add(MarcaLabel)
         Me.Controls.Add(Nombre_ProductoLabel)
@@ -423,6 +461,8 @@ Partial Class Gerente_Producto
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -436,7 +476,6 @@ Partial Class Gerente_Producto
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransaccionesDeCompraToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -461,4 +500,8 @@ Partial Class Gerente_Producto
     Friend WithEvents StrockDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioUnitarioDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

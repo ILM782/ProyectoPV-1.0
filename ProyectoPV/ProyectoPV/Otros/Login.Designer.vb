@@ -29,6 +29,7 @@ Partial Class Login
         Me.Txt_Contrasena = New System.Windows.Forms.TextBox()
         Me.Txt_Usuario = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -43,7 +44,6 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TimerLogin = New System.Windows.Forms.Timer(Me.components)
         Me.Btn_Salir = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -107,6 +107,17 @@ Partial Class Login
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(250, 301)
         Me.Panel1.TabIndex = 11
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(0, 278)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(122, 23)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Versión 1.1.05 (BETA)"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -254,17 +265,6 @@ Partial Class Login
         Me.Btn_Salir.TabIndex = 5
         Me.Btn_Salir.Text = "&SALIR"
         Me.Btn_Salir.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(0, 278)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(97, 23)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Versión 1.1.03"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Login
         '

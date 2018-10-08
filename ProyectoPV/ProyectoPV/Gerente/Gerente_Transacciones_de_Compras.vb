@@ -15,16 +15,6 @@
         Me.Close()
     End Sub
 
-    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub ComprasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasRealizadasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()

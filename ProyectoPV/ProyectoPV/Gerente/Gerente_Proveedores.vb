@@ -10,8 +10,6 @@
     Private Sub Proveedores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Localidad' Puede moverla o quitarla según sea necesario.
         Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Localidad' Puede moverla o quitarla según sea necesario.
-
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Proveedor' Puede moverla o quitarla según sea necesario.
         Me.ProveedorTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Proveedor)
         Me.ProveedorBindingSource.AddNew()
@@ -24,11 +22,6 @@
 
     Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub VentasOComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasOComprasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
         Me.Close()
     End Sub
 
@@ -47,11 +40,6 @@
 
     Private Sub TransaccionesDeCompraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionesDeCompraToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub ComprasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasRealizadasToolStripMenuItem.Click
-        Gerente_Compras_Realizadas.Show()
         Me.Close()
     End Sub
 

@@ -14,11 +14,6 @@
         Me.MarcasBindingSource.AddNew()
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Hora.Text = TimeOfDay
-        Fecha.Text = DateString
-    End Sub
-
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
         Dim respuesta As Object
         respuesta = MsgBox("¿Desea Salir?", MsgBoxStyle.YesNo, "Advertencia")
@@ -93,7 +88,7 @@
         If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
             Call VolverToolStripMenuItem_Click(sender, e)
         End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
             Call Btn_Guardar_Click(sender, e)
         End If
     End Sub
@@ -102,7 +97,7 @@
         If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
             Call VolverToolStripMenuItem_Click(sender, e)
         End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
             Call Btn_Eliminar_Click(sender, e)
         End If
     End Sub
