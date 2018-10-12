@@ -66,6 +66,15 @@ Partial Class Gerente_Agregar_Marca
         MarcaLabel.TabIndex = 4
         MarcaLabel.Text = "Marca:"
         '
+        'MarcaLabel1
+        '
+        MarcaLabel1.AutoSize = True
+        MarcaLabel1.Location = New System.Drawing.Point(38, 339)
+        MarcaLabel1.Name = "MarcaLabel1"
+        MarcaLabel1.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel1.TabIndex = 59
+        MarcaLabel1.Text = "Marca:"
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
@@ -240,15 +249,6 @@ Partial Class Gerente_Agregar_Marca
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "&MODIFICAR"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'MarcaLabel1
-        '
-        MarcaLabel1.AutoSize = True
-        MarcaLabel1.Location = New System.Drawing.Point(38, 339)
-        MarcaLabel1.Name = "MarcaLabel1"
-        MarcaLabel1.Size = New System.Drawing.Size(40, 13)
-        MarcaLabel1.TabIndex = 59
-        MarcaLabel1.Text = "Marca:"
         '
         'MarcaTextBox1
         '

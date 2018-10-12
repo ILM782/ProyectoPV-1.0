@@ -28,6 +28,9 @@ Partial Class Gerente_Localidad
         Dim Provincia_LocalidadLabel As System.Windows.Forms.Label
         Dim LocalidadDataGridView As System.Windows.Forms.DataGridView
         Dim ID_LocalidadLabel As System.Windows.Forms.Label
+        Dim Localidad_LocalidadLabel1 As System.Windows.Forms.Label
+        Dim CP_LocalidadLabel1 As System.Windows.Forms.Label
+        Dim Provincia_LocalidadLabel1 As System.Windows.Forms.Label
         Dim ID_LocalidadLabel1 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Localidad))
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,17 +60,24 @@ Partial Class Gerente_Localidad
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Btn_Modificar = New System.Windows.Forms.Button()
+        Me.Localidad_LocalidadTextBox = New System.Windows.Forms.TextBox()
+        Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
+        Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
         LocalidadDataGridView = New System.Windows.Forms.DataGridView()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
+        Localidad_LocalidadLabel1 = New System.Windows.Forms.Label()
+        CP_LocalidadLabel1 = New System.Windows.Forms.Label()
+        Provincia_LocalidadLabel1 = New System.Windows.Forms.Label()
         ID_LocalidadLabel1 = New System.Windows.Forms.Label()
         CType(LocalidadDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,7 +136,7 @@ Partial Class Gerente_Localidad
         LocalidadDataGridView.ShowCellToolTips = False
         LocalidadDataGridView.ShowEditingIcon = False
         LocalidadDataGridView.ShowRowErrors = False
-        LocalidadDataGridView.Size = New System.Drawing.Size(443, 305)
+        LocalidadDataGridView.Size = New System.Drawing.Size(443, 444)
         LocalidadDataGridView.TabIndex = 11
         LocalidadDataGridView.TabStop = False
         '
@@ -173,6 +183,33 @@ Partial Class Gerente_Localidad
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 0
         ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'Localidad_LocalidadLabel1
+        '
+        Localidad_LocalidadLabel1.AutoSize = True
+        Localidad_LocalidadLabel1.Location = New System.Drawing.Point(36, 447)
+        Localidad_LocalidadLabel1.Name = "Localidad_LocalidadLabel1"
+        Localidad_LocalidadLabel1.Size = New System.Drawing.Size(105, 13)
+        Localidad_LocalidadLabel1.TabIndex = 2
+        Localidad_LocalidadLabel1.Text = "Localidad Localidad:"
+        '
+        'CP_LocalidadLabel1
+        '
+        CP_LocalidadLabel1.AutoSize = True
+        CP_LocalidadLabel1.Location = New System.Drawing.Point(36, 473)
+        CP_LocalidadLabel1.Name = "CP_LocalidadLabel1"
+        CP_LocalidadLabel1.Size = New System.Drawing.Size(73, 13)
+        CP_LocalidadLabel1.TabIndex = 4
+        CP_LocalidadLabel1.Text = "CP Localidad:"
+        '
+        'Provincia_LocalidadLabel1
+        '
+        Provincia_LocalidadLabel1.AutoSize = True
+        Provincia_LocalidadLabel1.Location = New System.Drawing.Point(36, 499)
+        Provincia_LocalidadLabel1.Name = "Provincia_LocalidadLabel1"
+        Provincia_LocalidadLabel1.Size = New System.Drawing.Size(103, 13)
+        Provincia_LocalidadLabel1.TabIndex = 6
+        Provincia_LocalidadLabel1.Text = "Provincia Localidad:"
         '
         'ID_LocalidadLabel1
         '
@@ -254,7 +291,7 @@ Partial Class Gerente_Localidad
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(772, 470)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(772, 586)
         Me.ShapeContainer1.TabIndex = 13
         Me.ShapeContainer1.TabStop = False
         '
@@ -280,7 +317,7 @@ Partial Class Gerente_Localidad
         Me.TextBox1.Location = New System.Drawing.Point(150, 296)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 15
+        Me.TextBox1.TabIndex = 6
         '
         'ID_LocalidadTextBox
         '
@@ -295,21 +332,21 @@ Partial Class Gerente_Localidad
         Me.Txt_Localidad.Location = New System.Drawing.Point(148, 123)
         Me.Txt_Localidad.Name = "Txt_Localidad"
         Me.Txt_Localidad.Size = New System.Drawing.Size(108, 20)
-        Me.Txt_Localidad.TabIndex = 21
+        Me.Txt_Localidad.TabIndex = 1
         '
         'Txt_CP
         '
         Me.Txt_CP.Location = New System.Drawing.Point(148, 148)
         Me.Txt_CP.Name = "Txt_CP"
         Me.Txt_CP.Size = New System.Drawing.Size(108, 20)
-        Me.Txt_CP.TabIndex = 22
+        Me.Txt_CP.TabIndex = 2
         '
         'Txt_Provincia
         '
         Me.Txt_Provincia.Location = New System.Drawing.Point(148, 174)
         Me.Txt_Provincia.Name = "Txt_Provincia"
         Me.Txt_Provincia.Size = New System.Drawing.Size(108, 20)
-        Me.Txt_Provincia.TabIndex = 23
+        Me.Txt_Provincia.TabIndex = 3
         '
         'LocalidadTableAdapter
         '
@@ -341,18 +378,17 @@ Partial Class Gerente_Localidad
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
         Me.RadioButton1.Location = New System.Drawing.Point(122, 19)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(69, 17)
         Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Provincia"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Checked = True
         Me.RadioButton2.Location = New System.Drawing.Point(32, 20)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
@@ -360,13 +396,6 @@ Partial Class Gerente_Localidad
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Localidad"
         Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(151, 263)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 25
         '
         'Panel2
         '
@@ -404,10 +433,10 @@ Partial Class Gerente_Localidad
         Me.Btn_Guardar.FlatAppearance.BorderSize = 0
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(45, 200)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(39, 200)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Guardar.TabIndex = 57
+        Me.Btn_Guardar.TabIndex = 4
         Me.Btn_Guardar.Text = "&GUARDAR"
         Me.Btn_Guardar.UseVisualStyleBackColor = False
         '
@@ -420,21 +449,72 @@ Partial Class Gerente_Localidad
         Me.Btn_Eliminar.Location = New System.Drawing.Point(39, 384)
         Me.Btn_Eliminar.Name = "Btn_Eliminar"
         Me.Btn_Eliminar.Size = New System.Drawing.Size(211, 40)
-        Me.Btn_Eliminar.TabIndex = 58
+        Me.Btn_Eliminar.TabIndex = 7
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
+        '
+        'Btn_Modificar
+        '
+        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modificar.Location = New System.Drawing.Point(39, 534)
+        Me.Btn_Modificar.Name = "Btn_Modificar"
+        Me.Btn_Modificar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Modificar.TabIndex = 11
+        Me.Btn_Modificar.Text = "&MODIFICAR"
+        Me.Btn_Modificar.UseVisualStyleBackColor = False
+        '
+        'Localidad_LocalidadTextBox
+        '
+        Me.Localidad_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad_Localidad", True))
+        Me.Localidad_LocalidadTextBox.Location = New System.Drawing.Point(147, 444)
+        Me.Localidad_LocalidadTextBox.Name = "Localidad_LocalidadTextBox"
+        Me.Localidad_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Localidad_LocalidadTextBox.TabIndex = 8
+        '
+        'CP_LocalidadTextBox
+        '
+        Me.CP_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "CP_Localidad", True))
+        Me.CP_LocalidadTextBox.Location = New System.Drawing.Point(147, 470)
+        Me.CP_LocalidadTextBox.Name = "CP_LocalidadTextBox"
+        Me.CP_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CP_LocalidadTextBox.TabIndex = 9
+        '
+        'Provincia_LocalidadTextBox
+        '
+        Me.Provincia_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Provincia_Localidad", True))
+        Me.Provincia_LocalidadTextBox.Location = New System.Drawing.Point(147, 496)
+        Me.Provincia_LocalidadTextBox.Name = "Provincia_LocalidadTextBox"
+        Me.Provincia_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Provincia_LocalidadTextBox.TabIndex = 10
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(150, 268)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 57
         '
         'Gerente_Localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(772, 470)
+        Me.ClientSize = New System.Drawing.Size(772, 586)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Localidad_LocalidadLabel1)
+        Me.Controls.Add(Me.Localidad_LocalidadTextBox)
+        Me.Controls.Add(CP_LocalidadLabel1)
+        Me.Controls.Add(Me.CP_LocalidadTextBox)
+        Me.Controls.Add(Provincia_LocalidadLabel1)
+        Me.Controls.Add(Me.Provincia_LocalidadTextBox)
+        Me.Controls.Add(Me.Btn_Modificar)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(ID_LocalidadLabel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
@@ -494,10 +574,14 @@ Partial Class Gerente_Localidad
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
+    Friend WithEvents Localidad_LocalidadTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents CP_LocalidadTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Provincia_LocalidadTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class

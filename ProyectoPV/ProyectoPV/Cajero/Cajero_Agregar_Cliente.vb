@@ -96,4 +96,12 @@
         vista.RowFilter = "DNI_Cliente = " & Val(Me.TextBox1.Text)
         Me.ClienteDataGridView.DataSource = vista
     End Sub
+
+    Private Sub DNI_ClienteTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles DNI_ClienteTextBox.KeyPress
+        e.KeyChar = ChrW(solonumeros(e))
+        If e.KeyChar = Chr(13) Then
+            DNI_ClienteTextBox.Focus()
+            e.Handled = True
+        End If
+    End Sub
 End Class

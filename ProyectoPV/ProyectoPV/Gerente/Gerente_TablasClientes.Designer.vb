@@ -70,10 +70,12 @@ Partial Class Gerente_TablasClientes
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Btn_Modicar = New System.Windows.Forms.Button()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
@@ -213,7 +215,7 @@ Partial Class Gerente_TablasClientes
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BorrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ToolStripMenuItem3, Me.LocalidadToolStripMenuItem, Me.AtrasToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(907, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1163, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -411,7 +413,7 @@ Partial Class Gerente_TablasClientes
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(907, 10)
+        Me.Panel2.Size = New System.Drawing.Size(1163, 10)
         Me.Panel2.TabIndex = 54
         '
         'Panel1
@@ -421,7 +423,7 @@ Partial Class Gerente_TablasClientes
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(907, 60)
+        Me.Panel1.Size = New System.Drawing.Size(1163, 60)
         Me.Panel1.TabIndex = 53
         '
         'Label3
@@ -431,27 +433,35 @@ Partial Class Gerente_TablasClientes
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(21, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(311, 42)
+        Me.Label3.Size = New System.Drawing.Size(296, 42)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Agregar Producto"
+        Me.Label3.Text = "Agregar Clientes"
         '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(907, 506)
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape3, Me.LineShape2, Me.LineShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1163, 506)
         Me.ShapeContainer1.TabIndex = 55
         Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape3
+        '
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 885
+        Me.LineShape3.X2 = 885
+        Me.LineShape3.Y1 = 125
+        Me.LineShape3.Y2 = 230
         '
         'LineShape2
         '
         Me.LineShape2.Name = "LineShape2"
         Me.LineShape2.X1 = 588
-        Me.LineShape2.X2 = 841
+        Me.LineShape2.X2 = 885
         Me.LineShape2.Y1 = 154
-        Me.LineShape2.Y2 = 153
+        Me.LineShape2.Y2 = 154
         '
         'LineShape1
         '
@@ -487,12 +497,26 @@ Partial Class Gerente_TablasClientes
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
         '
+        'Btn_Modicar
+        '
+        Me.Btn_Modicar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modicar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modicar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modicar.Location = New System.Drawing.Point(913, 254)
+        Me.Btn_Modicar.Name = "Btn_Modicar"
+        Me.Btn_Modicar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Modicar.TabIndex = 60
+        Me.Btn_Modicar.Text = "&MODIFICAR"
+        Me.Btn_Modicar.UseVisualStyleBackColor = False
+        '
         'Gerente_TablasClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(907, 506)
+        Me.ClientSize = New System.Drawing.Size(1163, 506)
+        Me.Controls.Add(Me.Btn_Modicar)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
@@ -580,4 +604,6 @@ Partial Class Gerente_TablasClientes
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents LineShape3 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents Btn_Modicar As System.Windows.Forms.Button
 End Class

@@ -101,6 +101,12 @@
     <Compile Include="Cajero\Cajero_Localidad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Agregar_Cajero.Designer.vb">
+      <DependentUpon>Gerente_Agregar_Cajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Agregar_Cajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Agregar_Categoria.Designer.vb">
       <DependentUpon>Gerente_Agregar_Categoria.vb</DependentUpon>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Cajero_Producto_Para_Ventas.resx">
       <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Agregar_Cajero.resx">
+      <DependentUpon>Gerente_Agregar_Cajero.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Agregar_Categoria.resx">
       <DependentUpon>Gerente_Agregar_Categoria.vb</DependentUpon>

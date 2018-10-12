@@ -2624,8 +2624,7 @@ Partial Public Class MayoristaBaseDeDatosDataSet
             MyBase.Columns.Add(Me.columnTelefono_Cliente)
             Me.columnCorreo_Cliente = New Global.System.Data.DataColumn("Correo_Cliente", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCorreo_Cliente)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnDNI_Cliente}, false))
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columnID_Cliente}, true))
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Cliente}, true))
             Me.columnID_Cliente.AutoIncrement = true
             Me.columnID_Cliente.AutoIncrementSeed = -1
             Me.columnID_Cliente.AutoIncrementStep = -1
@@ -2637,7 +2636,6 @@ Partial Public Class MayoristaBaseDeDatosDataSet
             Me.columnApellido_Cliente.AllowDBNull = false
             Me.columnApellido_Cliente.MaxLength = 25
             Me.columnDNI_Cliente.AllowDBNull = false
-            Me.columnDNI_Cliente.Unique = true
             Me.columnDomicilio_Cliente.MaxLength = 50
             Me.columnCorreo_Cliente.MaxLength = 50
         End Sub
@@ -3900,8 +3898,8 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ID_Categoria, Categoria"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Categoria"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (C"& _ 
-                "ategoria LIKE @Param1 + N'%')"
+            Me._commandCollection(1).CommandText = "SELECT        ID_Categoria, Categoria"&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Categoria"&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Cat"& _ 
+                "egoria LIKE @Param1 + N'%')"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 60, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Categoria", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
@@ -4240,15 +4238,15 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
             Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(1).Connection = Me.Connection
             Me._commandCollection(1).CommandText = "SELECT        ID_Localidad, Localidad_Localidad, CP_Localidad, Provincia_Localida"& _ 
-                "d"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Localidad"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Localidad_Localidad LIKE @Param1 + N"& _ 
-                "'%')"
+                "d"&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Localidad"&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Localidad_Localidad LIKE @Param1 + N'%"& _ 
+                "')"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 80, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Localidad_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(2) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(2).Connection = Me.Connection
             Me._commandCollection(2).CommandText = "SELECT        ID_Localidad, Localidad_Localidad, CP_Localidad, Provincia_Localida"& _ 
-                "d"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Localidad"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Provincia_Localidad LIKE @Param1 + N"& _ 
-                "'%')"
+                "d"&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Localidad"&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Provincia_Localidad LIKE @Param1 + N'%"& _ 
+                "')"
             Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Provincia_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
@@ -4623,8 +4621,8 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ID_Marca, Marca"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Marcas"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Marca LIKE @"& _ 
-                "Param1 + N'%')"
+            Me._commandCollection(1).CommandText = "SELECT        ID_Marca, Marca"&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Marcas"&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Marca LIKE @Pa"& _ 
+                "ram1 + N'%')"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 60, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Marca", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
@@ -4967,8 +4965,8 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT [ID_Producto], [ID_Marca], [ID_Categoria], [Nombre_Producto], [Strock], [P"& _ 
-                "recio_Unitario], [Descripcion] FROM [Producto]"
+            Me._commandCollection(0).CommandText = "SELECT ID_Producto, ID_Marca, ID_Categoria, Nombre_Producto, Strock, Precio_Unita"& _ 
+                "rio, Descripcion FROM Producto"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -5297,8 +5295,8 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
             Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(1).Connection = Me.Connection
             Me._commandCollection(1).CommandText = "SELECT        ID_Proveedor, Nombre_Empresa, ID_Localidad, Domicilio_Proveedor, Te"& _ 
-                "lefono_Proveedor, Correo_Proveedor"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Proveedor"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Nom"& _ 
-                "bre_Empresa LIKE @Param1 + N'%')"
+                "lefono_Proveedor, Correo_Proveedor"&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Proveedor"&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Nombr"& _ 
+                "e_Empresa LIKE @Param1 + N'%')"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 60, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Empresa", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub

@@ -301,6 +301,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.Nombre_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre_Cliente", True))
         Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(137, 121)
+        Me.Nombre_ClienteTextBox.MaxLength = 25
         Me.Nombre_ClienteTextBox.Name = "Nombre_ClienteTextBox"
         Me.Nombre_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Nombre_ClienteTextBox.TabIndex = 25
@@ -309,6 +310,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.Apellido_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_Cliente", True))
         Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(137, 147)
+        Me.Apellido_ClienteTextBox.MaxLength = 25
         Me.Apellido_ClienteTextBox.Name = "Apellido_ClienteTextBox"
         Me.Apellido_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Apellido_ClienteTextBox.TabIndex = 27
@@ -317,6 +319,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.DNI_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "DNI_Cliente", True))
         Me.DNI_ClienteTextBox.Location = New System.Drawing.Point(137, 173)
+        Me.DNI_ClienteTextBox.MaxLength = 8
         Me.DNI_ClienteTextBox.Name = "DNI_ClienteTextBox"
         Me.DNI_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.DNI_ClienteTextBox.TabIndex = 29
@@ -341,6 +344,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.Domicilio_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Domicilio_Cliente", True))
         Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(137, 226)
+        Me.Domicilio_ClienteTextBox.MaxLength = 50
         Me.Domicilio_ClienteTextBox.Name = "Domicilio_ClienteTextBox"
         Me.Domicilio_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Domicilio_ClienteTextBox.TabIndex = 33
@@ -349,6 +353,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.Telefono_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Telefono_Cliente", True))
         Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(137, 252)
+        Me.Telefono_ClienteTextBox.MaxLength = 10
         Me.Telefono_ClienteTextBox.Name = "Telefono_ClienteTextBox"
         Me.Telefono_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Telefono_ClienteTextBox.TabIndex = 35
@@ -357,6 +362,7 @@ Partial Class Cajero_Agregar_Cliente
         '
         Me.Correo_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Correo_Cliente", True))
         Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(137, 278)
+        Me.Correo_ClienteTextBox.MaxLength = 50
         Me.Correo_ClienteTextBox.Name = "Correo_ClienteTextBox"
         Me.Correo_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Correo_ClienteTextBox.TabIndex = 37
@@ -476,7 +482,6 @@ Partial Class Cajero_Agregar_Cliente
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Cajero_Agregar_Cliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

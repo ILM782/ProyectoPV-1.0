@@ -96,7 +96,6 @@
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
                     Me.LocalidadBindingSource.AddNew()
-
                     TextBox2.Text = ""
                     TextBox2.Focus()
                 End If
@@ -122,4 +121,70 @@
         End If
     End Sub
 
+    Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click
+
+        Dim aux As Object
+
+        If TextBox2.Text = "" Then
+            MsgBox("Primero busque localidad", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            If Localidad_LocalidadTextBox.Text <> "" And CP_LocalidadTextBox.Text <> "" And Provincia_LocalidadTextBox.Text <> "" Then
+
+                aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.Validate()
+                    Me.LocalidadBindingSource.EndEdit()
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                    Me.LocalidadBindingSource.MoveLast()
+                    Me.LocalidadBindingSource.AddNew()
+                    TextBox1.Text = ""
+                    TextBox1.Focus()
+                    Localidad_LocalidadTextBox.Text = ""
+                    CP_LocalidadTextBox.Text = ""
+                    Provincia_LocalidadTextBox.Text = ""
+                End If
+            Else
+                MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+            End If
+        End If
+
+    End Sub
+
+    ' Private Sub TextBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+    'Dim i As Integer
+    '  Dim codigoConsulta As String
+    '    LocalidadBindingSource.MoveFirst()
+    '   codigoConsulta = TextBox2.Text
+    '   i = 0
+    '   If  IsNumeric(codigoConsulta) Then
+    '      Do
+    '         If LocalidadBindingSource.Current("ID_Localidad") = codigoConsulta Then
+    '             Localidad_LocalidadTextBox.Text = LocalidadBindingSource.Current("Localidad_Localidad")
+    '             CP_LocalidadTextBox.Text = LocalidadBindingSource.Current("CP_Localidad")
+    '               Provincia_LocalidadTextBox.Text = LocalidadBindingSource.Current("Provincia_Localidad")
+    '
+    '             Exit Sub
+    '        End If
+    '         i = i + 1
+    '          LocalidadBindingSource.MoveNext()
+    '       Loop Until i = LocalidadBindingSource.Count
+    '
+    '   Else
+
+    '   End If
+    ' End Sub
+
+    'Private Sub Txt_Localidad_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Localidad.TextChanged
+
+    ' TextBox2.Text = ""
+    '  TextBox1.Text = ""
+
+    'End Sub
+
+
+   
+    Private Sub Txt_Localidad_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Localidad.KeyPress
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+    End Sub
 End Class

@@ -51,7 +51,7 @@
                 Me.CategoriaBindingSource.AddNew()
                 TextBox1.Text = ""
                 TextBox1.Focus()
-           
+
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -124,6 +124,7 @@
                         Me.Validate()
                         Me.CategoriaBindingSource.EndEdit()
                         Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                        Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
                         Me.CategoriaBindingSource.AddNew()
                         Txt_Buscar.Text = ""
                         Txt_Buscar.Focus()
