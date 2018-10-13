@@ -32,35 +32,19 @@ Partial Class Atributos_De_Gerente
         Me.Lbl_Fecha = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Button5
-        '
-        Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Button5.ForeColor = System.Drawing.Color.Black
-        Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
-        Button5.Location = New System.Drawing.Point(497, 460)
-        Button5.Name = "Button5"
-        Button5.Size = New System.Drawing.Size(159, 170)
-        Button5.TabIndex = 5
-        Button5.Text = "Volver"
-        Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Button5.UseVisualStyleBackColor = False
-        AddHandler Button5.Click, AddressOf Me.Button5_Click
         '
         'Panel1
         '
@@ -139,6 +123,45 @@ Partial Class Atributos_De_Gerente
         '
         Me.Timer1.Enabled = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 60)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1148, 10)
+        Me.Panel2.TabIndex = 58
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Microsoft Tai Le", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Image = Global.WindowsApplication1.My.Resources.Resources.agregar_usuario1
+        Me.Button10.Location = New System.Drawing.Point(667, 170)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(159, 170)
+        Me.Button10.TabIndex = 59
+        Me.Button10.Text = "Agregar Cajero"
+        Me.Button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Image = Global.WindowsApplication1.My.Resources.Resources.simbolo_seo_local
+        Me.Button9.Location = New System.Drawing.Point(849, 170)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(159, 170)
+        Me.Button9.TabIndex = 9
+        Me.Button9.Text = "Localidad"
+        Me.Button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button9.UseVisualStyleBackColor = False
+        '
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -146,7 +169,7 @@ Partial Class Atributos_De_Gerente
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Tai Le", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Image = Global.WindowsApplication1.My.Resources.Resources.cesta_de_la_compra_de_diseno_a_cuadros
-        Me.Button8.Location = New System.Drawing.Point(678, 268)
+        Me.Button8.Location = New System.Drawing.Point(487, 357)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(159, 170)
         Me.Button8.TabIndex = 8
@@ -161,13 +184,46 @@ Partial Class Atributos_De_Gerente
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Image = Global.WindowsApplication1.My.Resources.Resources.png21
-        Me.Button7.Location = New System.Drawing.Point(678, 81)
+        Me.Button7.Location = New System.Drawing.Point(487, 170)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(159, 170)
         Me.Button7.TabIndex = 7
         Me.Button7.Text = "Transaccion de Compras"
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.Black
+        Me.Button6.Image = Global.WindowsApplication1.My.Resources.Resources.apertura_de_puerta_abierta
+        Me.Button6.Location = New System.Drawing.Point(849, 357)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(159, 170)
+        Me.Button6.TabIndex = 6
+        Me.Button6.Text = "Salir"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Button5.ForeColor = System.Drawing.Color.Black
+        Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
+        Button5.Location = New System.Drawing.Point(667, 357)
+        Button5.Name = "Button5"
+        Button5.Size = New System.Drawing.Size(159, 170)
+        Button5.TabIndex = 5
+        Button5.Text = "Volver"
+        Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Button5.UseVisualStyleBackColor = False
+        AddHandler Button5.Click, AddressOf Me.Button5_Click
         '
         'Button4
         '
@@ -177,7 +233,7 @@ Partial Class Atributos_De_Gerente
         Me.Button4.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Black
         Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources.divisa
-        Me.Button4.Location = New System.Drawing.Point(497, 268)
+        Me.Button4.Location = New System.Drawing.Point(306, 357)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(159, 170)
         Me.Button4.TabIndex = 3
@@ -193,11 +249,11 @@ Partial Class Atributos_De_Gerente
         Me.Button3.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.cliente
-        Me.Button3.Location = New System.Drawing.Point(317, 268)
+        Me.Button3.Location = New System.Drawing.Point(126, 357)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(159, 170)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Clientes"
+        Me.Button3.Text = "Agregar Clientes"
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -209,7 +265,7 @@ Partial Class Atributos_De_Gerente
         Me.Button2.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.carretilla_de_transporte
-        Me.Button2.Location = New System.Drawing.Point(497, 80)
+        Me.Button2.Location = New System.Drawing.Point(306, 169)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(159, 170)
         Me.Button2.TabIndex = 1
@@ -225,7 +281,7 @@ Partial Class Atributos_De_Gerente
         Me.Button1.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.codigo_de_barras2
-        Me.Button1.Location = New System.Drawing.Point(317, 80)
+        Me.Button1.Location = New System.Drawing.Point(126, 169)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(159, 170)
         Me.Button1.TabIndex = 0
@@ -233,52 +289,13 @@ Partial Class Atributos_De_Gerente
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Image = Global.WindowsApplication1.My.Resources.Resources.simbolo_seo_local
-        Me.Button9.Location = New System.Drawing.Point(317, 460)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(159, 170)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Text = "Localidad"
-        Me.Button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.Black
-        Me.Button6.Image = Global.WindowsApplication1.My.Resources.Resources.apertura_de_puerta_abierta
-        Me.Button6.Location = New System.Drawing.Point(678, 460)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(159, 170)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Text = "Salir"
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 60)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1148, 10)
-        Me.Panel2.TabIndex = 58
-        '
         'Atributos_De_Gerente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(1148, 642)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
@@ -317,4 +334,5 @@ Partial Class Atributos_De_Gerente
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button10 As System.Windows.Forms.Button
 End Class

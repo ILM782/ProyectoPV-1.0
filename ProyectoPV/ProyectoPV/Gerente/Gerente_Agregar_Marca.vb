@@ -45,7 +45,7 @@
                 Me.MarcasBindingSource.AddNew()
                 TextBox2.Text = ""
                 TextBox2.Focus()
-              
+
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -126,6 +126,7 @@
                         Me.Validate()
                         Me.MarcasBindingSource.EndEdit()
                         Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                        Gerente_Producto.MarcasTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Marcas)
                         Me.MarcasBindingSource.AddNew()
                         TextBox1.Text = ""
                         TextBox1.Focus()
@@ -141,4 +142,6 @@
         TextBox1.Text = ""
         MarcaTextBox1.Text = ""
     End Sub
+
+   
 End Class

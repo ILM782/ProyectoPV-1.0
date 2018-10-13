@@ -133,4 +133,8 @@
         vista.RowFilter = " ID_Cliente =" & Val(Me.TextBox1.Text)
         Me.ClienteDataGridView.DataSource = vista
     End Sub
+
+    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
+
+    End Sub
 End Class
