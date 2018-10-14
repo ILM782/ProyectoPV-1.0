@@ -126,6 +126,7 @@ Partial Class Gerente_Agregar_Marca
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'MarcasDataGridView
         '
@@ -207,9 +208,9 @@ Partial Class Gerente_Agregar_Marca
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(21, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(265, 42)
+        Me.Label3.Size = New System.Drawing.Size(141, 42)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Agregar Marca"
+        Me.Label3.Text = "Marcas"
         '
         'Btn_Guardar
         '
@@ -291,7 +292,7 @@ Partial Class Gerente_Agregar_Marca
         Me.MaximizeBox = False
         Me.Name = "Gerente_Agregar_Marca"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Marcas"
+        Me.Text = "COMERCIANDO / Marcas"
         Me.TransparencyKey = System.Drawing.Color.Red
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

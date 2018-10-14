@@ -32,13 +32,13 @@ Partial Class Atributos_De_Cajero
         Me.Lbl_Hora = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Btn_Localidades = New System.Windows.Forms.Button()
         Me.Btn_Salir = New System.Windows.Forms.Button()
         Me.Btn_Volver = New System.Windows.Forms.Button()
         Me.Btn_Agregar_Cliente = New System.Windows.Forms.Button()
         Me.Btn_Productos = New System.Windows.Forms.Button()
         Me.Btn_Transacciones = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -132,6 +132,15 @@ Partial Class Atributos_De_Cajero
         Me.Panel2.Size = New System.Drawing.Size(1226, 513)
         Me.Panel2.TabIndex = 9
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1226, 10)
+        Me.Panel3.TabIndex = 58
+        '
         'Btn_Localidades
         '
         Me.Btn_Localidades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -221,15 +230,6 @@ Partial Class Atributos_De_Cajero
         Me.Btn_Transacciones.Text = "Transacciones"
         Me.Btn_Transacciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Btn_Transacciones.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1226, 10)
-        Me.Panel3.TabIndex = 58
         '
         'Atributos_De_Cajero
         '

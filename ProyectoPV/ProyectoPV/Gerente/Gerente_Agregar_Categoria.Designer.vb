@@ -67,6 +67,15 @@ Partial Class Gerente_Agregar_Categoria
         CategoriaLabel.TabIndex = 3
         CategoriaLabel.Text = "Categoria:"
         '
+        'CategoriaLabel1
+        '
+        CategoriaLabel1.AutoSize = True
+        CategoriaLabel1.Location = New System.Drawing.Point(12, 313)
+        CategoriaLabel1.Name = "CategoriaLabel1"
+        CategoriaLabel1.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel1.TabIndex = 58
+        CategoriaLabel1.Text = "Categoria:"
+        '
         'MayoristaBaseDeDatosDataSet
         '
         Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
@@ -92,6 +101,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'MenuStrip1
         '
@@ -191,9 +201,9 @@ Partial Class Gerente_Agregar_Categoria
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(21, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(323, 42)
+        Me.Label3.Size = New System.Drawing.Size(199, 42)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Agregar Categoria"
+        Me.Label3.Text = "Categorias"
         '
         'Btn_Guardar
         '
@@ -220,15 +230,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.Btn_Eliminar.TabIndex = 4
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
-        '
-        'CategoriaLabel1
-        '
-        CategoriaLabel1.AutoSize = True
-        CategoriaLabel1.Location = New System.Drawing.Point(12, 313)
-        CategoriaLabel1.Name = "CategoriaLabel1"
-        CategoriaLabel1.Size = New System.Drawing.Size(55, 13)
-        CategoriaLabel1.TabIndex = 58
-        CategoriaLabel1.Text = "Categoria:"
         '
         'CategoriaTextBox1
         '
@@ -284,7 +285,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Gerente_Agregar_Categoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Categorias"
+        Me.Text = "COMERCIANDO / Categorias"
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

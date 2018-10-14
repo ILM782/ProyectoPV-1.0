@@ -64,9 +64,6 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -88,7 +85,7 @@ Partial Class Cajero_Agregar_Cliente
         'Nombre_ClienteLabel
         '
         Nombre_ClienteLabel.AutoSize = True
-        Nombre_ClienteLabel.Location = New System.Drawing.Point(44, 124)
+        Nombre_ClienteLabel.Location = New System.Drawing.Point(43, 137)
         Nombre_ClienteLabel.Name = "Nombre_ClienteLabel"
         Nombre_ClienteLabel.Size = New System.Drawing.Size(82, 13)
         Nombre_ClienteLabel.TabIndex = 24
@@ -97,7 +94,7 @@ Partial Class Cajero_Agregar_Cliente
         'Apellido_ClienteLabel
         '
         Apellido_ClienteLabel.AutoSize = True
-        Apellido_ClienteLabel.Location = New System.Drawing.Point(44, 150)
+        Apellido_ClienteLabel.Location = New System.Drawing.Point(43, 163)
         Apellido_ClienteLabel.Name = "Apellido_ClienteLabel"
         Apellido_ClienteLabel.Size = New System.Drawing.Size(82, 13)
         Apellido_ClienteLabel.TabIndex = 26
@@ -106,7 +103,7 @@ Partial Class Cajero_Agregar_Cliente
         'DNI_ClienteLabel
         '
         DNI_ClienteLabel.AutoSize = True
-        DNI_ClienteLabel.Location = New System.Drawing.Point(44, 176)
+        DNI_ClienteLabel.Location = New System.Drawing.Point(43, 189)
         DNI_ClienteLabel.Name = "DNI_ClienteLabel"
         DNI_ClienteLabel.Size = New System.Drawing.Size(64, 13)
         DNI_ClienteLabel.TabIndex = 28
@@ -115,7 +112,7 @@ Partial Class Cajero_Agregar_Cliente
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(44, 202)
+        ID_LocalidadLabel.Location = New System.Drawing.Point(43, 215)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 30
@@ -124,7 +121,7 @@ Partial Class Cajero_Agregar_Cliente
         'Domicilio_ClienteLabel
         '
         Domicilio_ClienteLabel.AutoSize = True
-        Domicilio_ClienteLabel.Location = New System.Drawing.Point(44, 229)
+        Domicilio_ClienteLabel.Location = New System.Drawing.Point(43, 242)
         Domicilio_ClienteLabel.Name = "Domicilio_ClienteLabel"
         Domicilio_ClienteLabel.Size = New System.Drawing.Size(87, 13)
         Domicilio_ClienteLabel.TabIndex = 32
@@ -133,7 +130,7 @@ Partial Class Cajero_Agregar_Cliente
         'Telefono_ClienteLabel
         '
         Telefono_ClienteLabel.AutoSize = True
-        Telefono_ClienteLabel.Location = New System.Drawing.Point(44, 255)
+        Telefono_ClienteLabel.Location = New System.Drawing.Point(43, 268)
         Telefono_ClienteLabel.Name = "Telefono_ClienteLabel"
         Telefono_ClienteLabel.Size = New System.Drawing.Size(87, 13)
         Telefono_ClienteLabel.TabIndex = 34
@@ -142,7 +139,7 @@ Partial Class Cajero_Agregar_Cliente
         'Correo_ClienteLabel
         '
         Correo_ClienteLabel.AutoSize = True
-        Correo_ClienteLabel.Location = New System.Drawing.Point(44, 281)
+        Correo_ClienteLabel.Location = New System.Drawing.Point(43, 294)
         Correo_ClienteLabel.Name = "Correo_ClienteLabel"
         Correo_ClienteLabel.Size = New System.Drawing.Size(76, 13)
         Correo_ClienteLabel.TabIndex = 36
@@ -154,7 +151,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TransaccionToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1205, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1185, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -204,7 +201,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.Btn_Guardar.FlatAppearance.BorderSize = 0
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(47, 334)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(46, 347)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
         Me.Btn_Guardar.TabIndex = 23
@@ -226,6 +223,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'ClienteDataGridView
         '
@@ -233,9 +231,9 @@ Partial Class Cajero_Agregar_Cliente
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn9})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
-        Me.ClienteDataGridView.Location = New System.Drawing.Point(308, 159)
+        Me.ClienteDataGridView.Location = New System.Drawing.Point(295, 134)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
-        Me.ClienteDataGridView.Size = New System.Drawing.Size(844, 275)
+        Me.ClienteDataGridView.Size = New System.Drawing.Size(844, 253)
         Me.ClienteDataGridView.TabIndex = 24
         '
         'DataGridViewTextBoxColumn1
@@ -300,7 +298,7 @@ Partial Class Cajero_Agregar_Cliente
         'Nombre_ClienteTextBox
         '
         Me.Nombre_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre_Cliente", True))
-        Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(137, 121)
+        Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(136, 134)
         Me.Nombre_ClienteTextBox.MaxLength = 25
         Me.Nombre_ClienteTextBox.Name = "Nombre_ClienteTextBox"
         Me.Nombre_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -309,7 +307,7 @@ Partial Class Cajero_Agregar_Cliente
         'Apellido_ClienteTextBox
         '
         Me.Apellido_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_Cliente", True))
-        Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(137, 147)
+        Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(136, 160)
         Me.Apellido_ClienteTextBox.MaxLength = 25
         Me.Apellido_ClienteTextBox.Name = "Apellido_ClienteTextBox"
         Me.Apellido_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -318,7 +316,7 @@ Partial Class Cajero_Agregar_Cliente
         'DNI_ClienteTextBox
         '
         Me.DNI_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "DNI_Cliente", True))
-        Me.DNI_ClienteTextBox.Location = New System.Drawing.Point(137, 173)
+        Me.DNI_ClienteTextBox.Location = New System.Drawing.Point(136, 186)
         Me.DNI_ClienteTextBox.MaxLength = 8
         Me.DNI_ClienteTextBox.Name = "DNI_ClienteTextBox"
         Me.DNI_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -329,7 +327,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.ID_LocalidadComboBox.DataSource = Me.LocalidadBindingSource
         Me.ID_LocalidadComboBox.DisplayMember = "Localidad_Localidad"
         Me.ID_LocalidadComboBox.FormattingEnabled = True
-        Me.ID_LocalidadComboBox.Location = New System.Drawing.Point(137, 199)
+        Me.ID_LocalidadComboBox.Location = New System.Drawing.Point(136, 212)
         Me.ID_LocalidadComboBox.Name = "ID_LocalidadComboBox"
         Me.ID_LocalidadComboBox.Size = New System.Drawing.Size(121, 21)
         Me.ID_LocalidadComboBox.TabIndex = 31
@@ -343,7 +341,7 @@ Partial Class Cajero_Agregar_Cliente
         'Domicilio_ClienteTextBox
         '
         Me.Domicilio_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Domicilio_Cliente", True))
-        Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(137, 226)
+        Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(136, 239)
         Me.Domicilio_ClienteTextBox.MaxLength = 50
         Me.Domicilio_ClienteTextBox.Name = "Domicilio_ClienteTextBox"
         Me.Domicilio_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -352,7 +350,7 @@ Partial Class Cajero_Agregar_Cliente
         'Telefono_ClienteTextBox
         '
         Me.Telefono_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Telefono_Cliente", True))
-        Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(137, 252)
+        Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(136, 265)
         Me.Telefono_ClienteTextBox.MaxLength = 10
         Me.Telefono_ClienteTextBox.Name = "Telefono_ClienteTextBox"
         Me.Telefono_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -361,7 +359,7 @@ Partial Class Cajero_Agregar_Cliente
         'Correo_ClienteTextBox
         '
         Me.Correo_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Correo_Cliente", True))
-        Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(137, 278)
+        Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(136, 291)
         Me.Correo_ClienteTextBox.MaxLength = 50
         Me.Correo_ClienteTextBox.Name = "Correo_ClienteTextBox"
         Me.Correo_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
@@ -396,38 +394,13 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn13.HeaderText = "Provincia_Localidad"
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(625, 120)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 13)
-        Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Buscar por DNI:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(738, 117)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 38
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(867, 115)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1205, 10)
+        Me.Panel2.Size = New System.Drawing.Size(1185, 10)
         Me.Panel2.TabIndex = 56
         '
         'Panel1
@@ -437,7 +410,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1205, 60)
+        Me.Panel1.Size = New System.Drawing.Size(1185, 60)
         Me.Panel1.TabIndex = 55
         '
         'Label3
@@ -447,21 +420,18 @@ Partial Class Cajero_Agregar_Cliente
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(21, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(311, 42)
+        Me.Label3.Size = New System.Drawing.Size(277, 42)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Agregar Producto"
+        Me.Label3.Text = "Agregar Cliente"
         '
         'Cajero_Agregar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(1205, 455)
+        Me.ClientSize = New System.Drawing.Size(1185, 428)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Nombre_ClienteLabel)
         Me.Controls.Add(Me.Nombre_ClienteTextBox)
         Me.Controls.Add(Apellido_ClienteLabel)
@@ -532,9 +502,6 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
