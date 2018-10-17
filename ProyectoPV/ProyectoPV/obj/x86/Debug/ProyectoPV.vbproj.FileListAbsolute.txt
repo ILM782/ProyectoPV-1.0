@@ -186,3 +186,7 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0 - copia\ProyectoPV\ProyectoPV\obj\x86\Debu
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
+<<<<<<< HEAD
+=======
+C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
+>>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
