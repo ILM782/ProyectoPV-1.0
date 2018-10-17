@@ -144,4 +144,9 @@
     Private Sub Btn_Buscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Buscar.Click
         Cajero_Agregar_Cliente.Show()
     End Sub
+
+    Private Sub Btn_Imprimir_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Imprimir.Click
+        Cajero_ImprimirVenta.Show()
+
+    End Sub
 End Class
