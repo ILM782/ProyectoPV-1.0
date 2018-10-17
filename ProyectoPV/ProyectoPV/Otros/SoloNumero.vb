@@ -31,7 +31,7 @@
     Function solo_letras(ByVal Tecla As System.Windows.Forms.KeyPressEventArgs) 'validacion para solo letras
         Dim tecla_presionada As Integer
         tecla_presionada = AscW(Tecla.KeyChar)
-        If tecla_presionada >= 97 And tecla_presionada <= 122 Or tecla_presionada = 8 Or tecla_presionada = 13 Then
+        If tecla_presionada >= 97 And tecla_presionada <= 122 Or tecla_presionada = 8 Or tecla_presionada = 13 Or tecla_presionada = 32 Or tecla_presionada = 46 Then
             solo_letras = AscW(Tecla.KeyChar)
         Else
             solo_letras = 0

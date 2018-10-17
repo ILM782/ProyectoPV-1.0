@@ -46,6 +46,7 @@ Partial Class Gerente_Localidad
         Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -71,7 +72,6 @@ Partial Class Gerente_Localidad
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -278,6 +278,13 @@ Partial Class Gerente_Localidad
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(112, 20)
         Me.ToolStripMenuItem3.Text = "Ventas Realizadas"
         '
+        'ComprasRealizadasToolStripMenuItem
+        '
+        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
+        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
+        '
         'AtrasToolStripMenuItem
         '
         Me.AtrasToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -339,6 +346,7 @@ Partial Class Gerente_Localidad
         'Txt_Localidad
         '
         Me.Txt_Localidad.Location = New System.Drawing.Point(148, 123)
+        Me.Txt_Localidad.MaxLength = 80
         Me.Txt_Localidad.Name = "Txt_Localidad"
         Me.Txt_Localidad.Size = New System.Drawing.Size(108, 20)
         Me.Txt_Localidad.TabIndex = 1
@@ -346,6 +354,7 @@ Partial Class Gerente_Localidad
         'Txt_CP
         '
         Me.Txt_CP.Location = New System.Drawing.Point(148, 148)
+        Me.Txt_CP.MaxLength = 10
         Me.Txt_CP.Name = "Txt_CP"
         Me.Txt_CP.Size = New System.Drawing.Size(108, 20)
         Me.Txt_CP.TabIndex = 2
@@ -353,6 +362,7 @@ Partial Class Gerente_Localidad
         'Txt_Provincia
         '
         Me.Txt_Provincia.Location = New System.Drawing.Point(148, 174)
+        Me.Txt_Provincia.MaxLength = 50
         Me.Txt_Provincia.Name = "Txt_Provincia"
         Me.Txt_Provincia.Size = New System.Drawing.Size(108, 20)
         Me.Txt_Provincia.TabIndex = 3
@@ -480,6 +490,7 @@ Partial Class Gerente_Localidad
         '
         Me.Localidad_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad_Localidad", True))
         Me.Localidad_LocalidadTextBox.Location = New System.Drawing.Point(147, 444)
+        Me.Localidad_LocalidadTextBox.MaxLength = 80
         Me.Localidad_LocalidadTextBox.Name = "Localidad_LocalidadTextBox"
         Me.Localidad_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Localidad_LocalidadTextBox.TabIndex = 8
@@ -488,6 +499,7 @@ Partial Class Gerente_Localidad
         '
         Me.CP_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "CP_Localidad", True))
         Me.CP_LocalidadTextBox.Location = New System.Drawing.Point(147, 470)
+        Me.CP_LocalidadTextBox.MaxLength = 10
         Me.CP_LocalidadTextBox.Name = "CP_LocalidadTextBox"
         Me.CP_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CP_LocalidadTextBox.TabIndex = 9
@@ -496,6 +508,7 @@ Partial Class Gerente_Localidad
         '
         Me.Provincia_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Provincia_Localidad", True))
         Me.Provincia_LocalidadTextBox.Location = New System.Drawing.Point(147, 496)
+        Me.Provincia_LocalidadTextBox.MaxLength = 80
         Me.Provincia_LocalidadTextBox.Name = "Provincia_LocalidadTextBox"
         Me.Provincia_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Provincia_LocalidadTextBox.TabIndex = 10
@@ -506,13 +519,6 @@ Partial Class Gerente_Localidad
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 57
-        '
-        'ComprasRealizadasToolStripMenuItem
-        '
-        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
-        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
-        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
         '
         'Gerente_Localidad
         '
