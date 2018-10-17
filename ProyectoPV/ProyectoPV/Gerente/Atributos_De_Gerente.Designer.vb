@@ -23,8 +23,8 @@ Partial Class Atributos_De_Gerente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Button5 As System.Windows.Forms.Button
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Atributos_De_Gerente))
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Lbl_Hora = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -42,26 +42,24 @@ Partial Class Atributos_De_Gerente
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button5
         '
-        Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Button5.ForeColor = System.Drawing.Color.Black
-        Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
-        Button5.Location = New System.Drawing.Point(667, 357)
-        Button5.Name = "Button5"
-        Button5.Size = New System.Drawing.Size(159, 170)
-        Button5.TabIndex = 5
-        Button5.Text = "Volver"
-        Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Button5.UseVisualStyleBackColor = False
-        AddHandler Button5.Click, AddressOf Me.Button5_Click
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Black
+        Me.Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
+        Me.Button5.Location = New System.Drawing.Point(667, 357)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(159, 170)
+        Me.Button5.TabIndex = 5
+        Me.Button5.Text = "Volver"
+        Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -154,7 +152,8 @@ Partial Class Atributos_De_Gerente
         Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Font = New System.Drawing.Font("Microsoft Tai Le", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.Color.Black
         Me.Button10.Image = Global.WindowsApplication1.My.Resources.Resources.agregar_usuario1
         Me.Button10.Location = New System.Drawing.Point(667, 170)
         Me.Button10.Name = "Button10"
@@ -170,6 +169,7 @@ Partial Class Atributos_De_Gerente
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.Black
         Me.Button9.Image = Global.WindowsApplication1.My.Resources.Resources.simbolo_seo_local
         Me.Button9.Location = New System.Drawing.Point(849, 170)
         Me.Button9.Name = "Button9"
@@ -185,6 +185,7 @@ Partial Class Atributos_De_Gerente
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Tai Le", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.Black
         Me.Button8.Image = Global.WindowsApplication1.My.Resources.Resources.cesta_de_la_compra_de_diseno_a_cuadros
         Me.Button8.Location = New System.Drawing.Point(487, 357)
         Me.Button8.Name = "Button8"
@@ -200,6 +201,7 @@ Partial Class Atributos_De_Gerente
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.Black
         Me.Button7.Image = Global.WindowsApplication1.My.Resources.Resources.png21
         Me.Button7.Location = New System.Drawing.Point(487, 170)
         Me.Button7.Name = "Button7"
@@ -301,7 +303,7 @@ Partial Class Atributos_De_Gerente
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Button5)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -335,4 +337,5 @@ Partial Class Atributos_De_Gerente
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

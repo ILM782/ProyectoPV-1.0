@@ -26,15 +26,15 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -58,15 +58,15 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -90,15 +90,15 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -126,15 +126,15 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

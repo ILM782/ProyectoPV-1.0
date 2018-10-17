@@ -133,4 +133,16 @@
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
     End Sub
+
+    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+        Gerente_Transacciones_de_Compras.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
+        Gerente_Agregar_Cajero.Show()
+        Me.Close()
+    End Sub
+
+
 End Class

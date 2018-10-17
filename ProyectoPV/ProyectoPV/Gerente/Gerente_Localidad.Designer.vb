@@ -43,6 +43,7 @@ Partial Class Gerente_Localidad
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -70,6 +71,7 @@ Partial Class Gerente_Localidad
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -224,10 +226,10 @@ Partial Class Gerente_Localidad
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BorrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ToolStripMenuItem3, Me.AtrasToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BorrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.AgregarCajeroToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ToolStripMenuItem3, Me.ComprasRealizadasToolStripMenuItem, Me.AtrasToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(772, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(913, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -252,15 +254,22 @@ Partial Class Gerente_Localidad
         Me.ActualizarToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ActualizarToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(151, 20)
-        Me.ActualizarToolStripMenuItem.Text = "Transaccion de Compras"
+        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(162, 20)
+        Me.ActualizarToolStripMenuItem.Text = "Transacciones de Compras"
+        '
+        'AgregarCajeroToolStripMenuItem
+        '
+        Me.AgregarCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AgregarCajeroToolStripMenuItem.Name = "AgregarCajeroToolStripMenuItem"
+        Me.AgregarCajeroToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.AgregarCajeroToolStripMenuItem.Text = "Agregar Cajero"
         '
         'VentasRealizadasToolStripMenuItem
         '
         Me.VentasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.VentasRealizadasToolStripMenuItem.Name = "VentasRealizadasToolStripMenuItem"
-        Me.VentasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.VentasRealizadasToolStripMenuItem.Text = "Clientes"
+        Me.VentasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+        Me.VentasRealizadasToolStripMenuItem.Text = "Agregar Clientes"
         '
         'ToolStripMenuItem3
         '
@@ -291,7 +300,7 @@ Partial Class Gerente_Localidad
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(772, 586)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(913, 586)
         Me.ShapeContainer1.TabIndex = 13
         Me.ShapeContainer1.TabStop = False
         '
@@ -404,7 +413,7 @@ Partial Class Gerente_Localidad
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(772, 10)
+        Me.Panel2.Size = New System.Drawing.Size(913, 10)
         Me.Panel2.TabIndex = 56
         '
         'Panel1
@@ -414,7 +423,7 @@ Partial Class Gerente_Localidad
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(772, 60)
+        Me.Panel1.Size = New System.Drawing.Size(913, 60)
         Me.Panel1.TabIndex = 55
         '
         'Label3
@@ -498,12 +507,19 @@ Partial Class Gerente_Localidad
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 57
         '
+        'ComprasRealizadasToolStripMenuItem
+        '
+        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
+        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
+        '
         'Gerente_Localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(772, 586)
+        Me.ClientSize = New System.Drawing.Size(913, 586)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Localidad_LocalidadLabel1)
         Me.Controls.Add(Me.Localidad_LocalidadTextBox)
@@ -585,4 +601,6 @@ Partial Class Gerente_Localidad
     Friend WithEvents CP_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Provincia_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents AgregarCajeroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

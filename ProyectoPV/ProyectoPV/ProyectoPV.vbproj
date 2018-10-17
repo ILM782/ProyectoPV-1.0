@@ -167,6 +167,12 @@
     <Compile Include="Gerente\Gerente_Tablas_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.Designer.vb">
+      <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
     </Compile>
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Tablas_Producto.resx">
       <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Cajeros.resx">
+      <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>

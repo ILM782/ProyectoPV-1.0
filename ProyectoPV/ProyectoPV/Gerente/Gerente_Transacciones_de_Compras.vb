@@ -37,4 +37,9 @@
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
     End Sub
+
+    Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
+        Gerente_Agregar_Cajero.Show()
+        Me.Close()
+    End Sub
 End Class

@@ -45,10 +45,11 @@ Partial Class Gerente_Producto
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
@@ -77,60 +78,66 @@ Partial Class Gerente_Producto
         'CategoriaLabel
         '
         CategoriaLabel.AutoSize = True
+        CategoriaLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CategoriaLabel.ForeColor = System.Drawing.Color.Black
-        CategoriaLabel.Location = New System.Drawing.Point(95, 233)
+        CategoriaLabel.Location = New System.Drawing.Point(71, 231)
         CategoriaLabel.Name = "CategoriaLabel"
-        CategoriaLabel.Size = New System.Drawing.Size(60, 14)
+        CategoriaLabel.Size = New System.Drawing.Size(68, 17)
         CategoriaLabel.TabIndex = 40
         CategoriaLabel.Text = "Categoria:"
         '
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
+        MarcaLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         MarcaLabel.ForeColor = System.Drawing.Color.Black
-        MarcaLabel.Location = New System.Drawing.Point(95, 262)
+        MarcaLabel.Location = New System.Drawing.Point(71, 260)
         MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(41, 14)
+        MarcaLabel.Size = New System.Drawing.Size(48, 17)
         MarcaLabel.TabIndex = 39
         MarcaLabel.Text = "Marca:"
         '
         'Nombre_ProductoLabel
         '
         Nombre_ProductoLabel.AutoSize = True
+        Nombre_ProductoLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Nombre_ProductoLabel.ForeColor = System.Drawing.Color.Black
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(94, 120)
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(70, 118)
         Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
-        Nombre_ProductoLabel.Size = New System.Drawing.Size(101, 14)
+        Nombre_ProductoLabel.Size = New System.Drawing.Size(117, 17)
         Nombre_ProductoLabel.TabIndex = 35
         Nombre_ProductoLabel.Text = "Nombre Producto:"
         '
         'StrockLabel
         '
         StrockLabel.AutoSize = True
+        StrockLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         StrockLabel.ForeColor = System.Drawing.Color.Black
-        StrockLabel.Location = New System.Drawing.Point(94, 149)
+        StrockLabel.Location = New System.Drawing.Point(70, 147)
         StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(42, 14)
+        StrockLabel.Size = New System.Drawing.Size(43, 17)
         StrockLabel.TabIndex = 36
-        StrockLabel.Text = "Strock:"
+        StrockLabel.Text = "Stock:"
         '
         'Precio_UnitarioLabel
         '
         Precio_UnitarioLabel.AutoSize = True
+        Precio_UnitarioLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Precio_UnitarioLabel.ForeColor = System.Drawing.Color.Black
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(94, 177)
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(70, 175)
         Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
-        Precio_UnitarioLabel.Size = New System.Drawing.Size(86, 14)
+        Precio_UnitarioLabel.Size = New System.Drawing.Size(97, 17)
         Precio_UnitarioLabel.TabIndex = 37
         Precio_UnitarioLabel.Text = "Precio Unitario:"
         '
         'DescripcionLabel
         '
         DescripcionLabel.AutoSize = True
+        DescripcionLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DescripcionLabel.ForeColor = System.Drawing.Color.Black
-        DescripcionLabel.Location = New System.Drawing.Point(94, 205)
+        DescripcionLabel.Location = New System.Drawing.Point(70, 203)
         DescripcionLabel.Name = "DescripcionLabel"
-        DescripcionLabel.Size = New System.Drawing.Size(70, 14)
+        DescripcionLabel.Size = New System.Drawing.Size(79, 17)
         DescripcionLabel.TabIndex = 38
         DescripcionLabel.Text = "Descripcion:"
         '
@@ -231,26 +238,43 @@ Partial Class Gerente_Producto
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.AgregarCajeroToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(737, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(856, 24)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ProveedorToolStripMenuItem
         '
+        Me.ProveedorToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ProveedorToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
-        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.ProveedorToolStripMenuItem.Text = "Proveedores"
         '
         'TransaccionesDeCompraToolStripMenuItem
         '
+        Me.TransaccionesDeCompraToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TransaccionesDeCompraToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.TransaccionesDeCompraToolStripMenuItem.Name = "TransaccionesDeCompraToolStripMenuItem"
-        Me.TransaccionesDeCompraToolStripMenuItem.Size = New System.Drawing.Size(153, 20)
-        Me.TransaccionesDeCompraToolStripMenuItem.Text = "Transacciones de compra"
+        Me.TransaccionesDeCompraToolStripMenuItem.Size = New System.Drawing.Size(144, 20)
+        Me.TransaccionesDeCompraToolStripMenuItem.Text = "Transaccion de compra"
+        '
+        'AgregarCajeroToolStripMenuItem
+        '
+        Me.AgregarCajeroToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgregarCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AgregarCajeroToolStripMenuItem.Name = "AgregarCajeroToolStripMenuItem"
+        Me.AgregarCajeroToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.AgregarCajeroToolStripMenuItem.Text = "Agregar Cajero"
+        '
+        'LocalidadToolStripMenuItem
+        '
+        Me.LocalidadToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
+        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.LocalidadToolStripMenuItem.Text = "Localidad"
         '
         'ClientesToolStripMenuItem
         '
@@ -272,13 +296,6 @@ Partial Class Gerente_Producto
         Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
         Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(124, 20)
         Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
-        '
-        'LocalidadToolStripMenuItem
-        '
-        Me.LocalidadToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
-        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
-        Me.LocalidadToolStripMenuItem.Text = "Localidad"
         '
         'VolverToolStripMenuItem
         '
@@ -326,7 +343,7 @@ Partial Class Gerente_Producto
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(737, 65)
+        Me.Panel1.Size = New System.Drawing.Size(856, 65)
         Me.Panel1.TabIndex = 51
         '
         'Label2
@@ -346,7 +363,7 @@ Partial Class Gerente_Producto
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 89)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(737, 11)
+        Me.Panel2.Size = New System.Drawing.Size(856, 11)
         Me.Panel2.TabIndex = 52
         '
         'Button1
@@ -355,7 +372,7 @@ Partial Class Gerente_Producto
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(407, 238)
+        Me.Button1.Location = New System.Drawing.Point(407, 234)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(217, 43)
         Me.Button1.TabIndex = 53
@@ -382,7 +399,7 @@ Partial Class Gerente_Producto
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(737, 301)
+        Me.ClientSize = New System.Drawing.Size(856, 301)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
@@ -451,4 +468,5 @@ Partial Class Gerente_Producto
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents AgregarCajeroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
