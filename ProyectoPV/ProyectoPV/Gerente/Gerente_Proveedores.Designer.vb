@@ -31,7 +31,6 @@ Partial Class Gerente_Proveedores
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Proveedores))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasOComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,6 +63,7 @@ Partial Class Gerente_Proveedores
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Nombre_EmpresaLabel = New System.Windows.Forms.Label()
         Domicilio_ProveedorLabel = New System.Windows.Forms.Label()
         Telefono_ProveedorLabel = New System.Windows.Forms.Label()
@@ -126,7 +126,7 @@ Partial Class Gerente_Proveedores
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasOComprasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.AgregarCajeroToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasOComprasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1173, 24)
@@ -142,19 +142,12 @@ Partial Class Gerente_Proveedores
         Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
         Me.NuevoToolStripMenuItem.Text = "Productos"
         '
-        'ProveedorToolStripMenuItem
-        '
-        Me.ProveedorToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
-        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
-        '
         'TransaccionesDeCompraToolStripMenuItem
         '
         Me.TransaccionesDeCompraToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.TransaccionesDeCompraToolStripMenuItem.Name = "TransaccionesDeCompraToolStripMenuItem"
-        Me.TransaccionesDeCompraToolStripMenuItem.Size = New System.Drawing.Size(155, 20)
-        Me.TransaccionesDeCompraToolStripMenuItem.Text = "Transacciones de compra"
+        Me.TransaccionesDeCompraToolStripMenuItem.Size = New System.Drawing.Size(146, 20)
+        Me.TransaccionesDeCompraToolStripMenuItem.Text = "Transaccion de Compra"
         '
         'ClientesToolStripMenuItem
         '
@@ -162,8 +155,8 @@ Partial Class Gerente_Proveedores
         Me.ClientesToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientesToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+        Me.ClientesToolStripMenuItem.Text = "Agregar Clientes"
         '
         'VentasOComprasToolStripMenuItem
         '
@@ -402,6 +395,13 @@ Partial Class Gerente_Proveedores
         Me.DataGridViewTextBoxColumn6.HeaderText = "Correo_Proveedor"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
+        'AgregarCajeroToolStripMenuItem
+        '
+        Me.AgregarCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AgregarCajeroToolStripMenuItem.Name = "AgregarCajeroToolStripMenuItem"
+        Me.AgregarCajeroToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.AgregarCajeroToolStripMenuItem.Text = "Agregar Cajero"
+        '
         'Gerente_Proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -472,7 +472,6 @@ Partial Class Gerente_Proveedores
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
-    Friend WithEvents ProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProveedorDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -480,4 +479,5 @@ Partial Class Gerente_Proveedores
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AgregarCajeroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

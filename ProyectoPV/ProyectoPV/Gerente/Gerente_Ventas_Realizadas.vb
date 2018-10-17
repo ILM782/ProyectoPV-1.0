@@ -1,6 +1,6 @@
-﻿Public Class Gerente_Transacciones_de_Compras
+﻿Public Class Gerente_Ventas_Realizadas
 
-    Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
+    Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
         Gerente_Producto.Show()
         Me.Close()
     End Sub
@@ -10,8 +10,22 @@
         Me.Close()
     End Sub
 
+    Private Sub TransaccionesDeCompraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionesDeCompraToolStripMenuItem.Click
+        Gerente_Transacciones_de_Compras.Show()
+        Me.Close()
+    End Sub
+
     Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ComprasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComprasRealizadasToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
+        Gerente_Localidad.Show()
         Me.Close()
     End Sub
 
@@ -28,17 +42,7 @@
         End If
     End Sub
 
-    Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Gerente_Localidad.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
-        Gerente_Ventas_Realizadas.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
+    Private Sub AgregarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
     End Sub

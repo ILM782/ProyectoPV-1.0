@@ -74,7 +74,7 @@
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim consulta1 As Integer
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" Then
+        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" And ComboBox1.Text <> "Seleccionar" And ComboBox2.Text <> "Seleccionar" Then
             consulta1 = Me.ProductoBindingSource.Find("Nombre_Producto", TextBox1.Text)
 
             If consulta1 <> -1 Then
@@ -128,4 +128,20 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
+        Gerente_Ventas_Realizadas.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+        Gerente_Transacciones_de_Compras.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
+        Gerente_Agregar_Cajero.Show()
+        Me.Close()
+    End Sub
+
 End Class

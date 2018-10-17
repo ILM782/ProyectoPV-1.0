@@ -52,17 +52,17 @@ Partial Class Gerente_Tablas_Producto
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
         Me.ID_MarcaTextBox = New System.Windows.Forms.TextBox()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.ID_CategoriaTextBox = New System.Windows.Forms.TextBox()
+        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Nombre_ProductoTextBox = New System.Windows.Forms.TextBox()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.StrockTextBox = New System.Windows.Forms.TextBox()
         Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
         Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ID_ProductoTextBox = New System.Windows.Forms.TextBox()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
-        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_CategoriaLabel = New System.Windows.Forms.Label()
         Nombre_ProductoLabel = New System.Windows.Forms.Label()
@@ -73,10 +73,10 @@ Partial Class Gerente_Tablas_Producto
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ID_MarcaLabel
@@ -310,6 +310,16 @@ Partial Class Gerente_Tablas_Producto
         Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_MarcaTextBox.TabIndex = 64
         '
+        'MarcasBindingSource
+        '
+        Me.MarcasBindingSource.DataMember = "Marcas"
+        Me.MarcasBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'MayoristaBaseDeDatosDataSet
+        '
+        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
+        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'ID_CategoriaTextBox
         '
         Me.ID_CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoriaBindingSource, "Categoria", True))
@@ -318,6 +328,11 @@ Partial Class Gerente_Tablas_Producto
         Me.ID_CategoriaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_CategoriaTextBox.TabIndex = 66
         '
+        'CategoriaBindingSource
+        '
+        Me.CategoriaBindingSource.DataMember = "Categoria"
+        Me.CategoriaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
         'Nombre_ProductoTextBox
         '
         Me.Nombre_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Nombre_Producto", True))
@@ -325,6 +340,11 @@ Partial Class Gerente_Tablas_Producto
         Me.Nombre_ProductoTextBox.Name = "Nombre_ProductoTextBox"
         Me.Nombre_ProductoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Nombre_ProductoTextBox.TabIndex = 68
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
         'StrockTextBox
         '
@@ -370,26 +390,6 @@ Partial Class Gerente_Tablas_Producto
         Me.ID_ProductoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_ProductoTextBox.TabIndex = 76
         '
-        'ProductoBindingSource
-        '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
-        '
-        'MayoristaBaseDeDatosDataSet
-        '
-        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
-        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MarcasBindingSource
-        '
-        Me.MarcasBindingSource.DataMember = "Marcas"
-        Me.MarcasBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
-        '
-        'CategoriaBindingSource
-        '
-        Me.CategoriaBindingSource.DataMember = "Categoria"
-        Me.CategoriaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
-        '
         'Gerente_Tablas_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -428,10 +428,10 @@ Partial Class Gerente_Tablas_Producto
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

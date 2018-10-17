@@ -51,7 +51,7 @@
                 Me.CategoriaBindingSource.AddNew()
                 TextBox1.Text = ""
                 TextBox1.Focus()
-
+                Gerente_Producto.ComboBox1.Text = "Seleccionar"
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -84,24 +84,6 @@
                     Txt_Buscar.Focus()
                 End If
             End If
-        End If
-    End Sub
-
-    Private Sub CategoriaTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
-        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
-            Call VolveToolStripMenuItem_Click(sender, e)
-        End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
-            Call Btn_Guardar_Click(sender, e)
-        End If
-    End Sub
-
-    Private Sub Txt_Buscar_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Buscar.KeyPress
-        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
-            Call VolveToolStripMenuItem_Click(sender, e)
-        End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
-            Call Btn_Eliminar_Click(sender, e)
         End If
     End Sub
 
@@ -140,5 +122,14 @@
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
         Txt_Buscar.Text = ""
         CategoriaTextBox1.Text = ""
+    End Sub
+
+    Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+        If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+            Call VolveToolStripMenuItem_Click(sender, e)
+        End If
+        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
+            Call Btn_Guardar_Click(sender, e)
+        End If
     End Sub
 End Class

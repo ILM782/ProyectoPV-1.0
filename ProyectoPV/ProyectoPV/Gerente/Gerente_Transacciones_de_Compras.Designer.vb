@@ -26,10 +26,11 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -45,7 +46,7 @@ Partial Class Gerente_Transacciones_de_Compras
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.AgregarCajeroToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
@@ -69,13 +70,27 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
+        'AgregarCajeroToolStripMenuItem
+        '
+        Me.AgregarCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AgregarCajeroToolStripMenuItem.Name = "AgregarCajeroToolStripMenuItem"
+        Me.AgregarCajeroToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.AgregarCajeroToolStripMenuItem.Text = "Agregar Cajero"
+        '
+        'LocalidadToolStripMenuItem
+        '
+        Me.LocalidadToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
+        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
+        Me.LocalidadToolStripMenuItem.Text = "Localidad"
+        '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientesToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+        Me.ClientesToolStripMenuItem.Text = "Agregar Clientes"
         '
         'VentasRealizadasToolStripMenuItem
         '
@@ -92,13 +107,6 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
         Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
         Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
-        '
-        'LocalidadToolStripMenuItem
-        '
-        Me.LocalidadToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.LocalidadToolStripMenuItem.Name = "LocalidadToolStripMenuItem"
-        Me.LocalidadToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
-        Me.LocalidadToolStripMenuItem.Text = "Localidad"
         '
         'VolverToolStripMenuItem
         '
@@ -142,9 +150,9 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(21, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(311, 42)
+        Me.Label2.Size = New System.Drawing.Size(476, 42)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Agregar Producto"
+        Me.Label2.Text = "Transacciones de Compras"
         '
         'Btn_Guardar
         '
@@ -215,4 +223,5 @@ Partial Class Gerente_Transacciones_de_Compras
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents AgregarCajeroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

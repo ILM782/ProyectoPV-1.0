@@ -66,6 +66,8 @@
     <ApplicationIcon>Resources\ICONO ICO.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="ProyectoPV, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <ExecutableExtension>.exe</ExecutableExtension>
@@ -76,6 +78,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -95,11 +98,22 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cajero\Cajero_ImprimirVenta.Designer.vb">
+      <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\Cajero_ImprimirVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cajero\Cajero_Localidad.Designer.vb">
       <DependentUpon>Cajero_Localidad.vb</DependentUpon>
     </Compile>
     <Compile Include="Cajero\Cajero_Localidad.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturasVentaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_Agregar_Cajero.Designer.vb">
       <DependentUpon>Gerente_Agregar_Cajero.vb</DependentUpon>
@@ -167,6 +181,12 @@
     <Compile Include="Gerente\Gerente_Tablas_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.Designer.vb">
+      <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
     </Compile>
@@ -191,6 +211,12 @@
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_TablasClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Ventas_Realizadas.Designer.vb">
+      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Ventas_Realizadas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Otros\Login.Designer.vb">
@@ -223,6 +249,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cajero\Cajero_ImprimirVenta.resx">
+      <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Cajero_Localidad.resx">
       <DependentUpon>Cajero_Localidad.vb</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +289,9 @@
     <EmbeddedResource Include="Gerente\Gerente_Tablas_Producto.resx">
       <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Cajeros.resx">
+      <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +302,9 @@
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
+      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Otros\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +314,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Otros\FacturaVenta.rdlc" />
     <EmbeddedResource Include="Otros\Version.resx">
       <DependentUpon>Version.vb</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +334,17 @@
     </None>
     <None Include="BaseDeDatos\MayoristaBaseDeDatosDataSet.xss">
       <DependentUpon>MayoristaBaseDeDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FacturasVentaDataSet.xsc">
+      <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FacturasVentaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FacturasVentaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FacturasVentaDataSet.xss">
+      <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

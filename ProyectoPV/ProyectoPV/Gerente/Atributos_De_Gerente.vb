@@ -1,6 +1,6 @@
 ﻿Public Class Atributos_De_Gerente
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         Login.Show()
         Me.Close()
     End Sub
@@ -50,4 +50,12 @@
         Me.Close()
     End Sub
 
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Gerente_Ventas_Realizadas.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
 End Class

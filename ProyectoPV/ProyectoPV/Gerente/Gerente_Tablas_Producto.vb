@@ -140,4 +140,12 @@
             End If
         End If
     End Sub
+
+    Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
+        Dim respuesta As Object
+        respuesta = MsgBox("¿Desea Salir?", MsgBoxStyle.YesNo, "Advertencia!")
+        If respuesta = vbYes Then
+            End
+        End If
+    End Sub
 End Class
