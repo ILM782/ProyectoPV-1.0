@@ -31,6 +31,7 @@ Partial Class Gerente_Proveedores
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gerente_Proveedores))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaccionesDeCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasOComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,21 +52,18 @@ Partial Class Gerente_Proveedores
         Me.Txt_Correo = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
-        Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Nombre_EmpresaLabel = New System.Windows.Forms.Label()
         Domicilio_ProveedorLabel = New System.Windows.Forms.Label()
         Telefono_ProveedorLabel = New System.Windows.Forms.Label()
@@ -75,8 +73,8 @@ Partial Class Gerente_Proveedores
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Nombre_EmpresaLabel
@@ -143,6 +141,13 @@ Partial Class Gerente_Proveedores
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
         Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
         Me.NuevoToolStripMenuItem.Text = "Productos"
+        '
+        'ProveedorToolStripMenuItem
+        '
+        Me.ProveedorToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
+        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
         '
         'TransaccionesDeCompraToolStripMenuItem
         '
@@ -226,6 +231,7 @@ Partial Class Gerente_Proveedores
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Me.ProveedorTableAdapter
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'ComboBox1
         '
@@ -292,55 +298,6 @@ Partial Class Gerente_Proveedores
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Buscar Proveedor:"
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8})
-        Me.DataGridView1.Location = New System.Drawing.Point(280, 128)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(843, 276)
-        Me.DataGridView1.TabIndex = 23
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Id Proveedor"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Nombre de Empresa "
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Localidad "
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Provincia"
-        Me.Column4.Name = "Column4"
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Codigo Postal"
-        Me.Column5.Name = "Column5"
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Domicilio"
-        Me.Column6.Name = "Column6"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Telefono"
-        Me.Column7.Name = "Column7"
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Correo"
-        Me.Column8.Name = "Column8"
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
@@ -397,12 +354,53 @@ Partial Class Gerente_Proveedores
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
         '
-        'ProveedorToolStripMenuItem
+        'ProveedorDataGridView
         '
-        Me.ProveedorToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
-        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
+        Me.ProveedorDataGridView.AutoGenerateColumns = False
+        Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
+        Me.ProveedorDataGridView.Location = New System.Drawing.Point(269, 128)
+        Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
+        Me.ProveedorDataGridView.Size = New System.Drawing.Size(643, 220)
+        Me.ProveedorDataGridView.TabIndex = 59
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Empresa"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Empresa"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Domicilio_Proveedor"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Domicilio_Proveedor"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Telefono_Proveedor"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Telefono_Proveedor"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Correo_Proveedor"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Correo_Proveedor"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'Gerente_Proveedores
         '
@@ -410,11 +408,11 @@ Partial Class Gerente_Proveedores
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(1173, 444)
+        Me.Controls.Add(Me.ProveedorDataGridView)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Txt_Correo)
@@ -440,9 +438,9 @@ Partial Class Gerente_Proveedores
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -469,19 +467,17 @@ Partial Class Gerente_Proveedores
     Friend WithEvents Txt_Correo As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
     Friend WithEvents ProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProveedorDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
