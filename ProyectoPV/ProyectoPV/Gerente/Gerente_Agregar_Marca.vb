@@ -45,13 +45,8 @@
                 Me.MarcasBindingSource.AddNew()
                 TextBox2.Text = ""
                 TextBox2.Focus()
-<<<<<<< HEAD
 
                 Gerente_Producto.ComboBox2.Text = "Seleccionar"
-=======
-                Gerente_Producto.ComboBox1.Text = "Seleccion"
-                Gerente_Producto.ComboBox2.Text = "Seleccion"
->>>>>>> master
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")

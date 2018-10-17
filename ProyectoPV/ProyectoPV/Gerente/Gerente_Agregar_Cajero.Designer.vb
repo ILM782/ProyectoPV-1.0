@@ -64,10 +64,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.DNI_CajeroTextBox = New System.Windows.Forms.TextBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-<<<<<<< HEAD
         Me.FacturasVentaDataSet = New WindowsApplication1.FacturasVentaDataSet()
-=======
->>>>>>> master
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         Nombre_CajeroLabel = New System.Windows.Forms.Label()
         Apellido_CajeroLabel = New System.Windows.Forms.Label()
@@ -80,10 +77,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.Panel1.SuspendLayout()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-<<<<<<< HEAD
         CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-=======
->>>>>>> master
         Me.SuspendLayout()
         '
         'ID_LocalidadLabel
@@ -162,11 +156,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductoToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.TrasaccionDeComprasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.AgregarClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-<<<<<<< HEAD
         Me.MenuStrip1.Size = New System.Drawing.Size(942, 24)
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(832, 24)
->>>>>>> master
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -292,11 +282,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-<<<<<<< HEAD
         Me.Panel2.Size = New System.Drawing.Size(942, 10)
-=======
-        Me.Panel2.Size = New System.Drawing.Size(832, 10)
->>>>>>> master
         Me.Panel2.TabIndex = 56
         '
         'Panel1
@@ -306,11 +292,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-<<<<<<< HEAD
         Me.Panel1.Size = New System.Drawing.Size(942, 60)
-=======
-        Me.Panel1.Size = New System.Drawing.Size(832, 60)
->>>>>>> master
         Me.Panel1.TabIndex = 55
         '
         'Label3
@@ -441,24 +423,17 @@ Partial Class Gerente_Agregar_Cajero
         Me.Button3.TabIndex = 70
         Me.Button3.UseVisualStyleBackColor = False
         '
-<<<<<<< HEAD
         'FacturasVentaDataSet
         '
         Me.FacturasVentaDataSet.DataSetName = "FacturasVentaDataSet"
         Me.FacturasVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-=======
->>>>>>> master
         'Gerente_Agregar_Cajero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(942, 313)
-=======
-        Me.ClientSize = New System.Drawing.Size(832, 313)
->>>>>>> master
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Nombre_CajeroLabel)
@@ -493,10 +468,7 @@ Partial Class Gerente_Agregar_Cajero
         Me.Panel1.PerformLayout()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-<<<<<<< HEAD
         CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-=======
->>>>>>> master
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -535,8 +507,5 @@ Partial Class Gerente_Agregar_Cajero
     Friend WithEvents ComprasRealizadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-<<<<<<< HEAD
     Friend WithEvents FacturasVentaDataSet As WindowsApplication1.FacturasVentaDataSet
-=======
->>>>>>> master
 End Class

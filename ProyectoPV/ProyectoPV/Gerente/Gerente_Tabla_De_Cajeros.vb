@@ -21,16 +21,12 @@
     End Sub
 
     Private Sub Gerente_Tabla_De_Cajeros_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-<<<<<<< HEAD
         'TODO: esta línea de código carga datos en la tabla 'FacturasVentaDataSet.Cajero' Puede moverla o quitarla según sea necesario.
         Me.CajeroTableAdapter1.Fill(Me.FacturasVentaDataSet.Cajero)
-=======
->>>>>>> master
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Localidad' Puede moverla o quitarla según sea necesario.
         Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cajero' Puede moverla o quitarla según sea necesario.
         Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
-<<<<<<< HEAD
         ComboBox1.Text = "Seleccionar"
         ComboBox1.Items.Add("DNI")
         ComboBox1.Items.Add("Nombre")
@@ -105,19 +101,4 @@
         End If
     End Sub
 
-=======
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-        Dim vista As New DataView 'creo e instancio el objeto 
-
-        vista.Table = Me.MayoristaBaseDeDatosDataSet.Cajero 'cargo objeto con la tabla stock
-        'aux = "Id_articulo = " + Val(Me.TextBox2.Text) con el simbolo + tira error no concatena
-
-        vista.RowFilter = " DNI_Cajero = ' " & Me.TextBox1.Text & " % ' "   'esta para numeros
-
-        Me.CajeroDataGridView.DataSource = vista 'cargo la vista
-    End Sub
->>>>>>> master
 End Class

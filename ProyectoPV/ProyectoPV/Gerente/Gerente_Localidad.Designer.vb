@@ -72,7 +72,6 @@ Partial Class Gerente_Localidad
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -520,13 +519,6 @@ Partial Class Gerente_Localidad
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 57
-        '
-        'ComprasRealizadasToolStripMenuItem
-        '
-        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
-        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
-        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
         '
         'Gerente_Localidad
         '
