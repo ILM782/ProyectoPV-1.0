@@ -36,27 +36,27 @@ Partial Class Version
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(216, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(119, 16)
+        Me.Label1.Size = New System.Drawing.Size(132, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "COMERCIANDO"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(237, 67)
+        Me.Label2.Location = New System.Drawing.Point(227, 68)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 13)
+        Me.Label2.Size = New System.Drawing.Size(112, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Versión 1.1.03"
+        Me.Label2.Text = "Versión 1.1.05 (BETA)"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(188, 103)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(176, 13)
+        Me.Label3.Size = New System.Drawing.Size(176, 26)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Email: ivan.martinez782@gmail.com"
+        Me.Label3.Text = "Email: ivan.martinez782@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "            fede_storti31@hotmail.com"
         '
         'PictureBox1
         '

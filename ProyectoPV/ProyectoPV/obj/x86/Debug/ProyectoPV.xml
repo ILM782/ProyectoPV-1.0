@@ -10,14 +10,6 @@ ProyectoPV
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.LocalidadDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -34,27 +26,19 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -74,27 +58,19 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.OperadorRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -114,15 +90,15 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Ventas_ClientesRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.Compra_ProveedorRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.ClienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -131,14 +107,6 @@ Row event argument class
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CategoriaTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.OperadorTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -158,15 +126,15 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Ventas_ClientesTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.Compra_ProveedorTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -219,6 +187,10 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.agregar_usuario1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:WindowsApplication1.My.Resources.Resources.apertura_de_puerta_abierta">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -239,7 +211,19 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.carpeta">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.carpeta1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.carpeta2">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

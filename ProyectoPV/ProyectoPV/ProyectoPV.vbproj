@@ -62,6 +62,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ICONO ICO.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="ProyectoPV, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -98,6 +101,12 @@
     <Compile Include="Cajero\Cajero_Localidad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Agregar_Cajero.Designer.vb">
+      <DependentUpon>Gerente_Agregar_Cajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Agregar_Cajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Agregar_Categoria.Designer.vb">
       <DependentUpon>Gerente_Agregar_Categoria.vb</DependentUpon>
     </Compile>
@@ -128,22 +137,10 @@
     <Compile Include="Gerente\Atributos_De_Gerente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gerente\Gerente_Compras_Realizadas.Designer.vb">
-      <DependentUpon>Gerente_Compras_Realizadas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Compras_Realizadas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Gerente\Gerente_Localidad.Designer.vb">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_Localidad.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Productos.Designer.vb">
-      <DependentUpon>Gerente_Productos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Productos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.Designer.vb">
@@ -152,10 +149,22 @@
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Producto.Designer.vb">
+      <DependentUpon>Gerente_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Proveedores.Designer.vb">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tablas_Producto.Designer.vb">
+      <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tablas_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
@@ -182,12 +191,6 @@
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_TablasClientes.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Ventas_Realizadas.Designer.vb">
-      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Ventas_Realizadas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Otros\Login.Designer.vb">
@@ -226,6 +229,9 @@
     <EmbeddedResource Include="Cajero\Cajero_Producto_Para_Ventas.resx">
       <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Agregar_Cajero.resx">
+      <DependentUpon>Gerente_Agregar_Cajero.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Agregar_Categoria.resx">
       <DependentUpon>Gerente_Agregar_Categoria.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,20 +247,18 @@
     <EmbeddedResource Include="Gerente\Atributos_De_Gerente.resx">
       <DependentUpon>Atributos_De_Gerente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Compras_Realizadas.resx">
-      <DependentUpon>Gerente_Compras_Realizadas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Localidad.resx">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
-      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Productos.resx">
-      <DependentUpon>Gerente_Productos.vb</DependentUpon>
+    <EmbeddedResource Include="Gerente\Gerente_Producto.resx">
+      <DependentUpon>Gerente_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Proveedores.resx">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tablas_Producto.resx">
+      <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
@@ -264,6 +268,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_TablasClientes.resx">
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Otros\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -357,6 +362,9 @@
     <Content Include="BaseDeDatos\MayoristaBaseDeDatos.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\carpeta2.png" />
+    <None Include="Resources\carpeta1.png" />
+    <None Include="Resources\carpeta.png" />
     <None Include="Resources\ICONO ICO.ico" />
     <None Include="Resources\ICONO PNG.png" />
     <None Include="Resources\login.png" />

@@ -79,10 +79,12 @@
     'BORRAR ES SOLO PARA EL DEBUG
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Atributos_De_Gerente.Show()
+        Me.Close()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Atributos_De_Cajero.Show()
+        Me.Close()
     End Sub
 
 End Class

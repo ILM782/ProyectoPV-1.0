@@ -23,120 +23,156 @@ Partial Class Cajero_Transaccion_Venta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim FechaLabel As System.Windows.Forms.Label
+        Dim ID_ClienteLabel As System.Windows.Forms.Label
+        Dim ID_CajeroLabel As System.Windows.Forms.Label
+        Dim NroFacturaLabel As System.Windows.Forms.Label
+        Dim Cantidad_VentaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
-        Dim ID_MarcaLabel As System.Windows.Forms.Label
-        Dim ID_CategoriaLabel As System.Windows.Forms.Label
-        Dim Nombre_ProductoLabel As System.Windows.Forms.Label
-        Dim StrockLabel As System.Windows.Forms.Label
-        Dim Precio_UnitarioLabel As System.Windows.Forms.Label
-        Dim DescripcionLabel As System.Windows.Forms.Label
+        Dim TipoDeFactura_VentaLabel As System.Windows.Forms.Label
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
-        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarLocalidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ID_CajeroComboBox = New System.Windows.Forms.ComboBox()
+        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
+        Me.NroFacturaNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.TipoDeFactura_VentaComboBox = New System.Windows.Forms.ComboBox()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
+        Me.CajeroTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter()
+        Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
+        Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
+        Me.VentaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.Btn_Buscar = New System.Windows.Forms.Button()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.VentaBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.VentaBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.ID_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.Cantidad_VentaTextBox = New System.Windows.Forms.TextBox()
         Me.ID_ProductoTextBox = New System.Windows.Forms.TextBox()
-        Me.ID_MarcaTextBox = New System.Windows.Forms.TextBox()
-        Me.ID_CategoriaTextBox = New System.Windows.Forms.TextBox()
-        Me.Nombre_ProductoTextBox = New System.Windows.Forms.TextBox()
-        Me.StrockTextBox = New System.Windows.Forms.TextBox()
-        Me.Precio_UnitarioTextBox = New System.Windows.Forms.TextBox()
-        Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        FechaLabel = New System.Windows.Forms.Label()
+        Me.ProductoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Btn_Vender = New System.Windows.Forms.Button()
+        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Btn_Imprimir = New System.Windows.Forms.Button()
+        ID_ClienteLabel = New System.Windows.Forms.Label()
+        ID_CajeroLabel = New System.Windows.Forms.Label()
+        NroFacturaLabel = New System.Windows.Forms.Label()
+        Cantidad_VentaLabel = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
-        ID_MarcaLabel = New System.Windows.Forms.Label()
-        ID_CategoriaLabel = New System.Windows.Forms.Label()
-        Nombre_ProductoLabel = New System.Windows.Forms.Label()
-        StrockLabel = New System.Windows.Forms.Label()
-        Precio_UnitarioLabel = New System.Windows.Forms.Label()
-        DescripcionLabel = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
+        TipoDeFactura_VentaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NroFacturaNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VentaBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.VentaBindingNavigator.SuspendLayout()
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'FechaLabel
+        'ID_ClienteLabel
         '
-        FechaLabel.AutoSize = True
-        FechaLabel.Location = New System.Drawing.Point(650, 12)
-        FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(42, 16)
-        FechaLabel.TabIndex = 9
-        FechaLabel.Text = "Fecha:"
+        ID_ClienteLabel.AutoSize = True
+        ID_ClienteLabel.Location = New System.Drawing.Point(33, 130)
+        ID_ClienteLabel.Name = "ID_ClienteLabel"
+        ID_ClienteLabel.Size = New System.Drawing.Size(62, 16)
+        ID_ClienteLabel.TabIndex = 0
+        ID_ClienteLabel.Text = "ID Cliente:"
         '
-        'FechaDateTimePicker
+        'ID_CajeroLabel
         '
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(692, 8)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(149, 23)
-        Me.FechaDateTimePicker.TabIndex = 10
+        ID_CajeroLabel.AutoSize = True
+        ID_CajeroLabel.Location = New System.Drawing.Point(524, 28)
+        ID_CajeroLabel.Name = "ID_CajeroLabel"
+        ID_CajeroLabel.Size = New System.Drawing.Size(59, 16)
+        ID_CajeroLabel.TabIndex = 2
+        ID_CajeroLabel.Text = "ID Cajero:"
         '
-        'Label1
+        'NroFacturaLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(2, 7)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(216, 26)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Datos de Transaccion"
+        NroFacturaLabel.AutoSize = True
+        NroFacturaLabel.Location = New System.Drawing.Point(819, 28)
+        NroFacturaLabel.Name = "NroFacturaLabel"
+        NroFacturaLabel.Size = New System.Drawing.Size(73, 16)
+        NroFacturaLabel.TabIndex = 4
+        NroFacturaLabel.Text = "Nro Factura:"
         '
-        'LineShape1
+        'Cantidad_VentaLabel
         '
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 217
-        Me.LineShape1.X2 = 647
-        Me.LineShape1.Y1 = 22
-        Me.LineShape1.Y2 = 22
+        Cantidad_VentaLabel.AutoSize = True
+        Cantidad_VentaLabel.Location = New System.Drawing.Point(15, 332)
+        Cantidad_VentaLabel.Name = "Cantidad_VentaLabel"
+        Cantidad_VentaLabel.Size = New System.Drawing.Size(92, 16)
+        Cantidad_VentaLabel.TabIndex = 6
+        Cantidad_VentaLabel.Text = "Cantidad Venta:"
+        '
+        'ID_ProductoLabel
+        '
+        ID_ProductoLabel.AutoSize = True
+        ID_ProductoLabel.Location = New System.Drawing.Point(33, 288)
+        ID_ProductoLabel.Name = "ID_ProductoLabel"
+        ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
+        ID_ProductoLabel.TabIndex = 8
+        ID_ProductoLabel.Text = "ID Producto:"
+        '
+        'TipoDeFactura_VentaLabel
+        '
+        TipoDeFactura_VentaLabel.AutoSize = True
+        TipoDeFactura_VentaLabel.Location = New System.Drawing.Point(174, 28)
+        TipoDeFactura_VentaLabel.Name = "TipoDeFactura_VentaLabel"
+        TipoDeFactura_VentaLabel.Size = New System.Drawing.Size(127, 16)
+        TipoDeFactura_VentaLabel.TabIndex = 12
+        TipoDeFactura_VentaLabel.Text = "Tipo De Factura Venta:"
         '
         'Btn_Finalizar
         '
-        Me.Btn_Finalizar.Location = New System.Drawing.Point(723, 468)
+        Me.Btn_Finalizar.Location = New System.Drawing.Point(1040, 626)
         Me.Btn_Finalizar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Btn_Finalizar.Name = "Btn_Finalizar"
         Me.Btn_Finalizar.Size = New System.Drawing.Size(87, 28)
         Me.Btn_Finalizar.TabIndex = 20
         Me.Btn_Finalizar.Text = "Finalizar "
         Me.Btn_Finalizar.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.FechaDateTimePicker)
-        Me.Panel1.Controls.Add(FechaLabel)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.ShapeContainer2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 24)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(855, 40)
-        Me.Panel1.TabIndex = 22
-        '
-        'ShapeContainer2
-        '
-        Me.ShapeContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer2.Name = "ShapeContainer2"
-        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer2.Size = New System.Drawing.Size(855, 40)
-        Me.ShapeContainer2.TabIndex = 18
-        Me.ShapeContainer2.TabStop = False
         '
         'AgregarClienteToolStripMenuItem
         '
@@ -185,191 +221,438 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(855, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1157, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 84)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1157, 10)
+        Me.Panel2.TabIndex = 56
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.ID_CajeroComboBox)
+        Me.Panel1.Controls.Add(NroFacturaLabel)
+        Me.Panel1.Controls.Add(ID_CajeroLabel)
+        Me.Panel1.Controls.Add(Me.NroFacturaNumericUpDown)
+        Me.Panel1.Controls.Add(Me.TipoDeFactura_VentaComboBox)
+        Me.Panel1.Controls.Add(TipoDeFactura_VentaLabel)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1157, 60)
+        Me.Panel1.TabIndex = 55
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(21, 9)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(116, 42)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Venta"
+        '
+        'ID_CajeroComboBox
+        '
+        Me.ID_CajeroComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Cajero", True))
+        Me.ID_CajeroComboBox.FormattingEnabled = True
+        Me.ID_CajeroComboBox.Location = New System.Drawing.Point(589, 20)
+        Me.ID_CajeroComboBox.Name = "ID_CajeroComboBox"
+        Me.ID_CajeroComboBox.Size = New System.Drawing.Size(200, 24)
+        Me.ID_CajeroComboBox.TabIndex = 3
+        '
+        'VentaBindingSource
+        '
+        Me.VentaBindingSource.DataMember = "Venta"
+        Me.VentaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
         'MayoristaBaseDeDatosDataSet
         '
         Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
         Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ProductoBindingSource
+        'NroFacturaNumericUpDown
         '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.NroFacturaNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "NroFactura", True))
+        Me.NroFacturaNumericUpDown.Location = New System.Drawing.Point(898, 21)
+        Me.NroFacturaNumericUpDown.Name = "NroFacturaNumericUpDown"
+        Me.NroFacturaNumericUpDown.Size = New System.Drawing.Size(200, 23)
+        Me.NroFacturaNumericUpDown.TabIndex = 5
+        '
+        'TipoDeFactura_VentaComboBox
+        '
+        Me.TipoDeFactura_VentaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "TipoDeFactura_Venta", True))
+        Me.TipoDeFactura_VentaComboBox.FormattingEnabled = True
+        Me.TipoDeFactura_VentaComboBox.Location = New System.Drawing.Point(307, 20)
+        Me.TipoDeFactura_VentaComboBox.Name = "TipoDeFactura_VentaComboBox"
+        Me.TipoDeFactura_VentaComboBox.Size = New System.Drawing.Size(200, 24)
+        Me.TipoDeFactura_VentaComboBox.TabIndex = 13
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Me.CajeroTableAdapter
+        Me.TableAdapterManager.CategoriaTableAdapter = Nothing
+        Me.TableAdapterManager.ClienteTableAdapter = Me.ClienteTableAdapter
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Nothing
+        Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
+        Me.TableAdapterManager.ProveedorTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Me.VentaTableAdapter
+        '
+        'CajeroTableAdapter
+        '
+        Me.CajeroTableAdapter.ClearBeforeFill = True
+        '
+        'ClienteTableAdapter
+        '
+        Me.ClienteTableAdapter.ClearBeforeFill = True
         '
         'ProductoTableAdapter
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
         '
-        'TableAdapterManager
+        'VentaTableAdapter
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CajeroTableAdapter = Nothing
-        Me.TableAdapterManager.CategoriaTableAdapter = Nothing
-        Me.TableAdapterManager.ClienteTableAdapter = Nothing
-        Me.TableAdapterManager.Compra_ProveedorTableAdapter = Nothing
-        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
-        Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.OperadorTableAdapter = Nothing
-        Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
-        Me.TableAdapterManager.ProveedorTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.Ventas_ClientesTableAdapter = Nothing
+        Me.VentaTableAdapter.ClearBeforeFill = True
         '
-        'ID_ProductoLabel
+        'DataGridView1
         '
-        ID_ProductoLabel.AutoSize = True
-        ID_ProductoLabel.Location = New System.Drawing.Point(20, 120)
-        ID_ProductoLabel.Name = "ID_ProductoLabel"
-        ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
-        ID_ProductoLabel.TabIndex = 23
-        ID_ProductoLabel.Text = "ID Producto:"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
+        Me.DataGridView1.Location = New System.Drawing.Point(357, 368)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(745, 241)
+        Me.DataGridView1.TabIndex = 58
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Producto"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 400
+        '
+        'Column2
+        '
+        DataGridViewCellStyle1.Format = "N0"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
+        Me.Column2.HeaderText = "Cantidad"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Column3.HeaderText = "Precio"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Column4.HeaderText = "Total"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1157, 676)
+        Me.ShapeContainer1.TabIndex = 74
+        Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape1
+        '
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 26
+        Me.LineShape1.X2 = 334
+        Me.LineShape1.Y1 = 246
+        Me.LineShape1.Y2 = 248
+        '
+        'Btn_Buscar
+        '
+        Me.Btn_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Buscar.FlatAppearance.BorderSize = 0
+        Me.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Buscar.Location = New System.Drawing.Point(105, 174)
+        Me.Btn_Buscar.Name = "Btn_Buscar"
+        Me.Btn_Buscar.Size = New System.Drawing.Size(208, 40)
+        Me.Btn_Buscar.TabIndex = 73
+        Me.Btn_Buscar.Text = "&Buscar Cliente"
+        Me.Btn_Buscar.UseVisualStyleBackColor = False
+        '
+        'BindingNavigatorMoveFirstItem
+        '
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
+        '
+        'BindingNavigatorMovePreviousItem
+        '
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
+        '
+        'BindingNavigatorSeparator
+        '
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorPositionItem
+        '
+        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorSeparator1
+        '
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorMoveNextItem
+        '
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
+        '
+        'BindingNavigatorMoveLastItem
+        '
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
+        '
+        'BindingNavigatorSeparator2
+        '
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        '
+        'VentaBindingNavigatorSaveItem
+        '
+        Me.VentaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.VentaBindingNavigatorSaveItem.Image = CType(resources.GetObject("VentaBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.VentaBindingNavigatorSaveItem.Name = "VentaBindingNavigatorSaveItem"
+        Me.VentaBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
+        Me.VentaBindingNavigatorSaveItem.Text = "Guardar datos"
+        '
+        'VentaBindingNavigator
+        '
+        Me.VentaBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.VentaBindingNavigator.BindingSource = Me.VentaBindingSource
+        Me.VentaBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.VentaBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.VentaBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
+        Me.VentaBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.VentaBindingNavigatorSaveItem})
+        Me.VentaBindingNavigator.Location = New System.Drawing.Point(36, 434)
+        Me.VentaBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.VentaBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.VentaBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.VentaBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.VentaBindingNavigator.Name = "VentaBindingNavigator"
+        Me.VentaBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.VentaBindingNavigator.Size = New System.Drawing.Size(280, 25)
+        Me.VentaBindingNavigator.TabIndex = 57
+        Me.VentaBindingNavigator.Text = "BindingNavigator1"
+        '
+        'ID_ClienteTextBox
+        '
+        Me.ID_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Cliente", True))
+        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(113, 126)
+        Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
+        Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 23)
+        Me.ID_ClienteTextBox.TabIndex = 1
+        '
+        'Cantidad_VentaTextBox
+        '
+        Me.Cantidad_VentaTextBox.Location = New System.Drawing.Point(113, 329)
+        Me.Cantidad_VentaTextBox.Name = "Cantidad_VentaTextBox"
+        Me.Cantidad_VentaTextBox.Size = New System.Drawing.Size(200, 23)
+        Me.Cantidad_VentaTextBox.TabIndex = 7
         '
         'ID_ProductoTextBox
         '
-        Me.ID_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Producto", True))
-        Me.ID_ProductoTextBox.Location = New System.Drawing.Point(133, 117)
+        Me.ID_ProductoTextBox.Location = New System.Drawing.Point(113, 281)
         Me.ID_ProductoTextBox.Name = "ID_ProductoTextBox"
-        Me.ID_ProductoTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.ID_ProductoTextBox.TabIndex = 24
+        Me.ID_ProductoTextBox.Size = New System.Drawing.Size(200, 23)
+        Me.ID_ProductoTextBox.TabIndex = 9
         '
-        'ID_MarcaLabel
+        'ProductoDataGridView
         '
-        ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.Location = New System.Drawing.Point(20, 149)
-        ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(58, 16)
-        ID_MarcaLabel.TabIndex = 25
-        ID_MarcaLabel.Text = "ID Marca:"
+        Me.ProductoDataGridView.AutoGenerateColumns = False
+        Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(357, 115)
+        Me.ProductoDataGridView.Name = "ProductoDataGridView"
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(741, 220)
+        Me.ProductoDataGridView.TabIndex = 0
         '
-        'ID_MarcaTextBox
+        'DataGridViewTextBoxColumn1
         '
-        Me.ID_MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Marca", True))
-        Me.ID_MarcaTextBox.Location = New System.Drawing.Point(133, 146)
-        Me.ID_MarcaTextBox.Name = "ID_MarcaTextBox"
-        Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.ID_MarcaTextBox.TabIndex = 26
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Producto"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Producto"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
-        'ID_CategoriaLabel
+        'DataGridViewTextBoxColumn2
         '
-        ID_CategoriaLabel.AutoSize = True
-        ID_CategoriaLabel.Location = New System.Drawing.Point(20, 178)
-        ID_CategoriaLabel.Name = "ID_CategoriaLabel"
-        ID_CategoriaLabel.Size = New System.Drawing.Size(76, 16)
-        ID_CategoriaLabel.TabIndex = 27
-        ID_CategoriaLabel.Text = "ID Categoria:"
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Marca"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Marca"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'ID_CategoriaTextBox
+        'DataGridViewTextBoxColumn3
         '
-        Me.ID_CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "ID_Categoria", True))
-        Me.ID_CategoriaTextBox.Location = New System.Drawing.Point(133, 175)
-        Me.ID_CategoriaTextBox.Name = "ID_CategoriaTextBox"
-        Me.ID_CategoriaTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.ID_CategoriaTextBox.TabIndex = 28
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Categoria"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Categoria"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'Nombre_ProductoLabel
+        'DataGridViewTextBoxColumn4
         '
-        Nombre_ProductoLabel.AutoSize = True
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(20, 207)
-        Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
-        Nombre_ProductoLabel.Size = New System.Drawing.Size(107, 16)
-        Nombre_ProductoLabel.TabIndex = 29
-        Nombre_ProductoLabel.Text = "Nombre Producto:"
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nombre_Producto"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Nombre_Producto"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'Nombre_ProductoTextBox
+        'DataGridViewTextBoxColumn5
         '
-        Me.Nombre_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Nombre_Producto", True))
-        Me.Nombre_ProductoTextBox.Location = New System.Drawing.Point(133, 204)
-        Me.Nombre_ProductoTextBox.Name = "Nombre_ProductoTextBox"
-        Me.Nombre_ProductoTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.Nombre_ProductoTextBox.TabIndex = 30
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Strock"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Strock"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
-        'StrockLabel
+        'DataGridViewTextBoxColumn6
         '
-        StrockLabel.AutoSize = True
-        StrockLabel.Location = New System.Drawing.Point(20, 236)
-        StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(44, 16)
-        StrockLabel.TabIndex = 31
-        StrockLabel.Text = "Strock:"
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Precio_Unitario"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Precio_Unitario"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
-        'StrockTextBox
+        'DataGridViewTextBoxColumn7
         '
-        Me.StrockTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Strock", True))
-        Me.StrockTextBox.Location = New System.Drawing.Point(133, 233)
-        Me.StrockTextBox.Name = "StrockTextBox"
-        Me.StrockTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.StrockTextBox.TabIndex = 32
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Descripcion"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Descripcion"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'Precio_UnitarioLabel
+        'ProductoBindingSource
         '
-        Precio_UnitarioLabel.AutoSize = True
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(20, 265)
-        Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
-        Precio_UnitarioLabel.Size = New System.Drawing.Size(89, 16)
-        Precio_UnitarioLabel.TabIndex = 33
-        Precio_UnitarioLabel.Text = "Precio Unitario:"
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
-        'Precio_UnitarioTextBox
+        'Btn_Vender
         '
-        Me.Precio_UnitarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Precio_Unitario", True))
-        Me.Precio_UnitarioTextBox.Location = New System.Drawing.Point(133, 262)
-        Me.Precio_UnitarioTextBox.Name = "Precio_UnitarioTextBox"
-        Me.Precio_UnitarioTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.Precio_UnitarioTextBox.TabIndex = 34
+        Me.Btn_Vender.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Vender.FlatAppearance.BorderSize = 0
+        Me.Btn_Vender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Vender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Vender.Location = New System.Drawing.Point(105, 368)
+        Me.Btn_Vender.Name = "Btn_Vender"
+        Me.Btn_Vender.Size = New System.Drawing.Size(208, 40)
+        Me.Btn_Vender.TabIndex = 75
+        Me.Btn_Vender.Text = "VENDER"
+        Me.Btn_Vender.UseVisualStyleBackColor = False
         '
-        'DescripcionLabel
+        'ClienteBindingSource
         '
-        DescripcionLabel.AutoSize = True
-        DescripcionLabel.Location = New System.Drawing.Point(20, 294)
-        DescripcionLabel.Name = "DescripcionLabel"
-        DescripcionLabel.Size = New System.Drawing.Size(73, 16)
-        DescripcionLabel.TabIndex = 35
-        DescripcionLabel.Text = "Descripcion:"
+        Me.ClienteBindingSource.DataMember = "Cliente"
+        Me.ClienteBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
-        'DescripcionTextBox
+        'CajeroBindingSource
         '
-        Me.DescripcionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "Descripcion", True))
-        Me.DescripcionTextBox.Location = New System.Drawing.Point(133, 291)
-        Me.DescripcionTextBox.Name = "DescripcionTextBox"
-        Me.DescripcionTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.DescripcionTextBox.TabIndex = 36
+        Me.CajeroBindingSource.DataMember = "Cajero"
+        Me.CajeroBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
-        'Label2
+        'Btn_Imprimir
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(79, 85)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 16)
-        Me.Label2.TabIndex = 37
-        Me.Label2.Text = "PRODUCTO"
+        Me.Btn_Imprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Imprimir.FlatAppearance.BorderSize = 0
+        Me.Btn_Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Imprimir.Location = New System.Drawing.Point(105, 485)
+        Me.Btn_Imprimir.Name = "Btn_Imprimir"
+        Me.Btn_Imprimir.Size = New System.Drawing.Size(208, 40)
+        Me.Btn_Imprimir.TabIndex = 76
+        Me.Btn_Imprimir.Text = "IMPRIMIR"
+        Me.Btn_Imprimir.UseVisualStyleBackColor = False
         '
         'Cajero_Transaccion_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(855, 524)
-        Me.Controls.Add(Me.Label2)
+        Me.BackColor = System.Drawing.Color.Gray
+        Me.ClientSize = New System.Drawing.Size(1157, 676)
+        Me.Controls.Add(Me.Btn_Imprimir)
+        Me.Controls.Add(Me.Btn_Vender)
+        Me.Controls.Add(Me.ProductoDataGridView)
+        Me.Controls.Add(ID_ClienteLabel)
+        Me.Controls.Add(Me.ID_ClienteTextBox)
+        Me.Controls.Add(Cantidad_VentaLabel)
+        Me.Controls.Add(Me.Cantidad_VentaTextBox)
         Me.Controls.Add(ID_ProductoLabel)
         Me.Controls.Add(Me.ID_ProductoTextBox)
-        Me.Controls.Add(ID_MarcaLabel)
-        Me.Controls.Add(Me.ID_MarcaTextBox)
-        Me.Controls.Add(ID_CategoriaLabel)
-        Me.Controls.Add(Me.ID_CategoriaTextBox)
-        Me.Controls.Add(Nombre_ProductoLabel)
-        Me.Controls.Add(Me.Nombre_ProductoTextBox)
-        Me.Controls.Add(StrockLabel)
-        Me.Controls.Add(Me.StrockTextBox)
-        Me.Controls.Add(Precio_UnitarioLabel)
-        Me.Controls.Add(Me.Precio_UnitarioTextBox)
-        Me.Controls.Add(DescripcionLabel)
-        Me.Controls.Add(Me.DescripcionTextBox)
+        Me.Controls.Add(Me.Btn_Buscar)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.VentaBindingNavigator)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_Finalizar)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -378,39 +661,81 @@ Partial Class Cajero_Transaccion_Venta
         Me.MaximizeBox = False
         Me.Name = "Cajero_Transaccion_Venta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "COMERCIANDO / Transaccion"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Text = "COMERCIANDO / Venta"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NroFacturaNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VentaBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.VentaBindingNavigator.ResumeLayout(False)
+        Me.VentaBindingNavigator.PerformLayout()
+        CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents ShapeContainer2 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents AgregarClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgregarLocalidadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VolverToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
-    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
+    Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ClienteTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter
+    Friend WithEvents ClienteBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CajeroTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter
+    Friend WithEvents CajeroBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ID_CajeroComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents VentaBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents NroFacturaNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents TipoDeFactura_VentaComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents VentaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter
+    Friend WithEvents Btn_Buscar As System.Windows.Forms.Button
+    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents VentaBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents VentaBindingNavigator As System.Windows.Forms.BindingNavigator
+    Friend WithEvents ID_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Cantidad_VentaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ID_ProductoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_MarcaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_CategoriaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Nombre_ProductoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents StrockTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Precio_UnitarioTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DescripcionTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents ProductoDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Btn_Vender As System.Windows.Forms.Button
+    Friend WithEvents Btn_Imprimir As System.Windows.Forms.Button
 End Class

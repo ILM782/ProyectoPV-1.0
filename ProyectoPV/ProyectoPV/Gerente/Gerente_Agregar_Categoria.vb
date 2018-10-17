@@ -10,6 +10,7 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Categoria' Puede moverla o quitarla según sea necesario.
         Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
         Me.CategoriaBindingSource.AddNew()
+
     End Sub
 
     Private Sub VolveToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolveToolStripMenuItem.Click
@@ -24,34 +25,33 @@
         End If
     End Sub
 
-
-
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Hora.Text = TimeOfDay
-        Fecha.Text = DateString
-    End Sub
-
     Private Sub Txt_Buscar_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Buscar.TextChanged
         Me.CategoriaTableAdapter.FillByName(Me.MayoristaBaseDeDatosDataSet.Categoria, Txt_Buscar.Text)
+        If Txt_Buscar.Text = "" Then
+            Me.CategoriaBindingSource.AddNew()
+        End If
+
     End Sub
 
     Private Sub Btn_Guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
         Dim Consulta As Integer
-        If CategoriaTextBox.Text <> "" Then
+        If TextBox1.Text <> "" Then
 
-            Consulta = Me.CategoriaBindingSource.Find("Categoria", CategoriaTextBox.Text)
+            Consulta = Me.CategoriaBindingSource.Find("Categoria", TextBox1.Text)
             If Consulta <> -1 Then
                 MsgBox("Categoria Repetida", MsgBoxStyle.Exclamation, "Advertencia")
             Else
+                Me.CategoriaBindingSource.Current("Categoria") = TextBox1.Text
                 Me.CategoriaBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
                 Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-                Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
+                Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
                 Me.CategoriaBindingSource.MoveLast()
                 MsgBox("El Id de la categoria es: " & CategoriaBindingSource.Current("ID_Categoria"), MsgBoxStyle.Information, " Id Categoria ")
                 Me.CategoriaBindingSource.AddNew()
-                CategoriaTextBox.Text = ""
-                CategoriaTextBox.Focus()
+                TextBox1.Text = ""
+                TextBox1.Focus()
+
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -77,9 +77,9 @@
                     Me.CategoriaBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.CategoriaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Categoria)
-                    Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
+                    Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
                     Me.CategoriaBindingSource.MoveLast()
-                    CategoriaTextBox.Text = ""
+                    TextBox1.Text = ""
                     Txt_Buscar.Text = ""
                     Txt_Buscar.Focus()
                 End If
@@ -87,11 +87,11 @@
         End If
     End Sub
 
-    Private Sub CategoriaTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles CategoriaTextBox.KeyPress
+    Private Sub CategoriaTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
             Call VolveToolStripMenuItem_Click(sender, e)
         End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
             Call Btn_Guardar_Click(sender, e)
         End If
     End Sub
@@ -100,8 +100,45 @@
         If Asc(e.KeyChar) = 27 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
             Call VolveToolStripMenuItem_Click(sender, e)
         End If
-        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON SALIR
+        If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
             Call Btn_Eliminar_Click(sender, e)
         End If
+    End Sub
+
+    Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click
+        Dim Consulta As Integer
+        Dim aux As Object
+
+        If Txt_Buscar.Text = "" Then
+            MsgBox("Primero busque categoria", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            If CategoriaTextBox1.Text <> "" Then
+
+                Consulta = Me.CategoriaBindingSource.Find("Categoria", CategoriaTextBox1.Text)
+
+                If Consulta <> -1 Then
+                    MsgBox("Categoria Repetida", MsgBoxStyle.Exclamation, "Advertencia")
+                Else
+                    aux = MsgBox("¿Seguro que quiere Modificar a " & Txt_Buscar.Text & " Por " & CategoriaTextBox1.Text & "?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                    If aux = vbYes Then
+                        Me.Validate()
+                        Me.CategoriaBindingSource.EndEdit()
+                        Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                        Gerente_Producto.CategoriaTableAdapter.Fill(Gerente_Producto.MayoristaBaseDeDatosDataSet.Categoria)
+                        Me.CategoriaBindingSource.AddNew()
+                        Txt_Buscar.Text = ""
+                        Txt_Buscar.Focus()
+                    End If
+                End If
+            Else
+                MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+            End If
+        End If
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Txt_Buscar.Text = ""
+        CategoriaTextBox1.Text = ""
     End Sub
 End Class

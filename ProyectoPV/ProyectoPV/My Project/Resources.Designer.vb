@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property agregar_usuario1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("agregar-usuario1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property apertura_de_puerta_abierta() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("apertura-de-puerta-abierta", resourceCulture)
@@ -133,9 +143,39 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property carpeta() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("carpeta", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property carpeta_simbolo_de_agregar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("carpeta-simbolo-de-agregar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property carpeta1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("carpeta1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property carpeta2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("carpeta2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

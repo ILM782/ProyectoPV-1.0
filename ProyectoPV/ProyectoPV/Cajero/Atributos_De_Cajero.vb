@@ -25,11 +25,6 @@
         Me.Close()
     End Sub
 
-    Private Sub Btn_Agregar_Cliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Agregar_Cliente.Click
-        Cajero_Agregar_Cliente.Show()
-        Me.Close()
-    End Sub
-
     Private Sub Btn_Productos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Productos.Click
         Cajero_Producto_Para_Ventas.Show()
         Me.Close()
@@ -40,7 +35,12 @@
         Me.Close()
     End Sub
 
-    Private Sub Atributos_De_Cajero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized 'PARA MAXIMIZAR LA VENTANA A LA MEDIDA DE LA PANTALLA(http://www.forosdelweb.com/f69/colocar-formulario-pantalla-completa-518379/)
+    'Private Sub Atributos_De_Cajero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'Me.WindowState = FormWindowState.Maximized 'PARA MAXIMIZAR LA VENTANA A LA MEDIDA DE LA PANTALLA(http://www.forosdelweb.com/f69/colocar-formulario-pantalla-completa-518379/)
+    'End Sub
+
+    Private Sub Btn_Agregar_Cliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Agregar_Cliente.Click
+        Cajero_Agregar_Cliente.Show()
+        Me.Close()
     End Sub
 End Class

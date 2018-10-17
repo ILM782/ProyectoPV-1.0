@@ -1,7 +1,7 @@
 ﻿Public Class Gerente_Localidad
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        Gerente_Productos.Show()
+        Gerente_Producto.Show()
         Me.Close()
     End Sub
 
@@ -17,11 +17,6 @@
 
     Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
-        Gerente_Ventas_Realizadas.Show()
         Me.Close()
     End Sub
 
@@ -64,11 +59,11 @@
                 Me.LocalidadBindingSource.Current("CP_Localidad") = Val(Txt_CP.Text)
                 Me.LocalidadBindingSource.Current("Provincia_Localidad") = Txt_Provincia.Text
                 Me.LocalidadBindingSource.EndEdit() ' finaliza edicion
-                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en discoc
+                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
                 Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-                Gerente_Productos.CategoriaTableAdapter.Fill(Gerente_Productos.MayoristaBaseDeDatosDataSet.Categoria)
                 Me.LocalidadBindingSource.MoveLast()
                 MsgBox("El Id de la Localidad es: " & LocalidadBindingSource.Current("ID_Localidad"), MsgBoxStyle.Information, " Id Localidad ")
+
                 Me.LocalidadBindingSource.AddNew()
                 Txt_CP.Text = ""
                 Txt_Localidad.Text = ""
@@ -85,10 +80,10 @@
         Dim fila As Integer
         Dim CodConsulta As String
         Dim aux As Object
-        If ID_LocalidadTextBox1.Text = "" Then
+        If TextBox2.Text = "" Then
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
         Else
-            CodConsulta = ID_LocalidadTextBox1.Text
+            CodConsulta = TextBox2.Text
             fila = Me.LocalidadBindingSource.Find("ID_Localidad", CodConsulta)
             If fila = -1 Then
                 MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
@@ -100,14 +95,13 @@
                     Me.LocalidadBindingSource.EndEdit() 'cierro base de datos
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                     Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
-                    Me.LocalidadBindingSource.MoveLast()
                     Me.LocalidadBindingSource.AddNew()
-
-                    TextBox1.Text = ""
-                    TextBox1.Focus()
+                    TextBox2.Text = ""
+                    TextBox2.Focus()
                 End If
             End If
         End If
+
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
@@ -117,5 +111,80 @@
         Else
             Me.LocalidadTableAdapter.FillBy(Me.MayoristaBaseDeDatosDataSet.Localidad, TextBox1.Text)
         End If
+    End Sub
+
+    Private Sub Txt_CP_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_CP.KeyPress
+        e.KeyChar = ChrW(solonumeros(e))
+        If e.KeyChar = Chr(13) Then
+            Txt_CP.Focus()
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click
+
+        Dim aux As Object
+
+        If TextBox2.Text = "" Then
+            MsgBox("Primero busque localidad", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            If Localidad_LocalidadTextBox.Text <> "" And CP_LocalidadTextBox.Text <> "" And Provincia_LocalidadTextBox.Text <> "" Then
+
+                aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.Validate()
+                    Me.LocalidadBindingSource.EndEdit()
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                    Me.LocalidadBindingSource.MoveLast()
+                    Me.LocalidadBindingSource.AddNew()
+                    TextBox1.Text = ""
+                    TextBox1.Focus()
+                    Localidad_LocalidadTextBox.Text = ""
+                    CP_LocalidadTextBox.Text = ""
+                    Provincia_LocalidadTextBox.Text = ""
+                End If
+            Else
+                MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+            End If
+        End If
+
+    End Sub
+
+    ' Private Sub TextBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+    'Dim i As Integer
+    '  Dim codigoConsulta As String
+    '    LocalidadBindingSource.MoveFirst()
+    '   codigoConsulta = TextBox2.Text
+    '   i = 0
+    '   If  IsNumeric(codigoConsulta) Then
+    '      Do
+    '         If LocalidadBindingSource.Current("ID_Localidad") = codigoConsulta Then
+    '             Localidad_LocalidadTextBox.Text = LocalidadBindingSource.Current("Localidad_Localidad")
+    '             CP_LocalidadTextBox.Text = LocalidadBindingSource.Current("CP_Localidad")
+    '               Provincia_LocalidadTextBox.Text = LocalidadBindingSource.Current("Provincia_Localidad")
+    '
+    '             Exit Sub
+    '        End If
+    '         i = i + 1
+    '          LocalidadBindingSource.MoveNext()
+    '       Loop Until i = LocalidadBindingSource.Count
+    '
+    '   Else
+
+    '   End If
+    ' End Sub
+
+    'Private Sub Txt_Localidad_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Localidad.TextChanged
+
+    ' TextBox2.Text = ""
+    '  TextBox1.Text = ""
+
+    'End Sub
+
+
+   
+    Private Sub Txt_Localidad_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Localidad.KeyPress
+        TextBox1.Text = ""
+        TextBox2.Text = ""
     End Sub
 End Class
