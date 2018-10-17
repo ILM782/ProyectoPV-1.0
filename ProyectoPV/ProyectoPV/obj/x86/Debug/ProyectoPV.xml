@@ -38,6 +38,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -70,6 +74,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
 	<summary>
 Row event argument class
@@ -99,6 +107,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CajeroRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -135,6 +147,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaVistaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -190,15 +206,7 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorDataTable">
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -222,15 +230,7 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorRow">
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -254,15 +254,7 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorRowChangeEvent">
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -290,15 +282,7 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.CategoriaTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.MarcasTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.ProveedorTableAdapter">
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.VentaVistaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

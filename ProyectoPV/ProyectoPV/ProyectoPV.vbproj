@@ -98,10 +98,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cajero\Cajero_ImprimirVenta.Designer.vb">
+    <Compile Include="FacturaVenta\Cajero_ImprimirVenta.Designer.vb">
       <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="Cajero\Cajero_ImprimirVenta.vb">
+    <Compile Include="FacturaVenta\Cajero_ImprimirVenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cajero\Cajero_Localidad.Designer.vb">
@@ -110,7 +110,7 @@
     <Compile Include="Cajero\Cajero_Localidad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacturasVentaDataSet.Designer.vb">
+    <Compile Include="FacturaVenta\FacturasVentaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
@@ -249,7 +249,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Cajero\Cajero_ImprimirVenta.resx">
+    <EmbeddedResource Include="FacturaVenta\Cajero_ImprimirVenta.resx">
       <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Cajero_Localidad.resx">
@@ -314,13 +314,13 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Otros\FacturaVenta.rdlc" />
+    <EmbeddedResource Include="FacturaVenta\FacturaVenta.rdlc" />
     <EmbeddedResource Include="Otros\Version.resx">
       <DependentUpon>Version.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="FacturaVenta\app.config" />
     <None Include="BaseDeDatos\app.config">
       <SubType>Designer</SubType>
     </None>
@@ -335,15 +335,15 @@
     <None Include="BaseDeDatos\MayoristaBaseDeDatosDataSet.xss">
       <DependentUpon>MayoristaBaseDeDatosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FacturasVentaDataSet.xsc">
+    <None Include="FacturaVenta\FacturasVentaDataSet.xsc">
       <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FacturasVentaDataSet.xsd">
+    <None Include="FacturaVenta\FacturasVentaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>FacturasVentaDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="FacturasVentaDataSet.xss">
+    <None Include="FacturaVenta\FacturasVentaDataSet.xss">
       <DependentUpon>FacturasVentaDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
