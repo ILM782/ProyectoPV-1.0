@@ -92,7 +92,9 @@ _Chutzpah*
 ipch/
 *.aps
 *.ncb
+*.opendb
 *.cachefile
+*.VC.db
 *.VC.VC.opendb
 
 # Visual Studio profiler

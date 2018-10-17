@@ -12,20 +12,11 @@
     Function Coma(ByVal tecla As System.Windows.Forms.KeyPressEventArgs)
         Dim teclapresionada2 As Integer
         teclapresionada2 = AscW(tecla.KeyChar)
-        If teclapresionada2 >= 48 And teclapresionada2 <= 57 Or teclapresionada2 = 8 Or teclapresionada2 = 46 Or teclapresionada2 = 13 Then
+        If teclapresionada2 >= 48 And teclapresionada2 <= 57 Or teclapresionada2 = 8 Or teclapresionada2 = 44 Or teclapresionada2 = 46 Or teclapresionada2 = 13 Then
             Coma = AscW(tecla.KeyChar)
         Else
             Coma = 0
 
-        End If
-    End Function
-    Function sin_letras(ByVal tecla As System.Windows.Forms.KeyPressEventArgs)
-        Dim teclapresionada2 As Integer
-        teclapresionada2 = AscW(tecla.KeyChar)
-        If teclapresionada2 = 0 Then
-            sin_letras = AscW(tecla.KeyChar)
-        Else
-            sin_letras = 0
         End If
     End Function
 End Module

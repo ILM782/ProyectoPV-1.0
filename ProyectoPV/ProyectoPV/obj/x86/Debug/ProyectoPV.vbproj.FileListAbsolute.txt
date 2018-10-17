@@ -186,7 +186,31 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0 - copia\ProyectoPV\ProyectoPV\obj\x86\Debu
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
-<<<<<<< HEAD
-=======
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.exe.config
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.exe
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.xml
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.pdb
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\bin\Debug\BaseDeDatos\MayoristaBaseDeDatos.sdf
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.pdb
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\bin\Debug\ProyectoPV.xml
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbprojResolveAssemblyReference.cache
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Localidad.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Producto_Para_Ventas.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Categoria.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Agregar_Cliente.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Marca.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Atributos_De_Cajero.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Atributos_De_Gerente.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Localidad.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Producto.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Proveedores.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Transacciones_de_Compras.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Transaccion_Venta.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_TablasClientes.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Login.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Version.resources
+C:\Users\Ruben\Desktop\ProyectoPV-1.0-58891744eabb18e695d258c4872131b7406ceedc\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbproj.GenerateResource.Cache

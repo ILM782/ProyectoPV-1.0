@@ -67,8 +67,7 @@
         Me.MarcasTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Marcas)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
-        ComboBox1.Text = "Seleccionar"
-        ComboBox2.Text = "Seleccionar"
+
         Me.ProductoBindingSource.AddNew()
     End Sub
 
@@ -97,8 +96,6 @@
                 TextBox3.Text = ""
                 TextBox4.Text = ""
                 TextBox1.Focus()
-                ComboBox1.Text = "Seleccionar"
-                ComboBox2.Text = "Seleccionar"
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -111,21 +108,5 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Gerente_Tablas_Producto.Show()
-    End Sub
-
-    Private Sub ComboBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ComboBox1.KeyPress
-        e.KeyChar = ChrW(sin_letras(e))
-        If e.KeyChar = Chr(13) Then
-            ComboBox1.Focus()
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub ComboBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ComboBox2.KeyPress
-        e.KeyChar = ChrW(sin_letras(e))
-        If e.KeyChar = Chr(13) Then
-            ComboBox1.Focus()
-            e.Handled = True
-        End If
     End Sub
 End Class

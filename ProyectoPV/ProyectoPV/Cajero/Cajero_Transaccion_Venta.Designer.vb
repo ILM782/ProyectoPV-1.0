@@ -28,20 +28,11 @@ Partial Class Cajero_Transaccion_Venta
         Dim NroFacturaLabel As System.Windows.Forms.Label
         Dim Cantidad_VentaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
-<<<<<<< HEAD
-        Dim TipoDeFacturacion_VentaLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim Fecha_VentaLabel As System.Windows.Forms.Label
-=======
         Dim TipoDeFactura_VentaLabel As System.Windows.Forms.Label
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,10 +43,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-<<<<<<< HEAD
-=======
         Me.ID_CajeroComboBox = New System.Windows.Forms.ComboBox()
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.NroFacturaNumericUpDown = New System.Windows.Forms.NumericUpDown()
@@ -101,34 +89,13 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Vender = New System.Windows.Forms.Button()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-<<<<<<< HEAD
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID_ClienteTextBox = New System.Windows.Forms.TextBox()
-        Me.NumeroTransaccion_VentaNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ID_ProductoTextBox = New System.Windows.Forms.TextBox()
-        Me.Btn_Buscar = New System.Windows.Forms.Button()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.Unidades_VentaNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Fecha_VentaDateTimePicker = New System.Windows.Forms.DateTimePicker()
-=======
         Me.Btn_Imprimir = New System.Windows.Forms.Button()
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         ID_ClienteLabel = New System.Windows.Forms.Label()
         ID_CajeroLabel = New System.Windows.Forms.Label()
         NroFacturaLabel = New System.Windows.Forms.Label()
         Cantidad_VentaLabel = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
-<<<<<<< HEAD
-        TipoDeFacturacion_VentaLabel = New System.Windows.Forms.Label()
-        Fecha_VentaLabel = New System.Windows.Forms.Label()
-=======
         TipoDeFactura_VentaLabel = New System.Windows.Forms.Label()
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,16 +155,6 @@ Partial Class Cajero_Transaccion_Venta
         ID_ProductoLabel.TabIndex = 8
         ID_ProductoLabel.Text = "ID Producto:"
         '
-<<<<<<< HEAD
-        'TipoDeFacturacion_VentaLabel
-        '
-        TipoDeFacturacion_VentaLabel.AutoSize = True
-        TipoDeFacturacion_VentaLabel.Location = New System.Drawing.Point(165, 27)
-        TipoDeFacturacion_VentaLabel.Name = "TipoDeFacturacion_VentaLabel"
-        TipoDeFacturacion_VentaLabel.Size = New System.Drawing.Size(117, 16)
-        TipoDeFacturacion_VentaLabel.TabIndex = 70
-        TipoDeFacturacion_VentaLabel.Text = "Tipo De Facturacion:"
-=======
         'TipoDeFactura_VentaLabel
         '
         TipoDeFactura_VentaLabel.AutoSize = True
@@ -206,7 +163,6 @@ Partial Class Cajero_Transaccion_Venta
         TipoDeFactura_VentaLabel.Size = New System.Drawing.Size(127, 16)
         TipoDeFactura_VentaLabel.TabIndex = 12
         TipoDeFactura_VentaLabel.Text = "Tipo De Factura Venta:"
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         '
         'Btn_Finalizar
         '
@@ -305,8 +261,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Venta"
         '
-<<<<<<< HEAD
-=======
         'ID_CajeroComboBox
         '
         Me.ID_CajeroComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Cajero", True))
@@ -316,7 +270,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.ID_CajeroComboBox.Size = New System.Drawing.Size(200, 24)
         Me.ID_CajeroComboBox.TabIndex = 3
         '
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         'VentaBindingSource
         '
         Me.VentaBindingSource.DataMember = "Venta"
@@ -543,15 +496,6 @@ Partial Class Cajero_Transaccion_Venta
         '
         'VentaBindingNavigator
         '
-<<<<<<< HEAD
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 269)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(741, 241)
-        Me.DataGridView1.TabIndex = 58
-=======
         Me.VentaBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
         Me.VentaBindingNavigator.BindingSource = Me.VentaBindingSource
         Me.VentaBindingNavigator.CountItem = Me.BindingNavigatorCountItem
@@ -568,41 +512,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.VentaBindingNavigator.Size = New System.Drawing.Size(280, 25)
         Me.VentaBindingNavigator.TabIndex = 57
         Me.VentaBindingNavigator.Text = "BindingNavigator1"
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Producto"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 400
-        '
-        'Column2
-        '
-        DataGridViewCellStyle1.Format = "N0"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
-        Me.Column2.HeaderText = "Cantidad"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Column3.HeaderText = "Precio"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Column4.HeaderText = "Total"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
         '
         'ID_ClienteTextBox
         '
@@ -656,24 +565,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Categoria"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-<<<<<<< HEAD
-        'Fecha_VentaLabel
-        '
-        Fecha_VentaLabel.AutoSize = True
-        Fecha_VentaLabel.Location = New System.Drawing.Point(732, 29)
-        Fecha_VentaLabel.Name = "Fecha_VentaLabel"
-        Fecha_VentaLabel.Size = New System.Drawing.Size(75, 16)
-        Fecha_VentaLabel.TabIndex = 68
-        Fecha_VentaLabel.Text = "Fecha Venta:"
-        '
-        'Fecha_VentaDateTimePicker
-        '
-        Me.Fecha_VentaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "Fecha_Venta", True))
-        Me.Fecha_VentaDateTimePicker.Location = New System.Drawing.Point(813, 22)
-        Me.Fecha_VentaDateTimePicker.Name = "Fecha_VentaDateTimePicker"
-        Me.Fecha_VentaDateTimePicker.Size = New System.Drawing.Size(212, 23)
-        Me.Fecha_VentaDateTimePicker.TabIndex = 69
-=======
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nombre_Producto"
@@ -738,7 +629,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Imprimir.TabIndex = 76
         Me.Btn_Imprimir.Text = "IMPRIMIR"
         Me.Btn_Imprimir.UseVisualStyleBackColor = False
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
         '
         'Cajero_Transaccion_Venta
         '
@@ -810,24 +700,12 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents CajeroTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter
     Friend WithEvents CajeroBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-<<<<<<< HEAD
-    Friend WithEvents ID_ClienteTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ID_CajeroTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents NumeroTransaccion_VentaNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents ID_ProductoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents TipoDeFacturacion_VentaComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents Btn_Buscar As System.Windows.Forms.Button
-=======
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-<<<<<<< HEAD
-    Friend WithEvents Fecha_VentaDateTimePicker As System.Windows.Forms.DateTimePicker
-=======
     Friend WithEvents ID_CajeroComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents VentaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents NroFacturaNumericUpDown As System.Windows.Forms.NumericUpDown
@@ -860,5 +738,4 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Btn_Vender As System.Windows.Forms.Button
     Friend WithEvents Btn_Imprimir As System.Windows.Forms.Button
->>>>>>> 58891744eabb18e695d258c4872131b7406ceedc
 End Class
