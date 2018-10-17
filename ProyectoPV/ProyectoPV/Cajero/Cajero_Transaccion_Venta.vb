@@ -48,6 +48,16 @@
     End Sub
 
     Private Sub Cajero_Transaccion_Venta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cajero' Puede moverla o quitarla según sea necesario.
         Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
@@ -84,7 +94,7 @@
         Me.ProductoDataGridView.DataSource = vista 'ACTUALIZO LA GRILLA
     End Sub
 
-    Private Sub Btn_Imprimir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Vender.Click
+    Private Sub Btn_Vender_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Vender.Click
         Dim fila, CodConsulta, aux, importe As Integer
         CodConsulta = Val(ID_ProductoTextBox.Text) '
         fila = Me.ProductoBindingSource.Find("ID_Producto", CodConsulta) 'me dice la posicion arranca de 0

@@ -25,20 +25,35 @@ Partial Class Cajero_ImprimirVenta
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FacturasVentaDataSet = New WindowsApplication1.FacturasVentaDataSet()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.FacturasVentaDataSet = New WindowsApplication1.FacturasVentaDataSet()
-        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.VentaTableAdapter = New WindowsApplication1.FacturasVentaDataSetTableAdapters.VentaTableAdapter()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoTableAdapter = New WindowsApplication1.FacturasVentaDataSetTableAdapters.ProductoTableAdapter()
-        Me.Panel1.SuspendLayout()
-        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'VentaBindingSource
+        '
+        Me.VentaBindingSource.DataMember = "Venta"
+        Me.VentaBindingSource.DataSource = Me.FacturasVentaDataSet
+        '
+        'FacturasVentaDataSet
+        '
+        Me.FacturasVentaDataSet.DataSetName = "FacturasVentaDataSet"
+        Me.FacturasVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.FacturasVentaDataSet
         '
         'ReportViewer1
         '
@@ -49,7 +64,7 @@ Partial Class Cajero_ImprimirVenta
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "WindowsApplication1.FacturaVenta.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(111, 96)
+        Me.ReportViewer1.Location = New System.Drawing.Point(56, 93)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(396, 246)
         Me.ReportViewer1.TabIndex = 0
@@ -84,24 +99,9 @@ Partial Class Cajero_ImprimirVenta
         Me.Panel2.Size = New System.Drawing.Size(602, 10)
         Me.Panel2.TabIndex = 57
         '
-        'FacturasVentaDataSet
-        '
-        Me.FacturasVentaDataSet.DataSetName = "FacturasVentaDataSet"
-        Me.FacturasVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'VentaBindingSource
-        '
-        Me.VentaBindingSource.DataMember = "Venta"
-        Me.VentaBindingSource.DataSource = Me.FacturasVentaDataSet
-        '
         'VentaTableAdapter
         '
         Me.VentaTableAdapter.ClearBeforeFill = True
-        '
-        'ProductoBindingSource
-        '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.FacturasVentaDataSet
         '
         'ProductoTableAdapter
         '
@@ -118,11 +118,11 @@ Partial Class Cajero_ImprimirVenta
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "Cajero_ImprimirVenta"
         Me.Text = "Cajero_ImprimirVenta"
+        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
