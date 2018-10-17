@@ -193,6 +193,12 @@
     <Compile Include="Gerente\Gerente_TablasClientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Ventas_Realizadas.Designer.vb">
+      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Ventas_Realizadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Otros\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -269,6 +275,9 @@
     <EmbeddedResource Include="Gerente\Gerente_TablasClientes.resx">
       <DependentUpon>Gerente_TablasClientes.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Ventas_Realizadas.resx">
+      <DependentUpon>Gerente_Ventas_Realizadas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Otros\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

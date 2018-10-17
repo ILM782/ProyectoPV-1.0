@@ -128,4 +128,9 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
+        Gerente_Ventas_Realizadas.Show()
+        Me.Close()
+    End Sub
 End Class
