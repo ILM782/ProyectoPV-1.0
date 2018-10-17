@@ -152,42 +152,14 @@
 
     End Sub
 
-    ' Private Sub TextBox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
-    'Dim i As Integer
-    '  Dim codigoConsulta As String
-    '    LocalidadBindingSource.MoveFirst()
-    '   codigoConsulta = TextBox2.Text
-    '   i = 0
-    '   If  IsNumeric(codigoConsulta) Then
-    '      Do
-    '         If LocalidadBindingSource.Current("ID_Localidad") = codigoConsulta Then
-    '             Localidad_LocalidadTextBox.Text = LocalidadBindingSource.Current("Localidad_Localidad")
-    '             CP_LocalidadTextBox.Text = LocalidadBindingSource.Current("CP_Localidad")
-    '               Provincia_LocalidadTextBox.Text = LocalidadBindingSource.Current("Provincia_Localidad")
-    '
-    '             Exit Sub
-    '        End If
-    '         i = i + 1
-    '          LocalidadBindingSource.MoveNext()
-    '       Loop Until i = LocalidadBindingSource.Count
-    '
-    '   Else
-
-    '   End If
-    ' End Sub
-
-    'Private Sub Txt_Localidad_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Localidad.TextChanged
-
-    ' TextBox2.Text = ""
-    '  TextBox1.Text = ""
-
-    'End Sub
-
-
-
     Private Sub Txt_Localidad_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Localidad.KeyPress
         TextBox1.Text = ""
         TextBox2.Text = ""
+        e.KeyChar = ChrW(solo_letras(e))
+        If e.KeyChar = Chr(13) Then
+            Txt_Localidad.Focus()
+            e.Handled = True
+        End If
     End Sub
 
     Private Sub CP_LocalidadTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles CP_LocalidadTextBox.KeyPress
@@ -206,6 +178,30 @@
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Txt_Provincia_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Provincia.KeyPress
+        e.KeyChar = ChrW(solo_letras(e))
+        If e.KeyChar = Chr(13) Then
+            Txt_Provincia.Focus()
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Localidad_LocalidadTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Localidad_LocalidadTextBox.KeyPress
+        e.KeyChar = ChrW(solo_letras(e))
+        If e.KeyChar = Chr(13) Then
+            Localidad_LocalidadTextBox.Focus()
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Provincia_LocalidadTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Provincia_LocalidadTextBox.KeyPress
+        e.KeyChar = ChrW(solo_letras(e))
+        If e.KeyChar = Chr(13) Then
+            Provincia_LocalidadTextBox.Focus()
+            e.Handled = True
+        End If
     End Sub
 
 End Class

@@ -38,10 +38,13 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+<<<<<<< HEAD
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -74,10 +77,13 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+<<<<<<< HEAD
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.CategoriaRowChangeEvent">
 	<summary>
 Row event argument class
@@ -110,10 +116,13 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+<<<<<<< HEAD
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet.VentaVistaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSet">
 	<summary>
 Represents a strongly typed in-memory cache of data.
@@ -150,10 +159,13 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+<<<<<<< HEAD
 </member><member name="T:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaVistaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 </member><member name="M:WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.MayoristaBaseDeDatosDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
@@ -187,6 +199,7 @@ Used to sort self-referenced table's rows
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.CajeroDataTable">
+<<<<<<< HEAD
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -207,10 +220,41 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaDataTable">
+=======
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ClienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.LocalidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProductoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorDataTable">
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.CajeroRow">
+<<<<<<< HEAD
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -231,10 +275,41 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaRow">
+=======
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ClienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.LocalidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProductoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorRow">
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 	<summary>
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.CajeroRowChangeEvent">
+<<<<<<< HEAD
 	<summary>
 Row event argument class
 </summary>
@@ -255,6 +330,36 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaVistaRowChangeEvent">
+=======
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ClienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.LocalidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProductoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.VentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.CategoriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.MarcasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSet.ProveedorRowChangeEvent">
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 	<summary>
 Row event argument class
 </summary>
@@ -263,6 +368,7 @@ Row event argument class
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.CajeroTableAdapter">
+<<<<<<< HEAD
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -283,6 +389,36 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.VentaVistaTableAdapter">
+=======
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.ClienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.LocalidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.ProductoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.VentaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.CategoriaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.MarcasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.FacturasVentaDataSetTableAdapters.ProveedorTableAdapter">
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

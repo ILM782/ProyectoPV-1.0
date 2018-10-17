@@ -35,7 +35,15 @@ Partial Public Class FacturasVentaDataSet
     
     Private tableVenta As VentaDataTable
     
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Private tableVentaVista As VentaVistaDataTable
+=======
+    Private tableCategoria As CategoriaDataTable
+    
+    Private tableMarcas As MarcasDataTable
+    
+    Private tableProveedor As ProveedorDataTable
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -81,8 +89,19 @@ Partial Public Class FacturasVentaDataSet
             If (Not (ds.Tables("Venta")) Is Nothing) Then
                 MyBase.Tables.Add(New VentaDataTable(ds.Tables("Venta")))
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (Not (ds.Tables("VentaVista")) Is Nothing) Then
                 MyBase.Tables.Add(New VentaVistaDataTable(ds.Tables("VentaVista")))
+=======
+            If (Not (ds.Tables("Categoria")) Is Nothing) Then
+                MyBase.Tables.Add(New CategoriaDataTable(ds.Tables("Categoria")))
+            End If
+            If (Not (ds.Tables("Marcas")) Is Nothing) Then
+                MyBase.Tables.Add(New MarcasDataTable(ds.Tables("Marcas")))
+            End If
+            If (Not (ds.Tables("Proveedor")) Is Nothing) Then
+                MyBase.Tables.Add(New ProveedorDataTable(ds.Tables("Proveedor")))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -155,9 +174,35 @@ Partial Public Class FacturasVentaDataSet
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Public ReadOnly Property VentaVista() As VentaVistaDataTable
         Get
             Return Me.tableVentaVista
+=======
+    Public ReadOnly Property Categoria() As CategoriaDataTable
+        Get
+            Return Me.tableCategoria
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property Marcas() As MarcasDataTable
+        Get
+            Return Me.tableMarcas
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property Proveedor() As ProveedorDataTable
+        Get
+            Return Me.tableProveedor
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Get
     End Property
     
@@ -243,8 +288,19 @@ Partial Public Class FacturasVentaDataSet
             If (Not (ds.Tables("Venta")) Is Nothing) Then
                 MyBase.Tables.Add(New VentaDataTable(ds.Tables("Venta")))
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (Not (ds.Tables("VentaVista")) Is Nothing) Then
                 MyBase.Tables.Add(New VentaVistaDataTable(ds.Tables("VentaVista")))
+=======
+            If (Not (ds.Tables("Categoria")) Is Nothing) Then
+                MyBase.Tables.Add(New CategoriaDataTable(ds.Tables("Categoria")))
+            End If
+            If (Not (ds.Tables("Marcas")) Is Nothing) Then
+                MyBase.Tables.Add(New MarcasDataTable(ds.Tables("Marcas")))
+            End If
+            If (Not (ds.Tables("Proveedor")) Is Nothing) Then
+                MyBase.Tables.Add(New ProveedorDataTable(ds.Tables("Proveedor")))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -308,10 +364,29 @@ Partial Public Class FacturasVentaDataSet
                 Me.tableVenta.InitVars
             End If
         End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Me.tableVentaVista = CType(MyBase.Tables("VentaVista"),VentaVistaDataTable)
         If (initTable = true) Then
             If (Not (Me.tableVentaVista) Is Nothing) Then
                 Me.tableVentaVista.InitVars
+=======
+        Me.tableCategoria = CType(MyBase.Tables("Categoria"),CategoriaDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableCategoria) Is Nothing) Then
+                Me.tableCategoria.InitVars
+            End If
+        End If
+        Me.tableMarcas = CType(MyBase.Tables("Marcas"),MarcasDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableMarcas) Is Nothing) Then
+                Me.tableMarcas.InitVars
+            End If
+        End If
+        Me.tableProveedor = CType(MyBase.Tables("Proveedor"),ProveedorDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableProveedor) Is Nothing) Then
+                Me.tableProveedor.InitVars
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End If
         End If
     End Sub
@@ -334,8 +409,17 @@ Partial Public Class FacturasVentaDataSet
         MyBase.Tables.Add(Me.tableProducto)
         Me.tableVenta = New VentaDataTable()
         MyBase.Tables.Add(Me.tableVenta)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Me.tableVentaVista = New VentaVistaDataTable()
         MyBase.Tables.Add(Me.tableVentaVista)
+=======
+        Me.tableCategoria = New CategoriaDataTable()
+        MyBase.Tables.Add(Me.tableCategoria)
+        Me.tableMarcas = New MarcasDataTable()
+        MyBase.Tables.Add(Me.tableMarcas)
+        Me.tableProveedor = New ProveedorDataTable()
+        MyBase.Tables.Add(Me.tableProveedor)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -370,7 +454,23 @@ Partial Public Class FacturasVentaDataSet
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Private Function ShouldSerializeVentaVista() As Boolean
+=======
+    Private Function ShouldSerializeCategoria() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializeMarcas() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializeProveedor() As Boolean
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         Return false
     End Function
     
@@ -448,7 +548,17 @@ Partial Public Class FacturasVentaDataSet
     Public Delegate Sub VentaRowChangeEventHandler(ByVal sender As Object, ByVal e As VentaRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Public Delegate Sub VentaVistaRowChangeEventHandler(ByVal sender As Object, ByVal e As VentaVistaRowChangeEvent)
+=======
+    Public Delegate Sub CategoriaRowChangeEventHandler(ByVal sender As Object, ByVal e As CategoriaRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub MarcasRowChangeEventHandler(ByVal sender As Object, ByVal e As MarcasRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub ProveedorRowChangeEventHandler(ByVal sender As Object, ByVal e As ProveedorRowChangeEvent)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -463,6 +573,16 @@ Partial Public Class FacturasVentaDataSet
         Private columnNombre_Cajero As Global.System.Data.DataColumn
         
         Private columnApellido_Cajero As Global.System.Data.DataColumn
+        
+        Private columnID_Localidad As Global.System.Data.DataColumn
+        
+        Private columnDomicilio_Cajero As Global.System.Data.DataColumn
+        
+        Private columnTelefono As Global.System.Data.DataColumn
+        
+        Private columnCorreo_Cajero As Global.System.Data.DataColumn
+        
+        Private columnDNI_Cajero As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -524,6 +644,46 @@ Partial Public Class FacturasVentaDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_LocalidadColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Localidad
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Domicilio_CajeroColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDomicilio_Cajero
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property TelefonoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTelefono
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Correo_CajeroColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCorreo_Cajero
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DNI_CajeroColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDNI_Cajero
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -560,9 +720,9 @@ Partial Public Class FacturasVentaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddCajeroRow(ByVal Nombre_Cajero As String, ByVal Apellido_Cajero As String) As CajeroRow
+        Public Overloads Function AddCajeroRow(ByVal Nombre_Cajero As String, ByVal Apellido_Cajero As String, ByVal ID_Localidad As Integer, ByVal Domicilio_Cajero As String, ByVal Telefono As Integer, ByVal Correo_Cajero As String, ByVal DNI_Cajero As String) As CajeroRow
             Dim rowCajeroRow As CajeroRow = CType(Me.NewRow,CajeroRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Cajero, Apellido_Cajero}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Cajero, Apellido_Cajero, ID_Localidad, Domicilio_Cajero, Telefono, Correo_Cajero, DNI_Cajero}
             rowCajeroRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCajeroRow)
             Return rowCajeroRow
@@ -594,6 +754,11 @@ Partial Public Class FacturasVentaDataSet
             Me.columnID_Cajero = MyBase.Columns("ID_Cajero")
             Me.columnNombre_Cajero = MyBase.Columns("Nombre_Cajero")
             Me.columnApellido_Cajero = MyBase.Columns("Apellido_Cajero")
+            Me.columnID_Localidad = MyBase.Columns("ID_Localidad")
+            Me.columnDomicilio_Cajero = MyBase.Columns("Domicilio_Cajero")
+            Me.columnTelefono = MyBase.Columns("Telefono")
+            Me.columnCorreo_Cajero = MyBase.Columns("Correo_Cajero")
+            Me.columnDNI_Cajero = MyBase.Columns("DNI_Cajero")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -605,6 +770,16 @@ Partial Public Class FacturasVentaDataSet
             MyBase.Columns.Add(Me.columnNombre_Cajero)
             Me.columnApellido_Cajero = New Global.System.Data.DataColumn("Apellido_Cajero", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnApellido_Cajero)
+            Me.columnID_Localidad = New Global.System.Data.DataColumn("ID_Localidad", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Localidad)
+            Me.columnDomicilio_Cajero = New Global.System.Data.DataColumn("Domicilio_Cajero", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDomicilio_Cajero)
+            Me.columnTelefono = New Global.System.Data.DataColumn("Telefono", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTelefono)
+            Me.columnCorreo_Cajero = New Global.System.Data.DataColumn("Correo_Cajero", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCorreo_Cajero)
+            Me.columnDNI_Cajero = New Global.System.Data.DataColumn("DNI_Cajero", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDNI_Cajero)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Cajero}, true))
             Me.columnID_Cajero.AutoIncrement = true
             Me.columnID_Cajero.AutoIncrementSeed = -1
@@ -616,6 +791,9 @@ Partial Public Class FacturasVentaDataSet
             Me.columnNombre_Cajero.MaxLength = 15
             Me.columnApellido_Cajero.AllowDBNull = false
             Me.columnApellido_Cajero.MaxLength = 15
+            Me.columnDomicilio_Cajero.MaxLength = 50
+            Me.columnCorreo_Cajero.MaxLength = 50
+            Me.columnDNI_Cajero.MaxLength = 8
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -763,6 +941,11 @@ Partial Public Class FacturasVentaDataSet
         
         Private columnTelefono_Cliente As Global.System.Data.DataColumn
         
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+        Private columnCorreo_Cliente As Global.System.Data.DataColumn
+        
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -839,6 +1022,22 @@ Partial Public Class FacturasVentaDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Telefono_ClienteColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTelefono_Cliente
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Correo_ClienteColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCorreo_Cliente
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -875,9 +1074,15 @@ Partial Public Class FacturasVentaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Overloads Function AddClienteRow(ByVal Nombre_Cliente As String, ByVal Apellido_Cliente As String, ByVal Domicilio_Cliente As String, ByVal Telefono_Cliente As Integer) As ClienteRow
             Dim rowClienteRow As ClienteRow = CType(Me.NewRow,ClienteRow)
             Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Cliente, Apellido_Cliente, Domicilio_Cliente, Telefono_Cliente}
+=======
+        Public Overloads Function AddClienteRow(ByVal Nombre_Cliente As String, ByVal Apellido_Cliente As String, ByVal DNI_Cliente As Integer, ByVal ID_Localidad As Short, ByVal Domicilio_Cliente As String, ByVal Telefono_Cliente As Integer, ByVal Correo_Cliente As String) As ClienteRow
+            Dim rowClienteRow As ClienteRow = CType(Me.NewRow,ClienteRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Cliente, Apellido_Cliente, DNI_Cliente, ID_Localidad, Domicilio_Cliente, Telefono_Cliente, Correo_Cliente}
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             rowClienteRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowClienteRow)
             Return rowClienteRow
@@ -911,6 +1116,10 @@ Partial Public Class FacturasVentaDataSet
             Me.columnApellido_Cliente = MyBase.Columns("Apellido_Cliente")
             Me.columnDomicilio_Cliente = MyBase.Columns("Domicilio_Cliente")
             Me.columnTelefono_Cliente = MyBase.Columns("Telefono_Cliente")
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+            Me.columnCorreo_Cliente = MyBase.Columns("Correo_Cliente")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -926,6 +1135,12 @@ Partial Public Class FacturasVentaDataSet
             MyBase.Columns.Add(Me.columnDomicilio_Cliente)
             Me.columnTelefono_Cliente = New Global.System.Data.DataColumn("Telefono_Cliente", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTelefono_Cliente)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+            Me.columnCorreo_Cliente = New Global.System.Data.DataColumn("Correo_Cliente", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCorreo_Cliente)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnDNI_Cliente}, false))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columnID_Cliente}, true))
             Me.columnID_Cliente.AutoIncrement = true
             Me.columnID_Cliente.AutoIncrementSeed = -1
@@ -938,6 +1153,7 @@ Partial Public Class FacturasVentaDataSet
             Me.columnApellido_Cliente.AllowDBNull = false
             Me.columnApellido_Cliente.MaxLength = 25
             Me.columnDomicilio_Cliente.MaxLength = 50
+            Me.columnCorreo_Cliente.MaxLength = 50
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1389,6 +1605,12 @@ Partial Public Class FacturasVentaDataSet
         
         Private columnDescripcion As Global.System.Data.DataColumn
         
+        Private columnID_Marca As Global.System.Data.DataColumn
+        
+        Private columnID_Categoria As Global.System.Data.DataColumn
+        
+        Private columnStrock As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -1449,6 +1671,30 @@ Partial Public Class FacturasVentaDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_MarcaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Marca
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_CategoriaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Categoria
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property StrockColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnStrock
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -1485,9 +1731,13 @@ Partial Public Class FacturasVentaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddProductoRow(ByVal Nombre_Producto As String, ByVal Precio_Unitario As Double, ByVal Descripcion As String) As ProductoRow
+        Public Overloads Function AddProductoRow(ByVal Nombre_Producto As String, ByVal Precio_Unitario As Double, ByVal Descripcion As String, ByVal ID_Marca As Integer, ByVal ID_Categoria As Integer, ByVal Strock As Integer) As ProductoRow
             Dim rowProductoRow As ProductoRow = CType(Me.NewRow,ProductoRow)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             Dim columnValuesArray() As Object = New Object() {Nombre_Producto, Precio_Unitario, Descripcion}
+=======
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Producto, Precio_Unitario, Descripcion, ID_Marca, ID_Categoria, Strock}
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             rowProductoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowProductoRow)
             Return rowProductoRow
@@ -1513,6 +1763,9 @@ Partial Public Class FacturasVentaDataSet
             Me.columnNombre_Producto = MyBase.Columns("Nombre_Producto")
             Me.columnPrecio_Unitario = MyBase.Columns("Precio_Unitario")
             Me.columnDescripcion = MyBase.Columns("Descripcion")
+            Me.columnID_Marca = MyBase.Columns("ID_Marca")
+            Me.columnID_Categoria = MyBase.Columns("ID_Categoria")
+            Me.columnStrock = MyBase.Columns("Strock")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1524,11 +1777,30 @@ Partial Public Class FacturasVentaDataSet
             MyBase.Columns.Add(Me.columnPrecio_Unitario)
             Me.columnDescripcion = New Global.System.Data.DataColumn("Descripcion", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnDescripcion)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+            Me.columnID_Marca = New Global.System.Data.DataColumn("ID_Marca", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Marca)
+            Me.columnID_Categoria = New Global.System.Data.DataColumn("ID_Categoria", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Categoria)
+            Me.columnStrock = New Global.System.Data.DataColumn("Strock", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnStrock)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Producto}, true))
+            Me.columnID_Producto.AutoIncrement = true
+            Me.columnID_Producto.AutoIncrementSeed = -1
+            Me.columnID_Producto.AutoIncrementStep = -1
+            Me.columnID_Producto.AllowDBNull = false
+            Me.columnID_Producto.ReadOnly = true
+            Me.columnID_Producto.Unique = true
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.columnNombre_Producto.AllowDBNull = false
             Me.columnNombre_Producto.MaxLength = 60
             Me.columnPrecio_Unitario.AllowDBNull = false
             Me.columnDescripcion.AllowDBNull = false
             Me.columnDescripcion.MaxLength = 110
+            Me.columnID_Marca.AllowDBNull = false
+            Me.columnID_Categoria.AllowDBNull = false
+            Me.columnStrock.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2027,6 +2299,7 @@ Partial Public Class FacturasVentaDataSet
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Partial Public Class VentaVistaDataTable
         Inherits Global.System.Data.TypedTableBase(Of VentaVistaRow)
         
@@ -2041,12 +2314,24 @@ Partial Public Class FacturasVentaDataSet
         Private columnPrecio_Unitario As Global.System.Data.DataColumn
         
         Private columnTotal As Global.System.Data.DataColumn
+=======
+    Partial Public Class CategoriaDataTable
+        Inherits Global.System.Data.TypedTableBase(Of CategoriaRow)
+        
+        Private columnID_Categoria As Global.System.Data.DataColumn
+        
+        Private columnCategoria As Global.System.Data.DataColumn
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
             MyBase.New
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             Me.TableName = "VentaVista"
+=======
+            Me.TableName = "Categoria"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.BeginInit
             Me.InitClass
             Me.EndInit
@@ -2079,14 +2364,21 @@ Partial Public Class FacturasVentaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property ID_ProductoColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnID_Producto
+=======
+        Public ReadOnly Property ID_CategoriaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Categoria
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property Nombre_ProductoColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnNombre_Producto
@@ -2098,27 +2390,59 @@ Partial Public Class FacturasVentaDataSet
         Public ReadOnly Property Descripcion_ProductoColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnDescripcion_Producto
+=======
+        Public ReadOnly Property CategoriaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCategoria
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Cantidad_VentaColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnCantidad_Venta
+=======
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property Precio_UnitarioColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnPrecio_Unitario
+=======
+        Public Default ReadOnly Property Item(ByVal index As Integer) As CategoriaRow
+            Get
+                Return CType(Me.Rows(index),CategoriaRow)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End Get
         End Property
         
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event CategoriaRowChanging As CategoriaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event CategoriaRowChanged As CategoriaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event CategoriaRowDeleting As CategoriaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event CategoriaRowDeleted As CategoriaRowChangeEventHandler
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property TotalColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnTotal
@@ -2182,10 +2506,76 @@ Partial Public Class FacturasVentaDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
             Return New VentaVistaDataTable()
+=======
+        Public Overloads Sub AddCategoriaRow(ByVal row As CategoriaRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddCategoriaRow(ByVal Categoria As String) As CategoriaRow
+            Dim rowCategoriaRow As CategoriaRow = CType(Me.NewRow,CategoriaRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Categoria}
+            rowCategoriaRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowCategoriaRow)
+            Return rowCategoriaRow
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindByID_Categoria(ByVal ID_Categoria As Integer) As CategoriaRow
+            Return CType(Me.Rows.Find(New Object() {ID_Categoria}),CategoriaRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As CategoriaDataTable = CType(MyBase.Clone,CategoriaDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New CategoriaDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnID_Categoria = MyBase.Columns("ID_Categoria")
+            Me.columnCategoria = MyBase.Columns("Categoria")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnID_Categoria = New Global.System.Data.DataColumn("ID_Categoria", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Categoria)
+            Me.columnCategoria = New Global.System.Data.DataColumn("Categoria", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCategoria)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Categoria}, true))
+            Me.columnID_Categoria.AutoIncrement = true
+            Me.columnID_Categoria.AutoIncrementSeed = -1
+            Me.columnID_Categoria.AutoIncrementStep = -1
+            Me.columnID_Categoria.AllowDBNull = false
+            Me.columnID_Categoria.ReadOnly = true
+            Me.columnID_Categoria.Unique = true
+            Me.columnCategoria.AllowDBNull = false
+            Me.columnCategoria.MaxLength = 60
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewCategoriaRow() As CategoriaRow
+            Return CType(Me.NewRow,CategoriaRow)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Friend Sub InitVars()
             Me.columnID_Producto = MyBase.Columns("ID_Producto")
             Me.columnNombre_Producto = MyBase.Columns("Nombre_Producto")
@@ -2238,11 +2628,57 @@ Partial Public Class FacturasVentaDataSet
             MyBase.OnRowChanged(e)
             If (Not (Me.VentaVistaRowChangedEvent) Is Nothing) Then
                 RaiseEvent VentaVistaRowChanged(Me, New VentaVistaRowChangeEvent(CType(e.Row,VentaVistaRow), e.Action))
+=======
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New CategoriaRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(CategoriaRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.CategoriaRowChangedEvent) Is Nothing) Then
+                RaiseEvent CategoriaRowChanged(Me, New CategoriaRowChangeEvent(CType(e.Row,CategoriaRow), e.Action))
             End If
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.CategoriaRowChangingEvent) Is Nothing) Then
+                RaiseEvent CategoriaRowChanging(Me, New CategoriaRowChangeEvent(CType(e.Row,CategoriaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.CategoriaRowDeletedEvent) Is Nothing) Then
+                RaiseEvent CategoriaRowDeleted(Me, New CategoriaRowChangeEvent(CType(e.Row,CategoriaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.CategoriaRowDeletingEvent) Is Nothing) Then
+                RaiseEvent CategoriaRowDeleting(Me, New CategoriaRowChangeEvent(CType(e.Row,CategoriaRow), e.Action))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
             If (Not (Me.VentaVistaRowChangingEvent) Is Nothing) Then
@@ -2271,6 +2707,9 @@ Partial Public Class FacturasVentaDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub RemoveVentaVistaRow(ByVal row As VentaVistaRow)
+=======
+        Public Sub RemoveCategoriaRow(ByVal row As CategoriaRow)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Rows.Remove(row)
         End Sub
         
@@ -2297,7 +2736,11 @@ Partial Public Class FacturasVentaDataSet
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             attribute2.FixedValue = "VentaVistaDataTable"
+=======
+            attribute2.FixedValue = "CategoriaDataTable"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -2342,8 +2785,9 @@ Partial Public Class FacturasVentaDataSet
     End Class
     
     '''<summary>
-    '''Represents strongly named DataRow class.
+    '''Represents the strongly named DataTable class.
     '''</summary>
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
     Partial Public Class CajeroRow
         Inherits Global.System.Data.DataRow
         
@@ -2354,10 +2798,30 @@ Partial Public Class FacturasVentaDataSet
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
             Me.tableCajero = CType(Me.Table,CajeroDataTable)
+=======
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class MarcasDataTable
+        Inherits Global.System.Data.TypedTableBase(Of MarcasRow)
+        
+        Private columnID_Marca As Global.System.Data.DataColumn
+        
+        Private columnMarca As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "Marcas"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Property ID_Cajero() As Integer
             Get
                 Return CType(Me(Me.tableCajero.ID_CajeroColumn),Integer)
@@ -2376,10 +2840,59 @@ Partial Public Class FacturasVentaDataSet
             Set
                 Me(Me.tableCajero.Nombre_CajeroColumn) = value
             End Set
+=======
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_MarcaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Marca
+            End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property MarcaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnMarca
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Property Apellido_Cajero() As String
             Get
                 Return CType(Me(Me.tableCajero.Apellido_CajeroColumn),String)
@@ -2472,10 +2985,45 @@ Partial Public Class FacturasVentaDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsDomicilio_ClienteNull() As Boolean
             Return Me.IsNull(Me.tableCliente.Domicilio_ClienteColumn)
+=======
+        Public Default ReadOnly Property Item(ByVal index As Integer) As MarcasRow
+            Get
+                Return CType(Me.Rows(index),MarcasRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event MarcasRowChanging As MarcasRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event MarcasRowChanged As MarcasRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event MarcasRowDeleting As MarcasRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event MarcasRowDeleted As MarcasRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub AddMarcasRow(ByVal row As MarcasRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddMarcasRow(ByVal Marca As String) As MarcasRow
+            Dim rowMarcasRow As MarcasRow = CType(Me.NewRow,MarcasRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Marca}
+            rowMarcasRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowMarcasRow)
+            Return rowMarcasRow
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Sub SetDomicilio_ClienteNull()
             Me(Me.tableCliente.Domicilio_ClienteColumn) = Global.System.Convert.DBNull
         End Sub
@@ -2484,10 +3032,23 @@ Partial Public Class FacturasVentaDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsTelefono_ClienteNull() As Boolean
             Return Me.IsNull(Me.tableCliente.Telefono_ClienteColumn)
+=======
+        Public Function FindByID_Marca(ByVal ID_Marca As Integer) As MarcasRow
+            Return CType(Me.Rows.Find(New Object() {ID_Marca}),MarcasRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As MarcasDataTable = CType(MyBase.Clone,MarcasDataTable)
+            cln.InitVars
+            Return cln
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Sub SetTelefono_ClienteNull()
             Me(Me.tableCliente.Telefono_ClienteColumn) = Global.System.Convert.DBNull
         End Sub
@@ -3026,10 +3587,22 @@ Partial Public Class FacturasVentaDataSet
             MyBase.New
             Me.eventRow = row
             Me.eventAction = action
+=======
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New MarcasDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnID_Marca = MyBase.Columns("ID_Marca")
+            Me.columnMarca = MyBase.Columns("Marca")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property Row() As ProductoRow
             Get
                 Return Me.eventRow
@@ -3098,10 +3671,63 @@ Partial Public Class FacturasVentaDataSet
             MyBase.New
             Me.eventRow = row
             Me.eventAction = action
+=======
+        Private Sub InitClass()
+            Me.columnID_Marca = New Global.System.Data.DataColumn("ID_Marca", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Marca)
+            Me.columnMarca = New Global.System.Data.DataColumn("Marca", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnMarca)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Marca}, true))
+            Me.columnID_Marca.AutoIncrement = true
+            Me.columnID_Marca.AutoIncrementSeed = -1
+            Me.columnID_Marca.AutoIncrementStep = -1
+            Me.columnID_Marca.AllowDBNull = false
+            Me.columnID_Marca.ReadOnly = true
+            Me.columnID_Marca.Unique = true
+            Me.columnMarca.AllowDBNull = false
+            Me.columnMarca.MaxLength = 60
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewMarcasRow() As MarcasRow
+            Return CType(Me.NewRow,MarcasRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New MarcasRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(MarcasRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.MarcasRowChangedEvent) Is Nothing) Then
+                RaiseEvent MarcasRowChanged(Me, New MarcasRowChangeEvent(CType(e.Row,MarcasRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.MarcasRowChangingEvent) Is Nothing) Then
+                RaiseEvent MarcasRowChanging(Me, New MarcasRowChangeEvent(CType(e.Row,MarcasRow), e.Action))
+            End If
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public ReadOnly Property Row() As VentaVistaRow
             Get
                 Return Me.eventRow
@@ -3294,6 +3920,1731 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
         Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.CajeroDataTable) As Integer
+=======
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.MarcasRowDeletedEvent) Is Nothing) Then
+                RaiseEvent MarcasRowDeleted(Me, New MarcasRowChangeEvent(CType(e.Row,MarcasRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.MarcasRowDeletingEvent) Is Nothing) Then
+                RaiseEvent MarcasRowDeleting(Me, New MarcasRowChangeEvent(CType(e.Row,MarcasRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub RemoveMarcasRow(ByVal row As MarcasRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As FacturasVentaDataSet = New FacturasVentaDataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "MarcasDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class ProveedorDataTable
+        Inherits Global.System.Data.TypedTableBase(Of ProveedorRow)
+        
+        Private columnID_Proveedor As Global.System.Data.DataColumn
+        
+        Private columnNombre_Empresa As Global.System.Data.DataColumn
+        
+        Private columnID_Localidad As Global.System.Data.DataColumn
+        
+        Private columnDomicilio_Proveedor As Global.System.Data.DataColumn
+        
+        Private columnTelefono_Proveedor As Global.System.Data.DataColumn
+        
+        Private columnCorreo_Proveedor As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "Proveedor"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_ProveedorColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Proveedor
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Nombre_EmpresaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnNombre_Empresa
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_LocalidadColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Localidad
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Domicilio_ProveedorColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDomicilio_Proveedor
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Telefono_ProveedorColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTelefono_Proveedor
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Correo_ProveedorColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCorreo_Proveedor
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As ProveedorRow
+            Get
+                Return CType(Me.Rows(index),ProveedorRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event ProveedorRowChanging As ProveedorRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event ProveedorRowChanged As ProveedorRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event ProveedorRowDeleting As ProveedorRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event ProveedorRowDeleted As ProveedorRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub AddProveedorRow(ByVal row As ProveedorRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddProveedorRow(ByVal Nombre_Empresa As String, ByVal ID_Localidad As Integer, ByVal Domicilio_Proveedor As String, ByVal Telefono_Proveedor As Long, ByVal Correo_Proveedor As String) As ProveedorRow
+            Dim rowProveedorRow As ProveedorRow = CType(Me.NewRow,ProveedorRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre_Empresa, ID_Localidad, Domicilio_Proveedor, Telefono_Proveedor, Correo_Proveedor}
+            rowProveedorRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowProveedorRow)
+            Return rowProveedorRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindByID_Proveedor(ByVal ID_Proveedor As Integer) As ProveedorRow
+            Return CType(Me.Rows.Find(New Object() {ID_Proveedor}),ProveedorRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As ProveedorDataTable = CType(MyBase.Clone,ProveedorDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New ProveedorDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnID_Proveedor = MyBase.Columns("ID_Proveedor")
+            Me.columnNombre_Empresa = MyBase.Columns("Nombre_Empresa")
+            Me.columnID_Localidad = MyBase.Columns("ID_Localidad")
+            Me.columnDomicilio_Proveedor = MyBase.Columns("Domicilio_Proveedor")
+            Me.columnTelefono_Proveedor = MyBase.Columns("Telefono_Proveedor")
+            Me.columnCorreo_Proveedor = MyBase.Columns("Correo_Proveedor")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnID_Proveedor = New Global.System.Data.DataColumn("ID_Proveedor", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Proveedor)
+            Me.columnNombre_Empresa = New Global.System.Data.DataColumn("Nombre_Empresa", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNombre_Empresa)
+            Me.columnID_Localidad = New Global.System.Data.DataColumn("ID_Localidad", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Localidad)
+            Me.columnDomicilio_Proveedor = New Global.System.Data.DataColumn("Domicilio_Proveedor", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDomicilio_Proveedor)
+            Me.columnTelefono_Proveedor = New Global.System.Data.DataColumn("Telefono_Proveedor", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTelefono_Proveedor)
+            Me.columnCorreo_Proveedor = New Global.System.Data.DataColumn("Correo_Proveedor", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCorreo_Proveedor)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Proveedor}, true))
+            Me.columnID_Proveedor.AutoIncrement = true
+            Me.columnID_Proveedor.AutoIncrementSeed = -1
+            Me.columnID_Proveedor.AutoIncrementStep = -1
+            Me.columnID_Proveedor.AllowDBNull = false
+            Me.columnID_Proveedor.ReadOnly = true
+            Me.columnID_Proveedor.Unique = true
+            Me.columnNombre_Empresa.AllowDBNull = false
+            Me.columnNombre_Empresa.MaxLength = 60
+            Me.columnID_Localidad.AllowDBNull = false
+            Me.columnDomicilio_Proveedor.AllowDBNull = false
+            Me.columnDomicilio_Proveedor.MaxLength = 80
+            Me.columnCorreo_Proveedor.MaxLength = 80
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewProveedorRow() As ProveedorRow
+            Return CType(Me.NewRow,ProveedorRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New ProveedorRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(ProveedorRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.ProveedorRowChangedEvent) Is Nothing) Then
+                RaiseEvent ProveedorRowChanged(Me, New ProveedorRowChangeEvent(CType(e.Row,ProveedorRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.ProveedorRowChangingEvent) Is Nothing) Then
+                RaiseEvent ProveedorRowChanging(Me, New ProveedorRowChangeEvent(CType(e.Row,ProveedorRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.ProveedorRowDeletedEvent) Is Nothing) Then
+                RaiseEvent ProveedorRowDeleted(Me, New ProveedorRowChangeEvent(CType(e.Row,ProveedorRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.ProveedorRowDeletingEvent) Is Nothing) Then
+                RaiseEvent ProveedorRowDeleting(Me, New ProveedorRowChangeEvent(CType(e.Row,ProveedorRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub RemoveProveedorRow(ByVal row As ProveedorRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As FacturasVentaDataSet = New FacturasVentaDataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "ProveedorDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class CajeroRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableCajero As CajeroDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableCajero = CType(Me.Table,CajeroDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Cajero() As Integer
+            Get
+                Return CType(Me(Me.tableCajero.ID_CajeroColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCajero.ID_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Nombre_Cajero() As String
+            Get
+                Return CType(Me(Me.tableCajero.Nombre_CajeroColumn),String)
+            End Get
+            Set
+                Me(Me.tableCajero.Nombre_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Apellido_Cajero() As String
+            Get
+                Return CType(Me(Me.tableCajero.Apellido_CajeroColumn),String)
+            End Get
+            Set
+                Me(Me.tableCajero.Apellido_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Localidad() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableCajero.ID_LocalidadColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'ID_Localidad' de la tabla 'Cajero' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCajero.ID_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Domicilio_Cajero() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCajero.Domicilio_CajeroColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Domicilio_Cajero' de la tabla 'Cajero' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCajero.Domicilio_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Telefono() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableCajero.TelefonoColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Telefono' de la tabla 'Cajero' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCajero.TelefonoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Correo_Cajero() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCajero.Correo_CajeroColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Correo_Cajero' de la tabla 'Cajero' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCajero.Correo_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DNI_Cajero() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCajero.DNI_CajeroColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'DNI_Cajero' de la tabla 'Cajero' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCajero.DNI_CajeroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsID_LocalidadNull() As Boolean
+            Return Me.IsNull(Me.tableCajero.ID_LocalidadColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetID_LocalidadNull()
+            Me(Me.tableCajero.ID_LocalidadColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDomicilio_CajeroNull() As Boolean
+            Return Me.IsNull(Me.tableCajero.Domicilio_CajeroColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDomicilio_CajeroNull()
+            Me(Me.tableCajero.Domicilio_CajeroColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTelefonoNull() As Boolean
+            Return Me.IsNull(Me.tableCajero.TelefonoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTelefonoNull()
+            Me(Me.tableCajero.TelefonoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCorreo_CajeroNull() As Boolean
+            Return Me.IsNull(Me.tableCajero.Correo_CajeroColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCorreo_CajeroNull()
+            Me(Me.tableCajero.Correo_CajeroColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDNI_CajeroNull() As Boolean
+            Return Me.IsNull(Me.tableCajero.DNI_CajeroColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDNI_CajeroNull()
+            Me(Me.tableCajero.DNI_CajeroColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class ClienteRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableCliente As ClienteDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableCliente = CType(Me.Table,ClienteDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Cliente() As Integer
+            Get
+                Return CType(Me(Me.tableCliente.ID_ClienteColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCliente.ID_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Nombre_Cliente() As String
+            Get
+                Return CType(Me(Me.tableCliente.Nombre_ClienteColumn),String)
+            End Get
+            Set
+                Me(Me.tableCliente.Nombre_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Apellido_Cliente() As String
+            Get
+                Return CType(Me(Me.tableCliente.Apellido_ClienteColumn),String)
+            End Get
+            Set
+                Me(Me.tableCliente.Apellido_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DNI_Cliente() As Integer
+            Get
+                Return CType(Me(Me.tableCliente.DNI_ClienteColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCliente.DNI_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Localidad() As Short
+            Get
+                Try 
+                    Return CType(Me(Me.tableCliente.ID_LocalidadColumn),Short)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'ID_Localidad' de la tabla 'Cliente' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCliente.ID_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Domicilio_Cliente() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCliente.Domicilio_ClienteColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Domicilio_Cliente' de la tabla 'Cliente' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCliente.Domicilio_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Telefono_Cliente() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableCliente.Telefono_ClienteColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Telefono_Cliente' de la tabla 'Cliente' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCliente.Telefono_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Correo_Cliente() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCliente.Correo_ClienteColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Correo_Cliente' de la tabla 'Cliente' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCliente.Correo_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsID_LocalidadNull() As Boolean
+            Return Me.IsNull(Me.tableCliente.ID_LocalidadColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetID_LocalidadNull()
+            Me(Me.tableCliente.ID_LocalidadColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDomicilio_ClienteNull() As Boolean
+            Return Me.IsNull(Me.tableCliente.Domicilio_ClienteColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDomicilio_ClienteNull()
+            Me(Me.tableCliente.Domicilio_ClienteColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTelefono_ClienteNull() As Boolean
+            Return Me.IsNull(Me.tableCliente.Telefono_ClienteColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTelefono_ClienteNull()
+            Me(Me.tableCliente.Telefono_ClienteColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCorreo_ClienteNull() As Boolean
+            Return Me.IsNull(Me.tableCliente.Correo_ClienteColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCorreo_ClienteNull()
+            Me(Me.tableCliente.Correo_ClienteColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class LocalidadRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableLocalidad As LocalidadDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableLocalidad = CType(Me.Table,LocalidadDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Localidad() As Integer
+            Get
+                Return CType(Me(Me.tableLocalidad.ID_LocalidadColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableLocalidad.ID_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Localidad_Localidad() As String
+            Get
+                Return CType(Me(Me.tableLocalidad.Localidad_LocalidadColumn),String)
+            End Get
+            Set
+                Me(Me.tableLocalidad.Localidad_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CP_Localidad() As Long
+            Get
+                Return CType(Me(Me.tableLocalidad.CP_LocalidadColumn),Long)
+            End Get
+            Set
+                Me(Me.tableLocalidad.CP_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Provincia_Localidad() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableLocalidad.Provincia_LocalidadColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Provincia_Localidad' de la tabla 'Localidad' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableLocalidad.Provincia_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsProvincia_LocalidadNull() As Boolean
+            Return Me.IsNull(Me.tableLocalidad.Provincia_LocalidadColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetProvincia_LocalidadNull()
+            Me(Me.tableLocalidad.Provincia_LocalidadColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class ProductoRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableProducto As ProductoDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableProducto = CType(Me.Table,ProductoDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Producto() As Integer
+            Get
+                Return CType(Me(Me.tableProducto.ID_ProductoColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProducto.ID_ProductoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Nombre_Producto() As String
+            Get
+                Return CType(Me(Me.tableProducto.Nombre_ProductoColumn),String)
+            End Get
+            Set
+                Me(Me.tableProducto.Nombre_ProductoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Precio_Unitario() As Double
+            Get
+                Return CType(Me(Me.tableProducto.Precio_UnitarioColumn),Double)
+            End Get
+            Set
+                Me(Me.tableProducto.Precio_UnitarioColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Descripcion() As String
+            Get
+                Return CType(Me(Me.tableProducto.DescripcionColumn),String)
+            End Get
+            Set
+                Me(Me.tableProducto.DescripcionColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Marca() As Integer
+            Get
+                Return CType(Me(Me.tableProducto.ID_MarcaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProducto.ID_MarcaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Categoria() As Integer
+            Get
+                Return CType(Me(Me.tableProducto.ID_CategoriaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProducto.ID_CategoriaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Strock() As Integer
+            Get
+                Return CType(Me(Me.tableProducto.StrockColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProducto.StrockColumn) = value
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class VentaRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableVenta As VentaDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableVenta = CType(Me.Table,VentaDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Venta() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.ID_VentaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.ID_VentaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property NroFactura() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.NroFacturaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.NroFacturaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Cantidad_Venta() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.Cantidad_VentaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.Cantidad_VentaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Producto() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.ID_ProductoColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.ID_ProductoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Fecha_Venta() As Date
+            Get
+                Return CType(Me(Me.tableVenta.Fecha_VentaColumn),Date)
+            End Get
+            Set
+                Me(Me.tableVenta.Fecha_VentaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property TipoDeFactura_Venta() As String
+            Get
+                Return CType(Me(Me.tableVenta.TipoDeFactura_VentaColumn),String)
+            End Get
+            Set
+                Me(Me.tableVenta.TipoDeFactura_VentaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Cliente() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.ID_ClienteColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.ID_ClienteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Cajero() As Integer
+            Get
+                Return CType(Me(Me.tableVenta.ID_CajeroColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVenta.ID_CajeroColumn) = value
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class CategoriaRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableCategoria As CategoriaDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableCategoria = CType(Me.Table,CategoriaDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Categoria() As Integer
+            Get
+                Return CType(Me(Me.tableCategoria.ID_CategoriaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCategoria.ID_CategoriaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Categoria() As String
+            Get
+                Return CType(Me(Me.tableCategoria.CategoriaColumn),String)
+            End Get
+            Set
+                Me(Me.tableCategoria.CategoriaColumn) = value
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class MarcasRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableMarcas As MarcasDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableMarcas = CType(Me.Table,MarcasDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Marca() As Integer
+            Get
+                Return CType(Me(Me.tableMarcas.ID_MarcaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableMarcas.ID_MarcaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Marca() As String
+            Get
+                Return CType(Me(Me.tableMarcas.MarcaColumn),String)
+            End Get
+            Set
+                Me(Me.tableMarcas.MarcaColumn) = value
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class ProveedorRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableProveedor As ProveedorDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableProveedor = CType(Me.Table,ProveedorDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Proveedor() As Integer
+            Get
+                Return CType(Me(Me.tableProveedor.ID_ProveedorColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProveedor.ID_ProveedorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Nombre_Empresa() As String
+            Get
+                Return CType(Me(Me.tableProveedor.Nombre_EmpresaColumn),String)
+            End Get
+            Set
+                Me(Me.tableProveedor.Nombre_EmpresaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ID_Localidad() As Integer
+            Get
+                Return CType(Me(Me.tableProveedor.ID_LocalidadColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProveedor.ID_LocalidadColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Domicilio_Proveedor() As String
+            Get
+                Return CType(Me(Me.tableProveedor.Domicilio_ProveedorColumn),String)
+            End Get
+            Set
+                Me(Me.tableProveedor.Domicilio_ProveedorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Telefono_Proveedor() As Long
+            Get
+                Try 
+                    Return CType(Me(Me.tableProveedor.Telefono_ProveedorColumn),Long)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Telefono_Proveedor' de la tabla 'Proveedor' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableProveedor.Telefono_ProveedorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Correo_Proveedor() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableProveedor.Correo_ProveedorColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Correo_Proveedor' de la tabla 'Proveedor' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableProveedor.Correo_ProveedorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTelefono_ProveedorNull() As Boolean
+            Return Me.IsNull(Me.tableProveedor.Telefono_ProveedorColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTelefono_ProveedorNull()
+            Me(Me.tableProveedor.Telefono_ProveedorColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCorreo_ProveedorNull() As Boolean
+            Return Me.IsNull(Me.tableProveedor.Correo_ProveedorColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCorreo_ProveedorNull()
+            Me(Me.tableProveedor.Correo_ProveedorColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class CajeroRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As CajeroRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As CajeroRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As CajeroRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class ClienteRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As ClienteRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As ClienteRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As ClienteRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class LocalidadRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As LocalidadRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As LocalidadRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As LocalidadRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class ProductoRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As ProductoRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As ProductoRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As ProductoRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class VentaRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As VentaRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As VentaRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As VentaRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class CategoriaRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As CategoriaRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As CategoriaRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As CategoriaRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class MarcasRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As MarcasRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As MarcasRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As MarcasRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class ProveedorRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As ProveedorRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As ProveedorRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As ProveedorRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+End Class
+
+Namespace FacturasVentaDataSetTableAdapters
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class CajeroTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+        
+        Private _connection As Global.System.Data.SqlServerCe.SqlCeConnection
+        
+        Private _transaction As Global.System.Data.SqlServerCe.SqlCeTransaction
+        
+        Private _commandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.SqlServerCe.SqlCeConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlServerCe.SqlCeCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.SqlServerCe.SqlCeTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "Cajero"
+            tableMapping.ColumnMappings.Add("ID_Cajero", "ID_Cajero")
+            tableMapping.ColumnMappings.Add("Nombre_Cajero", "Nombre_Cajero")
+            tableMapping.ColumnMappings.Add("Apellido_Cajero", "Apellido_Cajero")
+            tableMapping.ColumnMappings.Add("ID_Localidad", "ID_Localidad")
+            tableMapping.ColumnMappings.Add("Domicilio_Cajero", "Domicilio_Cajero")
+            tableMapping.ColumnMappings.Add("Telefono", "Telefono")
+            tableMapping.ColumnMappings.Add("Correo_Cajero", "Correo_Cajero")
+            tableMapping.ColumnMappings.Add("DNI_Cajero", "DNI_Cajero")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Cajero] WHERE (([ID_Cajero] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cajero", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Cajero] ([Nombre_Cajero], [Apellido_Cajero], [Correo_Cajero], [DNI_C"& _ 
+                "ajero], [Domicilio_Cajero], [ID_Localidad], [Telefono]) VALUES (@p1, @p2, @p3, @"& _ 
+                "p4, @p5, @p6, @p7)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Cajero] SET [Nombre_Cajero] = @p1, [Apellido_Cajero] = @p2, [Correo_Cajer"& _ 
+                "o] = @p3, [DNI_Cajero] = @p4, [Domicilio_Cajero] = @p5, [ID_Localidad] = @p6, [T"& _ 
+                "elefono] = @p7 WHERE (([ID_Cajero] = @p8))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cajero", Global.System.Data.DataRowVersion.Original, Nothing))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlServerCe.SqlCeConnection()
+            Me._connection.ConnectionString = Global.WindowsApplication1.My.MySettings.Default.MayoristaBaseDeDatosConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT ID_Cajero, Nombre_Cajero, Apellido_Cajero, Correo_Cajero, DNI_Cajero, Domi"& _ 
+                "cilio_Cajero, ID_Localidad, Telefono FROM Cajero"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.CajeroDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3366,7 +5717,7 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As Global.System.Nullable(Of Integer), ByVal p7 As Global.System.Nullable(Of Integer)) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -3376,6 +5727,31 @@ Namespace FacturasVentaDataSetTableAdapters
                 Throw New Global.System.ArgumentNullException("p2")
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
+            End If
+            If (p3 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,String)
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            If (p6.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            End If
+            If (p7.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -3396,7 +5772,7 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As Global.System.Nullable(Of Integer), ByVal p7 As Global.System.Nullable(Of Integer), ByVal p8 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -3407,7 +5783,32 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p3 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,String)
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            If (p6.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            End If
+            If (p7.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3554,14 +5955,18 @@ Namespace FacturasVentaDataSetTableAdapters
             tableMapping.ColumnMappings.Add("ID_Cliente", "ID_Cliente")
             tableMapping.ColumnMappings.Add("Nombre_Cliente", "Nombre_Cliente")
             tableMapping.ColumnMappings.Add("Apellido_Cliente", "Apellido_Cliente")
+            tableMapping.ColumnMappings.Add("DNI_Cliente", "DNI_Cliente")
+            tableMapping.ColumnMappings.Add("ID_Localidad", "ID_Localidad")
             tableMapping.ColumnMappings.Add("Domicilio_Cliente", "Domicilio_Cliente")
             tableMapping.ColumnMappings.Add("Telefono_Cliente", "Telefono_Cliente")
+            tableMapping.ColumnMappings.Add("Correo_Cliente", "Correo_Cliente")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Cliente] WHERE (([ID_Cliente] = @p1))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Cliente] WHERE (([ID_Cliente] = @p1) AND ([DNI_Cliente] = @p2))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [Cliente] ([Nombre_Cliente], [Apellido_Cliente], [DNI_Cliente], [ID_L"& _ 
@@ -3577,14 +5982,20 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [Cliente] SET [Nombre_Cliente] = @p1, [Apellido_Cliente] = @p2, [Domicilio"& _ 
-                "_Cliente] = @p3, [Telefono_Cliente] = @p4 WHERE (([ID_Cliente] = @p5))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Cliente] SET [Nombre_Cliente] = @p1, [Apellido_Cliente] = @p2, [DNI_Clien"& _ 
+                "te] = @p3, [ID_Localidad] = @p4, [Domicilio_Cliente] = @p5, [Correo_Cliente] = @"& _ 
+                "p6, [Telefono_Cliente] = @p7 WHERE (([ID_Cliente] = @p8) AND ([DNI_Cliente] = @p"& _ 
+                "9))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p9", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3600,8 +6011,8 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT ID_Cliente, Nombre_Cliente, Apellido_Cliente, Domicilio_Cliente, Telefono_"& _ 
-                "Cliente FROM Cliente"
+            Me._commandCollection(0).CommandText = "SELECT ID_Cliente, Nombre_Cliente, Apellido_Cliente, DNI_Cliente, ID_Localidad, D"& _ 
+                "omicilio_Cliente, Correo_Cliente, Telefono_Cliente FROM Cliente"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -3610,6 +6021,7 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
         Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.ClienteDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3622,9 +6034,15 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.CajeroDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.CajeroDataTable = New FacturasVentaDataSet.CajeroDataTable()
+=======
         Public Overloads Overridable Function GetData() As FacturasVentaDataSet.ClienteDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As FacturasVentaDataSet.ClienteDataTable = New FacturasVentaDataSet.ClienteDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -3632,7 +6050,11 @@ Namespace FacturasVentaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.CajeroDataTable) As Integer
+=======
         Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.ClienteDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Return Me.Adapter.Update(dataTable)
         End Function
         
@@ -3640,7 +6062,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataSet, "Cajero")
+=======
             Return Me.Adapter.Update(dataSet, "Cliente")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3661,8 +6087,14 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Overloads Overridable Function Delete(ByVal p1 As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
+=======
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
+            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(p2,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3682,7 +6114,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String) As Integer
+=======
         Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Global.System.Nullable(Of Short), ByVal p5 As String, ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Integer)) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -3693,6 +6129,8 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
             Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
             If (p4.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4.Value,Short)
@@ -3714,6 +6152,7 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3733,7 +6172,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Integer), ByVal p5 As Integer) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer) As Integer
+=======
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Global.System.Nullable(Of Short), ByVal p5 As String, ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Integer), ByVal p8 As Integer, ByVal p9 As Integer) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -3744,17 +6187,31 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
-            If (p3 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
-            End If
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
             If (p4.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4.Value,Short)
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
+            If (p5 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            If (p6 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
+            End If
+            If (p7.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4066,6 +6523,7 @@ Namespace FacturasVentaDataSetTableAdapters
                 Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
             End If
             Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4091,7 +6549,11 @@ Namespace FacturasVentaDataSetTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+    Partial Public Class ClienteTableAdapter
+=======
     Partial Public Class ProductoTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
@@ -4208,10 +6670,51 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            tableMapping.DataSetTable = "Cliente"
+            tableMapping.ColumnMappings.Add("ID_Cliente", "ID_Cliente")
+            tableMapping.ColumnMappings.Add("Nombre_Cliente", "Nombre_Cliente")
+            tableMapping.ColumnMappings.Add("Apellido_Cliente", "Apellido_Cliente")
+            tableMapping.ColumnMappings.Add("Domicilio_Cliente", "Domicilio_Cliente")
+            tableMapping.ColumnMappings.Add("Telefono_Cliente", "Telefono_Cliente")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Cliente] WHERE (([ID_Cliente] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Cliente] ([Nombre_Cliente], [Apellido_Cliente], [DNI_Cliente], [ID_L"& _ 
+                "ocalidad], [Domicilio_Cliente], [Correo_Cliente], [Telefono_Cliente]) VALUES (@p"& _ 
+                "1, @p2, @p3, @p4, @p5, @p6, @p7)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Cliente] SET [Nombre_Cliente] = @p1, [Apellido_Cliente] = @p2, [Domicilio"& _ 
+                "_Cliente] = @p3, [Telefono_Cliente] = @p4 WHERE (([ID_Cliente] = @p5))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Original, Nothing))
+=======
             tableMapping.DataSetTable = "Producto"
+            tableMapping.ColumnMappings.Add("ID_Producto", "ID_Producto")
             tableMapping.ColumnMappings.Add("Nombre_Producto", "Nombre_Producto")
             tableMapping.ColumnMappings.Add("Precio_Unitario", "Precio_Unitario")
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion")
+            tableMapping.ColumnMappings.Add("ID_Marca", "ID_Marca")
+            tableMapping.ColumnMappings.Add("ID_Categoria", "ID_Categoria")
+            tableMapping.ColumnMappings.Add("Strock", "Strock")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -4242,6 +6745,7 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Marca", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Strock", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Producto", Global.System.Data.DataRowVersion.Original, Nothing))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4257,7 +6761,13 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Nombre_Producto, Precio_Unitario, Descripcion FROM Producto"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandText = "SELECT ID_Cliente, Nombre_Cliente, Apellido_Cliente, Domicilio_Cliente, Telefono_"& _ 
+                "Cliente FROM Cliente"
+=======
+            Me._commandCollection(0).CommandText = "SELECT ID_Producto, Nombre_Producto, Precio_Unitario, Descripcion, ID_Categoria, "& _ 
+                "ID_Marca, Strock FROM Producto"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -4265,7 +6775,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.ClienteDataTable) As Integer
+=======
         Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.ProductoDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -4278,9 +6792,15 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.ClienteDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.ClienteDataTable = New FacturasVentaDataSet.ClienteDataTable()
+=======
         Public Overloads Overridable Function GetData() As FacturasVentaDataSet.ProductoDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As FacturasVentaDataSet.ProductoDataTable = New FacturasVentaDataSet.ProductoDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -4288,7 +6808,11 @@ Namespace FacturasVentaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.ClienteDataTable) As Integer
+=======
         Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.ProductoDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Return Me.Adapter.Update(dataTable)
         End Function
         
@@ -4296,7 +6820,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataSet, "Cliente")
+=======
             Return Me.Adapter.Update(dataSet, "Producto")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4338,7 +6866,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Global.System.Nullable(Of Short), ByVal p5 As String, ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Integer)) As Integer
+=======
         Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Double, ByVal p3 As String, ByVal p4 As Integer, ByVal p5 As Integer, ByVal p6 As Integer) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -4350,9 +6882,33 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p4.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4.Value,Short)
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            If (p6 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,String)
+            End If
+            If (p7.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+=======
             Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Integer)
             Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,Integer)
             Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4372,7 +6928,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Integer), ByVal p5 As Integer) As Integer
+=======
         Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Double, ByVal p3 As String, ByVal p4 As Integer, ByVal p5 As Integer, ByVal p6 As Integer, ByVal p7 As Integer) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -4384,10 +6944,24 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            If (p3 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
+=======
             Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
             Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
             Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
             Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4413,7 +6987,11 @@ Namespace FacturasVentaDataSetTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+    Partial Public Class LocalidadTableAdapter
+=======
     Partial Public Class VentaTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
@@ -4530,6 +7108,36 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            tableMapping.DataSetTable = "Localidad"
+            tableMapping.ColumnMappings.Add("ID_Localidad", "ID_Localidad")
+            tableMapping.ColumnMappings.Add("Localidad_Localidad", "Localidad_Localidad")
+            tableMapping.ColumnMappings.Add("CP_Localidad", "CP_Localidad")
+            tableMapping.ColumnMappings.Add("Provincia_Localidad", "Provincia_Localidad")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Localidad] WHERE (([ID_Localidad] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Localidad] ([Localidad_Localidad], [CP_Localidad], [Provincia_Locali"& _ 
+                "dad]) VALUES (@p1, @p2, @p3)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Localidad_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.BigInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "CP_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Provincia_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Localidad] SET [Localidad_Localidad] = @p1, [CP_Localidad] = @p2, [Provin"& _ 
+                "cia_Localidad] = @p3 WHERE (([ID_Localidad] = @p4))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Localidad_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.BigInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "CP_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Provincia_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Original, Nothing))
+=======
             tableMapping.DataSetTable = "Venta"
             tableMapping.ColumnMappings.Add("ID_Venta", "ID_Venta")
             tableMapping.ColumnMappings.Add("NroFactura", "NroFactura")
@@ -4572,6 +7180,7 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Venta", Global.System.Data.DataRowVersion.Original, Nothing))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4587,8 +7196,13 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandText = "SELECT [ID_Localidad], [Localidad_Localidad], [CP_Localidad], [Provincia_Localida"& _ 
+                "d] FROM [Localidad]"
+=======
             Me._commandCollection(0).CommandText = "SELECT ID_Venta, NroFactura, Cantidad_Venta, ID_Producto, Fecha_Venta, TipoDeFact"& _ 
                 "ura_Venta, ID_Cajero, ID_Cliente FROM Venta"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -4596,7 +7210,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.LocalidadDataTable) As Integer
+=======
         Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.VentaDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -4609,9 +7227,15 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.LocalidadDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.LocalidadDataTable = New FacturasVentaDataSet.LocalidadDataTable()
+=======
         Public Overloads Overridable Function GetData() As FacturasVentaDataSet.VentaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As FacturasVentaDataSet.VentaDataTable = New FacturasVentaDataSet.VentaDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -4619,7 +7243,11 @@ Namespace FacturasVentaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.LocalidadDataTable) As Integer
+=======
         Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.VentaDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Return Me.Adapter.Update(dataTable)
         End Function
         
@@ -4627,7 +7255,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataSet, "Localidad")
+=======
             Return Me.Adapter.Update(dataSet, "Venta")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4669,6 +7301,17 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Long, ByVal p3 As String) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Long)
+            If (p3 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+=======
         Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Date, ByVal p5 As String, ByVal p6 As Integer, ByVal p7 As Integer) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
             Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
@@ -4676,8 +7319,9 @@ Namespace FacturasVentaDataSetTableAdapters
             Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Date)
             If (p5 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p5")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Else
-                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
             End If
             Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,Integer)
             Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7,Integer)
@@ -4700,6 +7344,17 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Long, ByVal p3 As String, ByVal p4 As Integer) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Long)
+            If (p3 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+=======
         Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Date, ByVal p5 As String, ByVal p6 As Integer, ByVal p7 As Integer, ByVal p8 As Integer) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,Integer)
             Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
@@ -4707,12 +7362,17 @@ Namespace FacturasVentaDataSetTableAdapters
             Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Date)
             If (p5 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p5")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
+=======
             Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
             Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
             Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4738,7 +7398,11 @@ Namespace FacturasVentaDataSetTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class VentaVistaTableAdapter
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+    Partial Public Class ProductoTableAdapter
+=======
+    Partial Public Class CategoriaTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
@@ -4855,6 +7519,802 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            tableMapping.DataSetTable = "Producto"
+            tableMapping.ColumnMappings.Add("Nombre_Producto", "Nombre_Producto")
+            tableMapping.ColumnMappings.Add("Precio_Unitario", "Precio_Unitario")
+            tableMapping.ColumnMappings.Add("Descripcion", "Descripcion")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Producto] WHERE (([ID_Producto] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Producto", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Producto] ([Nombre_Producto], [Precio_Unitario], [Descripcion], [ID_"& _ 
+                "Categoria], [ID_Marca], [Strock]) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Producto", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Precio_Unitario", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Categoria", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Marca", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Strock", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Producto] SET [Nombre_Producto] = @p1, [Precio_Unitario] = @p2, [Descripc"& _ 
+                "ion] = @p3, [ID_Categoria] = @p4, [ID_Marca] = @p5, [Strock] = @p6 WHERE (([ID_P"& _ 
+                "roducto] = @p7))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Producto", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Precio_Unitario", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Categoria", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Marca", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Strock", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Producto", Global.System.Data.DataRowVersion.Original, Nothing))
+=======
+            tableMapping.DataSetTable = "Categoria"
+            tableMapping.ColumnMappings.Add("ID_Categoria", "ID_Categoria")
+            tableMapping.ColumnMappings.Add("Categoria", "Categoria")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Categoria] WHERE (([ID_Categoria] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Categoria", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Categoria] ([Categoria]) VALUES (@p1)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Categoria", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Categoria] SET [Categoria] = @p1 WHERE (([ID_Categoria] = @p2))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Categoria", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Categoria", Global.System.Data.DataRowVersion.Original, Nothing))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlServerCe.SqlCeConnection()
+            Me._connection.ConnectionString = Global.WindowsApplication1.My.MySettings.Default.MayoristaBaseDeDatosConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandText = "SELECT Nombre_Producto, Precio_Unitario, Descripcion FROM Producto"
+=======
+            Me._commandCollection(0).CommandText = "SELECT [ID_Categoria], [Categoria] FROM [Categoria]"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.ProductoDataTable) As Integer
+=======
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.CategoriaDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.ProductoDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.ProductoDataTable = New FacturasVentaDataSet.ProductoDataTable()
+=======
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.CategoriaDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.CategoriaDataTable = New FacturasVentaDataSet.CategoriaDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.ProductoDataTable) As Integer
+=======
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.CategoriaDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataSet, "Producto")
+=======
+            Return Me.Adapter.Update(dataSet, "Categoria")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Double, ByVal p3 As String, ByVal p4 As Integer, ByVal p5 As Integer, ByVal p6 As Integer) As Integer
+=======
+        Public Overloads Overridable Function Insert(ByVal p1 As String) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,String)
+            End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Double)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Integer)
+            Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,Integer)
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,Integer)
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Double, ByVal p3 As String, ByVal p4 As Integer, ByVal p5 As Integer, ByVal p6 As Integer, ByVal p7 As Integer) As Integer
+=======
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Integer) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,String)
+            End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Double)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
+=======
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+    Partial Public Class VentaTableAdapter
+=======
+    Partial Public Class MarcasTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+        
+        Private _connection As Global.System.Data.SqlServerCe.SqlCeConnection
+        
+        Private _transaction As Global.System.Data.SqlServerCe.SqlCeTransaction
+        
+        Private _commandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.SqlServerCe.SqlCeConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlServerCe.SqlCeCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.SqlServerCe.SqlCeTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            tableMapping.DataSetTable = "Venta"
+            tableMapping.ColumnMappings.Add("ID_Venta", "ID_Venta")
+            tableMapping.ColumnMappings.Add("NroFactura", "NroFactura")
+            tableMapping.ColumnMappings.Add("Cantidad_Venta", "Cantidad_Venta")
+            tableMapping.ColumnMappings.Add("ID_Producto", "ID_Producto")
+            tableMapping.ColumnMappings.Add("Fecha_Venta", "Fecha_Venta")
+            tableMapping.ColumnMappings.Add("TipoDeFactura_Venta", "TipoDeFactura_Venta")
+            tableMapping.ColumnMappings.Add("ID_Cliente", "ID_Cliente")
+            tableMapping.ColumnMappings.Add("ID_Cajero", "ID_Cajero")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Venta] WHERE (([ID_Venta] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Venta", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Venta] ([NroFactura], [Cantidad_Venta], [ID_Producto], [Fecha_Venta]"& _ 
+                ", [TipoDeFactura_Venta], [ID_Cajero], [ID_Cliente]) VALUES (@p1, @p2, @p3, @p4, "& _ 
+                "@p5, @p6, @p7)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "NroFactura", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cantidad_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Producto", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Fecha_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "TipoDeFactura_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Venta] SET [NroFactura] = @p1, [Cantidad_Venta] = @p2, [ID_Producto] = @p"& _ 
+                "3, [Fecha_Venta] = @p4, [TipoDeFactura_Venta] = @p5, [ID_Cajero] = @p6, [ID_Clie"& _ 
+                "nte] = @p7 WHERE (([ID_Venta] = @p8))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "NroFactura", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cantidad_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Producto", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Fecha_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "TipoDeFactura_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p7", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Cliente", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Venta", Global.System.Data.DataRowVersion.Original, Nothing))
+=======
+            tableMapping.DataSetTable = "Marcas"
+            tableMapping.ColumnMappings.Add("ID_Marca", "ID_Marca")
+            tableMapping.ColumnMappings.Add("Marca", "Marca")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Marcas] WHERE (([ID_Marca] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Marca", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Marcas] ([Marca]) VALUES (@p1)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Marca", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Marcas] SET [Marca] = @p1 WHERE (([ID_Marca] = @p2))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Marca", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Marca", Global.System.Data.DataRowVersion.Original, Nothing))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlServerCe.SqlCeConnection()
+            Me._connection.ConnectionString = Global.WindowsApplication1.My.MySettings.Default.MayoristaBaseDeDatosConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandText = "SELECT ID_Venta, NroFactura, Cantidad_Venta, ID_Producto, Fecha_Venta, TipoDeFact"& _ 
+                "ura_Venta, ID_Cajero, ID_Cliente FROM Venta"
+=======
+            Me._commandCollection(0).CommandText = "SELECT [ID_Marca], [Marca] FROM [Marcas]"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.VentaDataTable) As Integer
+=======
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.MarcasDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.VentaDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.VentaDataTable = New FacturasVentaDataSet.VentaDataTable()
+=======
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.MarcasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.MarcasDataTable = New FacturasVentaDataSet.MarcasDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.VentaDataTable) As Integer
+=======
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.MarcasDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Return Me.Adapter.Update(dataSet, "Venta")
+=======
+            Return Me.Adapter.Update(dataSet, "Marcas")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Date, ByVal p5 As String, ByVal p6 As Integer, ByVal p7 As Integer) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Date)
+            If (p5 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p5")
+=======
+        Public Overloads Overridable Function Insert(ByVal p1 As String) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Integer) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
+            End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,Integer)
+            Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Date, ByVal p5 As String, ByVal p6 As Integer, ByVal p7 As Integer, ByVal p8 As Integer) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,Integer)
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Date)
+            If (p5 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p5")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
+=======
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+    Partial Public Class VentaVistaTableAdapter
+=======
+    Partial Public Class ProveedorTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+        
+        Private _connection As Global.System.Data.SqlServerCe.SqlCeConnection
+        
+        Private _transaction As Global.System.Data.SqlServerCe.SqlCeTransaction
+        
+        Private _commandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlServerCe.SqlCeDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.SqlServerCe.SqlCeConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlServerCe.SqlCeCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.SqlServerCe.SqlCeTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlServerCe.SqlCeCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlServerCe.SqlCeDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             tableMapping.DataSetTable = "VentaVista"
             tableMapping.ColumnMappings.Add("ID_Producto", "ID_Producto")
             tableMapping.ColumnMappings.Add("Nombre_Producto", "Nombre_Producto")
@@ -4875,6 +8335,43 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cantidad_Venta", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Precio_Unitario", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Total", Global.System.Data.DataRowVersion.Current, Nothing))
+=======
+            tableMapping.DataSetTable = "Proveedor"
+            tableMapping.ColumnMappings.Add("ID_Proveedor", "ID_Proveedor")
+            tableMapping.ColumnMappings.Add("Nombre_Empresa", "Nombre_Empresa")
+            tableMapping.ColumnMappings.Add("ID_Localidad", "ID_Localidad")
+            tableMapping.ColumnMappings.Add("Domicilio_Proveedor", "Domicilio_Proveedor")
+            tableMapping.ColumnMappings.Add("Telefono_Proveedor", "Telefono_Proveedor")
+            tableMapping.ColumnMappings.Add("Correo_Proveedor", "Correo_Proveedor")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Proveedor] WHERE (([ID_Proveedor] = @p1))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Proveedor", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Proveedor] ([Nombre_Empresa], [ID_Localidad], [Domicilio_Proveedor],"& _ 
+                " [Telefono_Proveedor], [Correo_Proveedor]) VALUES (@p1, @p2, @p3, @p4, @p5)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Empresa", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.BigInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Proveedor] SET [Nombre_Empresa] = @p1, [ID_Localidad] = @p2, [Domicilio_P"& _ 
+                "roveedor] = @p3, [Telefono_Proveedor] = @p4, [Correo_Proveedor] = @p5 WHERE (([I"& _ 
+                "D_Proveedor] = @p6))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Empresa", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Localidad", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Domicilio_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.BigInt, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Telefono_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Correo_Proveedor", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p6", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "ID_Proveedor", Global.System.Data.DataRowVersion.Original, Nothing))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4890,8 +8387,13 @@ Namespace FacturasVentaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             Me._commandCollection(0).CommandText = "SELECT [ID_Producto], [Nombre_Producto], [Descripcion_Producto], [Cantidad_Venta]"& _ 
                 ", [Precio_Unitario], [Total] FROM [VentaVista]"
+=======
+            Me._commandCollection(0).CommandText = "SELECT [ID_Proveedor], [Nombre_Empresa], [ID_Localidad], [Domicilio_Proveedor], ["& _ 
+                "Telefono_Proveedor], [Correo_Proveedor] FROM [Proveedor]"
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -4899,7 +8401,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.VentaVistaDataTable) As Integer
+=======
+        Public Overloads Overridable Function Fill(ByVal dataTable As FacturasVentaDataSet.ProveedorDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -4912,9 +8418,15 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Overloads Overridable Function GetData() As FacturasVentaDataSet.VentaVistaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As FacturasVentaDataSet.VentaVistaDataTable = New FacturasVentaDataSet.VentaVistaDataTable()
+=======
+        Public Overloads Overridable Function GetData() As FacturasVentaDataSet.ProveedorDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As FacturasVentaDataSet.ProveedorDataTable = New FacturasVentaDataSet.ProveedorDataTable()
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -4922,7 +8434,11 @@ Namespace FacturasVentaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.VentaVistaDataTable) As Integer
+=======
+        Public Overloads Overridable Function Update(ByVal dataTable As FacturasVentaDataSet.ProveedorDataTable) As Integer
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Return Me.Adapter.Update(dataTable)
         End Function
         
@@ -4930,7 +8446,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function Update(ByVal dataSet As FacturasVentaDataSet) As Integer
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             Return Me.Adapter.Update(dataSet, "VentaVista")
+=======
+            Return Me.Adapter.Update(dataSet, "Proveedor")
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4957,8 +8477,85 @@ Namespace FacturasVentaDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (p2 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+=======
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Long), ByVal p5 As String) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4.Value,Long)
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Long), ByVal p5 As String, ByVal p6 As Integer) As Integer
+            If (p1 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p1")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4.Value,Long)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
@@ -5021,7 +8618,15 @@ Namespace FacturasVentaDataSetTableAdapters
         
         Private _ventaTableAdapter As VentaTableAdapter
         
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Private _ventaVistaTableAdapter As VentaVistaTableAdapter
+=======
+        Private _categoriaTableAdapter As CategoriaTableAdapter
+        
+        Private _marcasTableAdapter As MarcasTableAdapter
+        
+        Private _proveedorTableAdapter As ProveedorTableAdapter
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
         
         Private _backupDataSetBeforeUpdate As Boolean
         
@@ -5113,12 +8718,49 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
             "a", "System.Drawing.Design.UITypeEditor")>  _
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
         Public Property VentaVistaTableAdapter() As VentaVistaTableAdapter
             Get
                 Return Me._ventaVistaTableAdapter
             End Get
             Set
                 Me._ventaVistaTableAdapter = value
+=======
+        Public Property CategoriaTableAdapter() As CategoriaTableAdapter
+            Get
+                Return Me._categoriaTableAdapter
+            End Get
+            Set
+                Me._categoriaTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property MarcasTableAdapter() As MarcasTableAdapter
+            Get
+                Return Me._marcasTableAdapter
+            End Get
+            Set
+                Me._marcasTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property ProveedorTableAdapter() As ProveedorTableAdapter
+            Get
+                Return Me._proveedorTableAdapter
+            End Get
+            Set
+                Me._proveedorTableAdapter = value
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             End Set
         End Property
         
@@ -5161,9 +8803,23 @@ Namespace FacturasVentaDataSetTableAdapters
                             AndAlso (Not (Me._ventaTableAdapter.Connection) Is Nothing)) Then
                     Return Me._ventaTableAdapter.Connection
                 End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
                 If ((Not (Me._ventaVistaTableAdapter) Is Nothing)  _
                             AndAlso (Not (Me._ventaVistaTableAdapter.Connection) Is Nothing)) Then
                     Return Me._ventaVistaTableAdapter.Connection
+=======
+                If ((Not (Me._categoriaTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._categoriaTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._categoriaTableAdapter.Connection
+                End If
+                If ((Not (Me._marcasTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._marcasTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._marcasTableAdapter.Connection
+                End If
+                If ((Not (Me._proveedorTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._proveedorTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._proveedorTableAdapter.Connection
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                 End If
                 Return Nothing
             End Get
@@ -5193,7 +8849,17 @@ Namespace FacturasVentaDataSetTableAdapters
                 If (Not (Me._ventaTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
                 If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
+=======
+                If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                     count = (count + 1)
                 End If
                 Return count
@@ -5207,12 +8873,12 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateUpdatedRows(ByVal dataSet As FacturasVentaDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._productoTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Categoria.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._productoTableAdapter.Update(updatedRows))
+                    result = (result + Me._categoriaTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -5225,21 +8891,30 @@ Namespace FacturasVentaDataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.VentaVista.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._ventaVistaTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
-            If (Not (Me._cajeroTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Cajero.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+=======
+            If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Proveedor.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._cajeroTableAdapter.Update(updatedRows))
+                    result = (result + Me._proveedorTableAdapter.Update(updatedRows))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Marcas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._marcasTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -5252,6 +8927,27 @@ Namespace FacturasVentaDataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+            If (Not (Me._cajeroTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Cajero.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._cajeroTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._productoTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._productoTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (Not (Me._localidadTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.Localidad.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
@@ -5271,11 +8967,11 @@ Namespace FacturasVentaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateInsertedRows(ByVal dataSet As FacturasVentaDataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._productoTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Categoria.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._productoTableAdapter.Update(addedRows))
+                    result = (result + Me._categoriaTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -5287,19 +8983,27 @@ Namespace FacturasVentaDataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.VentaVista.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._ventaVistaTableAdapter.Update(addedRows))
+=======
+            If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Proveedor.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._proveedorTableAdapter.Update(addedRows))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._cajeroTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Cajero.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Marcas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._cajeroTableAdapter.Update(addedRows))
+                    result = (result + Me._marcasTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -5311,6 +9015,25 @@ Namespace FacturasVentaDataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
+=======
+            If (Not (Me._cajeroTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Cajero.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._cajeroTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._productoTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._productoTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
             If (Not (Me._localidadTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Localidad.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
@@ -5331,6 +9054,7 @@ Namespace FacturasVentaDataSetTableAdapters
             Dim result As Integer = 0
             If (Not (Me._localidadTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.Localidad.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._localidadTableAdapter.Update(deletedRows))
@@ -5339,9 +9063,19 @@ Namespace FacturasVentaDataSetTableAdapters
             End If
             If (Not (Me._clienteTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.Cliente.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+=======
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._clienteTableAdapter.Update(deletedRows))
+                    result = (result + Me._localidadTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._productoTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._productoTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -5353,11 +9087,35 @@ Namespace FacturasVentaDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.VentaVista.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._ventaVistaTableAdapter.Update(deletedRows))
+=======
+            If (Not (Me._clienteTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Cliente.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._clienteTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Marcas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._marcasTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Proveedor.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._proveedorTableAdapter.Update(deletedRows))
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -5369,11 +9127,11 @@ Namespace FacturasVentaDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._productoTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Producto.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Categoria.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._productoTableAdapter.Update(deletedRows))
+                    result = (result + Me._categoriaTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -5443,8 +9201,23 @@ Namespace FacturasVentaDataSetTableAdapters
                 Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
                         "sma cadena de conexión.")
             End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
             If ((Not (Me._ventaVistaTableAdapter) Is Nothing)  _
                         AndAlso (Me.MatchTableAdapterConnection(Me._ventaVistaTableAdapter.Connection) = false)) Then
+=======
+            If ((Not (Me._categoriaTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._categoriaTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
+                        "sma cadena de conexión.")
+            End If
+            If ((Not (Me._marcasTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._marcasTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
+                        "sma cadena de conexión.")
+            End If
+            If ((Not (Me._proveedorTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._proveedorTableAdapter.Connection) = false)) Then
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                 Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
                         "sma cadena de conexión.")
             End If
@@ -5525,6 +9298,7 @@ Namespace FacturasVentaDataSetTableAdapters
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._ventaTableAdapter.Adapter)
                     End If
                 End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
                 If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
                     revertConnections.Add(Me._ventaVistaTableAdapter, Me._ventaVistaTableAdapter.Connection)
                     Me._ventaVistaTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlServerCe.SqlCeConnection)
@@ -5532,6 +9306,33 @@ Namespace FacturasVentaDataSetTableAdapters
                     If Me._ventaVistaTableAdapter.Adapter.AcceptChangesDuringUpdate Then
                         Me._ventaVistaTableAdapter.Adapter.AcceptChangesDuringUpdate = false
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._ventaVistaTableAdapter.Adapter)
+=======
+                If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._categoriaTableAdapter, Me._categoriaTableAdapter.Connection)
+                    Me._categoriaTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._categoriaTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlServerCe.SqlCeTransaction)
+                    If Me._categoriaTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._categoriaTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._categoriaTableAdapter.Adapter)
+                    End If
+                End If
+                If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._marcasTableAdapter, Me._marcasTableAdapter.Connection)
+                    Me._marcasTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._marcasTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlServerCe.SqlCeTransaction)
+                    If Me._marcasTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._marcasTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._marcasTableAdapter.Adapter)
+                    End If
+                End If
+                If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._proveedorTableAdapter, Me._proveedorTableAdapter.Connection)
+                    Me._proveedorTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._proveedorTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlServerCe.SqlCeTransaction)
+                    If Me._proveedorTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._proveedorTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._proveedorTableAdapter.Adapter)
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                     End If
                 End If
                 '
@@ -5614,9 +9415,23 @@ Namespace FacturasVentaDataSetTableAdapters
                     Me._ventaTableAdapter.Connection = CType(revertConnections(Me._ventaTableAdapter),Global.System.Data.SqlServerCe.SqlCeConnection)
                     Me._ventaTableAdapter.Transaction = Nothing
                 End If
+<<<<<<< HEAD:ProyectoPV/ProyectoPV/FacturaVenta/FacturasVentaDataSet.Designer.vb
                 If (Not (Me._ventaVistaTableAdapter) Is Nothing) Then
                     Me._ventaVistaTableAdapter.Connection = CType(revertConnections(Me._ventaVistaTableAdapter),Global.System.Data.SqlServerCe.SqlCeConnection)
                     Me._ventaVistaTableAdapter.Transaction = Nothing
+=======
+                If (Not (Me._categoriaTableAdapter) Is Nothing) Then
+                    Me._categoriaTableAdapter.Connection = CType(revertConnections(Me._categoriaTableAdapter),Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._categoriaTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._marcasTableAdapter) Is Nothing) Then
+                    Me._marcasTableAdapter.Connection = CType(revertConnections(Me._marcasTableAdapter),Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._marcasTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._proveedorTableAdapter) Is Nothing) Then
+                    Me._proveedorTableAdapter.Connection = CType(revertConnections(Me._proveedorTableAdapter),Global.System.Data.SqlServerCe.SqlCeConnection)
+                    Me._proveedorTableAdapter.Transaction = Nothing
+>>>>>>> 1115fdce4e9732d708dd60985fb286176e7224bb:ProyectoPV/ProyectoPV/FacturasVentaDataSet.Designer.vb
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter

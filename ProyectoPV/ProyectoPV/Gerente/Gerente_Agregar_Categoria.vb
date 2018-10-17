@@ -51,7 +51,7 @@
                 Me.CategoriaBindingSource.AddNew()
                 TextBox1.Text = ""
                 TextBox1.Focus()
-
+                Gerente_Producto.ComboBox1.Text = "Seleccionar"
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
