@@ -29,11 +29,11 @@ Partial Class Cajero_Transaccion_Venta
         Dim Unidades_VentaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
         Dim TipoDeFacturacion_VentaLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
+        Dim Fecha_VentaLabel As System.Windows.Forms.Label
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim Fecha_VentaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,28 +44,14 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Fecha_VentaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.ID_CajeroTextBox = New System.Windows.Forms.TextBox()
         Me.TipoDeFacturacion_VentaComboBox = New System.Windows.Forms.ComboBox()
-        Me.VentaTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.CajeroTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter()
         Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
         Me.ProductoTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter()
-        Me.VentaBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.VentaBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -81,7 +67,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Unidades_VentaNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Fecha_VentaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         ID_CajeroLabel = New System.Windows.Forms.Label()
         NumeroTransaccion_VentaLabel = New System.Windows.Forms.Label()
@@ -91,10 +76,7 @@ Partial Class Cajero_Transaccion_Venta
         Fecha_VentaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VentaBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.VentaBindingNavigator.SuspendLayout()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,6 +138,15 @@ Partial Class Cajero_Transaccion_Venta
         TipoDeFacturacion_VentaLabel.Size = New System.Drawing.Size(117, 16)
         TipoDeFacturacion_VentaLabel.TabIndex = 70
         TipoDeFacturacion_VentaLabel.Text = "Tipo De Facturacion:"
+        '
+        'Fecha_VentaLabel
+        '
+        Fecha_VentaLabel.AutoSize = True
+        Fecha_VentaLabel.Location = New System.Drawing.Point(732, 29)
+        Fecha_VentaLabel.Name = "Fecha_VentaLabel"
+        Fecha_VentaLabel.Size = New System.Drawing.Size(75, 16)
+        Fecha_VentaLabel.TabIndex = 68
+        Fecha_VentaLabel.Text = "Fecha Venta:"
         '
         'Btn_Finalizar
         '
@@ -254,10 +245,12 @@ Partial Class Cajero_Transaccion_Venta
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Venta"
         '
-        'VentaBindingSource
+        'Fecha_VentaDateTimePicker
         '
-        Me.VentaBindingSource.DataMember = "Venta"
-        Me.VentaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        Me.Fecha_VentaDateTimePicker.Location = New System.Drawing.Point(813, 22)
+        Me.Fecha_VentaDateTimePicker.Name = "Fecha_VentaDateTimePicker"
+        Me.Fecha_VentaDateTimePicker.Size = New System.Drawing.Size(212, 23)
+        Me.Fecha_VentaDateTimePicker.TabIndex = 69
         '
         'MayoristaBaseDeDatosDataSet
         '
@@ -266,7 +259,6 @@ Partial Class Cajero_Transaccion_Venta
         '
         'ID_CajeroTextBox
         '
-        Me.ID_CajeroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Cajero", True))
         Me.ID_CajeroTextBox.Location = New System.Drawing.Point(573, 22)
         Me.ID_CajeroTextBox.Name = "ID_CajeroTextBox"
         Me.ID_CajeroTextBox.Size = New System.Drawing.Size(136, 23)
@@ -274,16 +266,11 @@ Partial Class Cajero_Transaccion_Venta
         '
         'TipoDeFacturacion_VentaComboBox
         '
-        Me.TipoDeFacturacion_VentaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "TipoDeFacturacion_Venta", True))
         Me.TipoDeFacturacion_VentaComboBox.FormattingEnabled = True
         Me.TipoDeFacturacion_VentaComboBox.Location = New System.Drawing.Point(288, 21)
         Me.TipoDeFacturacion_VentaComboBox.Name = "TipoDeFacturacion_VentaComboBox"
         Me.TipoDeFacturacion_VentaComboBox.Size = New System.Drawing.Size(200, 24)
         Me.TipoDeFacturacion_VentaComboBox.TabIndex = 71
-        '
-        'VentaTableAdapter
-        '
-        Me.VentaTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
@@ -296,7 +283,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentaTableAdapter = Me.VentaTableAdapter
         '
         'CajeroTableAdapter
         '
@@ -309,118 +295,6 @@ Partial Class Cajero_Transaccion_Venta
         'ProductoTableAdapter
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
-        '
-        'VentaBindingNavigator
-        '
-        Me.VentaBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.VentaBindingNavigator.BindingSource = Me.VentaBindingSource
-        Me.VentaBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.VentaBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.VentaBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
-        Me.VentaBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.VentaBindingNavigatorSaveItem})
-        Me.VentaBindingNavigator.Location = New System.Drawing.Point(177, 536)
-        Me.VentaBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.VentaBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.VentaBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.VentaBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.VentaBindingNavigator.Name = "VentaBindingNavigator"
-        Me.VentaBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.VentaBindingNavigator.Size = New System.Drawing.Size(280, 25)
-        Me.VentaBindingNavigator.TabIndex = 57
-        Me.VentaBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'VentaBindingNavigatorSaveItem
-        '
-        Me.VentaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.VentaBindingNavigatorSaveItem.Image = CType(resources.GetObject("VentaBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.VentaBindingNavigatorSaveItem.Name = "VentaBindingNavigatorSaveItem"
-        Me.VentaBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.VentaBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'ProductoBindingSource
         '
@@ -483,7 +357,6 @@ Partial Class Cajero_Transaccion_Venta
         '
         'ID_ClienteTextBox
         '
-        Me.ID_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Cliente", True))
         Me.ID_ClienteTextBox.Location = New System.Drawing.Point(136, 132)
         Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
         Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 23)
@@ -491,7 +364,6 @@ Partial Class Cajero_Transaccion_Venta
         '
         'NumeroTransaccion_VentaNumericUpDown
         '
-        Me.NumeroTransaccion_VentaNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "NumeroTransaccion_Venta", True))
         Me.NumeroTransaccion_VentaNumericUpDown.Location = New System.Drawing.Point(825, 111)
         Me.NumeroTransaccion_VentaNumericUpDown.Name = "NumeroTransaccion_VentaNumericUpDown"
         Me.NumeroTransaccion_VentaNumericUpDown.Size = New System.Drawing.Size(165, 23)
@@ -499,7 +371,6 @@ Partial Class Cajero_Transaccion_Venta
         '
         'ID_ProductoTextBox
         '
-        Me.ID_ProductoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "ID_Producto", True))
         Me.ID_ProductoTextBox.Location = New System.Drawing.Point(147, 226)
         Me.ID_ProductoTextBox.Name = "ID_ProductoTextBox"
         Me.ID_ProductoTextBox.Size = New System.Drawing.Size(200, 23)
@@ -538,28 +409,10 @@ Partial Class Cajero_Transaccion_Venta
         '
         'Unidades_VentaNumericUpDown
         '
-        Me.Unidades_VentaNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "Unidades_Venta", True))
         Me.Unidades_VentaNumericUpDown.Location = New System.Drawing.Point(447, 226)
         Me.Unidades_VentaNumericUpDown.Name = "Unidades_VentaNumericUpDown"
         Me.Unidades_VentaNumericUpDown.Size = New System.Drawing.Size(120, 23)
         Me.Unidades_VentaNumericUpDown.TabIndex = 1
-        '
-        'Fecha_VentaLabel
-        '
-        Fecha_VentaLabel.AutoSize = True
-        Fecha_VentaLabel.Location = New System.Drawing.Point(732, 29)
-        Fecha_VentaLabel.Name = "Fecha_VentaLabel"
-        Fecha_VentaLabel.Size = New System.Drawing.Size(75, 16)
-        Fecha_VentaLabel.TabIndex = 68
-        Fecha_VentaLabel.Text = "Fecha Venta:"
-        '
-        'Fecha_VentaDateTimePicker
-        '
-        Me.Fecha_VentaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "Fecha_Venta", True))
-        Me.Fecha_VentaDateTimePicker.Location = New System.Drawing.Point(813, 22)
-        Me.Fecha_VentaDateTimePicker.Name = "Fecha_VentaDateTimePicker"
-        Me.Fecha_VentaDateTimePicker.Size = New System.Drawing.Size(212, 23)
-        Me.Fecha_VentaDateTimePicker.TabIndex = 69
         '
         'Cajero_Transaccion_Venta
         '
@@ -577,7 +430,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Controls.Add(ID_ProductoLabel)
         Me.Controls.Add(Me.ID_ProductoTextBox)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.VentaBindingNavigator)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_Finalizar)
@@ -596,11 +448,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VentaBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.VentaBindingNavigator.ResumeLayout(False)
-        Me.VentaBindingNavigator.PerformLayout()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -622,22 +470,7 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
-    Friend WithEvents VentaBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents VentaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents VentaBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents VentaBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents ProductoTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ProductoTableAdapter
     Friend WithEvents ProductoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ClienteTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter
