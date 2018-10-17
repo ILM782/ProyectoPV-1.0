@@ -1,19 +1,5 @@
 ﻿Public Class Cajero_Transaccion_Venta
 
-    'Private Sub Btn_Finalizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Finalizar.Click
-    'Dim fila As Integer
-    'If Txt_Categoria.Text <> "" Then
-
-    'fila = Me.CategoriaBindingSource.Find("Categoria", Txt_Categoria.Text)
-    'If fila <> -1 Then
-    'Else
-    'MsgBox("Categoria no encontrada")
-    'End If
-    'Else
-    'MsgBox("El campo esta vacio")
-    'End If
-    'End Sub
-
     'BARRA SUPERIOR
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Cajero.Show()
@@ -56,8 +42,6 @@
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Venta' Puede moverla o quitarla según sea necesario.
         Me.VentaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Venta)
-        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
-        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
 
     End Sub
 
