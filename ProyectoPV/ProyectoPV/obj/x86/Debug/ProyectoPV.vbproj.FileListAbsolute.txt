@@ -194,3 +194,6 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.cache
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.compiled
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tabla_De_Cajeros.resources
+C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_ImprimirVenta.resources
+C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.cache
+C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.compiled
