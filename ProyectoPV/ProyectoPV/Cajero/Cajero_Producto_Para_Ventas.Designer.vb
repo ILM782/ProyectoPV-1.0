@@ -119,6 +119,7 @@ Partial Class Cajero_Producto_Para_Ventas
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'ProductoDataGridView
         '
@@ -232,9 +233,9 @@ Partial Class Cajero_Producto_Para_Ventas
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(21, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(311, 42)
+        Me.Label2.Size = New System.Drawing.Size(187, 42)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Agregar Producto"
+        Me.Label2.Text = "Productos"
         '
         'Cajero_Producto_Para_Ventas
         '

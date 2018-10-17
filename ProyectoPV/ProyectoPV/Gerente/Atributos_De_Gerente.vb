@@ -44,4 +44,9 @@
         Gerente_Localidad.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+        Gerente_Agregar_Cajero.Show()
+        Me.Close()
+    End Sub
 End Class

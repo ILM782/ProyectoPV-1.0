@@ -59,16 +59,7 @@ Partial Class Gerente_Producto
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ID_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID_Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID_Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Strock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio_Uniatrio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         CategoriaLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         Nombre_ProductoLabel = New System.Windows.Forms.Label()
@@ -81,16 +72,15 @@ Partial Class Gerente_Producto
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CategoriaLabel
         '
         CategoriaLabel.AutoSize = True
         CategoriaLabel.ForeColor = System.Drawing.Color.Black
-        CategoriaLabel.Location = New System.Drawing.Point(45, 235)
+        CategoriaLabel.Location = New System.Drawing.Point(89, 253)
         CategoriaLabel.Name = "CategoriaLabel"
-        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel.Size = New System.Drawing.Size(60, 14)
         CategoriaLabel.TabIndex = 40
         CategoriaLabel.Text = "Categoria:"
         '
@@ -98,9 +88,9 @@ Partial Class Gerente_Producto
         '
         MarcaLabel.AutoSize = True
         MarcaLabel.ForeColor = System.Drawing.Color.Black
-        MarcaLabel.Location = New System.Drawing.Point(45, 262)
+        MarcaLabel.Location = New System.Drawing.Point(89, 282)
         MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel.Size = New System.Drawing.Size(41, 14)
         MarcaLabel.TabIndex = 39
         MarcaLabel.Text = "Marca:"
         '
@@ -108,9 +98,9 @@ Partial Class Gerente_Producto
         '
         Nombre_ProductoLabel.AutoSize = True
         Nombre_ProductoLabel.ForeColor = System.Drawing.Color.Black
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(44, 130)
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(88, 140)
         Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
-        Nombre_ProductoLabel.Size = New System.Drawing.Size(93, 13)
+        Nombre_ProductoLabel.Size = New System.Drawing.Size(101, 14)
         Nombre_ProductoLabel.TabIndex = 35
         Nombre_ProductoLabel.Text = "Nombre Producto:"
         '
@@ -118,9 +108,9 @@ Partial Class Gerente_Producto
         '
         StrockLabel.AutoSize = True
         StrockLabel.ForeColor = System.Drawing.Color.Black
-        StrockLabel.Location = New System.Drawing.Point(44, 157)
+        StrockLabel.Location = New System.Drawing.Point(88, 169)
         StrockLabel.Name = "StrockLabel"
-        StrockLabel.Size = New System.Drawing.Size(41, 13)
+        StrockLabel.Size = New System.Drawing.Size(42, 14)
         StrockLabel.TabIndex = 36
         StrockLabel.Text = "Strock:"
         '
@@ -128,9 +118,9 @@ Partial Class Gerente_Producto
         '
         Precio_UnitarioLabel.AutoSize = True
         Precio_UnitarioLabel.ForeColor = System.Drawing.Color.Black
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(44, 183)
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(88, 197)
         Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
-        Precio_UnitarioLabel.Size = New System.Drawing.Size(79, 13)
+        Precio_UnitarioLabel.Size = New System.Drawing.Size(86, 14)
         Precio_UnitarioLabel.TabIndex = 37
         Precio_UnitarioLabel.Text = "Precio Unitario:"
         '
@@ -138,9 +128,9 @@ Partial Class Gerente_Producto
         '
         DescripcionLabel.AutoSize = True
         DescripcionLabel.ForeColor = System.Drawing.Color.Black
-        DescripcionLabel.Location = New System.Drawing.Point(44, 209)
+        DescripcionLabel.Location = New System.Drawing.Point(88, 225)
         DescripcionLabel.Name = "DescripcionLabel"
-        DescripcionLabel.Size = New System.Drawing.Size(66, 13)
+        DescripcionLabel.Size = New System.Drawing.Size(70, 14)
         DescripcionLabel.TabIndex = 38
         DescripcionLabel.Text = "Descripcion:"
         '
@@ -156,34 +146,30 @@ Partial Class Gerente_Producto
         '
         'TextBox4
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(143, 206)
+        Me.TextBox4.Location = New System.Drawing.Point(187, 222)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(121, 21)
         Me.TextBox4.TabIndex = 50
         '
         'TextBox3
         '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(143, 180)
+        Me.TextBox3.Location = New System.Drawing.Point(187, 194)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(121, 21)
         Me.TextBox3.TabIndex = 48
         '
         'TextBox2
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(143, 154)
+        Me.TextBox2.Location = New System.Drawing.Point(187, 166)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(121, 21)
         Me.TextBox2.TabIndex = 47
         '
         'TextBox1
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(143, 127)
+        Me.TextBox1.Location = New System.Drawing.Point(187, 137)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(121, 21)
         Me.TextBox1.TabIndex = 46
         '
         'ComboBox2
@@ -191,9 +177,9 @@ Partial Class Gerente_Producto
         Me.ComboBox2.DataSource = Me.MarcasBindingSource
         Me.ComboBox2.DisplayMember = "Marca"
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(143, 259)
+        Me.ComboBox2.Location = New System.Drawing.Point(187, 279)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 22)
         Me.ComboBox2.TabIndex = 45
         Me.ComboBox2.ValueMember = "ID_Marca"
         '
@@ -207,9 +193,9 @@ Partial Class Gerente_Producto
         Me.ComboBox1.DataSource = Me.CategoriaBindingSource
         Me.ComboBox1.DisplayMember = "Categoria"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(143, 232)
+        Me.ComboBox1.Location = New System.Drawing.Point(187, 250)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 22)
         Me.ComboBox1.TabIndex = 44
         Me.ComboBox1.ValueMember = "ID_Categoria"
         '
@@ -224,9 +210,9 @@ Partial Class Gerente_Producto
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button3.Location = New System.Drawing.Point(270, 232)
+        Me.Button3.Location = New System.Drawing.Point(314, 250)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(34, 21)
+        Me.Button3.Size = New System.Drawing.Size(34, 22)
         Me.Button3.TabIndex = 43
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -236,9 +222,9 @@ Partial Class Gerente_Producto
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button2.Location = New System.Drawing.Point(270, 259)
+        Me.Button2.Location = New System.Drawing.Point(314, 278)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(34, 23)
+        Me.Button2.Size = New System.Drawing.Size(34, 22)
         Me.Button2.TabIndex = 42
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -248,7 +234,7 @@ Partial Class Gerente_Producto
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedorToolStripMenuItem, Me.TransaccionesDeCompraToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ComprasRealizadasToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1078, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(737, 24)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -323,6 +309,7 @@ Partial Class Gerente_Producto
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'CategoriaTableAdapter
         '
@@ -339,7 +326,7 @@ Partial Class Gerente_Producto
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1078, 60)
+        Me.Panel1.Size = New System.Drawing.Size(737, 65)
         Me.Panel1.TabIndex = 51
         '
         'Label2
@@ -347,7 +334,7 @@ Partial Class Gerente_Producto
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(21, 9)
+        Me.Label2.Location = New System.Drawing.Point(21, 10)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(311, 42)
         Me.Label2.TabIndex = 10
@@ -357,9 +344,9 @@ Partial Class Gerente_Producto
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 84)
+        Me.Panel2.Location = New System.Drawing.Point(0, 89)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1078, 10)
+        Me.Panel2.Size = New System.Drawing.Size(737, 11)
         Me.Panel2.TabIndex = 52
         '
         'Button1
@@ -368,83 +355,35 @@ Partial Class Gerente_Producto
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(47, 298)
+        Me.Button1.Location = New System.Drawing.Point(401, 258)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(217, 40)
+        Me.Button1.Size = New System.Drawing.Size(217, 43)
         Me.Button1.TabIndex = 53
         Me.Button1.Text = "&GUARDAR"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'Button4
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_Producto, Me.ID_Marca, Me.ID_Categoria, Me.Nombre_Producto, Me.Strock, Me.Precio_Uniatrio, Me.Descripcion})
-        Me.DataGridView1.Location = New System.Drawing.Point(310, 127)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(743, 211)
-        Me.DataGridView1.TabIndex = 54
-        '
-        'ID_Producto
-        '
-        Me.ID_Producto.HeaderText = "Id Producto "
-        Me.ID_Producto.Name = "ID_Producto"
-        '
-        'ID_Marca
-        '
-        Me.ID_Marca.HeaderText = "Marca"
-        Me.ID_Marca.Name = "ID_Marca"
-        '
-        'ID_Categoria
-        '
-        Me.ID_Categoria.HeaderText = "Categoria"
-        Me.ID_Categoria.Name = "ID_Categoria"
-        '
-        'Nombre_Producto
-        '
-        Me.Nombre_Producto.HeaderText = "Nombre Producto"
-        Me.Nombre_Producto.Name = "Nombre_Producto"
-        '
-        'Strock
-        '
-        Me.Strock.HeaderText = "Stock"
-        Me.Strock.Name = "Strock"
-        '
-        'Precio_Uniatrio
-        '
-        Me.Precio_Uniatrio.HeaderText = "Precio Unitario"
-        Me.Precio_Uniatrio.Name = "Precio_Uniatrio"
-        '
-        'Descripcion
-        '
-        Me.Descripcion.HeaderText = "Descripcion"
-        Me.Descripcion.Name = "Descripcion"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(143, 354)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 55
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(271, 130)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 56
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta2
+        Me.Button4.Location = New System.Drawing.Point(401, 137)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(217, 115)
+        Me.Button4.TabIndex = 57
+        Me.Button4.Text = "Tablas de Productos"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Gerente_Producto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(1078, 393)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.ClientSize = New System.Drawing.Size(737, 335)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -463,6 +402,7 @@ Partial Class Gerente_Producto
         Me.Controls.Add(Precio_UnitarioLabel)
         Me.Controls.Add(DescripcionLabel)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -477,7 +417,6 @@ Partial Class Gerente_Producto
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -511,14 +450,5 @@ Partial Class Gerente_Producto
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents ID_Producto As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ID_Marca As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ID_Categoria As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombre_Producto As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Strock As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Precio_Uniatrio As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Descripcion As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

@@ -46,6 +46,23 @@ Partial Class Atributos_De_Gerente
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
+        'Button5
+        '
+        Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Button5.ForeColor = System.Drawing.Color.Black
+        Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
+        Button5.Location = New System.Drawing.Point(667, 357)
+        Button5.Name = "Button5"
+        Button5.Size = New System.Drawing.Size(159, 170)
+        Button5.TabIndex = 5
+        Button5.Text = "Volver"
+        Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Button5.UseVisualStyleBackColor = False
+        AddHandler Button5.Click, AddressOf Me.Button5_Click
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
@@ -208,23 +225,6 @@ Partial Class Atributos_De_Gerente
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Button5
-        '
-        Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Button5.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Button5.ForeColor = System.Drawing.Color.Black
-        Button5.Image = Global.WindowsApplication1.My.Resources.Resources.flecha_atras
-        Button5.Location = New System.Drawing.Point(667, 357)
-        Button5.Name = "Button5"
-        Button5.Size = New System.Drawing.Size(159, 170)
-        Button5.TabIndex = 5
-        Button5.Text = "Volver"
-        Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Button5.UseVisualStyleBackColor = False
-        AddHandler Button5.Click, AddressOf Me.Button5_Click
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -312,7 +312,7 @@ Partial Class Atributos_De_Gerente
         Me.MaximizeBox = False
         Me.Name = "Atributos_De_Gerente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = " "
+        Me.Text = " COMERCIANDO "
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

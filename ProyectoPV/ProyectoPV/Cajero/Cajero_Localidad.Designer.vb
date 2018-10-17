@@ -150,6 +150,7 @@ Partial Class Cajero_Localidad
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'LocalidadDataGridView
         '
@@ -276,9 +277,9 @@ Partial Class Cajero_Localidad
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(21, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(311, 42)
+        Me.Label3.Size = New System.Drawing.Size(219, 42)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Agregar Producto"
+        Me.Label3.Text = "Localidades"
         '
         'Cajero_Localidad
         '

@@ -161,6 +161,12 @@
     <Compile Include="Gerente\Gerente_Proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Tablas_Producto.Designer.vb">
+      <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tablas_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
     </Compile>
@@ -250,6 +256,9 @@
     <EmbeddedResource Include="Gerente\Gerente_Proveedores.resx">
       <DependentUpon>Gerente_Proveedores.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tablas_Producto.resx">
+      <DependentUpon>Gerente_Tablas_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
@@ -353,6 +362,9 @@
     <Content Include="BaseDeDatos\MayoristaBaseDeDatos.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\carpeta2.png" />
+    <None Include="Resources\carpeta1.png" />
+    <None Include="Resources\carpeta.png" />
     <None Include="Resources\ICONO ICO.ico" />
     <None Include="Resources\ICONO PNG.png" />
     <None Include="Resources\login.png" />
