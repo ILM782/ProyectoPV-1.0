@@ -7827,33 +7827,12 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(3) {}
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT [ID_Producto], [Nombre_Producto], [Descripcion_Producto], [Cantidad_Venta]"& _ 
                 ", [Precio_Unitario], [Total] FROM [VentaVista]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
-            Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ID_Cajero, Nombre_Cajero, Apellido_Cajero, ID_Localidad, Domicilio_"& _ 
-                "Cajero, Telefono, Correo_Cajero, DNI_Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE      "& _ 
-                "  (Apellido_Cajero LIKE @Param1 + N'%')"
-            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Apellido_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._commandCollection(2) = New Global.System.Data.SqlServerCe.SqlCeCommand()
-            Me._commandCollection(2).Connection = Me.Connection
-            Me._commandCollection(2).CommandText = "SELECT        ID_Cajero, Nombre_Cajero, Apellido_Cajero, ID_Localidad, Domicilio_"& _ 
-                "Cajero, Telefono, Correo_Cajero, DNI_Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE      "& _ 
-                "  (DNI_Cajero LIKE @Param1 + N'%')"
-            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "DNI_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._commandCollection(3) = New Global.System.Data.SqlServerCe.SqlCeCommand()
-            Me._commandCollection(3).Connection = Me.Connection
-            Me._commandCollection(3).CommandText = "SELECT        ID_Cajero, Nombre_Cajero, Apellido_Cajero, ID_Localidad, Domicilio_"& _ 
-                "Cajero, Telefono, Correo_Cajero, DNI_Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Cajero"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE      "& _ 
-                "  (Nombre_Cajero LIKE @Param1 + N'%')"
-            Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre_Cajero", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7876,108 +7855,6 @@ Namespace MayoristaBaseDeDatosDataSetTableAdapters
         Public Overloads Overridable Function GetData() As MayoristaBaseDeDatosDataSet.VentaVistaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As MayoristaBaseDeDatosDataSet.VentaVistaDataTable = New MayoristaBaseDeDatosDataSet.VentaVistaDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByApellido(ByVal dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable, ByVal Param1 As String) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            If (Param1 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Param1")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataBy2(ByVal Param1 As String) As MayoristaBaseDeDatosDataSet.CajeroDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            If (Param1 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Param1")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            Dim dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable = New MayoristaBaseDeDatosDataSet.CajeroDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByDNI(ByVal dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable, ByVal Param1 As String) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(2)
-            If (Param1 Is Nothing) Then
-                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataBy(ByVal Param1 As String) As MayoristaBaseDeDatosDataSet.CajeroDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(2)
-            If (Param1 Is Nothing) Then
-                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            Dim dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable = New MayoristaBaseDeDatosDataSet.CajeroDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByNombre(ByVal dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable, ByVal Param1 As String) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(3)
-            If (Param1 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Param1")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataBy1(ByVal Param1 As String) As MayoristaBaseDeDatosDataSet.CajeroDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(3)
-            If (Param1 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Param1")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
-            End If
-            Dim dataTable As MayoristaBaseDeDatosDataSet.CajeroDataTable = New MayoristaBaseDeDatosDataSet.CajeroDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function

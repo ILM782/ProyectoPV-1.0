@@ -74,7 +74,7 @@
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim consulta1 As Integer
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" And ComboBox1.Text <> "Seleccionar" And ComboBox2.Text <> "Seleccionar" Then
+        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" Then
             consulta1 = Me.ProductoBindingSource.Find("Nombre_Producto", TextBox1.Text)
 
             If consulta1 <> -1 Then
@@ -143,5 +143,6 @@
         Gerente_Agregar_Cajero.Show()
         Me.Close()
     End Sub
+
 
 End Class
