@@ -23,19 +23,47 @@ Partial Class Gerente_Tabla_De_Cajeros
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Dim ID_CajeroLabel As System.Windows.Forms.Label
+        Dim Nombre_CajeroLabel As System.Windows.Forms.Label
+        Dim Apellido_CajeroLabel As System.Windows.Forms.Label
+        Dim ID_LocalidadLabel As System.Windows.Forms.Label
+        Dim Domicilio_CajeroLabel As System.Windows.Forms.Label
+        Dim TelefonoLabel As System.Windows.Forms.Label
+        Dim Correo_CajeroLabel As System.Windows.Forms.Label
+        Dim DNI_CajeroLabel As System.Windows.Forms.Label
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Btn_Modificar = New System.Windows.Forms.Button()
+        Me.ID_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.Nombre_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.Apellido_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.ID_LocalidadTextBox = New System.Windows.Forms.TextBox()
+        Me.Domicilio_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.Correo_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.DNI_CajeroTextBox = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Txt_Buscar = New System.Windows.Forms.TextBox()
+        Me.Buscar = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ID_CajeroTextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
+        Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CajeroTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
-        Me.CajeroDataGridView = New System.Windows.Forms.DataGridView()
-        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
+        Me.CajeroTableAdapter1 = New WindowsApplication1.FacturasVentaDataSetTableAdapters.CajeroTableAdapter()
+        Me.CajeroBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FacturasVentaDataSet = New WindowsApplication1.FacturasVentaDataSet()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TableAdapterManager1 = New WindowsApplication1.FacturasVentaDataSetTableAdapters.TableAdapterManager()
+        Me.CajeroDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -44,40 +72,105 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.MenuStrip1.SuspendLayout()
+        ID_CajeroLabel = New System.Windows.Forms.Label()
+        Nombre_CajeroLabel = New System.Windows.Forms.Label()
+        Apellido_CajeroLabel = New System.Windows.Forms.Label()
+        ID_LocalidadLabel = New System.Windows.Forms.Label()
+        Domicilio_CajeroLabel = New System.Windows.Forms.Label()
+        TelefonoLabel = New System.Windows.Forms.Label()
+        Correo_CajeroLabel = New System.Windows.Forms.Label()
+        DNI_CajeroLabel = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Buscar.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CajeroBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'ID_CajeroLabel
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Black
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(918, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
+        ID_CajeroLabel.AutoSize = True
+        ID_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_CajeroLabel.Location = New System.Drawing.Point(42, 449)
+        ID_CajeroLabel.Name = "ID_CajeroLabel"
+        ID_CajeroLabel.Size = New System.Drawing.Size(66, 17)
+        ID_CajeroLabel.TabIndex = 104
+        ID_CajeroLabel.Text = "ID Cajero:"
         '
-        'VolverToolStripMenuItem
+        'Nombre_CajeroLabel
         '
-        Me.VolverToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolverToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.VolverToolStripMenuItem.Name = "VolverToolStripMenuItem"
-        Me.VolverToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.VolverToolStripMenuItem.Text = "Volver"
+        Nombre_CajeroLabel.AutoSize = True
+        Nombre_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Nombre_CajeroLabel.Location = New System.Drawing.Point(42, 475)
+        Nombre_CajeroLabel.Name = "Nombre_CajeroLabel"
+        Nombre_CajeroLabel.Size = New System.Drawing.Size(102, 17)
+        Nombre_CajeroLabel.TabIndex = 106
+        Nombre_CajeroLabel.Text = "Nombre Cajero:"
         '
-        'SalirToolStripMenuItem
+        'Apellido_CajeroLabel
         '
-        Me.SalirToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
+        Apellido_CajeroLabel.AutoSize = True
+        Apellido_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Apellido_CajeroLabel.Location = New System.Drawing.Point(256, 449)
+        Apellido_CajeroLabel.Name = "Apellido_CajeroLabel"
+        Apellido_CajeroLabel.Size = New System.Drawing.Size(101, 17)
+        Apellido_CajeroLabel.TabIndex = 108
+        Apellido_CajeroLabel.Text = "Apellido Cajero:"
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.Location = New System.Drawing.Point(256, 475)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(84, 17)
+        ID_LocalidadLabel.TabIndex = 110
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'Domicilio_CajeroLabel
+        '
+        Domicilio_CajeroLabel.AutoSize = True
+        Domicilio_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Domicilio_CajeroLabel.Location = New System.Drawing.Point(469, 449)
+        Domicilio_CajeroLabel.Name = "Domicilio_CajeroLabel"
+        Domicilio_CajeroLabel.Size = New System.Drawing.Size(107, 17)
+        Domicilio_CajeroLabel.TabIndex = 112
+        Domicilio_CajeroLabel.Text = "Domicilio Cajero:"
+        '
+        'TelefonoLabel
+        '
+        TelefonoLabel.AutoSize = True
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.Location = New System.Drawing.Point(469, 475)
+        TelefonoLabel.Name = "TelefonoLabel"
+        TelefonoLabel.Size = New System.Drawing.Size(62, 17)
+        TelefonoLabel.TabIndex = 114
+        TelefonoLabel.Text = "Telefono:"
+        '
+        'Correo_CajeroLabel
+        '
+        Correo_CajeroLabel.AutoSize = True
+        Correo_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Correo_CajeroLabel.Location = New System.Drawing.Point(688, 447)
+        Correo_CajeroLabel.Name = "Correo_CajeroLabel"
+        Correo_CajeroLabel.Size = New System.Drawing.Size(94, 17)
+        Correo_CajeroLabel.TabIndex = 115
+        Correo_CajeroLabel.Text = "Correo Cajero:"
+        '
+        'DNI_CajeroLabel
+        '
+        DNI_CajeroLabel.AutoSize = True
+        DNI_CajeroLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DNI_CajeroLabel.Location = New System.Drawing.Point(688, 475)
+        DNI_CajeroLabel.Name = "DNI_CajeroLabel"
+        DNI_CajeroLabel.Size = New System.Drawing.Size(76, 17)
+        DNI_CajeroLabel.TabIndex = 117
+        DNI_CajeroLabel.Text = "DNI Cajero:"
         '
         'Panel1
         '
@@ -86,7 +179,7 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(918, 60)
+        Me.Panel1.Size = New System.Drawing.Size(941, 60)
         Me.Panel1.TabIndex = 56
         '
         'Label3
@@ -106,13 +199,177 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(918, 10)
+        Me.Panel2.Size = New System.Drawing.Size(941, 10)
         Me.Panel2.TabIndex = 57
+        '
+        'Btn_Modificar
+        '
+        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modificar.Location = New System.Drawing.Point(680, 518)
+        Me.Btn_Modificar.Name = "Btn_Modificar"
+        Me.Btn_Modificar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Modificar.TabIndex = 119
+        Me.Btn_Modificar.Text = "&MODIFICAR"
+        Me.Btn_Modificar.UseVisualStyleBackColor = False
+        '
+        'ID_CajeroTextBox
+        '
+        Me.ID_CajeroTextBox.Enabled = False
+        Me.ID_CajeroTextBox.Location = New System.Drawing.Point(150, 444)
+        Me.ID_CajeroTextBox.Name = "ID_CajeroTextBox"
+        Me.ID_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ID_CajeroTextBox.TabIndex = 105
+        '
+        'Nombre_CajeroTextBox
+        '
+        Me.Nombre_CajeroTextBox.Location = New System.Drawing.Point(150, 472)
+        Me.Nombre_CajeroTextBox.Name = "Nombre_CajeroTextBox"
+        Me.Nombre_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Nombre_CajeroTextBox.TabIndex = 107
+        '
+        'Apellido_CajeroTextBox
+        '
+        Me.Apellido_CajeroTextBox.Location = New System.Drawing.Point(363, 446)
+        Me.Apellido_CajeroTextBox.Name = "Apellido_CajeroTextBox"
+        Me.Apellido_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Apellido_CajeroTextBox.TabIndex = 109
+        '
+        'ID_LocalidadTextBox
+        '
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(363, 472)
+        Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
+        Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ID_LocalidadTextBox.TabIndex = 111
+        '
+        'Domicilio_CajeroTextBox
+        '
+        Me.Domicilio_CajeroTextBox.Location = New System.Drawing.Point(582, 448)
+        Me.Domicilio_CajeroTextBox.Name = "Domicilio_CajeroTextBox"
+        Me.Domicilio_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Domicilio_CajeroTextBox.TabIndex = 113
+        '
+        'Correo_CajeroTextBox
+        '
+        Me.Correo_CajeroTextBox.Location = New System.Drawing.Point(788, 446)
+        Me.Correo_CajeroTextBox.Name = "Correo_CajeroTextBox"
+        Me.Correo_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Correo_CajeroTextBox.TabIndex = 116
+        '
+        'DNI_CajeroTextBox
+        '
+        Me.DNI_CajeroTextBox.Location = New System.Drawing.Point(788, 472)
+        Me.DNI_CajeroTextBox.Name = "DNI_CajeroTextBox"
+        Me.DNI_CajeroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.DNI_CajeroTextBox.TabIndex = 118
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(150, 352)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 103
+        '
+        'Txt_Buscar
+        '
+        Me.Txt_Buscar.Location = New System.Drawing.Point(256, 354)
+        Me.Txt_Buscar.Name = "Txt_Buscar"
+        Me.Txt_Buscar.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Buscar.TabIndex = 102
+        '
+        'Buscar
+        '
+        Me.Buscar.Controls.Add(Me.Label1)
+        Me.Buscar.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Buscar.Location = New System.Drawing.Point(31, 330)
+        Me.Buscar.Name = "Buscar"
+        Me.Buscar.Size = New System.Drawing.Size(337, 59)
+        Me.Buscar.TabIndex = 120
+        Me.Buscar.TabStop = False
+        Me.Buscar.Text = "Buscar"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(11, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(50, 17)
+        Me.Label1.TabIndex = 60
+        Me.Label1.Text = "Buscar:"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ID_CajeroTextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.TelefonoTextBox)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 395)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(860, 117)
+        Me.GroupBox1.TabIndex = 121
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Modificar Datos"
+        '
+        'ID_CajeroTextBox1
+        '
+        Me.ID_CajeroTextBox1.Location = New System.Drawing.Point(119, 17)
+        Me.ID_CajeroTextBox1.Multiline = True
+        Me.ID_CajeroTextBox1.Name = "ID_CajeroTextBox1"
+        Me.ID_CajeroTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.ID_CajeroTextBox1.TabIndex = 79
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 23)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(90, 17)
+        Me.Label2.TabIndex = 78
+        Me.Label2.Text = "Seleecione ID:"
+        '
+        'TelefonoTextBox
+        '
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(551, 77)
+        Me.TelefonoTextBox.Multiline = True
+        Me.TelefonoTextBox.Name = "TelefonoTextBox"
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.TelefonoTextBox.TabIndex = 72
         '
         'MayoristaBaseDeDatosDataSet
         '
         Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
         Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'VolverToolStripMenuItem
+        '
+        Me.VolverToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VolverToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.VolverToolStripMenuItem.Name = "VolverToolStripMenuItem"
+        Me.VolverToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.VolverToolStripMenuItem.Text = "Volver"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Black
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VolverToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(941, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'CajeroBindingSource
         '
@@ -135,28 +392,56 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
+        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
-        'CajeroDataGridView
+        'LocalidadTableAdapter
         '
-        Me.CajeroDataGridView.AllowUserToDeleteRows = False
-        Me.CajeroDataGridView.AutoGenerateColumns = False
-        Me.CajeroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CajeroDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        Me.CajeroDataGridView.DataSource = Me.CajeroBindingSource
-        Me.CajeroDataGridView.Location = New System.Drawing.Point(28, 100)
-        Me.CajeroDataGridView.Name = "CajeroDataGridView"
-        Me.CajeroDataGridView.ReadOnly = True
-        Me.CajeroDataGridView.Size = New System.Drawing.Size(844, 220)
-        Me.CajeroDataGridView.TabIndex = 58
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        '
+        'CajeroTableAdapter1
+        '
+        Me.CajeroTableAdapter1.ClearBeforeFill = True
+        '
+        'CajeroBindingSource1
+        '
+        Me.CajeroBindingSource1.DataMember = "Cajero"
+        Me.CajeroBindingSource1.DataSource = Me.FacturasVentaDataSet
+        '
+        'FacturasVentaDataSet
+        '
+        Me.FacturasVentaDataSet.DataSetName = "FacturasVentaDataSet"
+        Me.FacturasVentaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'LocalidadBindingSource
         '
         Me.LocalidadBindingSource.DataMember = "Localidad"
         Me.LocalidadBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
-        'LocalidadTableAdapter
+        'TableAdapterManager1
         '
-        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.CajeroTableAdapter = Me.CajeroTableAdapter1
+        Me.TableAdapterManager1.ClienteTableAdapter = Nothing
+        Me.TableAdapterManager1.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager1.ProductoTableAdapter = Nothing
+        Me.TableAdapterManager1.UpdateOrder = WindowsApplication1.FacturasVentaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager1.VentaTableAdapter = Nothing
+        Me.TableAdapterManager1.VentaVistaTableAdapter = Nothing
+        '
+        'CajeroDataGridView
+        '
+        Me.CajeroDataGridView.AllowUserToDeleteRows = False
+        Me.CajeroDataGridView.AutoGenerateColumns = False
+        Me.CajeroDataGridView.BackgroundColor = System.Drawing.Color.White
+        Me.CajeroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.CajeroDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.CajeroDataGridView.DataSource = Me.CajeroBindingSource
+        Me.CajeroDataGridView.GridColor = System.Drawing.Color.Black
+        Me.CajeroDataGridView.Location = New System.Drawing.Point(47, 104)
+        Me.CajeroDataGridView.Name = "CajeroDataGridView"
+        Me.CajeroDataGridView.ReadOnly = True
+        Me.CajeroDataGridView.Size = New System.Drawing.Size(844, 220)
+        Me.CajeroDataGridView.TabIndex = 122
         '
         'DataGridViewTextBoxColumn1
         '
@@ -214,21 +499,33 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 355)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 59
-        '
         'Gerente_Tabla_De_Cajeros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(918, 478)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(941, 581)
         Me.Controls.Add(Me.CajeroDataGridView)
+        Me.Controls.Add(Me.Btn_Modificar)
+        Me.Controls.Add(ID_CajeroLabel)
+        Me.Controls.Add(Me.ID_CajeroTextBox)
+        Me.Controls.Add(Nombre_CajeroLabel)
+        Me.Controls.Add(Me.Nombre_CajeroTextBox)
+        Me.Controls.Add(Apellido_CajeroLabel)
+        Me.Controls.Add(Me.Apellido_CajeroTextBox)
+        Me.Controls.Add(ID_LocalidadLabel)
+        Me.Controls.Add(Me.ID_LocalidadTextBox)
+        Me.Controls.Add(Domicilio_CajeroLabel)
+        Me.Controls.Add(Me.Domicilio_CajeroTextBox)
+        Me.Controls.Add(TelefonoLabel)
+        Me.Controls.Add(Correo_CajeroLabel)
+        Me.Controls.Add(Me.Correo_CajeroTextBox)
+        Me.Controls.Add(DNI_CajeroLabel)
+        Me.Controls.Add(Me.DNI_CajeroTextBox)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Txt_Buscar)
+        Me.Controls.Add(Me.Buscar)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -237,31 +534,57 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Name = "Gerente_Tabla_De_Cajeros"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tabla de Cajeros"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Buscar.ResumeLayout(False)
+        Me.Buscar.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CajeroBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents VolverToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
+    Friend WithEvents ID_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Nombre_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Apellido_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ID_LocalidadTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Domicilio_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Correo_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DNI_CajeroTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Txt_Buscar As System.Windows.Forms.TextBox
+    Friend WithEvents Buscar As System.Windows.Forms.GroupBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents ID_CajeroTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents TelefonoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents MayoristaBaseDeDatosDataSet As WindowsApplication1.MayoristaBaseDeDatosDataSet
+    Friend WithEvents VolverToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents CajeroBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CajeroTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
     Friend WithEvents LocalidadTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter
-    Friend WithEvents CajeroDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents CajeroTableAdapter1 As WindowsApplication1.FacturasVentaDataSetTableAdapters.CajeroTableAdapter
+    Friend WithEvents CajeroBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents FacturasVentaDataSet As WindowsApplication1.FacturasVentaDataSet
     Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TableAdapterManager1 As WindowsApplication1.FacturasVentaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents CajeroDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -270,5 +593,4 @@ Partial Class Gerente_Tabla_De_Cajeros
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class
