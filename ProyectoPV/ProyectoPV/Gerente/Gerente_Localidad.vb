@@ -135,10 +135,12 @@
                     Me.Validate()
                     Me.LocalidadBindingSource.EndEdit()
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                    Me.LocalidadTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Localidad)
                     Me.LocalidadBindingSource.MoveLast()
-                    Me.LocalidadBindingSource.AddNew()
                     TextBox1.Text = ""
-                    TextBox1.Focus()
+                    Me.LocalidadBindingSource.AddNew()
+                    TextBox2.Text = ""
+                    Txt_Localidad.Focus()
                     Localidad_LocalidadTextBox.Text = ""
                     CP_LocalidadTextBox.Text = ""
                     Provincia_LocalidadTextBox.Text = ""
@@ -182,9 +184,17 @@
     'End Sub
 
 
-   
+
     Private Sub Txt_Localidad_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Localidad.KeyPress
         TextBox1.Text = ""
         TextBox2.Text = ""
+    End Sub
+
+    Private Sub CP_LocalidadTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles CP_LocalidadTextBox.KeyPress
+        e.KeyChar = ChrW(solonumeros(e))
+        If e.KeyChar = Chr(13) Then
+            CP_LocalidadTextBox.Focus()
+            e.Handled = True
+        End If
     End Sub
 End Class
