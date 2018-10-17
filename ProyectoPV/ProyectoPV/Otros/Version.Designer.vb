@@ -36,7 +36,7 @@ Partial Class Version
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(216, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(119, 16)
+        Me.Label1.Size = New System.Drawing.Size(132, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "COMERCIANDO"
         '
@@ -47,7 +47,7 @@ Partial Class Version
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(112, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Versión 1.2.01 (BETA)"
+        Me.Label2.Text = "Versión 1.1.08 (BETA)"
         '
         'Label3
         '
