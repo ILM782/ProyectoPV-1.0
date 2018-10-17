@@ -83,7 +83,7 @@ Partial Class Atributos_De_Gerente
         Me.Lbl_Hora.BackColor = System.Drawing.Color.Black
         Me.Lbl_Hora.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_Hora.ForeColor = System.Drawing.Color.White
-        Me.Lbl_Hora.Location = New System.Drawing.Point(1050, 30)
+        Me.Lbl_Hora.Location = New System.Drawing.Point(1058, 30)
         Me.Lbl_Hora.Name = "Lbl_Hora"
         Me.Lbl_Hora.Size = New System.Drawing.Size(56, 16)
         Me.Lbl_Hora.TabIndex = 3
@@ -130,7 +130,7 @@ Partial Class Atributos_De_Gerente
         Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(1021, 14)
+        Me.Label1.Location = New System.Drawing.Point(1018, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 16)
         Me.Label1.TabIndex = 0

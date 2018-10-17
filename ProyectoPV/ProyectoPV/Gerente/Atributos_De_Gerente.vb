@@ -49,4 +49,5 @@
         Gerente_Agregar_Cajero.Show()
         Me.Close()
     End Sub
+
 End Class

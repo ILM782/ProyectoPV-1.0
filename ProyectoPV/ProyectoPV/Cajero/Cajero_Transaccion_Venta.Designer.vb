@@ -28,12 +28,12 @@ Partial Class Cajero_Transaccion_Venta
         Dim NumeroTransaccion_VentaLabel As System.Windows.Forms.Label
         Dim Unidades_VentaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
-        Dim Fecha_VentaLabel As System.Windows.Forms.Label
         Dim TipoDeFacturacion_VentaLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim Fecha_VentaLabel As System.Windows.Forms.Label
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,7 +44,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Fecha_VentaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.ID_CajeroTextBox = New System.Windows.Forms.TextBox()
@@ -71,6 +70,10 @@ Partial Class Cajero_Transaccion_Venta
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ID_ClienteTextBox = New System.Windows.Forms.TextBox()
         Me.NumeroTransaccion_VentaNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.ID_ProductoTextBox = New System.Windows.Forms.TextBox()
@@ -78,17 +81,14 @@ Partial Class Cajero_Transaccion_Venta
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Unidades_VentaNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fecha_VentaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         ID_CajeroLabel = New System.Windows.Forms.Label()
         NumeroTransaccion_VentaLabel = New System.Windows.Forms.Label()
         Unidades_VentaLabel = New System.Windows.Forms.Label()
         ID_ProductoLabel = New System.Windows.Forms.Label()
-        Fecha_VentaLabel = New System.Windows.Forms.Label()
         TipoDeFacturacion_VentaLabel = New System.Windows.Forms.Label()
+        Fecha_VentaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,15 +147,6 @@ Partial Class Cajero_Transaccion_Venta
         ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
         ID_ProductoLabel.TabIndex = 66
         ID_ProductoLabel.Text = "ID Producto:"
-        '
-        'Fecha_VentaLabel
-        '
-        Fecha_VentaLabel.AutoSize = True
-        Fecha_VentaLabel.Location = New System.Drawing.Point(732, 29)
-        Fecha_VentaLabel.Name = "Fecha_VentaLabel"
-        Fecha_VentaLabel.Size = New System.Drawing.Size(75, 16)
-        Fecha_VentaLabel.TabIndex = 68
-        Fecha_VentaLabel.Text = "Fecha Venta:"
         '
         'TipoDeFacturacion_VentaLabel
         '
@@ -262,14 +253,6 @@ Partial Class Cajero_Transaccion_Venta
         Me.Label3.Size = New System.Drawing.Size(116, 42)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Venta"
-        '
-        'Fecha_VentaDateTimePicker
-        '
-        Me.Fecha_VentaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "Fecha_Venta", True))
-        Me.Fecha_VentaDateTimePicker.Location = New System.Drawing.Point(813, 22)
-        Me.Fecha_VentaDateTimePicker.Name = "Fecha_VentaDateTimePicker"
-        Me.Fecha_VentaDateTimePicker.Size = New System.Drawing.Size(212, 23)
-        Me.Fecha_VentaDateTimePicker.TabIndex = 69
         '
         'VentaBindingSource
         '
@@ -461,8 +444,42 @@ Partial Class Cajero_Transaccion_Venta
         Me.DataGridView1.Location = New System.Drawing.Point(28, 269)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(643, 241)
+        Me.DataGridView1.Size = New System.Drawing.Size(741, 241)
         Me.DataGridView1.TabIndex = 58
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Producto"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 400
+        '
+        'Column2
+        '
+        DataGridViewCellStyle1.Format = "N0"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
+        Me.Column2.HeaderText = "Cantidad"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Column3.HeaderText = "Precio"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Column4.HeaderText = "Total"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         '
         'ID_ClienteTextBox
         '
@@ -527,39 +544,22 @@ Partial Class Cajero_Transaccion_Venta
         Me.Unidades_VentaNumericUpDown.Size = New System.Drawing.Size(120, 23)
         Me.Unidades_VentaNumericUpDown.TabIndex = 1
         '
-        'Column1
+        'Fecha_VentaLabel
         '
-        Me.Column1.HeaderText = "Producto"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 400
+        Fecha_VentaLabel.AutoSize = True
+        Fecha_VentaLabel.Location = New System.Drawing.Point(732, 29)
+        Fecha_VentaLabel.Name = "Fecha_VentaLabel"
+        Fecha_VentaLabel.Size = New System.Drawing.Size(75, 16)
+        Fecha_VentaLabel.TabIndex = 68
+        Fecha_VentaLabel.Text = "Fecha Venta:"
         '
-        'Column2
+        'Fecha_VentaDateTimePicker
         '
-        DataGridViewCellStyle1.Format = "N0"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
-        Me.Column2.HeaderText = "Cantidad"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Column3.HeaderText = "Precio"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Column4.HeaderText = "Total"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
+        Me.Fecha_VentaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VentaBindingSource, "Fecha_Venta", True))
+        Me.Fecha_VentaDateTimePicker.Location = New System.Drawing.Point(813, 22)
+        Me.Fecha_VentaDateTimePicker.Name = "Fecha_VentaDateTimePicker"
+        Me.Fecha_VentaDateTimePicker.Size = New System.Drawing.Size(212, 23)
+        Me.Fecha_VentaDateTimePicker.TabIndex = 69
         '
         'Cajero_Transaccion_Venta
         '
@@ -645,7 +645,6 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents CajeroTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter
     Friend WithEvents CajeroBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Fecha_VentaDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents ID_ClienteTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ID_CajeroTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NumeroTransaccion_VentaNumericUpDown As System.Windows.Forms.NumericUpDown
@@ -659,4 +658,5 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Fecha_VentaDateTimePicker As System.Windows.Forms.DateTimePicker
 End Class

@@ -78,7 +78,7 @@ Partial Class Gerente_Producto
         '
         CategoriaLabel.AutoSize = True
         CategoriaLabel.ForeColor = System.Drawing.Color.Black
-        CategoriaLabel.Location = New System.Drawing.Point(89, 253)
+        CategoriaLabel.Location = New System.Drawing.Point(95, 233)
         CategoriaLabel.Name = "CategoriaLabel"
         CategoriaLabel.Size = New System.Drawing.Size(60, 14)
         CategoriaLabel.TabIndex = 40
@@ -88,7 +88,7 @@ Partial Class Gerente_Producto
         '
         MarcaLabel.AutoSize = True
         MarcaLabel.ForeColor = System.Drawing.Color.Black
-        MarcaLabel.Location = New System.Drawing.Point(89, 282)
+        MarcaLabel.Location = New System.Drawing.Point(95, 262)
         MarcaLabel.Name = "MarcaLabel"
         MarcaLabel.Size = New System.Drawing.Size(41, 14)
         MarcaLabel.TabIndex = 39
@@ -98,7 +98,7 @@ Partial Class Gerente_Producto
         '
         Nombre_ProductoLabel.AutoSize = True
         Nombre_ProductoLabel.ForeColor = System.Drawing.Color.Black
-        Nombre_ProductoLabel.Location = New System.Drawing.Point(88, 140)
+        Nombre_ProductoLabel.Location = New System.Drawing.Point(94, 120)
         Nombre_ProductoLabel.Name = "Nombre_ProductoLabel"
         Nombre_ProductoLabel.Size = New System.Drawing.Size(101, 14)
         Nombre_ProductoLabel.TabIndex = 35
@@ -108,7 +108,7 @@ Partial Class Gerente_Producto
         '
         StrockLabel.AutoSize = True
         StrockLabel.ForeColor = System.Drawing.Color.Black
-        StrockLabel.Location = New System.Drawing.Point(88, 169)
+        StrockLabel.Location = New System.Drawing.Point(94, 149)
         StrockLabel.Name = "StrockLabel"
         StrockLabel.Size = New System.Drawing.Size(42, 14)
         StrockLabel.TabIndex = 36
@@ -118,7 +118,7 @@ Partial Class Gerente_Producto
         '
         Precio_UnitarioLabel.AutoSize = True
         Precio_UnitarioLabel.ForeColor = System.Drawing.Color.Black
-        Precio_UnitarioLabel.Location = New System.Drawing.Point(88, 197)
+        Precio_UnitarioLabel.Location = New System.Drawing.Point(94, 177)
         Precio_UnitarioLabel.Name = "Precio_UnitarioLabel"
         Precio_UnitarioLabel.Size = New System.Drawing.Size(86, 14)
         Precio_UnitarioLabel.TabIndex = 37
@@ -128,7 +128,7 @@ Partial Class Gerente_Producto
         '
         DescripcionLabel.AutoSize = True
         DescripcionLabel.ForeColor = System.Drawing.Color.Black
-        DescripcionLabel.Location = New System.Drawing.Point(88, 225)
+        DescripcionLabel.Location = New System.Drawing.Point(94, 205)
         DescripcionLabel.Name = "DescripcionLabel"
         DescripcionLabel.Size = New System.Drawing.Size(70, 14)
         DescripcionLabel.TabIndex = 38
@@ -146,28 +146,28 @@ Partial Class Gerente_Producto
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(187, 222)
+        Me.TextBox4.Location = New System.Drawing.Point(193, 202)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 21)
         Me.TextBox4.TabIndex = 50
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(187, 194)
+        Me.TextBox3.Location = New System.Drawing.Point(193, 174)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(121, 21)
         Me.TextBox3.TabIndex = 48
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(187, 166)
+        Me.TextBox2.Location = New System.Drawing.Point(193, 146)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 21)
         Me.TextBox2.TabIndex = 47
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(187, 137)
+        Me.TextBox1.Location = New System.Drawing.Point(193, 117)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 21)
         Me.TextBox1.TabIndex = 46
@@ -177,7 +177,7 @@ Partial Class Gerente_Producto
         Me.ComboBox2.DataSource = Me.MarcasBindingSource
         Me.ComboBox2.DisplayMember = "Marca"
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(187, 279)
+        Me.ComboBox2.Location = New System.Drawing.Point(193, 259)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 22)
         Me.ComboBox2.TabIndex = 45
@@ -193,7 +193,7 @@ Partial Class Gerente_Producto
         Me.ComboBox1.DataSource = Me.CategoriaBindingSource
         Me.ComboBox1.DisplayMember = "Categoria"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(187, 250)
+        Me.ComboBox1.Location = New System.Drawing.Point(193, 230)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 22)
         Me.ComboBox1.TabIndex = 44
@@ -210,7 +210,7 @@ Partial Class Gerente_Producto
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button3.Location = New System.Drawing.Point(314, 250)
+        Me.Button3.Location = New System.Drawing.Point(320, 230)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(34, 22)
         Me.Button3.TabIndex = 43
@@ -222,7 +222,7 @@ Partial Class Gerente_Producto
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta_simbolo_de_agregar
-        Me.Button2.Location = New System.Drawing.Point(314, 278)
+        Me.Button2.Location = New System.Drawing.Point(320, 258)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(34, 22)
         Me.Button2.TabIndex = 42
@@ -355,7 +355,7 @@ Partial Class Gerente_Producto
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(401, 258)
+        Me.Button1.Location = New System.Drawing.Point(407, 238)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(217, 43)
         Me.Button1.TabIndex = 53
@@ -365,10 +365,10 @@ Partial Class Gerente_Producto
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources.carpeta2
-        Me.Button4.Location = New System.Drawing.Point(401, 137)
+        Me.Button4.Location = New System.Drawing.Point(407, 117)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(217, 115)
         Me.Button4.TabIndex = 57
@@ -382,7 +382,7 @@ Partial Class Gerente_Producto
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(737, 335)
+        Me.ClientSize = New System.Drawing.Size(737, 301)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
