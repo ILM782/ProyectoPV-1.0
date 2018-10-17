@@ -185,4 +185,7 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0 - copia\ProyectoPV\ProyectoPV\obj\x86\Debu
 C:\Users\Ruben\Desktop\ProyectoPV-1.0 - copia\ProyectoPV\ProyectoPV\obj\x86\Debug\ProyectoPV.vbproj.GenerateResource.Cache
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Agregar_Cajero.resources
+<<<<<<< HEAD
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tablas_Producto.resources
+=======
+>>>>>>> ff55b988bd06d493853b6d4db6e6b8364fa18f05
