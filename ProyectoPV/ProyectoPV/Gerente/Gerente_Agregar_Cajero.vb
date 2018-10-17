@@ -120,7 +120,10 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Gerente_Tabla_De_Cajeros.Show()
+<<<<<<< HEAD
         Me.Close()
+=======
+>>>>>>> master
     End Sub
 
     Private Sub Nombre_CajeroTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Nombre_CajeroTextBox.KeyPress

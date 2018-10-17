@@ -1,19 +1,5 @@
 ﻿Public Class Cajero_Transaccion_Venta
 
-    'Private Sub Btn_Finalizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Finalizar.Click
-    'Dim fila As Integer
-    'If Txt_Categoria.Text <> "" Then
-
-    'fila = Me.CategoriaBindingSource.Find("Categoria", Txt_Categoria.Text)
-    'If fila <> -1 Then
-    'Else
-    'MsgBox("Categoria no encontrada")
-    'End If
-    'Else
-    'MsgBox("El campo esta vacio")
-    'End If
-    'End Sub
-
     'BARRA SUPERIOR
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Cajero.Show()
@@ -48,6 +34,8 @@
     End Sub
 
     Private Sub Cajero_Transaccion_Venta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.VentaVista' Puede moverla o quitarla según sea necesario.
+        Me.VentaVistaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.VentaVista)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cajero' Puede moverla o quitarla según sea necesario.
         Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
@@ -56,8 +44,6 @@
         Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Venta' Puede moverla o quitarla según sea necesario.
         Me.VentaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Venta)
-        'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Producto' Puede moverla o quitarla según sea necesario.
-        Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
 
     End Sub
 
@@ -84,7 +70,7 @@
         Me.ProductoDataGridView.DataSource = vista 'ACTUALIZO LA GRILLA
     End Sub
 
-    Private Sub Btn_Imprimir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Vender.Click
+    Private Sub Btn_Vender_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Vender.Click
         Dim fila, CodConsulta, aux, importe As Integer
         CodConsulta = Val(ID_ProductoTextBox.Text) '
         fila = Me.ProductoBindingSource.Find("ID_Producto", CodConsulta) 'me dice la posicion arranca de 0

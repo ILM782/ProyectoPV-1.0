@@ -23,6 +23,7 @@ Partial Class Gerente_Tabla_De_Cajeros
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+<<<<<<< HEAD
         Dim ID_CajeroLabel As System.Windows.Forms.Label
         Dim Nombre_CajeroLabel As System.Windows.Forms.Label
         Dim Apellido_CajeroLabel As System.Windows.Forms.Label
@@ -31,13 +32,25 @@ Partial Class Gerente_Tabla_De_Cajeros
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim Correo_CajeroLabel As System.Windows.Forms.Label
         Dim DNI_CajeroLabel As System.Windows.Forms.Label
+=======
+>>>>>>> master
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+<<<<<<< HEAD
         Me.CajeroDataGridView = New System.Windows.Forms.DataGridView()
+=======
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
+        Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CajeroTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
+        Me.CajeroDataGridView = New System.Windows.Forms.DataGridView()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
+>>>>>>> master
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,6 +59,7 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+<<<<<<< HEAD
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.Txt_Buscar = New System.Windows.Forms.TextBox()
@@ -172,6 +186,17 @@ Partial Class Gerente_Tabla_De_Cajeros
         DNI_CajeroLabel.TabIndex = 75
         DNI_CajeroLabel.Text = "DNI Cajero:"
         '
+=======
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+>>>>>>> master
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
@@ -228,21 +253,69 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Panel2.Size = New System.Drawing.Size(918, 10)
         Me.Panel2.TabIndex = 57
         '
+<<<<<<< HEAD
+=======
+        'MayoristaBaseDeDatosDataSet
+        '
+        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
+        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CajeroBindingSource
+        '
+        Me.CajeroBindingSource.DataMember = "Cajero"
+        Me.CajeroBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'CajeroTableAdapter
+        '
+        Me.CajeroTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CajeroTableAdapter = Me.CajeroTableAdapter
+        Me.TableAdapterManager.CategoriaTableAdapter = Nothing
+        Me.TableAdapterManager.ClienteTableAdapter = Nothing
+        Me.TableAdapterManager.LocalidadTableAdapter = Me.LocalidadTableAdapter
+        Me.TableAdapterManager.MarcasTableAdapter = Nothing
+        Me.TableAdapterManager.ProductoTableAdapter = Nothing
+        Me.TableAdapterManager.ProveedorTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentaTableAdapter = Nothing
+        '
+>>>>>>> master
         'CajeroDataGridView
         '
         Me.CajeroDataGridView.AllowUserToDeleteRows = False
         Me.CajeroDataGridView.AutoGenerateColumns = False
+<<<<<<< HEAD
         Me.CajeroDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.CajeroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CajeroDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.CajeroDataGridView.DataSource = Me.CajeroBindingSource
         Me.CajeroDataGridView.GridColor = System.Drawing.Color.Black
+=======
+        Me.CajeroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.CajeroDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.CajeroDataGridView.DataSource = Me.CajeroBindingSource
+>>>>>>> master
         Me.CajeroDataGridView.Location = New System.Drawing.Point(28, 100)
         Me.CajeroDataGridView.Name = "CajeroDataGridView"
         Me.CajeroDataGridView.ReadOnly = True
         Me.CajeroDataGridView.Size = New System.Drawing.Size(844, 220)
         Me.CajeroDataGridView.TabIndex = 58
         '
+<<<<<<< HEAD
+=======
+        'LocalidadBindingSource
+        '
+        Me.LocalidadBindingSource.DataMember = "Localidad"
+        Me.LocalidadBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'LocalidadTableAdapter
+        '
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        '
+>>>>>>> master
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cajero"
@@ -299,6 +372,7 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
+<<<<<<< HEAD
         'CajeroBindingSource
         '
         Me.CajeroBindingSource.DataMember = "Cajero"
@@ -507,12 +581,21 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.ID_CajeroTextBox1.Name = "ID_CajeroTextBox1"
         Me.ID_CajeroTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.ID_CajeroTextBox1.TabIndex = 79
+=======
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(92, 355)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 59
+>>>>>>> master
         '
         'Gerente_Tabla_De_Cajeros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(918, 611)
         Me.Controls.Add(Me.Btn_Modificar)
         Me.Controls.Add(ID_CajeroLabel)
@@ -532,12 +615,19 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Controls.Add(Me.DNI_CajeroTextBox)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Txt_Buscar)
+=======
+        Me.ClientSize = New System.Drawing.Size(918, 478)
+        Me.Controls.Add(Me.TextBox1)
+>>>>>>> master
         Me.Controls.Add(Me.CajeroDataGridView)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
+<<<<<<< HEAD
         Me.Controls.Add(Me.Buscar)
         Me.Controls.Add(Me.GroupBox1)
+=======
+>>>>>>> master
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "Gerente_Tabla_De_Cajeros"
@@ -547,6 +637,7 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+<<<<<<< HEAD
         CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -557,6 +648,12 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.Buscar.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+=======
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CajeroDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+>>>>>>> master
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -582,6 +679,7 @@ Partial Class Gerente_Tabla_De_Cajeros
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+<<<<<<< HEAD
     Friend WithEvents Txt_Buscar As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
@@ -602,4 +700,7 @@ Partial Class Gerente_Tabla_De_Cajeros
     Friend WithEvents Buscar As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents ID_CajeroTextBox1 As System.Windows.Forms.TextBox
+=======
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+>>>>>>> master
 End Class

@@ -116,7 +116,11 @@ Partial Class Login
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(122, 23)
         Me.Button3.TabIndex = 14
+<<<<<<< HEAD
         Me.Button3.Text = "Versión 1.1.08 (BETA)"
+=======
+        Me.Button3.Text = "Versión 1.2.00 (BETA)"
+>>>>>>> master
         Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox1
