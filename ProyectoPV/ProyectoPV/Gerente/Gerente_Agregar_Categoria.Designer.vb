@@ -102,7 +102,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
-        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'MenuStrip1
         '
@@ -286,7 +285,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Gerente_Agregar_Categoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "COMERCIO / Categorias"
+        Me.Text = "COMERCIANDO / Categorias"
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
