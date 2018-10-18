@@ -69,4 +69,8 @@
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
         End If
     End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Me.LocalidadTableAdapter.FillBy(Me.MayoristaBaseDeDatosDataSet.Localidad, TextBox1.Text)
+    End Sub
 End Class

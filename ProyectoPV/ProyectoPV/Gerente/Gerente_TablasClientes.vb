@@ -19,29 +19,29 @@
         Gerente_Producto.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub BorrarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BorrarToolStripMenuItem.Click
         Gerente_Proveedores.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub ActualizarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ActualizarToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub ClienteBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -140,14 +140,14 @@
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
         Gerente_Tabla_De_Clientes_Vistas.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

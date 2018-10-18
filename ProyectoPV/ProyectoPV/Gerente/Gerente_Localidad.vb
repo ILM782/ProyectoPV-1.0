@@ -121,7 +121,7 @@
         End If
     End Sub
 
-    Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click
+    Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim aux As Object
 

@@ -102,7 +102,6 @@ Partial Class Gerente_Agregar_Categoria
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
-        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'MenuStrip1
         '

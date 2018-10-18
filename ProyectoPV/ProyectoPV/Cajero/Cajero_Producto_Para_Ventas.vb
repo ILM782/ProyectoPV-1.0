@@ -53,4 +53,11 @@
         vista.RowFilter = "Descripcion LIKE '" & Me.TextBox2.Text & "%'" 'esta para texto like
         Me.ProductoDataGridView.DataSource = vista
     End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+        Dim vista As New DataView 'instancio el objeto
+        vista.Table = Me.MayoristaBaseDeDatosDataSet.Producto 'cargo objeto
+        vista.RowFilter = "Nombre_Producto LIKE '" & Me.TextBox2.Text & "%'" 'esta para texto like
+        Me.ProductoDataGridView.DataSource = vista
+    End Sub
 End Class

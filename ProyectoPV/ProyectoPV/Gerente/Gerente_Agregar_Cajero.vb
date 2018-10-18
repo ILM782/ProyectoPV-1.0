@@ -73,21 +73,21 @@
         Gerente_Producto.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -102,28 +102,28 @@
         Gerente_Proveedores.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub TrasaccionDeComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TrasaccionDeComprasToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub AgregarClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
         Gerente_Tabla_De_Cajeros.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click

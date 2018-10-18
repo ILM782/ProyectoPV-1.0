@@ -236,7 +236,6 @@ Partial Class Gerente_Ventas_Realizadas
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Me.VentaTableAdapter
-        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'CajeroTableAdapter
         '

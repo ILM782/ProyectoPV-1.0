@@ -20,21 +20,21 @@
         Gerente_Producto.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -49,14 +49,14 @@
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub Btn_Guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
@@ -129,14 +129,14 @@
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
         Gerente_Tabla_de_Proveedores.Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
 

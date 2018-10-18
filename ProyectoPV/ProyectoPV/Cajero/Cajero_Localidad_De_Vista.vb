@@ -1,4 +1,4 @@
-﻿Public Class Gerente_Localidad_De_Vista
+﻿Public Class Cajero_Localidad_De_Vista
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Me.Close()

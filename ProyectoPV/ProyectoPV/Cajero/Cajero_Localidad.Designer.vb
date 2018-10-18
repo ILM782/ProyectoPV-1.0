@@ -46,11 +46,12 @@ Partial Class Cajero_Localidad
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Btn_Buscar = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -59,12 +60,13 @@ Partial Class Cajero_Localidad
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Localidad_LocalidadLabel
         '
         Localidad_LocalidadLabel.AutoSize = True
-        Localidad_LocalidadLabel.Location = New System.Drawing.Point(31, 119)
+        Localidad_LocalidadLabel.Location = New System.Drawing.Point(15, 30)
         Localidad_LocalidadLabel.Name = "Localidad_LocalidadLabel"
         Localidad_LocalidadLabel.Size = New System.Drawing.Size(56, 13)
         Localidad_LocalidadLabel.TabIndex = 11
@@ -73,7 +75,7 @@ Partial Class Cajero_Localidad
         'CP_LocalidadLabel
         '
         CP_LocalidadLabel.AutoSize = True
-        CP_LocalidadLabel.Location = New System.Drawing.Point(31, 145)
+        CP_LocalidadLabel.Location = New System.Drawing.Point(15, 56)
         CP_LocalidadLabel.Name = "CP_LocalidadLabel"
         CP_LocalidadLabel.Size = New System.Drawing.Size(75, 13)
         CP_LocalidadLabel.TabIndex = 13
@@ -82,7 +84,7 @@ Partial Class Cajero_Localidad
         'Provincia_LocalidadLabel
         '
         Provincia_LocalidadLabel.AutoSize = True
-        Provincia_LocalidadLabel.Location = New System.Drawing.Point(31, 171)
+        Provincia_LocalidadLabel.Location = New System.Drawing.Point(15, 82)
         Provincia_LocalidadLabel.Name = "Provincia_LocalidadLabel"
         Provincia_LocalidadLabel.Size = New System.Drawing.Size(54, 13)
         Provincia_LocalidadLabel.TabIndex = 15
@@ -158,9 +160,9 @@ Partial Class Cajero_Localidad
         Me.LocalidadDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.LocalidadDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.LocalidadDataGridView.DataSource = Me.LocalidadBindingSource
-        Me.LocalidadDataGridView.Location = New System.Drawing.Point(270, 116)
+        Me.LocalidadDataGridView.Location = New System.Drawing.Point(283, 107)
         Me.LocalidadDataGridView.Name = "LocalidadDataGridView"
-        Me.LocalidadDataGridView.Size = New System.Drawing.Size(445, 136)
+        Me.LocalidadDataGridView.Size = New System.Drawing.Size(445, 223)
         Me.LocalidadDataGridView.TabIndex = 8
         '
         'DataGridViewTextBoxColumn1
@@ -173,19 +175,19 @@ Partial Class Cajero_Localidad
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Localidad_Localidad"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Localidad_Localidad"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Localidad"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "CP_Localidad"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "CP_Localidad"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Codigo Postal"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Provincia_Localidad"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Provincia_Localidad"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Provincia"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'LocalidadBindingSource
@@ -201,7 +203,7 @@ Partial Class Cajero_Localidad
         'Localidad_LocalidadTextBox
         '
         Me.Localidad_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad_Localidad", True))
-        Me.Localidad_LocalidadTextBox.Location = New System.Drawing.Point(140, 116)
+        Me.Localidad_LocalidadTextBox.Location = New System.Drawing.Point(124, 27)
         Me.Localidad_LocalidadTextBox.Name = "Localidad_LocalidadTextBox"
         Me.Localidad_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Localidad_LocalidadTextBox.TabIndex = 12
@@ -209,7 +211,7 @@ Partial Class Cajero_Localidad
         'CP_LocalidadTextBox
         '
         Me.CP_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "CP_Localidad", True))
-        Me.CP_LocalidadTextBox.Location = New System.Drawing.Point(140, 142)
+        Me.CP_LocalidadTextBox.Location = New System.Drawing.Point(124, 53)
         Me.CP_LocalidadTextBox.Name = "CP_LocalidadTextBox"
         Me.CP_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CP_LocalidadTextBox.TabIndex = 14
@@ -217,7 +219,7 @@ Partial Class Cajero_Localidad
         'Provincia_LocalidadTextBox
         '
         Me.Provincia_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Provincia_Localidad", True))
-        Me.Provincia_LocalidadTextBox.Location = New System.Drawing.Point(140, 168)
+        Me.Provincia_LocalidadTextBox.Location = New System.Drawing.Point(124, 79)
         Me.Provincia_LocalidadTextBox.Name = "Provincia_LocalidadTextBox"
         Me.Provincia_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Provincia_LocalidadTextBox.TabIndex = 16
@@ -228,28 +230,12 @@ Partial Class Cajero_Localidad
         Me.Btn_Buscar.FlatAppearance.BorderSize = 0
         Me.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Buscar.Location = New System.Drawing.Point(32, 212)
+        Me.Btn_Buscar.Location = New System.Drawing.Point(18, 111)
         Me.Btn_Buscar.Name = "Btn_Buscar"
         Me.Btn_Buscar.Size = New System.Drawing.Size(208, 40)
         Me.Btn_Buscar.TabIndex = 26
         Me.Btn_Buscar.Text = "&GUARDAR"
         Me.Btn_Buscar.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(615, 263)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 27
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(506, 270)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 13)
-        Me.Label1.TabIndex = 28
-        Me.Label1.Text = "Buscar por Localidad"
         '
         'Panel2
         '
@@ -281,23 +267,50 @@ Partial Class Cajero_Localidad
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Localidades"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Provincia_LocalidadTextBox)
+        Me.GroupBox1.Controls.Add(Provincia_LocalidadLabel)
+        Me.GroupBox1.Controls.Add(Me.CP_LocalidadTextBox)
+        Me.GroupBox1.Controls.Add(CP_LocalidadLabel)
+        Me.GroupBox1.Controls.Add(Localidad_LocalidadLabel)
+        Me.GroupBox1.Controls.Add(Me.Localidad_LocalidadTextBox)
+        Me.GroupBox1.Controls.Add(Me.Btn_Buscar)
+        Me.GroupBox1.Location = New System.Drawing.Point(18, 116)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(244, 166)
+        Me.GroupBox1.TabIndex = 57
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Guarde una nueva localidad"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(30, 302)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(110, 17)
+        Me.Label1.TabIndex = 62
+        Me.Label1.Text = "Buscar Localidad:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(144, 299)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 60
+        '
         'Cajero_Localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(749, 302)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(749, 344)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Btn_Buscar)
-        Me.Controls.Add(Localidad_LocalidadLabel)
-        Me.Controls.Add(Me.Localidad_LocalidadTextBox)
-        Me.Controls.Add(CP_LocalidadLabel)
-        Me.Controls.Add(Me.CP_LocalidadTextBox)
-        Me.Controls.Add(Provincia_LocalidadLabel)
-        Me.Controls.Add(Me.Provincia_LocalidadTextBox)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.LocalidadDataGridView)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -306,7 +319,7 @@ Partial Class Cajero_Localidad
         Me.MaximizeBox = False
         Me.Name = "Cajero_Localidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "COMERCIANDO / Localidades"
+        Me.Text = "    "
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.LocalidadDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -314,6 +327,8 @@ Partial Class Cajero_Localidad
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -329,17 +344,18 @@ Partial Class Cajero_Localidad
     Friend WithEvents LocalidadTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
     Friend WithEvents LocalidadDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Localidad_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CP_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Provincia_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Btn_Buscar As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

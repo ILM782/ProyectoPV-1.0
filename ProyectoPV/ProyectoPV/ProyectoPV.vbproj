@@ -98,6 +98,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cajero\Cajero_Localidad_De_Vista.Designer.vb">
+      <DependentUpon>Cajero_Localidad_De_Vista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\Cajero_Localidad_De_Vista.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FacturaVenta\Cajero_ImprimirVenta.Designer.vb">
       <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
     </Compile>
@@ -161,12 +167,6 @@
       <DependentUpon>Cajero_Producto_Para_Ventas.vb</DependentUpon>
     </Compile>
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Localidad_De_Vista.Designer.vb">
-      <DependentUpon>Gerente_Localidad_De_Vista.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Localidad_De_Vista.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Producto.Designer.vb">
@@ -267,6 +267,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cajero\Cajero_Localidad_De_Vista.resx">
+      <DependentUpon>Cajero_Localidad_De_Vista.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FacturaVenta\Cajero_ImprimirVenta.resx">
       <DependentUpon>Cajero_ImprimirVenta.vb</DependentUpon>
     </EmbeddedResource>
@@ -296,9 +299,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Localidad.resx">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Localidad_De_Vista.resx">
-      <DependentUpon>Gerente_Localidad_De_Vista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Producto.resx">
       <DependentUpon>Gerente_Producto.vb</DependentUpon>

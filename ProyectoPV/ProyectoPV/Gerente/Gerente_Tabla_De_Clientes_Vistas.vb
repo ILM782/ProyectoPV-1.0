@@ -20,7 +20,7 @@
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Gerente_Localidad_De_Vista.Show()
+        Cajero_Localidad_De_Vista.Show()
     End Sub
 
     Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click
@@ -76,7 +76,7 @@
 
     Private Sub AtrasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AtrasToolStripMenuItem.Click
         Close()
-        Gerente_Localidad_De_Vista.Close()
+        Cajero_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
