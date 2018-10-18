@@ -392,7 +392,6 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
-        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'LocalidadTableAdapter
         '
@@ -426,7 +425,6 @@ Partial Class Gerente_Tabla_De_Cajeros
         Me.TableAdapterManager1.ProductoTableAdapter = Nothing
         Me.TableAdapterManager1.UpdateOrder = WindowsApplication1.FacturasVentaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager1.VentaTableAdapter = Nothing
-        Me.TableAdapterManager1.VentaVistaTableAdapter = Nothing
         '
         'CajeroDataGridView
         '
