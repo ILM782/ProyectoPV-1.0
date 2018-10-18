@@ -71,7 +71,7 @@
 
     End Sub
 
-    Private Sub VentaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentaBindingNavigatorSaveItem.Click
+    Private Sub VentaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.VentaBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
@@ -95,6 +95,7 @@
     End Sub
 
     Private Sub Btn_Vender_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Vender.Click
+
         Dim fila, CodConsulta, aux, importe As Integer
         CodConsulta = Val(ID_ProductoTextBox.Text) '
         fila = Me.ProductoBindingSource.Find("ID_Producto", CodConsulta) 'me dice la posicion arranca de 0
@@ -109,16 +110,17 @@
                 If ProductoBindingSource.Current("Strock") >= Val(Cantidad_VentaTextBox.Text) Then 'si true puedo vender
                     'guardo la transaccion en la tabla venta-----------------------------------------------
 
-                    Me.VentaBindingSource.AddNew()
-                    Me.VentaBindingSource.Current("ID_Producto") = ProductoBindingSource.Current("ID_Producto")
-                    Me.VentaBindingSource.Current("Cantidad_Venta") = Val(Cantidad_VentaTextBox.Text)
+                    Me.VentaVistaBindingSource.AddNew()
+                    Me.VentaVistaBindingSource.Current("ID_Producto") = ProductoBindingSource.Current("ID_Producto")
+                    Me.VentaVistaBindingSource.Current("Cantidad_Venta") = Val(Cantidad_VentaTextBox.Text)
                     ' --------------------------------------- Me.VentaBindingSource.Current("precio") = Val(Cantidad_VentaTextBox.Text) * Me.ProductoBindingSource.Current("Precio")
                     Me.VentaBindingSource.Current("ID_Cliente") = Val(ID_ClienteTextBox.Text)
                     Me.VentaBindingSource.Current("ID_Cajero") = Val(ID_CajeroComboBox.SelectedValue)
-                    Me.VentaBindingSource.Current("NroFactura") = Val(NroFacturaNumericUpDown.Text)
-                    Me.VentaBindingSource.Current("Fecha_Venta") = DateTime.Now.ToString("dd/MM/yyyy hh:mm")
+                    'Me.VentaVistaBindingSource.Current("NroFactura") = Val(NroFacturaNumericUpDown.Text)
+                    'Me.VentaVistaBindingSource.Current("Fecha_Venta") = DateTime.Now.ToString("dd/MM/yyyy hh:mm")
                     Me.VentaBindingSource.Current("TipoDeFactura_Venta") = Val(TipoDeFactura_VentaComboBox.SelectedValue)
-                    Me.VentaBindingSource.EndEdit()
+                    'DataGridView1.Item(3, fila).Value = Cantidad_VentaTextBox.Text
+                    Me.VentaVistaBindingSource.EndEdit()
                     Me.VentaTableAdapter.Update(Me.MayoristaBaseDeDatosDataSet.Venta)
                     'Me.TableAdapterManager.UpdateAll(Me.FarmaciaDataSet) 'grabo en disco las dos tablas
                     'esta sentencia no va sino corro el puntero de lugar
@@ -147,6 +149,59 @@
                 End If
             End If
         End If
+        'Dim fila, CodConsulta, aux, importe As Integer
+        'CodConsulta = Val(ID_ProductoTextBox.Text) '
+        'fila = Me.ProductoBindingSource.Find("ID_Producto", CodConsulta) 'me dice la posicion arranca de 0
+        'If fila = -1 Then
+        '    'no se encontro ultimo registro es -1
+        '    MsgBox("El registro no se encontro")
+        'Else
+        '    'Se encontro
+        '    ProductoBindingSource.Position = fila ' Mover el cursor a la fila obtenida con esto muestro
+        '    aux = MsgBox("Quiere realizar esta venta Cod_articulo: " & CodConsulta, 32 + 1, "Vender")
+        '    If aux = 1 Then
+        '        If ProductoBindingSource.Current("Strock") >= Val(Cantidad_VentaTextBox.Text) Then 'si true puedo vender
+        '            'guardo la transaccion en la tabla venta-----------------------------------------------
+
+        '            Me.VentaVistaBindingSource.AddNew()
+        '            Me.VentaVistaBindingSource.Current("ID_Producto") = ProductoBindingSource.Current("ID_Producto")
+        '            Me.VentaVistaBindingSource.Current("Cantidad_Venta") = Val(Cantidad_VentaTextBox.Text)
+        '            ' --------------------------------------- Me.VentaBindingSource.Current("precio") = Val(Cantidad_VentaTextBox.Text) * Me.ProductoBindingSource.Current("Precio")
+        '            Me.VentaBindingSource.Current("ID_Cliente") = Val(ID_ClienteTextBox.Text)
+        '            Me.VentaBindingSource.Current("ID_Cajero") = Val(ID_CajeroComboBox.SelectedValue)
+        '            'Me.VentaVistaBindingSource.Current("NroFactura") = Val(NroFacturaNumericUpDown.Text)
+        '            'Me.VentaVistaBindingSource.Current("Fecha_Venta") = DateTime.Now.ToString("dd/MM/yyyy hh:mm")
+        '            Me.VentaBindingSource.Current("TipoDeFactura_Venta") = Val(TipoDeFactura_VentaComboBox.SelectedValue)
+        '            'DataGridView1.Item(3, fila).Value = Cantidad_VentaTextBox.Text
+        '            Me.VentaVistaBindingSource.EndEdit()
+        '            Me.VentaTableAdapter.Update(Me.MayoristaBaseDeDatosDataSet.Venta)
+        '            'Me.TableAdapterManager.UpdateAll(Me.FarmaciaDataSet) 'grabo en disco las dos tablas
+        '            'esta sentencia no va sino corro el puntero de lugar
+        '            '------------------------------------------
+
+        '            'aca trabajo sobre la tabla PRODUCTO descuento la cantidad vendida
+        '            Me.ProductoBindingSource.Current("Strock") = ProductoBindingSource.Current("Strock") - Val(Cantidad_VentaTextBox.Text)
+        '            importe = Val(Cantidad_VentaTextBox.Text) * Me.ProductoBindingSource.Current("Precio_Unitario")
+        '            MsgBox("La venta a sido realizada con exito el importe es:" & importe & " Pesos")
+
+        '            'ahora si cierro y guardo
+        '            Me.ProductoBindingSource.EndEdit() 'cierro bd
+        '            Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'grabo en disco las dos tablas
+        '            Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto) 'Para actualizar en el otro formulario la grilla
+        '            Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto) 'Actualizo la grilla stock
+        '            Me.VentaTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Venta) 'actualizo la grilla ventas
+
+
+        '        Else
+        '            MsgBox("El stock es insuficiente, el stock actual es de: " & ProductoBindingSource.Current("Strock") & " unidades")
+        '            'limpiar(Me) 'funcion limpiar textbox
+        '            ID_ProductoTextBox.Text = ""
+        '            Cantidad_VentaTextBox.Text = ""
+        '            ID_ProductoTextBox.Focus()
+
+        '        End If
+        '    End If
+        'End If
         'Me.TableAdapterManager.UpdateAll(Me.FarmaciaDataSet)
 
     End Sub
@@ -158,5 +213,9 @@
     Private Sub Btn_Imprimir_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Imprimir.Click
         Cajero_ImprimirVenta.Show()
 
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        VentaVistaDataGridView.
     End Sub
 End Class
