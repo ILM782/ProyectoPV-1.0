@@ -38,6 +38,7 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -102,6 +103,7 @@ Partial Class Gerente_Transacciones_de_Compras
         '
         'ComprasRealizadasToolStripMenuItem
         '
+        Me.ComprasRealizadasToolStripMenuItem.Enabled = False
         Me.ComprasRealizadasToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
@@ -160,7 +162,7 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.Btn_Guardar.FlatAppearance.BorderSize = 0
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(59, 239)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(674, 225)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
         Me.Btn_Guardar.TabIndex = 58
@@ -173,12 +175,23 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(302, 239)
+        Me.Button1.Location = New System.Drawing.Point(674, 274)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(211, 40)
         Me.Button1.TabIndex = 59
         Me.Button1.Text = "&ELIMINAR"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(67, 149)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(182, 27)
+        Me.Label1.TabIndex = 60
+        Me.Label1.Text = "PROXIMAMENTE"
         '
         'Gerente_Transacciones_de_Compras
         '
@@ -186,6 +199,7 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(897, 321)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
@@ -200,7 +214,7 @@ Partial Class Gerente_Transacciones_de_Compras
         Me.MaximizeBox = False
         Me.Name = "Gerente_Transacciones_de_Compras"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Transacciones de Compras"
+        Me.Text = "COMERCIO/Transacciones de Compras"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -224,4 +238,5 @@ Partial Class Gerente_Transacciones_de_Compras
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents AgregarCajeroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

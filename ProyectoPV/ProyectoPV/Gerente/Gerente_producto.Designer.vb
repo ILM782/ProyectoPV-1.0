@@ -154,6 +154,7 @@ Partial Class Gerente_Producto
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(193, 202)
+        Me.TextBox4.MaxLength = 110
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 21)
         Me.TextBox4.TabIndex = 50
@@ -161,6 +162,7 @@ Partial Class Gerente_Producto
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(193, 174)
+        Me.TextBox3.MaxLength = 30000
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(121, 21)
         Me.TextBox3.TabIndex = 48
@@ -168,6 +170,7 @@ Partial Class Gerente_Producto
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(193, 146)
+        Me.TextBox2.MaxLength = 30000
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 21)
         Me.TextBox2.TabIndex = 47
@@ -175,6 +178,7 @@ Partial Class Gerente_Producto
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(193, 117)
+        Me.TextBox1.MaxLength = 60
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 21)
         Me.TextBox1.TabIndex = 46
@@ -292,6 +296,7 @@ Partial Class Gerente_Producto
         '
         'ComprasRealizadasToolStripMenuItem
         '
+        Me.ComprasRealizadasToolStripMenuItem.Enabled = False
         Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
         Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(124, 20)
@@ -426,7 +431,7 @@ Partial Class Gerente_Producto
         Me.MaximizeBox = False
         Me.Name = "Gerente_Producto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Productos"
+        Me.Text = "COMERCIO/Productos"
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

@@ -286,7 +286,7 @@ Partial Class Gerente_Agregar_Categoria
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Gerente_Agregar_Categoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "COMERCIANDO / Categorias"
+        Me.Text = "COMERCIO / Categorias"
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

@@ -12,64 +12,36 @@
     Private Sub AtrasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AtrasToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
+        Gerente_Tabla_De_Clientes_Vistas.Close()
     End Sub
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
         Gerente_Producto.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub BorrarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BorrarToolStripMenuItem.Click
         Gerente_Proveedores.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub ActualizarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ActualizarToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub ClienteBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -121,33 +93,31 @@
         End If
     End Sub
 
-    Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Eliminar.Click
-        Dim fila As Integer
-        Dim CodConsulta As String
-        Dim aux As Object
-        If TextBox2.Text = "" Then
-            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
-        Else
-            CodConsulta = TextBox2.Text
-            fila = Me.ClienteBindingSource.Find("DNI_Cliente", CodConsulta)
-            If fila = -1 Then
-                MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
-            Else
-                Me.ClienteBindingSource.Position = fila
-                aux = MsgBox("¿Seguro que quiere eliminar el Dni: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
-                If aux = vbYes Then
-                    Me.ClienteBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
-                    Me.ClienteBindingSource.EndEdit() 'cierro base de datos
-                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
-                    Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
-                    TextBox1.Text = ""
-                    TextBox1.Focus()
-                End If
-            End If
-        End If
+    'Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    Dim fila As Integer
+    '    Dim CodConsulta As String
+    '    Dim aux As Object
+    '    If TextBox2.Text = "" Then
+    '        MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+    '    Else
+    '        CodConsulta = TextBox2.Text
+    '        fila = Me.ClienteBindingSource.Find("DNI_Cliente", CodConsulta)
+    '        If fila = -1 Then
+    '            MsgBox("Localidad no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
+    '        Else
+    '            Me.ClienteBindingSource.Position = fila
+    '            aux = MsgBox("¿Seguro que quiere eliminar el Dni: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+    '            If aux = vbYes Then
+    '                Me.ClienteBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
+    '                Me.ClienteBindingSource.EndEdit() 'cierro base de datos
+    '                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
+    '                Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
+    '            End If
+    '        End If
+    '    End If
 
 
-    End Sub
+    'End Sub
 
     Private Sub Txt_Telefono_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Telefono.KeyPress
         e.KeyChar = ChrW(solonumeros(e))
@@ -165,40 +135,22 @@
         End If
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-        Dim vista As New DataView 'instancio el objeto
-        vista.Table = Me.MayoristaBaseDeDatosDataSet.Cliente
-        vista.RowFilter = " ID_Cliente =" & Val(Me.TextBox1.Text)
-        Me.ClienteDataGridView.DataSource = vista
-    End Sub
-
 
     Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
-<<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
-<<<<<<< HEAD
-        Cajero_Localidad_De_Vista.Close()
-=======
->>>>>>> rama
-=======
         Gerente_Localidad_De_Vista.Close()
->>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Gerente_Tabla_De_Clientes_Vistas.Show()
+    End Sub
 End Class
