@@ -20,11 +20,11 @@
 
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
         Dim consulta As Integer
-        If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" And TelefonoTextBox.Text <> "" Then
+        If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" And TelefonoTextBox.Text <> "" And ID_LocalidadComboBox.Text <> "Seleccionar" Then
             consulta = Me.CajeroBindingSource.Find("DNI_Cajero", DNI_CajeroTextBox.Text)
 
             If consulta <> -1 Then
-                MsgBox("Cliente Repetido", MsgBoxStyle.Exclamation, "Advertencia")
+                MsgBox("Cajero Repetido", MsgBoxStyle.Exclamation, "Advertencia")
             Else
                 Me.CajeroBindingSource.Current("Nombre_Cajero") = Nombre_CajeroTextBox.Text
                 Me.CajeroBindingSource.Current("Apellido_Cajero") = Apellido_CajeroTextBox.Text
@@ -72,16 +72,22 @@
     Private Sub ProductoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductoToolStripMenuItem.Click
         Gerente_Producto.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -95,26 +101,29 @@
     Private Sub ProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem.Click
         Gerente_Proveedores.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub TrasaccionDeComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TrasaccionDeComprasToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub AgregarClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
         Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Gerente_Localidad.Show()
-        Me.Close()
+        Gerente_Tabla_De_Cajeros.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -129,7 +138,7 @@
         End If
     End Sub
 
- 
+
     Private Sub Apellido_CajeroTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Apellido_CajeroTextBox.KeyPress
         e.KeyChar = ChrW(solo_letras(e))
         If e.KeyChar = Chr(13) Then
@@ -142,14 +151,6 @@
         e.KeyChar = ChrW(sin_letras(e))
         If e.KeyChar = Chr(13) Then
             ID_LocalidadComboBox.Focus()
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub Domicilio_CajeroTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Domicilio_CajeroTextBox.KeyPress
-        e.KeyChar = ChrW(solo_letras(e))
-        If e.KeyChar = Chr(13) Then
-            Domicilio_CajeroTextBox.Focus()
             e.Handled = True
         End If
     End Sub

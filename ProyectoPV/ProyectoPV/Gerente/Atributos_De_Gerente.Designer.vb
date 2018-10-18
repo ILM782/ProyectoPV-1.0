@@ -106,9 +106,9 @@ Partial Class Atributos_De_Gerente
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(12, 8)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(149, 47)
+        Me.Label3.Size = New System.Drawing.Size(108, 47)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Gerente"
+        Me.Label3.Text = "Inicio"
         '
         'Lbl_Fecha
         '
@@ -171,7 +171,7 @@ Partial Class Atributos_De_Gerente
         Me.Button9.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.Black
         Me.Button9.Image = Global.WindowsApplication1.My.Resources.Resources.simbolo_seo_local
-        Me.Button9.Location = New System.Drawing.Point(849, 170)
+        Me.Button9.Location = New System.Drawing.Point(487, 357)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(159, 170)
         Me.Button9.TabIndex = 9
@@ -182,12 +182,13 @@ Partial Class Atributos_De_Gerente
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button8.Enabled = False
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Tai Le", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.Black
         Me.Button8.Image = Global.WindowsApplication1.My.Resources.Resources.cesta_de_la_compra_de_diseno_a_cuadros
-        Me.Button8.Location = New System.Drawing.Point(487, 357)
+        Me.Button8.Location = New System.Drawing.Point(126, 357)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(159, 170)
         Me.Button8.TabIndex = 8
@@ -251,7 +252,7 @@ Partial Class Atributos_De_Gerente
         Me.Button3.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.cliente
-        Me.Button3.Location = New System.Drawing.Point(126, 357)
+        Me.Button3.Location = New System.Drawing.Point(849, 170)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(159, 170)
         Me.Button3.TabIndex = 2
@@ -314,7 +315,7 @@ Partial Class Atributos_De_Gerente
         Me.MaximizeBox = False
         Me.Name = "Atributos_De_Gerente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = " COMERCIANDO "
+        Me.Text = " COMERCIO/Inicio "
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

@@ -1,8 +1,8 @@
 ﻿Public Class Gerente_Tabla_De_Cajeros
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
-        Gerente_Agregar_Cajero.Show()
         Me.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -31,15 +31,6 @@
         ComboBox1.Items.Add("DNI")
         ComboBox1.Items.Add("Nombre")
         ComboBox1.Items.Add("Apellido")
-        ID_CajeroTextBox1.Text = ""
-        ID_CajeroTextBox.Text = ""
-        Nombre_CajeroTextBox.Text = ""
-        Apellido_CajeroTextBox.Text = ""
-        ID_CajeroTextBox1.Text = ""
-        Domicilio_CajeroTextBox.Text = ""
-        TelefonoTextBox.Text = ""
-        Correo_CajeroTextBox.Text = ""
-        DNI_CajeroTextBox.Text = ""
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Buscar.TextChanged
@@ -72,9 +63,6 @@
 
         Dim aux As Object
 
-        If Txt_Buscar.Text = "" Then
-            MsgBox("Primero busque al Cajero", MsgBoxStyle.Exclamation, "Advertencia")
-        Else
             If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And ID_LocalidadTextBox.Text <> "" And Domicilio_CajeroTextBox.Text <> "" And Correo_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" Then
 
                 aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
@@ -83,22 +71,38 @@
                     Me.CajeroBindingSource.EndEdit()
                     Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
                     Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
-                    Me.CajeroBindingSource.MoveLast()
-                    ID_CajeroTextBox1.Text = ""
-                    ID_CajeroTextBox.Text = ""
-                    Nombre_CajeroTextBox.Text = ""
-                    ID_CajeroTextBox1.Focus()
-                    Apellido_CajeroTextBox.Text = ""
-                    ID_CajeroTextBox1.Text = ""
-                    Domicilio_CajeroTextBox.Text = ""
-                    TelefonoTextBox.Text = ""
-                    Correo_CajeroTextBox.Text = ""
-                    DNI_CajeroTextBox.Text = ""
+                Me.CajeroBindingSource.MoveLast()
                 End If
             Else
                 MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
             End If
-        End If
     End Sub
 
+    Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
+        Gerente_Localidad_De_Vista.Show()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim fila As Integer
+        Dim CodConsulta As String
+        Dim aux As Object
+        If ID_CajeroTextBox.Text = "" Then
+            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            CodConsulta = ID_CajeroTextBox.Text
+            fila = Me.CajeroBindingSource.Find("ID_Cajero", CodConsulta)
+            If fila = -1 Then
+                MsgBox("Cliente no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
+            Else
+                Me.CajeroBindingSource.Position = fila
+                aux = MsgBox("¿Seguro que quiere eliminar el id: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.CajeroBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
+                    Me.CajeroBindingSource.EndEdit() 'cierro base de datos
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
+                    Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
+                End If
+            End If
+        End If
+    End Sub
 End Class

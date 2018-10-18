@@ -163,6 +163,12 @@
     <Compile Include="Cajero\Cajero_Producto_Para_Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gerente\Gerente_Localidad_De_Vista.Designer.vb">
+      <DependentUpon>Gerente_Localidad_De_Vista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Localidad_De_Vista.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gerente\Gerente_Producto.Designer.vb">
       <DependentUpon>Gerente_Producto.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,18 @@
       <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.Designer.vb">
+      <DependentUpon>Gerente_Tabla_De_Clientes_Vistas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_de_Proveedores.Designer.vb">
+      <DependentUpon>Gerente_Tabla_de_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente\Gerente_Tabla_de_Proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
@@ -279,6 +297,9 @@
     <EmbeddedResource Include="Gerente\Gerente_Localidad.resx">
       <DependentUpon>Gerente_Localidad.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Localidad_De_Vista.resx">
+      <DependentUpon>Gerente_Localidad_De_Vista.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Producto.resx">
       <DependentUpon>Gerente_Producto.vb</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Cajeros.resx">
       <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.resx">
+      <DependentUpon>Gerente_Tabla_De_Clientes_Vistas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente\Gerente_Tabla_de_Proveedores.resx">
+      <DependentUpon>Gerente_Tabla_de_Proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>

@@ -2,70 +2,8 @@
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Me.Close()
-    End Sub
-
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-             'arranco con una grilla sin enlazar, traigo las dos grilla enlazada, edito la grilla con las columnas
-        'case para elejir atributo con un combobox
-
-
-        Dim fila, contador, Total, filaConsulta, art, filaConsulta1 As Integer
-        Dim Cadena As String
-        fila = 0 'ir bajando lineas en el datagrill
-        Total = 0 'sumo los subtotales
-        filaConsulta = 0
-        filaConsulta1 = 0
-        DataGridView1.Rows.Clear() 'limpio la grilla cada ves que ingreso un dato 
-        ProductoBindingSource.MoveFirst() 'muevo al primer registro de la tabla
-       
-        Do
-            Try
-                Cadena = ProductoBindingSource.Current("ID_Producto").ToString.Substring(0, Len(TextBox1.Text))
-                'ejemplo de error descripcion valor "maria"    caja de texto "mariano" len da 7 y maria tiene solo 5 tira error
-            Catch ex As Exception 'ante cualquier error
-                Cadena = ""
-
-            End Try
-            'ucase para pasarlo a mayuscula
-
-            If UCase(Cadena) = UCase(TextBox1.Text) Then
-                DataGridView1.Rows.Add() 'columna
-                If TextBox1.Text = "" Then
-                Else
-                    DataGridView1.Item(0, fila).Value = ProductoBindingSource.Current("ID_Producto")
-                    art = ProductoBindingSource.Current("ID_Producto")
-
-
-                    filaConsulta = Me.MarcasBindingSource.Find("ID_Marca", ProductoBindingSource.Current("ID_Marca")) 'busco relacion id-descripcion blister
-                    Me.MarcasBindingSource.Position = filaConsulta
-                    DataGridView1.Item(1, fila).Value = Me.MarcasBindingSource.Current("Marca") 'pego la descripcion no el id
-
-                    filaConsulta1 = Me.CategoriaBindingSource.Find("ID_Categoria", ProductoBindingSource.Current("ID_Categoria")) 'busco relacion id-descripcion blister
-                    Me.CategoriaBindingSource.Position = filaConsulta1
-                    DataGridView1.Item(2, fila).Value = Me.CategoriaBindingSource.Current("Categoria")
-
-                    'continuo pegando datos de la tabla stock
-                    DataGridView1.Item(3, fila).Value = ProductoBindingSource.Current("Nombre_Producto")
-                    DataGridView1.Item(4, fila).Value = ProductoBindingSource.Current("Strock")
-                    DataGridView1.Item(5, fila).Value = ProductoBindingSource.Current("Precio_unitario")
-                    DataGridView1.Item(6, fila).Value = ProductoBindingSource.Current("Descripcion")
-
-                    'pego en la grilla la multiplicacion de cantidad por precio
-
-                    fila = fila + 1 'para ir bajando lineas en la grilla
-
-
-                End If
-            End If
-
-            contador = contador + 1
-
-            ProductoBindingSource.MoveNext()
-
-        Loop Until contador = ProductoBindingSource.Count
-        'creo una fila final con el total a facturar
-
-        TextBox1.Focus()
+        Gerente_Agregar_Categoria.Close()
+        Gerente_Agregar_Marca.Close()
     End Sub
 
     Private Sub ProductoBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -85,7 +23,7 @@
         'TextBox1.Text = "Buscar"
     End Sub
 
-    Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Eliminar.Click
+    Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim fila As Integer
         Dim CodConsulta As String
         Dim aux As Object
@@ -111,7 +49,7 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim aux As Object
 
@@ -147,5 +85,56 @@
         If respuesta = vbYes Then
             End
         End If
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim aux As Object
+
+        If Nombre_ProductoTextBox.Text <> "" And StrockTextBox.Text <> "" And Precio_UnitarioTextBox.Text <> "" And DescripcionTextBox.Text <> "" Then
+
+            aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+            If aux = vbYes Then
+                Me.Validate()
+                Me.ProductoBindingSource.EndEdit()
+                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
+                Me.ProductoBindingSource.MoveLast()
+            End If
+        Else
+            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        End If
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim fila As Integer
+        Dim CodConsulta As String
+        Dim aux As Object
+        If ID_ProductoTextBox.Text = "" Then
+            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            CodConsulta = ID_ProductoTextBox.Text
+            fila = Me.ProductoBindingSource.Find("ID_Producto", CodConsulta)
+            If fila = -1 Then
+                MsgBox("Cliente no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
+            Else
+                Me.ProductoBindingSource.Position = fila
+                aux = MsgBox("¿Seguro que quiere eliminar el id: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.ProductoBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
+                    Me.ProductoBindingSource.EndEdit() 'cierro base de datos
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
+                    Me.ProductoTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Producto)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem.Click
+
+        Gerente_Agregar_Marca.Show()
+    End Sub
+
+    Private Sub CategoriaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CategoriaToolStripMenuItem.Click
+        Gerente_Agregar_Categoria.Show()
     End Sub
 End Class
