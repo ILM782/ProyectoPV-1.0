@@ -1,8 +1,12 @@
 ﻿Public Class Gerente_Tabla_De_Cajeros
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
+        Gerente_Agregar_Cajero.Show()
         Me.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -31,6 +35,15 @@
         ComboBox1.Items.Add("DNI")
         ComboBox1.Items.Add("Nombre")
         ComboBox1.Items.Add("Apellido")
+        ID_CajeroTextBox1.Text = ""
+        ID_CajeroTextBox.Text = ""
+        Nombre_CajeroTextBox.Text = ""
+        Apellido_CajeroTextBox.Text = ""
+        ID_CajeroTextBox1.Text = ""
+        Domicilio_CajeroTextBox.Text = ""
+        TelefonoTextBox.Text = ""
+        Correo_CajeroTextBox.Text = ""
+        DNI_CajeroTextBox.Text = ""
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_Buscar.TextChanged
@@ -63,6 +76,7 @@
 
         Dim aux As Object
 
+<<<<<<< HEAD
         If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And ID_LocalidadTextBox.Text <> "" And Domicilio_CajeroTextBox.Text <> "" And Correo_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" Then
 
             aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
@@ -103,6 +117,35 @@
                     Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
                 End If
             End If
+=======
+        If Txt_Buscar.Text = "" Then
+            MsgBox("Primero busque al Cajero", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And ID_LocalidadTextBox.Text <> "" And Domicilio_CajeroTextBox.Text <> "" And Correo_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" Then
+
+                aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.Validate()
+                    Me.CajeroBindingSource.EndEdit()
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                    Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
+                    Me.CajeroBindingSource.MoveLast()
+                    ID_CajeroTextBox1.Text = ""
+                    ID_CajeroTextBox.Text = ""
+                    Nombre_CajeroTextBox.Text = ""
+                    ID_CajeroTextBox1.Focus()
+                    Apellido_CajeroTextBox.Text = ""
+                    ID_CajeroTextBox1.Text = ""
+                    Domicilio_CajeroTextBox.Text = ""
+                    TelefonoTextBox.Text = ""
+                    Correo_CajeroTextBox.Text = ""
+                    DNI_CajeroTextBox.Text = ""
+                End If
+            Else
+                MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+            End If
+>>>>>>> rama
         End If
     End Sub
+
 End Class

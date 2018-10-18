@@ -154,6 +154,7 @@
 
     End Sub
 
+<<<<<<< HEAD
     'Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
     '    Dim fila1, contador, Total, filaConsulta, art, CodConsulta1, aux As Integer
@@ -237,5 +238,9 @@
 
     Private Sub TipoDeFactura_VentaComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TipoDeFactura_VentaComboBox.SelectedIndexChanged
         TextBox1.Text = TipoDeFactura_VentaComboBox.Text
+=======
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        VentaVistaDataGridView.
+>>>>>>> rama
     End Sub
 End Class

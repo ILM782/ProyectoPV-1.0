@@ -193,18 +193,6 @@
     <Compile Include="Gerente\Gerente_Tabla_De_Cajeros.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.Designer.vb">
-      <DependentUpon>Gerente_Tabla_De_Clientes_Vistas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Tabla_de_Proveedores.Designer.vb">
-      <DependentUpon>Gerente_Tabla_de_Proveedores.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gerente\Gerente_Tabla_de_Proveedores.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Gerente\Gerente_Transacciones_de_Compras.Designer.vb">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>
     </Compile>
@@ -312,12 +300,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Cajeros.resx">
       <DependentUpon>Gerente_Tabla_De_Cajeros.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Tabla_De_Clientes_Vistas.resx">
-      <DependentUpon>Gerente_Tabla_De_Clientes_Vistas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gerente\Gerente_Tabla_de_Proveedores.resx">
-      <DependentUpon>Gerente_Tabla_de_Proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerente\Gerente_Transacciones_de_Compras.resx">
       <DependentUpon>Gerente_Transacciones_de_Compras.vb</DependentUpon>

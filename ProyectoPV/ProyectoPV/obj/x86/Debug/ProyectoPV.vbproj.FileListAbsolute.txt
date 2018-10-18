@@ -197,6 +197,7 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_ImprimirVenta.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.cache
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\RdlCompile.compiled
+<<<<<<< HEAD
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tabla_de_Proveedores.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Localidad_De_Vista.resources
 C:\Users\fede_\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tabla_De_Clientes_Vistas.resources
@@ -204,3 +205,5 @@ C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\Window
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tabla_De_Clientes_Vistas.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Gerente_Tabla_de_Proveedores.resources
 C:\Users\Ruben\Desktop\ProyectoPV-1.0\ProyectoPV\ProyectoPV\obj\x86\Debug\WindowsApplication1.Cajero_Localidad_De_Vista.resources
+=======
+>>>>>>> rama

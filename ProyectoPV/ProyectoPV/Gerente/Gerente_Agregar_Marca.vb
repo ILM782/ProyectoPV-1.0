@@ -132,7 +132,7 @@
             Call VolverToolStripMenuItem_Click(sender, e)
         End If
         If Asc(e.KeyChar) = 13 Then  'CON ESTE IF LE DIGO QUE AL PRECIONAR 27(ESC) LLAME AL BOTON ENTER
-            Call Btn_Guardar_Click(sender, e)
+            Call Btn_Eliminar_Click(sender, e)
         End If
     End Sub
 End Class

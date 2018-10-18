@@ -46,7 +46,6 @@ Partial Class Gerente_Localidad
         Me.AgregarCajeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -71,6 +70,7 @@ Partial Class Gerente_Localidad
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Localidad_LocalidadLabel = New System.Windows.Forms.Label()
         CP_LocalidadLabel = New System.Windows.Forms.Label()
         Provincia_LocalidadLabel = New System.Windows.Forms.Label()
@@ -91,35 +91,33 @@ Partial Class Gerente_Localidad
         'Localidad_LocalidadLabel
         '
         Localidad_LocalidadLabel.AutoSize = True
-        Localidad_LocalidadLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Localidad_LocalidadLabel.Location = New System.Drawing.Point(42, 126)
         Localidad_LocalidadLabel.Name = "Localidad_LocalidadLabel"
-        Localidad_LocalidadLabel.Size = New System.Drawing.Size(67, 17)
+        Localidad_LocalidadLabel.Size = New System.Drawing.Size(105, 13)
         Localidad_LocalidadLabel.TabIndex = 6
-        Localidad_LocalidadLabel.Text = "Localidad:"
+        Localidad_LocalidadLabel.Text = "Localidad Localidad:"
         '
         'CP_LocalidadLabel
         '
         CP_LocalidadLabel.AutoSize = True
-        CP_LocalidadLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CP_LocalidadLabel.Location = New System.Drawing.Point(42, 152)
         CP_LocalidadLabel.Name = "CP_LocalidadLabel"
-        CP_LocalidadLabel.Size = New System.Drawing.Size(93, 17)
+        CP_LocalidadLabel.Size = New System.Drawing.Size(73, 13)
         CP_LocalidadLabel.TabIndex = 8
-        CP_LocalidadLabel.Text = "Codigo Postal:"
+        CP_LocalidadLabel.Text = "CP Localidad:"
         '
         'Provincia_LocalidadLabel
         '
         Provincia_LocalidadLabel.AutoSize = True
-        Provincia_LocalidadLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Provincia_LocalidadLabel.Location = New System.Drawing.Point(42, 177)
         Provincia_LocalidadLabel.Name = "Provincia_LocalidadLabel"
-        Provincia_LocalidadLabel.Size = New System.Drawing.Size(63, 17)
+        Provincia_LocalidadLabel.Size = New System.Drawing.Size(103, 13)
         Provincia_LocalidadLabel.TabIndex = 10
-        Provincia_LocalidadLabel.Text = "Provincia:"
+        Provincia_LocalidadLabel.Text = "Provincia Localidad:"
         '
         'LocalidadDataGridView
         '
+        LocalidadDataGridView.AllowUserToAddRows = False
         LocalidadDataGridView.AllowUserToDeleteRows = False
         LocalidadDataGridView.AllowUserToResizeColumns = False
         LocalidadDataGridView.AllowUserToResizeRows = False
@@ -134,7 +132,6 @@ Partial Class Gerente_Localidad
         LocalidadDataGridView.Location = New System.Drawing.Point(274, 119)
         LocalidadDataGridView.MultiSelect = False
         LocalidadDataGridView.Name = "LocalidadDataGridView"
-        LocalidadDataGridView.ReadOnly = True
         LocalidadDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         LocalidadDataGridView.ShowCellErrors = False
         LocalidadDataGridView.ShowCellToolTips = False
@@ -156,21 +153,18 @@ Partial Class Gerente_Localidad
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Localidad_Localidad"
         Me.DataGridViewTextBoxColumn2.HeaderText = "Localidad"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "CP_Localidad"
         Me.DataGridViewTextBoxColumn3.HeaderText = "Codigo Postal"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Provincia_Localidad"
         Me.DataGridViewTextBoxColumn4.HeaderText = "Provincia"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'LocalidadBindingSource
         '
@@ -194,40 +188,36 @@ Partial Class Gerente_Localidad
         'Localidad_LocalidadLabel1
         '
         Localidad_LocalidadLabel1.AutoSize = True
-        Localidad_LocalidadLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Localidad_LocalidadLabel1.Location = New System.Drawing.Point(36, 447)
         Localidad_LocalidadLabel1.Name = "Localidad_LocalidadLabel1"
-        Localidad_LocalidadLabel1.Size = New System.Drawing.Size(67, 17)
+        Localidad_LocalidadLabel1.Size = New System.Drawing.Size(105, 13)
         Localidad_LocalidadLabel1.TabIndex = 2
-        Localidad_LocalidadLabel1.Text = "Localidad:"
+        Localidad_LocalidadLabel1.Text = "Localidad Localidad:"
         '
         'CP_LocalidadLabel1
         '
         CP_LocalidadLabel1.AutoSize = True
-        CP_LocalidadLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CP_LocalidadLabel1.Location = New System.Drawing.Point(36, 473)
         CP_LocalidadLabel1.Name = "CP_LocalidadLabel1"
-        CP_LocalidadLabel1.Size = New System.Drawing.Size(93, 17)
+        CP_LocalidadLabel1.Size = New System.Drawing.Size(73, 13)
         CP_LocalidadLabel1.TabIndex = 4
-        CP_LocalidadLabel1.Text = "Codigo Postal:"
+        CP_LocalidadLabel1.Text = "CP Localidad:"
         '
         'Provincia_LocalidadLabel1
         '
         Provincia_LocalidadLabel1.AutoSize = True
-        Provincia_LocalidadLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Provincia_LocalidadLabel1.Location = New System.Drawing.Point(36, 499)
         Provincia_LocalidadLabel1.Name = "Provincia_LocalidadLabel1"
-        Provincia_LocalidadLabel1.Size = New System.Drawing.Size(63, 17)
+        Provincia_LocalidadLabel1.Size = New System.Drawing.Size(103, 13)
         Provincia_LocalidadLabel1.TabIndex = 6
-        Provincia_LocalidadLabel1.Text = "Provincia:"
+        Provincia_LocalidadLabel1.Text = "Provincia Localidad:"
         '
         'ID_LocalidadLabel1
         '
         ID_LocalidadLabel1.AutoSize = True
-        ID_LocalidadLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ID_LocalidadLabel1.Location = New System.Drawing.Point(36, 271)
         ID_LocalidadLabel1.Name = "ID_LocalidadLabel1"
-        ID_LocalidadLabel1.Size = New System.Drawing.Size(89, 17)
+        ID_LocalidadLabel1.Size = New System.Drawing.Size(77, 13)
         ID_LocalidadLabel1.TabIndex = 0
         ID_LocalidadLabel1.Text = "Seleccione ID:"
         '
@@ -238,7 +228,7 @@ Partial Class Gerente_Localidad
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BorrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.AgregarCajeroToolStripMenuItem, Me.VentasRealizadasToolStripMenuItem, Me.ToolStripMenuItem3, Me.ComprasRealizadasToolStripMenuItem, Me.AtrasToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(865, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(913, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -287,14 +277,6 @@ Partial Class Gerente_Localidad
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(112, 20)
         Me.ToolStripMenuItem3.Text = "Ventas Realizadas"
         '
-        'ComprasRealizadasToolStripMenuItem
-        '
-        Me.ComprasRealizadasToolStripMenuItem.Enabled = False
-        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
-        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
-        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
-        '
         'AtrasToolStripMenuItem
         '
         Me.AtrasToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -317,7 +299,7 @@ Partial Class Gerente_Localidad
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(865, 586)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(913, 586)
         Me.ShapeContainer1.TabIndex = 13
         Me.ShapeContainer1.TabStop = False
         '
@@ -332,10 +314,9 @@ Partial Class Gerente_Localidad
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(36, 299)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 17)
+        Me.Label1.Size = New System.Drawing.Size(92, 13)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Buscar Localidad:"
         '
@@ -357,7 +338,6 @@ Partial Class Gerente_Localidad
         'Txt_Localidad
         '
         Me.Txt_Localidad.Location = New System.Drawing.Point(148, 123)
-        Me.Txt_Localidad.MaxLength = 80
         Me.Txt_Localidad.Name = "Txt_Localidad"
         Me.Txt_Localidad.Size = New System.Drawing.Size(108, 20)
         Me.Txt_Localidad.TabIndex = 1
@@ -365,7 +345,6 @@ Partial Class Gerente_Localidad
         'Txt_CP
         '
         Me.Txt_CP.Location = New System.Drawing.Point(148, 148)
-        Me.Txt_CP.MaxLength = 10
         Me.Txt_CP.Name = "Txt_CP"
         Me.Txt_CP.Size = New System.Drawing.Size(108, 20)
         Me.Txt_CP.TabIndex = 2
@@ -373,7 +352,6 @@ Partial Class Gerente_Localidad
         'Txt_Provincia
         '
         Me.Txt_Provincia.Location = New System.Drawing.Point(148, 174)
-        Me.Txt_Provincia.MaxLength = 50
         Me.Txt_Provincia.Name = "Txt_Provincia"
         Me.Txt_Provincia.Size = New System.Drawing.Size(108, 20)
         Me.Txt_Provincia.TabIndex = 3
@@ -399,7 +377,6 @@ Partial Class Gerente_Localidad
         '
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(39, 322)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(214, 47)
@@ -412,7 +389,7 @@ Partial Class Gerente_Localidad
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(122, 19)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(78, 21)
+        Me.RadioButton1.Size = New System.Drawing.Size(69, 17)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.Text = "Provincia"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -423,7 +400,7 @@ Partial Class Gerente_Localidad
         Me.RadioButton2.Checked = True
         Me.RadioButton2.Location = New System.Drawing.Point(32, 20)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(82, 21)
+        Me.RadioButton2.Size = New System.Drawing.Size(71, 17)
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Localidad"
@@ -435,7 +412,7 @@ Partial Class Gerente_Localidad
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(865, 10)
+        Me.Panel2.Size = New System.Drawing.Size(913, 10)
         Me.Panel2.TabIndex = 56
         '
         'Panel1
@@ -445,7 +422,7 @@ Partial Class Gerente_Localidad
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(865, 60)
+        Me.Panel1.Size = New System.Drawing.Size(913, 60)
         Me.Panel1.TabIndex = 55
         '
         'Label3
@@ -516,12 +493,19 @@ Partial Class Gerente_Localidad
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 57
         '
+        'ComprasRealizadasToolStripMenuItem
+        '
+        Me.ComprasRealizadasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ComprasRealizadasToolStripMenuItem.Name = "ComprasRealizadasToolStripMenuItem"
+        Me.ComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.ComprasRealizadasToolStripMenuItem.Text = "Compras Realizadas"
+        '
         'Gerente_Localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(865, 586)
+        Me.ClientSize = New System.Drawing.Size(913, 586)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Localidad_LocalidadLabel1)
         Me.Controls.Add(Me.Localidad_LocalidadTextBox)
@@ -551,7 +535,7 @@ Partial Class Gerente_Localidad
         Me.MaximizeBox = False
         Me.Name = "Gerente_Localidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "COMERCIO/Localidades"
+        Me.Text = "Localidades"
         CType(LocalidadDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()

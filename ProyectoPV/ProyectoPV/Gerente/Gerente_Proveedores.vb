@@ -13,28 +13,36 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Proveedor' Puede moverla o quitarla según sea necesario.
         Me.ProveedorTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Proveedor)
         Me.ProveedorBindingSource.AddNew()
-        ComboBox1.Text = "Seleccionar"
     End Sub
 
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
         Gerente_Producto.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -48,24 +56,30 @@
     Private Sub TransaccionesDeCompraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionesDeCompraToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub Btn_Guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
         Dim consulta1 As Integer
-        If Txt_Nombre_Empresa.Text <> "" And Txt_Correo.Text <> "" And Txt_Domicilio.Text <> "" And Txt_Telefono.Text <> "" And ComboBox1.Text <> "Seleccionar" Then
+        If Txt_Nombre_Empresa.Text <> "" And Txt_Correo.Text <> "" And Txt_Domicilio.Text <> "" And Txt_Telefono.Text <> "" Then
             consulta1 = Me.ProveedorBindingSource.Find("Nombre_Empresa", Txt_Nombre_Empresa.Text)
 
             If consulta1 <> -1 Then
-                MsgBox("Proveedor repetido", MsgBoxStyle.Exclamation, "Advertencia")
+                MsgBox("Nombre de empresa repetida", MsgBoxStyle.Exclamation, "Advertencia")
             Else
                 Me.ProveedorBindingSource.Current("Nombre_Empresa") = Txt_Nombre_Empresa.Text()
                 Me.ProveedorBindingSource.Current("Telefono_Proveedor") = Val(Txt_Telefono.Text)
@@ -82,7 +96,6 @@
                 Txt_Domicilio.Text = ""
                 Txt_Nombre_Empresa.Text = ""
                 Txt_Telefono.Text = ""
-                ComboBox1.Text = "Seleccionar"
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -90,31 +103,31 @@
     End Sub
 
 
-    Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        'Dim fila As Integer
-        'Dim CodConsulta As String
-        'Dim aux As Object
-        'If TextBox1.Text = "" Then
-        '    MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
-        'Else
-        '    CodConsulta = TextBox1.Text
-        '    fila = Me.ProveedorBindingSource.Find("Nombre_Empresa", CodConsulta)
-        '    If fila = -1 Then
-        '        MsgBox("Nombre de empresa no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
-        '    Else
-        '        Me.ProveedorBindingSource.Position = fila
-        '        aux = MsgBox("¿Seguro que quiere eliminar la empresa: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
-        '        If aux = vbYes Then
-        '            Me.ProveedorBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
-        '            Me.ProveedorBindingSource.EndEdit() 'cierro base de datos
-        '            Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
-        '            Me.ProveedorTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Proveedor)
-        '            Me.ProveedorBindingSource.AddNew()
-        '            TextBox1.Text = ""
-        '            TextBox1.Focus()
-        '        End If
-        '    End If
-        'End If
+    Private Sub Btn_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Eliminar.Click
+        Dim fila As Integer
+        Dim CodConsulta As String
+        Dim aux As Object
+        If TextBox1.Text = "" Then
+            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
+        Else
+            CodConsulta = TextBox1.Text
+            fila = Me.ProveedorBindingSource.Find("Nombre_Empresa", CodConsulta)
+            If fila = -1 Then
+                MsgBox("Nombre de empresa no encontrada", MsgBoxStyle.Exclamation, "Advertencia")
+            Else
+                Me.ProveedorBindingSource.Position = fila
+                aux = MsgBox("¿Seguro que quiere eliminar la empresa: " & CodConsulta & " ? ", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.ProveedorBindingSource.RemoveCurrent() ' borro el registro donde estoy parado
+                    Me.ProveedorBindingSource.EndEdit() 'cierro base de datos
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
+                    Me.ProveedorTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Proveedor)
+                    Me.ProveedorBindingSource.AddNew()
+                    TextBox1.Text = ""
+                    TextBox1.Focus()
+                End If
+            End If
+        End If
     End Sub
 
     Private Sub Txt_Telefono_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Telefono.KeyPress
@@ -128,13 +141,17 @@
     Private Sub VentasOComprasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasOComprasToolStripMenuItem.Click
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
+=======
+>>>>>>> rama
     End Sub
 
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
+<<<<<<< HEAD
         Gerente_Tabla_de_Proveedores.Close()
         Cajero_Localidad_De_Vista.Close()
     End Sub
@@ -150,5 +167,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Gerente_Tabla_de_Proveedores.Show()
+=======
+>>>>>>> rama
     End Sub
 End Class

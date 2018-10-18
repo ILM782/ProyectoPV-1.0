@@ -3,41 +3,26 @@
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
         Gerente_Localidad.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
     Private Sub VolverToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Atributos_De_Gerente.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
     Private Sub ProveedorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedorToolStripMenuItem.Click
         Gerente_Proveedores.Show()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
         Me.Close()
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
         Gerente_TablasClientes.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
     Private Sub TransaccionesDeCompraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaccionesDeCompraToolStripMenuItem.Click
         Gerente_Transacciones_de_Compras.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -89,7 +74,7 @@
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim consulta1 As Integer
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" And ComboBox1.Text <> "Seleccionar" And ComboBox2.Text <> "Seleccionar" Then
+        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox3.Text <> "" And TextBox4.Text <> "" Then
             consulta1 = Me.ProductoBindingSource.Find("Nombre_Producto", TextBox1.Text)
 
             If consulta1 <> -1 Then
@@ -147,9 +132,6 @@
     Private Sub VentasRealizadasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasRealizadasToolStripMenuItem.Click
         Gerente_Ventas_Realizadas.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
     Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
@@ -160,9 +142,6 @@
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
         Gerente_Agregar_Cajero.Show()
         Me.Close()
-        Gerente_Agregar_Marca.Close()
-        Gerente_Agregar_Categoria.Close()
-        Gerente_Tablas_Producto.Close()
     End Sub
 
 
