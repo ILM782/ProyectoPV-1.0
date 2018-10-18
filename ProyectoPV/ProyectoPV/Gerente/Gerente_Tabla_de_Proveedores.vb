@@ -19,7 +19,7 @@
 
     Private Sub VolverToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VolverToolStripMenuItem.Click
         Me.Close()
-        Cajero_Localidad_De_Vista.Close()
+        Gerente_Localidad_De_Vista.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Cajero_Localidad_De_Vista.Show()
+        Gerente_Localidad_De_Vista.Show()
     End Sub
 
     Private Sub Btn_Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Modificar.Click, Button4.Click, Button2.Click

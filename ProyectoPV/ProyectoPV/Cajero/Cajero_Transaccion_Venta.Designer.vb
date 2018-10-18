@@ -28,10 +28,10 @@ Partial Class Cajero_Transaccion_Venta
         Dim Cantidad_VentaLabel As System.Windows.Forms.Label
         Dim ID_ProductoLabel As System.Windows.Forms.Label
         Dim TipoDeFactura_VentaLabel1 As System.Windows.Forms.Label
-        Dim NroFacturaLabel As System.Windows.Forms.Label
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim NroFacturaLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Transaccion_Venta))
         Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,14 +41,12 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.NroFacturaTextBox = New System.Windows.Forms.TextBox()
-        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TipoDeFactura_VentaComboBox = New System.Windows.Forms.ComboBox()
+        Me.Btn_Imprimir = New System.Windows.Forms.Button()
         Me.ID_CajeroComboBox = New System.Windows.Forms.ComboBox()
         Me.CajeroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Btn_Imprimir = New System.Windows.Forms.Button()
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
         Me.Btn_Buscar = New System.Windows.Forms.Button()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -57,6 +55,13 @@ Partial Class Cajero_Transaccion_Venta
         Me.ID_ProductoTextBox = New System.Windows.Forms.TextBox()
         Me.Btn_Vender = New System.Windows.Forms.Button()
         Me.ProductoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CajeroTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.CajeroTableAdapter()
         Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
@@ -70,6 +75,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FacturasVentaDataSet = New WindowsApplication1.FacturasVentaDataSet()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.VentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.VentaTableAdapter1 = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.VentaDataGridView = New System.Windows.Forms.DataGridView()
@@ -89,16 +95,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.lbl_Totalventas = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Btn_Finalizar = New System.Windows.Forms.Button()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.NroFacturaTextBox = New System.Windows.Forms.TextBox()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         ID_CajeroLabel = New System.Windows.Forms.Label()
         Cantidad_VentaLabel = New System.Windows.Forms.Label()
@@ -107,24 +104,22 @@ Partial Class Cajero_Transaccion_Venta
         NroFacturaLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VentaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.Location = New System.Drawing.Point(11, 31)
+        ID_ClienteLabel.Location = New System.Drawing.Point(32, 149)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
         ID_ClienteLabel.Size = New System.Drawing.Size(62, 16)
         ID_ClienteLabel.TabIndex = 0
@@ -133,7 +128,7 @@ Partial Class Cajero_Transaccion_Venta
         'ID_CajeroLabel
         '
         ID_CajeroLabel.AutoSize = True
-        ID_CajeroLabel.Location = New System.Drawing.Point(781, 9)
+        ID_CajeroLabel.Location = New System.Drawing.Point(713, 7)
         ID_CajeroLabel.Name = "ID_CajeroLabel"
         ID_CajeroLabel.Size = New System.Drawing.Size(59, 16)
         ID_CajeroLabel.TabIndex = 2
@@ -142,7 +137,7 @@ Partial Class Cajero_Transaccion_Venta
         'Cantidad_VentaLabel
         '
         Cantidad_VentaLabel.AutoSize = True
-        Cantidad_VentaLabel.Location = New System.Drawing.Point(11, 67)
+        Cantidad_VentaLabel.Location = New System.Drawing.Point(25, 371)
         Cantidad_VentaLabel.Name = "Cantidad_VentaLabel"
         Cantidad_VentaLabel.Size = New System.Drawing.Size(92, 16)
         Cantidad_VentaLabel.TabIndex = 6
@@ -151,7 +146,7 @@ Partial Class Cajero_Transaccion_Venta
         'ID_ProductoLabel
         '
         ID_ProductoLabel.AutoSize = True
-        ID_ProductoLabel.Location = New System.Drawing.Point(11, 33)
+        ID_ProductoLabel.Location = New System.Drawing.Point(25, 337)
         ID_ProductoLabel.Name = "ID_ProductoLabel"
         ID_ProductoLabel.Size = New System.Drawing.Size(74, 16)
         ID_ProductoLabel.TabIndex = 8
@@ -165,15 +160,6 @@ Partial Class Cajero_Transaccion_Venta
         TipoDeFactura_VentaLabel1.Size = New System.Drawing.Size(127, 16)
         TipoDeFactura_VentaLabel1.TabIndex = 0
         TipoDeFactura_VentaLabel1.Text = "Tipo De Factura Venta:"
-        '
-        'NroFacturaLabel
-        '
-        NroFacturaLabel.AutoSize = True
-        NroFacturaLabel.Location = New System.Drawing.Point(767, 37)
-        NroFacturaLabel.Name = "NroFacturaLabel"
-        NroFacturaLabel.Size = New System.Drawing.Size(73, 16)
-        NroFacturaLabel.TabIndex = 0
-        NroFacturaLabel.Text = "Nro Factura:"
         '
         'AgregarClienteToolStripMenuItem
         '
@@ -222,7 +208,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1199, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1167, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -232,13 +218,12 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 84)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1199, 10)
+        Me.Panel2.Size = New System.Drawing.Size(1167, 10)
         Me.Panel2.TabIndex = 56
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(NroFacturaLabel)
         Me.Panel1.Controls.Add(TipoDeFactura_VentaLabel1)
         Me.Panel1.Controls.Add(Me.NroFacturaTextBox)
@@ -249,27 +234,8 @@ Partial Class Cajero_Transaccion_Venta
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1199, 60)
+        Me.Panel1.Size = New System.Drawing.Size(1167, 60)
         Me.Panel1.TabIndex = 55
-        '
-        'NroFacturaTextBox
-        '
-        Me.NroFacturaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "NroFactura", True))
-        Me.NroFacturaTextBox.Enabled = False
-        Me.NroFacturaTextBox.Location = New System.Drawing.Point(846, 34)
-        Me.NroFacturaTextBox.Name = "NroFacturaTextBox"
-        Me.NroFacturaTextBox.Size = New System.Drawing.Size(100, 23)
-        Me.NroFacturaTextBox.TabIndex = 1
-        '
-        'VentaBindingSource
-        '
-        Me.VentaBindingSource.DataMember = "Venta"
-        Me.VentaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
-        '
-        'MayoristaBaseDeDatosDataSet
-        '
-        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
-        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label3
         '
@@ -290,6 +256,19 @@ Partial Class Cajero_Transaccion_Venta
         Me.TipoDeFactura_VentaComboBox.Size = New System.Drawing.Size(121, 24)
         Me.TipoDeFactura_VentaComboBox.TabIndex = 1
         '
+        'Btn_Imprimir
+        '
+        Me.Btn_Imprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Imprimir.FlatAppearance.BorderSize = 0
+        Me.Btn_Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Imprimir.Location = New System.Drawing.Point(883, 497)
+        Me.Btn_Imprimir.Name = "Btn_Imprimir"
+        Me.Btn_Imprimir.Size = New System.Drawing.Size(208, 40)
+        Me.Btn_Imprimir.TabIndex = 77
+        Me.Btn_Imprimir.Text = "IMPRIMIR"
+        Me.Btn_Imprimir.UseVisualStyleBackColor = False
+        '
         'ID_CajeroComboBox
         '
         Me.ID_CajeroComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CajeroBindingSource, "ID_Cajero", True))
@@ -307,18 +286,10 @@ Partial Class Cajero_Transaccion_Venta
         Me.CajeroBindingSource.DataMember = "Cajero"
         Me.CajeroBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
-        'Btn_Imprimir
+        'MayoristaBaseDeDatosDataSet
         '
-        Me.Btn_Imprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Imprimir.FlatAppearance.BorderSize = 0
-        Me.Btn_Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Imprimir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Imprimir.Location = New System.Drawing.Point(883, 497)
-        Me.Btn_Imprimir.Name = "Btn_Imprimir"
-        Me.Btn_Imprimir.Size = New System.Drawing.Size(208, 40)
-        Me.Btn_Imprimir.TabIndex = 77
-        Me.Btn_Imprimir.Text = "IMPRIMIR"
-        Me.Btn_Imprimir.UseVisualStyleBackColor = False
+        Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
+        Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Btn_Buscar
         '
@@ -326,7 +297,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Buscar.FlatAppearance.BorderSize = 0
         Me.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Buscar.Location = New System.Drawing.Point(81, 229)
+        Me.Btn_Buscar.Location = New System.Drawing.Point(123, 188)
         Me.Btn_Buscar.Name = "Btn_Buscar"
         Me.Btn_Buscar.Size = New System.Drawing.Size(200, 40)
         Me.Btn_Buscar.TabIndex = 73
@@ -339,7 +310,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1199, 549)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1167, 549)
         Me.ShapeContainer1.TabIndex = 74
         Me.ShapeContainer1.TabStop = False
         '
@@ -348,26 +319,26 @@ Partial Class Cajero_Transaccion_Venta
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 22
         Me.LineShape1.X2 = 322
-        Me.LineShape1.Y1 = 300
-        Me.LineShape1.Y2 = 300
+        Me.LineShape1.Y1 = 283
+        Me.LineShape1.Y2 = 287
         '
         'ID_ClienteTextBox
         '
-        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(102, 28)
+        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(123, 146)
         Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
         Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 23)
         Me.ID_ClienteTextBox.TabIndex = 1
         '
         'Cantidad_VentaTextBox
         '
-        Me.Cantidad_VentaTextBox.Location = New System.Drawing.Point(109, 64)
+        Me.Cantidad_VentaTextBox.Location = New System.Drawing.Point(123, 368)
         Me.Cantidad_VentaTextBox.Name = "Cantidad_VentaTextBox"
         Me.Cantidad_VentaTextBox.Size = New System.Drawing.Size(200, 23)
         Me.Cantidad_VentaTextBox.TabIndex = 7
         '
         'ID_ProductoTextBox
         '
-        Me.ID_ProductoTextBox.Location = New System.Drawing.Point(109, 30)
+        Me.ID_ProductoTextBox.Location = New System.Drawing.Point(123, 334)
         Me.ID_ProductoTextBox.Name = "ID_ProductoTextBox"
         Me.ID_ProductoTextBox.Size = New System.Drawing.Size(200, 23)
         Me.ID_ProductoTextBox.TabIndex = 9
@@ -378,7 +349,7 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Vender.FlatAppearance.BorderSize = 0
         Me.Btn_Vender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Vender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Vender.Location = New System.Drawing.Point(121, 452)
+        Me.Btn_Vender.Location = New System.Drawing.Point(123, 403)
         Me.Btn_Vender.Name = "Btn_Vender"
         Me.Btn_Vender.Size = New System.Drawing.Size(200, 40)
         Me.Btn_Vender.TabIndex = 76
@@ -393,8 +364,51 @@ Partial Class Cajero_Transaccion_Venta
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
         Me.ProductoDataGridView.Location = New System.Drawing.Point(359, 120)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(828, 168)
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(743, 168)
         Me.ProductoDataGridView.TabIndex = 0
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Producto"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Producto"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Marca"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Marca"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Categoria"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Categoria"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nombre_Producto"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Nombre_Producto"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Descripcion"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Descripcion"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Strock"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Stock"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Precio_Unitario"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Precio_Unitario"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'ProductoBindingSource
         '
@@ -471,6 +485,11 @@ Partial Class Cajero_Transaccion_Venta
         '
         Me.ClienteBindingSource.DataMember = "Cliente"
         Me.ClienteBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'VentaBindingSource
+        '
+        Me.VentaBindingSource.DataMember = "Venta"
+        Me.VentaBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
         '
         'VentaTableAdapter1
         '
@@ -611,82 +630,23 @@ Partial Class Cajero_Transaccion_Venta
         Me.Btn_Finalizar.Text = "Finalizar"
         Me.Btn_Finalizar.UseVisualStyleBackColor = False
         '
-        'DataGridViewTextBoxColumn1
+        'NroFacturaLabel
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Producto"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Producto"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        NroFacturaLabel.AutoSize = True
+        NroFacturaLabel.Location = New System.Drawing.Point(767, 37)
+        NroFacturaLabel.Name = "NroFacturaLabel"
+        NroFacturaLabel.Size = New System.Drawing.Size(73, 16)
+        NroFacturaLabel.TabIndex = 0
+        NroFacturaLabel.Text = "Nro Factura:"
         '
-        'DataGridViewTextBoxColumn2
+        'NroFacturaTextBox
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Marca"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Marca"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Categoria"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Categoria"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nombre_Producto"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Nombre de Producto"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 150
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Descripcion"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Descripcion"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 150
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Strock"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Stock"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Precio_Unitario"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Precio"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.ID_ClienteTextBox)
-        Me.GroupBox2.Controls.Add(ID_ClienteLabel)
-        Me.GroupBox2.Location = New System.Drawing.Point(28, 143)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(316, 70)
-        Me.GroupBox2.TabIndex = 85
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.ID_ProductoTextBox)
-        Me.GroupBox3.Controls.Add(ID_ProductoLabel)
-        Me.GroupBox3.Controls.Add(Me.Cantidad_VentaTextBox)
-        Me.GroupBox3.Controls.Add(Cantidad_VentaLabel)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 317)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(328, 120)
-        Me.GroupBox3.TabIndex = 86
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(589, 4)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(61, 50)
-        Me.TextBox1.TabIndex = 11
+        Me.NroFacturaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VentaBindingSource, "NroFactura", True))
+        Me.NroFacturaTextBox.Enabled = False
+        Me.NroFacturaTextBox.Location = New System.Drawing.Point(846, 34)
+        Me.NroFacturaTextBox.Name = "NroFacturaTextBox"
+        Me.NroFacturaTextBox.Size = New System.Drawing.Size(100, 23)
+        Me.NroFacturaTextBox.TabIndex = 1
         '
         'Cajero_Transaccion_Venta
         '
@@ -694,16 +654,20 @@ Partial Class Cajero_Transaccion_Venta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(1199, 549)
-        Me.Controls.Add(Me.Btn_Vender)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(1167, 549)
         Me.Controls.Add(Me.Btn_Imprimir)
         Me.Controls.Add(Me.Btn_Finalizar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.VentaDataGridView)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ProductoDataGridView)
+        Me.Controls.Add(Me.Btn_Vender)
+        Me.Controls.Add(ID_ClienteLabel)
+        Me.Controls.Add(Me.ID_ClienteTextBox)
+        Me.Controls.Add(Cantidad_VentaLabel)
+        Me.Controls.Add(Me.Cantidad_VentaTextBox)
+        Me.Controls.Add(ID_ProductoLabel)
+        Me.Controls.Add(Me.ID_ProductoTextBox)
         Me.Controls.Add(Me.Btn_Buscar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -722,20 +686,16 @@ Partial Class Cajero_Transaccion_Venta
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CajeroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FacturasVentaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VentaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -769,6 +729,13 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents VentaTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.VentaTableAdapter
     Friend WithEvents ProductoDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents CodProducto As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Producto As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -798,14 +765,4 @@ Partial Class Cajero_Transaccion_Venta
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Btn_Finalizar As System.Windows.Forms.Button
     Friend WithEvents NroFacturaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

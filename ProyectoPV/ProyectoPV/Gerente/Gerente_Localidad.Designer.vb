@@ -66,6 +66,7 @@ Partial Class Gerente_Localidad
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_Guardar = New System.Windows.Forms.Button()
         Me.Btn_Eliminar = New System.Windows.Forms.Button()
+        Me.Btn_Modificar = New System.Windows.Forms.Button()
         Me.Localidad_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.CP_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Provincia_LocalidadTextBox = New System.Windows.Forms.TextBox()
@@ -372,6 +373,7 @@ Partial Class Gerente_Localidad
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
+        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'GroupBox1
         '
@@ -462,6 +464,19 @@ Partial Class Gerente_Localidad
         Me.Btn_Eliminar.Text = "&ELIMINAR"
         Me.Btn_Eliminar.UseVisualStyleBackColor = False
         '
+        'Btn_Modificar
+        '
+        Me.Btn_Modificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_Modificar.FlatAppearance.BorderSize = 0
+        Me.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modificar.Location = New System.Drawing.Point(39, 534)
+        Me.Btn_Modificar.Name = "Btn_Modificar"
+        Me.Btn_Modificar.Size = New System.Drawing.Size(211, 40)
+        Me.Btn_Modificar.TabIndex = 11
+        Me.Btn_Modificar.Text = "&MODIFICAR"
+        Me.Btn_Modificar.UseVisualStyleBackColor = False
+        '
         'Localidad_LocalidadTextBox
         '
         Me.Localidad_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad_Localidad", True))
@@ -513,6 +528,7 @@ Partial Class Gerente_Localidad
         Me.Controls.Add(Me.CP_LocalidadTextBox)
         Me.Controls.Add(Provincia_LocalidadLabel1)
         Me.Controls.Add(Me.Provincia_LocalidadTextBox)
+        Me.Controls.Add(Me.Btn_Modificar)
         Me.Controls.Add(Me.Btn_Eliminar)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.Panel2)
@@ -581,6 +597,7 @@ Partial Class Gerente_Localidad
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Btn_Guardar As System.Windows.Forms.Button
     Friend WithEvents Btn_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents Btn_Modificar As System.Windows.Forms.Button
     Friend WithEvents Localidad_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CP_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Provincia_LocalidadTextBox As System.Windows.Forms.TextBox

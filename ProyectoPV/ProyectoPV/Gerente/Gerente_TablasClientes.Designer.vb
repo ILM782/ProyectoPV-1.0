@@ -356,6 +356,7 @@ Partial Class Gerente_TablasClientes
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         '
         'ClienteDataGridView
@@ -418,6 +419,9 @@ Partial Class Gerente_TablasClientes
         Me.DataGridViewTextBoxColumn8.HeaderText = "DNI_Cliente"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
 >>>>>>> rama
+=======
+        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
         '
         'Panel2
         '

@@ -47,10 +47,6 @@
         'TODO: esta línea de código carga datos en la tabla 'MayoristaBaseDeDatosDataSet.Venta' Puede moverla o quitarla según sea necesario.
         Me.VentaTableAdapter1.Fill(Me.MayoristaBaseDeDatosDataSet.Venta)
 
-        TipoDeFactura_VentaComboBox.Items.Add("Factura Tipo A")
-        TipoDeFactura_VentaComboBox.Items.Add("Factura Tipo B")
-        TipoDeFactura_VentaComboBox.Items.Add("Factura Tipo C")
-
     End Sub
 
     Private Sub VentaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -229,12 +225,12 @@
         Me.lbl_Totalventas.Text = Resultado.ToString
         A = A + 1
         Me.NroFacturaTextBox.Text = A
-
         VentaDataGridView.DataSource = Nothing
         'For i As Integer = 0 To Me.VentaDataGridView.RowCount - 1
         '    Me.DataGridView1.Rows.Remove(Me.VentaDataGridView.CurrentRow)
         'Next
     End Sub
+<<<<<<< HEAD
 
     Private Sub TipoDeFactura_VentaComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TipoDeFactura_VentaComboBox.SelectedIndexChanged
         TextBox1.Text = TipoDeFactura_VentaComboBox.Text
@@ -243,4 +239,6 @@
         VentaVistaDataGridView.
 >>>>>>> rama
     End Sub
+=======
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
 End Class

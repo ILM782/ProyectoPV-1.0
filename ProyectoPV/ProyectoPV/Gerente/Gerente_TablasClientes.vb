@@ -19,10 +19,15 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub BorrarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BorrarToolStripMenuItem.Click
@@ -30,9 +35,13 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub ActualizarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ActualizarToolStripMenuItem.Click
@@ -40,9 +49,13 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
@@ -50,9 +63,13 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub ClienteBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -161,9 +178,13 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub AgregarCajeroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarCajeroToolStripMenuItem.Click
@@ -171,9 +192,13 @@
         Me.Close()
 <<<<<<< HEAD
         Gerente_Tabla_De_Clientes_Vistas.Close()
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
 End Class

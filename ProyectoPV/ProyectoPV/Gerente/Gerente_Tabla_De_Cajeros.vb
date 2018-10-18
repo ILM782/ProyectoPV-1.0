@@ -4,9 +4,13 @@
         Gerente_Agregar_Cajero.Show()
         Me.Close()
 <<<<<<< HEAD
+<<<<<<< HEAD
         Cajero_Localidad_De_Vista.Close()
 =======
 >>>>>>> rama
+=======
+        Gerente_Localidad_De_Vista.Close()
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalirToolStripMenuItem.Click
@@ -77,23 +81,27 @@
         Dim aux As Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And ID_LocalidadTextBox.Text <> "" And Domicilio_CajeroTextBox.Text <> "" And Correo_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" Then
+=======
+            If Nombre_CajeroTextBox.Text <> "" And Apellido_CajeroTextBox.Text <> "" And ID_LocalidadTextBox.Text <> "" And Domicilio_CajeroTextBox.Text <> "" And Correo_CajeroTextBox.Text <> "" And DNI_CajeroTextBox.Text <> "" Then
+>>>>>>> parent of 127a408... HAY QUE ARREGLAR ESE ERROR DEL FILLBY
 
-            aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
-            If aux = vbYes Then
-                Me.Validate()
-                Me.CajeroBindingSource.EndEdit()
-                Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
-                Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
+                aux = MsgBox("¿Seguro que quiere Modificar ?", MsgBoxStyle.YesNoCancel, "¿Seguro?")
+                If aux = vbYes Then
+                    Me.Validate()
+                    Me.CajeroBindingSource.EndEdit()
+                    Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet)
+                    Me.CajeroTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cajero)
                 Me.CajeroBindingSource.MoveLast()
+                End If
+            Else
+                MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
             End If
-        Else
-            MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
-        End If
     End Sub
 
     Private Sub LocalidadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadToolStripMenuItem.Click
-        Cajero_Localidad_De_Vista.Show()
+        Gerente_Localidad_De_Vista.Show()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

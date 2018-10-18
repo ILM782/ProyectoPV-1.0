@@ -225,6 +225,7 @@ Partial Class Gerente_Proveedores
         Me.TableAdapterManager.ProveedorTableAdapter = Me.ProveedorTableAdapter
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
+        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'ComboBox1
         '

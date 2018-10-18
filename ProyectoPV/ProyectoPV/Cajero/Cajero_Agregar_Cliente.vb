@@ -43,20 +43,20 @@
     End Sub
 
     Private Sub Btn_Entrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Guardar.Click
-        Dim consulta1 As Integer
-        If Txt_Nombre.Text <> "" And Txt_Apellido.Text <> "" And Txt_Dni.Text <> "" And Txt_Domicilio.Text <> "" And Txt_Telefono.Text <> "" And Txt_Correo.Text <> "" Then
-            consulta1 = Me.ClienteBindingSource.Find("DNI_Cliente", Txt_Dni.Text)
+        Dim consulta As Integer
+        If Nombre_ClienteTextBox.Text <> "" And Apellido_ClienteTextBox.Text <> "" And DNI_ClienteTextBox.Text <> "" And Telefono_ClienteTextBox.Text <> "" Then
+            consulta = Me.ClienteBindingSource.Find("DNI_Cliente", DNI_ClienteTextBox.Text)
 
-            If consulta1 <> -1 Then
-                MsgBox("Cliente Exixtente", MsgBoxStyle.Exclamation, "Advertencia")
+            If consulta <> -1 Then
+                MsgBox("Cliente Repetido", MsgBoxStyle.Exclamation, "Advertencia")
             Else
-                Me.ClienteBindingSource.Current("Nombre_Cliente") = Txt_Nombre.Text
-                Me.ClienteBindingSource.Current("Apellido_Cliente") = Txt_Apellido.Text
-                Me.ClienteBindingSource.Current("DNI_Cliente") = Val(Txt_Dni.Text)
-                Me.ClienteBindingSource.Current("Domicilio_Cliente") = Txt_Domicilio.Text
-                Me.ClienteBindingSource.Current("Correo_Cliente") = Txt_Correo.Text
-                Me.ClienteBindingSource.Current("Telefono_Cliente") = Txt_Telefono.Text
-                Me.ClienteBindingSource.Current("ID_Localidad") = Val(ComboBox1.SelectedValue)
+                Me.ClienteBindingSource.Current("Nombre_Cliente") = Nombre_ClienteTextBox.Text
+                Me.ClienteBindingSource.Current("Apellido_Cliente") = Apellido_ClienteTextBox.Text
+                Me.ClienteBindingSource.Current("DNI_Cliente") = Val(DNI_ClienteTextBox.Text)
+                Me.ClienteBindingSource.Current("Domicilio_Cliente") = Domicilio_ClienteTextBox.Text
+                Me.ClienteBindingSource.Current("Correo_Cliente") = Correo_ClienteTextBox.Text
+                Me.ClienteBindingSource.Current("Telefono_Cliente") = Telefono_ClienteTextBox.Text
+                Me.ClienteBindingSource.Current("ID_Localidad") = Val(ID_LocalidadComboBox.SelectedValue)
                 Me.ClienteBindingSource.EndEdit() ' finaliza edicion
                 Me.TableAdapterManager.UpdateAll(Me.MayoristaBaseDeDatosDataSet) 'guardo en disco
                 Me.ClienteTableAdapter.Fill(Me.MayoristaBaseDeDatosDataSet.Cliente)
@@ -64,12 +64,12 @@
                 MsgBox("El Id del Cliente es: " & ClienteBindingSource.Current("ID_Cliente"), MsgBoxStyle.Information, " Id Cliente ")
 
                 Me.ClienteBindingSource.AddNew()
-                Txt_Nombre.Text = ""
-                Txt_Apellido.Text = ""
-                Txt_Domicilio.Text = ""
-                Txt_Telefono.Text = ""
-                Txt_Correo.Text = ""
-                Txt_Dni.Text = ""
+                Nombre_ClienteTextBox.Text = ""
+                Apellido_ClienteTextBox.Text = ""
+                DNI_ClienteTextBox.Text = ""
+                ID_LocalidadComboBox.Text = "Seleccionar"
+                Domicilio_ClienteTextBox.Text = ""
+                Correo_ClienteTextBox.Text = ""
             End If
         Else
             MsgBox("El campo esta vacio", MsgBoxStyle.Exclamation, "Advertencia")
@@ -89,18 +89,18 @@
         End If
     End Sub
 
-    Private Sub Txt_Telefono_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Telefono.KeyPress
+    Private Sub DNI_ClienteTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles DNI_ClienteTextBox.KeyPress
         e.KeyChar = ChrW(solonumeros(e))
         If e.KeyChar = Chr(13) Then
-            Txt_Telefono.Focus()
+            DNI_ClienteTextBox.Focus()
             e.Handled = True
         End If
     End Sub
 
-    Private Sub Txt_Dni_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_Dni.KeyPress
+    Private Sub Telefono_ClienteTextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Telefono_ClienteTextBox.KeyPress
         e.KeyChar = ChrW(solonumeros(e))
         If e.KeyChar = Chr(13) Then
-            Txt_Dni.Focus()
+            DNI_ClienteTextBox.Focus()
             e.Handled = True
         End If
     End Sub

@@ -272,6 +272,7 @@ Partial Class Gerente_Tablas_Producto
         Me.TableAdapterManager.ProveedorTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
+        Me.TableAdapterManager.VentaVistaTableAdapter = Nothing
         '
         'CategoriaTableAdapter
         '

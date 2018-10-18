@@ -24,12 +24,12 @@ Partial Class Cajero_Agregar_Cliente
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
-        Dim DniLabel As System.Windows.Forms.Label
-        Dim Correo_ClienteLabel As System.Windows.Forms.Label
-        Dim Telefono_ClienteLabel As System.Windows.Forms.Label
-        Dim Domicilio_ClienteLabel As System.Windows.Forms.Label
-        Dim ID_LocalidadLabel As System.Windows.Forms.Label
         Dim Apellido_ClienteLabel As System.Windows.Forms.Label
+        Dim DNI_ClienteLabel As System.Windows.Forms.Label
+        Dim ID_LocalidadLabel As System.Windows.Forms.Label
+        Dim Domicilio_ClienteLabel As System.Windows.Forms.Label
+        Dim Telefono_ClienteLabel As System.Windows.Forms.Label
+        Dim Correo_ClienteLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cajero_Agregar_Cliente))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.TransaccionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,25 +41,6 @@ Partial Class Cajero_Agregar_Cliente
         Me.ClienteTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
-        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
-        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Txt_Correo = New System.Windows.Forms.TextBox()
-        Me.Txt_Telefono = New System.Windows.Forms.TextBox()
-        Me.Txt_Domicilio = New System.Windows.Forms.TextBox()
-        Me.Txt_Dni = New System.Windows.Forms.TextBox()
-        Me.Txt_Apellido = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Txt_Nombre = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -68,91 +49,101 @@ Partial Class Cajero_Agregar_Cliente
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MayoristaBaseDeDatosDataSet = New WindowsApplication1.MayoristaBaseDeDatosDataSet()
+        Me.Nombre_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.Apellido_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.DNI_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.ID_LocalidadComboBox = New System.Windows.Forms.ComboBox()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Domicilio_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.Telefono_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.Correo_ClienteTextBox = New System.Windows.Forms.TextBox()
+        Me.LocalidadTableAdapter = New WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
-        DniLabel = New System.Windows.Forms.Label()
-        Correo_ClienteLabel = New System.Windows.Forms.Label()
-        Telefono_ClienteLabel = New System.Windows.Forms.Label()
-        Domicilio_ClienteLabel = New System.Windows.Forms.Label()
-        ID_LocalidadLabel = New System.Windows.Forms.Label()
         Apellido_ClienteLabel = New System.Windows.Forms.Label()
+        DNI_ClienteLabel = New System.Windows.Forms.Label()
+        ID_LocalidadLabel = New System.Windows.Forms.Label()
+        Domicilio_ClienteLabel = New System.Windows.Forms.Label()
+        Telefono_ClienteLabel = New System.Windows.Forms.Label()
+        Correo_ClienteLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MayoristaBaseDeDatosDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Nombre_ClienteLabel
         '
         Nombre_ClienteLabel.AutoSize = True
-        Nombre_ClienteLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Nombre_ClienteLabel.Location = New System.Drawing.Point(23, 32)
+        Nombre_ClienteLabel.Location = New System.Drawing.Point(43, 137)
         Nombre_ClienteLabel.Name = "Nombre_ClienteLabel"
-        Nombre_ClienteLabel.Size = New System.Drawing.Size(95, 16)
-        Nombre_ClienteLabel.TabIndex = 4
+        Nombre_ClienteLabel.Size = New System.Drawing.Size(82, 13)
+        Nombre_ClienteLabel.TabIndex = 24
         Nombre_ClienteLabel.Text = "Nombre Cliente:"
-        '
-        'DniLabel
-        '
-        DniLabel.AutoSize = True
-        DniLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DniLabel.Location = New System.Drawing.Point(23, 84)
-        DniLabel.Name = "DniLabel"
-        DniLabel.Size = New System.Drawing.Size(29, 16)
-        DniLabel.TabIndex = 16
-        DniLabel.Text = "Dni:"
-        '
-        'Correo_ClienteLabel
-        '
-        Correo_ClienteLabel.AutoSize = True
-        Correo_ClienteLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Correo_ClienteLabel.Location = New System.Drawing.Point(23, 189)
-        Correo_ClienteLabel.Name = "Correo_ClienteLabel"
-        Correo_ClienteLabel.Size = New System.Drawing.Size(87, 16)
-        Correo_ClienteLabel.TabIndex = 14
-        Correo_ClienteLabel.Text = "Correo Cliente:"
-        '
-        'Telefono_ClienteLabel
-        '
-        Telefono_ClienteLabel.AutoSize = True
-        Telefono_ClienteLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Telefono_ClienteLabel.Location = New System.Drawing.Point(23, 163)
-        Telefono_ClienteLabel.Name = "Telefono_ClienteLabel"
-        Telefono_ClienteLabel.Size = New System.Drawing.Size(98, 16)
-        Telefono_ClienteLabel.TabIndex = 12
-        Telefono_ClienteLabel.Text = "Telefono Cliente:"
-        '
-        'Domicilio_ClienteLabel
-        '
-        Domicilio_ClienteLabel.AutoSize = True
-        Domicilio_ClienteLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Domicilio_ClienteLabel.Location = New System.Drawing.Point(23, 137)
-        Domicilio_ClienteLabel.Name = "Domicilio_ClienteLabel"
-        Domicilio_ClienteLabel.Size = New System.Drawing.Size(102, 16)
-        Domicilio_ClienteLabel.TabIndex = 10
-        Domicilio_ClienteLabel.Text = "Domicilio Cliente:"
-        '
-        'ID_LocalidadLabel
-        '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ID_LocalidadLabel.Location = New System.Drawing.Point(23, 110)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(62, 16)
-        ID_LocalidadLabel.TabIndex = 8
-        ID_LocalidadLabel.Text = "Localidad:"
         '
         'Apellido_ClienteLabel
         '
         Apellido_ClienteLabel.AutoSize = True
-        Apellido_ClienteLabel.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Apellido_ClienteLabel.Location = New System.Drawing.Point(23, 58)
+        Apellido_ClienteLabel.Location = New System.Drawing.Point(43, 163)
         Apellido_ClienteLabel.Name = "Apellido_ClienteLabel"
-        Apellido_ClienteLabel.Size = New System.Drawing.Size(95, 16)
-        Apellido_ClienteLabel.TabIndex = 6
+        Apellido_ClienteLabel.Size = New System.Drawing.Size(82, 13)
+        Apellido_ClienteLabel.TabIndex = 26
         Apellido_ClienteLabel.Text = "Apellido Cliente:"
+        '
+        'DNI_ClienteLabel
+        '
+        DNI_ClienteLabel.AutoSize = True
+        DNI_ClienteLabel.Location = New System.Drawing.Point(43, 189)
+        DNI_ClienteLabel.Name = "DNI_ClienteLabel"
+        DNI_ClienteLabel.Size = New System.Drawing.Size(64, 13)
+        DNI_ClienteLabel.TabIndex = 28
+        DNI_ClienteLabel.Text = "DNI Cliente:"
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(43, 215)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 30
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'Domicilio_ClienteLabel
+        '
+        Domicilio_ClienteLabel.AutoSize = True
+        Domicilio_ClienteLabel.Location = New System.Drawing.Point(43, 242)
+        Domicilio_ClienteLabel.Name = "Domicilio_ClienteLabel"
+        Domicilio_ClienteLabel.Size = New System.Drawing.Size(87, 13)
+        Domicilio_ClienteLabel.TabIndex = 32
+        Domicilio_ClienteLabel.Text = "Domicilio Cliente:"
+        '
+        'Telefono_ClienteLabel
+        '
+        Telefono_ClienteLabel.AutoSize = True
+        Telefono_ClienteLabel.Location = New System.Drawing.Point(43, 268)
+        Telefono_ClienteLabel.Name = "Telefono_ClienteLabel"
+        Telefono_ClienteLabel.Size = New System.Drawing.Size(87, 13)
+        Telefono_ClienteLabel.TabIndex = 34
+        Telefono_ClienteLabel.Text = "Telefono Cliente:"
+        '
+        'Correo_ClienteLabel
+        '
+        Correo_ClienteLabel.AutoSize = True
+        Correo_ClienteLabel.Location = New System.Drawing.Point(43, 294)
+        Correo_ClienteLabel.Name = "Correo_ClienteLabel"
+        Correo_ClienteLabel.Size = New System.Drawing.Size(76, 13)
+        Correo_ClienteLabel.TabIndex = 36
+        Correo_ClienteLabel.Text = "Correo Cliente:"
         '
         'MenuStrip1
         '
@@ -210,7 +201,7 @@ Partial Class Cajero_Agregar_Cliente
         Me.Btn_Guardar.FlatAppearance.BorderSize = 0
         Me.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Guardar.Location = New System.Drawing.Point(45, 357)
+        Me.Btn_Guardar.Location = New System.Drawing.Point(46, 347)
         Me.Btn_Guardar.Name = "Btn_Guardar"
         Me.Btn_Guardar.Size = New System.Drawing.Size(211, 40)
         Me.Btn_Guardar.TabIndex = 23
@@ -240,10 +231,59 @@ Partial Class Cajero_Agregar_Cliente
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn9})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
-        Me.ClienteDataGridView.Location = New System.Drawing.Point(317, 121)
+        Me.ClienteDataGridView.Location = New System.Drawing.Point(295, 134)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
         Me.ClienteDataGridView.Size = New System.Drawing.Size(844, 253)
         Me.ClienteDataGridView.TabIndex = 24
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre_Cliente"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido_Cliente"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio_Cliente"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono_Cliente"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo_Cliente"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "DNI_Cliente"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "DNI_Cliente"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
         'ClienteBindingSource
         '
@@ -255,10 +295,75 @@ Partial Class Cajero_Agregar_Cliente
         Me.MayoristaBaseDeDatosDataSet.DataSetName = "MayoristaBaseDeDatosDataSet"
         Me.MayoristaBaseDeDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'Nombre_ClienteTextBox
+        '
+        Me.Nombre_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre_Cliente", True))
+        Me.Nombre_ClienteTextBox.Location = New System.Drawing.Point(136, 134)
+        Me.Nombre_ClienteTextBox.MaxLength = 25
+        Me.Nombre_ClienteTextBox.Name = "Nombre_ClienteTextBox"
+        Me.Nombre_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.Nombre_ClienteTextBox.TabIndex = 25
+        '
+        'Apellido_ClienteTextBox
+        '
+        Me.Apellido_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_Cliente", True))
+        Me.Apellido_ClienteTextBox.Location = New System.Drawing.Point(136, 160)
+        Me.Apellido_ClienteTextBox.MaxLength = 25
+        Me.Apellido_ClienteTextBox.Name = "Apellido_ClienteTextBox"
+        Me.Apellido_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.Apellido_ClienteTextBox.TabIndex = 27
+        '
+        'DNI_ClienteTextBox
+        '
+        Me.DNI_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "DNI_Cliente", True))
+        Me.DNI_ClienteTextBox.Location = New System.Drawing.Point(136, 186)
+        Me.DNI_ClienteTextBox.MaxLength = 8
+        Me.DNI_ClienteTextBox.Name = "DNI_ClienteTextBox"
+        Me.DNI_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.DNI_ClienteTextBox.TabIndex = 29
+        '
+        'ID_LocalidadComboBox
+        '
+        Me.ID_LocalidadComboBox.DataSource = Me.LocalidadBindingSource
+        Me.ID_LocalidadComboBox.DisplayMember = "Localidad_Localidad"
+        Me.ID_LocalidadComboBox.FormattingEnabled = True
+        Me.ID_LocalidadComboBox.Location = New System.Drawing.Point(136, 212)
+        Me.ID_LocalidadComboBox.Name = "ID_LocalidadComboBox"
+        Me.ID_LocalidadComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.ID_LocalidadComboBox.TabIndex = 31
+        Me.ID_LocalidadComboBox.ValueMember = "ID_Localidad"
+        '
         'LocalidadBindingSource
         '
         Me.LocalidadBindingSource.DataMember = "Localidad"
         Me.LocalidadBindingSource.DataSource = Me.MayoristaBaseDeDatosDataSet
+        '
+        'Domicilio_ClienteTextBox
+        '
+        Me.Domicilio_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Domicilio_Cliente", True))
+        Me.Domicilio_ClienteTextBox.Location = New System.Drawing.Point(136, 239)
+        Me.Domicilio_ClienteTextBox.MaxLength = 50
+        Me.Domicilio_ClienteTextBox.Name = "Domicilio_ClienteTextBox"
+        Me.Domicilio_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.Domicilio_ClienteTextBox.TabIndex = 33
+        '
+        'Telefono_ClienteTextBox
+        '
+        Me.Telefono_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Telefono_Cliente", True))
+        Me.Telefono_ClienteTextBox.Location = New System.Drawing.Point(136, 265)
+        Me.Telefono_ClienteTextBox.MaxLength = 10
+        Me.Telefono_ClienteTextBox.Name = "Telefono_ClienteTextBox"
+        Me.Telefono_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.Telefono_ClienteTextBox.TabIndex = 35
+        '
+        'Correo_ClienteTextBox
+        '
+        Me.Correo_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Correo_Cliente", True))
+        Me.Correo_ClienteTextBox.Location = New System.Drawing.Point(136, 291)
+        Me.Correo_ClienteTextBox.MaxLength = 50
+        Me.Correo_ClienteTextBox.Name = "Correo_ClienteTextBox"
+        Me.Correo_ClienteTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.Correo_ClienteTextBox.TabIndex = 37
         '
         'LocalidadTableAdapter
         '
@@ -319,142 +424,28 @@ Partial Class Cajero_Agregar_Cliente
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Agregar Cliente"
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Nombre_ClienteLabel)
-        Me.GroupBox1.Controls.Add(DniLabel)
-        Me.GroupBox1.Controls.Add(Correo_ClienteLabel)
-        Me.GroupBox1.Controls.Add(Me.Txt_Correo)
-        Me.GroupBox1.Controls.Add(Telefono_ClienteLabel)
-        Me.GroupBox1.Controls.Add(Me.Txt_Telefono)
-        Me.GroupBox1.Controls.Add(Domicilio_ClienteLabel)
-        Me.GroupBox1.Controls.Add(Me.Txt_Domicilio)
-        Me.GroupBox1.Controls.Add(ID_LocalidadLabel)
-        Me.GroupBox1.Controls.Add(Me.Txt_Dni)
-        Me.GroupBox1.Controls.Add(Apellido_ClienteLabel)
-        Me.GroupBox1.Controls.Add(Me.Txt_Apellido)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Txt_Nombre)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(19, 121)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(279, 230)
-        Me.GroupBox1.TabIndex = 60
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Agregar Cliente"
-        '
-        'Txt_Correo
-        '
-        Me.Txt_Correo.Location = New System.Drawing.Point(135, 186)
-        Me.Txt_Correo.Name = "Txt_Correo"
-        Me.Txt_Correo.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Correo.TabIndex = 27
-        '
-        'Txt_Telefono
-        '
-        Me.Txt_Telefono.Location = New System.Drawing.Point(135, 160)
-        Me.Txt_Telefono.Name = "Txt_Telefono"
-        Me.Txt_Telefono.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Telefono.TabIndex = 26
-        '
-        'Txt_Domicilio
-        '
-        Me.Txt_Domicilio.Location = New System.Drawing.Point(135, 134)
-        Me.Txt_Domicilio.Name = "Txt_Domicilio"
-        Me.Txt_Domicilio.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Domicilio.TabIndex = 25
-        '
-        'Txt_Dni
-        '
-        Me.Txt_Dni.Location = New System.Drawing.Point(135, 81)
-        Me.Txt_Dni.MaxLength = 8
-        Me.Txt_Dni.Name = "Txt_Dni"
-        Me.Txt_Dni.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Dni.TabIndex = 24
-        '
-        'Txt_Apellido
-        '
-        Me.Txt_Apellido.Location = New System.Drawing.Point(135, 55)
-        Me.Txt_Apellido.Name = "Txt_Apellido"
-        Me.Txt_Apellido.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Apellido.TabIndex = 23
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DataSource = Me.LocalidadBindingSource
-        Me.ComboBox1.DisplayMember = "Localidad_Localidad"
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(135, 107)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(124, 24)
-        Me.ComboBox1.TabIndex = 18
-        Me.ComboBox1.ValueMember = "ID_Localidad"
-        '
-        'Txt_Nombre
-        '
-        Me.Txt_Nombre.Location = New System.Drawing.Point(135, 29)
-        Me.Txt_Nombre.Name = "Txt_Nombre"
-        Me.Txt_Nombre.Size = New System.Drawing.Size(124, 23)
-        Me.Txt_Nombre.TabIndex = 22
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Cliente"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Cliente"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido_Cliente"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Domicilio_Cliente"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Domicilio"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Telefono_Cliente"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Correo_Cliente"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "DNI_Cliente"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "DNI"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
         'Cajero_Agregar_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(1185, 428)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Nombre_ClienteLabel)
+        Me.Controls.Add(Me.Nombre_ClienteTextBox)
+        Me.Controls.Add(Apellido_ClienteLabel)
+        Me.Controls.Add(Me.Apellido_ClienteTextBox)
+        Me.Controls.Add(DNI_ClienteLabel)
+        Me.Controls.Add(Me.DNI_ClienteTextBox)
+        Me.Controls.Add(ID_LocalidadLabel)
+        Me.Controls.Add(Me.ID_LocalidadComboBox)
+        Me.Controls.Add(Domicilio_ClienteLabel)
+        Me.Controls.Add(Me.Domicilio_ClienteTextBox)
+        Me.Controls.Add(Telefono_ClienteLabel)
+        Me.Controls.Add(Me.Telefono_ClienteTextBox)
+        Me.Controls.Add(Correo_ClienteLabel)
+        Me.Controls.Add(Me.Correo_ClienteTextBox)
         Me.Controls.Add(Me.Btn_Guardar)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.ClienteDataGridView)
@@ -473,8 +464,6 @@ Partial Class Cajero_Agregar_Cliente
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -492,6 +481,21 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents ClienteTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.ClienteTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.TableAdapterManager
     Friend WithEvents ClienteDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Apellido_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DNI_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ID_LocalidadComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents Domicilio_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Telefono_ClienteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Correo_ClienteTextBox As System.Windows.Forms.TextBox
     Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents LocalidadTableAdapter As WindowsApplication1.MayoristaBaseDeDatosDataSetTableAdapters.LocalidadTableAdapter
     Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -501,20 +505,4 @@ Partial Class Cajero_Agregar_Cliente
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Txt_Correo As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Telefono As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Domicilio As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Dni As System.Windows.Forms.TextBox
-    Friend WithEvents Txt_Apellido As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Txt_Nombre As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
